@@ -1,5 +1,6 @@
 import re
 import math
+import itertools
 from fractions import Fraction
 
 def C2(k):
@@ -80,11 +81,11 @@ def validate_constraint(sign, a, b, c):
         return det(a, b, c) < 0
 
 def orient(a, b, c):
-    if a < b:
+    if a > b:
         t = a
         a = b
         b = t
-    if b < c:
+    if b > c:
         t = b
         b = c
         c = t
@@ -103,3 +104,17 @@ def validate(constraint_filename, point_filename):
             bad_vars.append(orient(vls[0], vls[1], vls[2]))
             valid = False
     return valid, bad_vars
+
+def get_sat_model(point_filename, n = 23):
+    sat_model = []
+    frac_points, _ = parse_points(point_filename)
+    for (i, j, k) in itertools.combinations(range(n), 3):
+        a, b, c = frac_points[i], frac_points[j], frac_points[k]
+        d = det(a, b, c)
+        assert d != 0
+        if d > 0:
+            sat_model.append(orient(i+1,j+1,k+1))
+        else:
+            sat_model.append(-orient(i+1,j+1,k+1))
+    sat_model.sort(key=abs)
+    return sat_model

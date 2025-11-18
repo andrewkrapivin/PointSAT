@@ -131,7 +131,7 @@ def server(results_queue, work_queue, base_formula, subcases, num_workers, out_f
             if jobs_left == 0:
                 break
             
-            print(jobs_left)
+            print(jobs_left, flush=True)
             result = results_queue.get()
             jobs_left -= 1
             print(json.dumps(result), file=file, flush=True)
@@ -161,7 +161,7 @@ def server(results_queue, work_queue, base_formula, subcases, num_workers, out_f
                     # shutil.move(old_realization_file+".png", results_realization_file+".png")
                     shutil.copy(old_realization_file, results_realization_file)
                     shutil.copy(orientations_file, results_orientation_file)
-                    shutil.copy(old_realization_file+".png", results_realization_file+".png")
+                    # shutil.copy(old_realization_file+".png", results_realization_file+".png")
                 elif result["meta"] == "initial_try":
                     # os.remove(old_realization_file)
                     if result['violations'] <= 10:
@@ -230,6 +230,9 @@ def server(results_queue, work_queue, base_formula, subcases, num_workers, out_f
                 # shutil.move(old_realization_file+".png", results_realization_file+".png")
                 shutil.copy(old_realization_file, results_realization_file)
                 shutil.copy(orientations_file, results_orientation_file)
+                perturbed_orientations_file = os.path.join(scratch_folder, str(result['original_id']) + "_" + str(result["real_id"]) + ".or")
+                with open(perturbed_orientations_file, "w") as f:
+                    f.write(get_orientations(split_line(result['solution']), n))
                 # no image generated in this case so gotta check it manually with validator later
                 # shutil.copy(old_realization_file+".png", results_realization_file+".png")
                 
