@@ -289,10 +289,6 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                 job['violations'] = len(bad_vars)
                 job['bad_vars'] = bad_vars
                 result_queue.put(job)
-    
-    # tell workers to stop when done
-    for _ in range(num_workers):
-            work_queue.put(None)
 
 def signal_handler(sig, frame):
     print(f"Received signal {sig}, exiting")
