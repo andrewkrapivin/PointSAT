@@ -105,7 +105,7 @@ def validate(constraint_filename, point_filename):
             valid = False
     return valid, bad_vars
 
-def get_sat_model(point_filename, n = 23):
+def get_sat_model(point_filename, n):
     sat_model = []
     frac_points, _ = parse_points(point_filename)
     for (i, j, k) in itertools.combinations(range(n), 3):

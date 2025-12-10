@@ -14,7 +14,7 @@ import argparse
 
 TIMEOUT_SECONDS = 10
 
-def process_sat_str(data):
+def process_sat_str(data, n):
     lines = [line.strip() for line in data.splitlines() if line.strip()]
 
     # Find the satisfiability line
@@ -36,7 +36,9 @@ def process_sat_str(data):
         nums.extend(map(int, parts))
 
     # Step 5: Filter out numbers > 1771
-    nums = [n for n in nums if abs(n) <= 1771]
+    num_orientations = n * (n-1) * (n-2) // 6
+    # nums = [n for n in nums if abs(n) <= 1771]
+    nums = [n for n in nums if abs(n) <= num_orientations]
     if len(nums) == 0:
         print("gamer", data)
         return ""
@@ -79,7 +81,7 @@ def run_external(task, program_params, timeout=None, kill_with_interrupt = False
         return False, None, str(e), elapsed
 
 
-def server(results_queue, work_queue, base_formula, settings, n = 23):
+def server(results_queue, work_queue, base_formula, settings):
     subcases = settings["cubes_file"]
     out_folder = settings["output_folder"]
     os.makedirs(out_folder, exist_ok=True)
@@ -151,7 +153,7 @@ def server(results_queue, work_queue, base_formula, settings, n = 23):
                     orientations_file = os.path.join(scratch_folder, str(result['id']) +  ".or")
                     realization_file = os.path.join(scratch_folder, str(result['id']) + "_" + str(cur_job_id) + ".real")
                     with open(orientations_file, "w") as f:
-                        f.write(get_orientations(split_line(result['solution']), n))
+                        f.write(get_orientations(split_line(result['solution']), settings['n']))
                     job = {
                         "type": "Realize",
                         "check_sat": True,
@@ -220,13 +222,14 @@ def check_sat_case(base_formula, assumptions, settings):
     formula = "\n".join(lines)
 
     success, out, err, elapsed = run_external(formula, ["./"+settings['cadical_loc'], "--quiet"], timeout=None)
-    out_p = process_sat_str(out)
+    out_p = process_sat_str(out, settings['n'])
     return success,out,err,elapsed,out_p
 
 def worker(work_queue, result_queue, base_formula, out_file, settings):
     with open(out_file, "w", encoding="utf-8") as file:
         while True:
             job = work_queue.get()
+            start_time = time.perf_counter()
             # print("hello", case)
             if job is None:
                 break
@@ -269,7 +272,7 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                     print(job['solution'], file = file, flush=True)
                 else:
                     job['satisfiable'] = False
-                result_queue.put(job)
+                # result_queue.put(job)
             elif job["type"] == "Realize":
                 seed = 42
                 if "seed" in job:
@@ -278,7 +281,7 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                 success, out, err, elapsed = run_external("", commands, timeout=job["timeout"], kill_with_interrupt=True)
                 valid, bad_vars = validate(job["orientations_file"], job["realization_file"])
                 if job['check_sat']:
-                    sat_model = get_sat_model(job["realization_file"])
+                    sat_model = get_sat_model(job["realization_file"], settings['n'])
                     success,out,err,elapsed,out_p = check_sat_case(base_formula, sat_model, settings)
                     if success and (out_p != ""):
                         job['realized'] = True
@@ -288,7 +291,13 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                     job['realized'] = valid
                 job['violations'] = len(bad_vars)
                 job['bad_vars'] = bad_vars
-                result_queue.put(job)
+            else:
+                print("Some job is not supported", job['type'])
+                continue
+
+            time_taken = time.perf_counter() - start_time
+            job['time_taken'] = time_taken
+            result_queue.put(job)
 
 def signal_handler(sig, frame):
     print(f"Received signal {sig}, exiting")
