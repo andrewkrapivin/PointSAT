@@ -2,13 +2,17 @@ import json
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.ticker import ScalarFormatter
 from pathlib import Path
 
 def create_shared_axis_histogram(jsonl_path):
     """
     Reads a JSONL file, extracts 'time_taken' and 'satisfiable'.
-    Plots histograms on a Log10 scale with a SHARED X-AXIS.
-    Displays vertical lines for both Geometric and Arithmetic Means.
+    Plots:
+      1. Histogram of Satisfiable instances (Log10 scale).
+      2. Histogram of Unsatisfiable instances (Log10 scale).
+      3. 'Effective Time' curve with readable Y-axis ticks.
+         Also prints the Optimal Timeout to the console.
     """
     input_path = Path(jsonl_path)
     
@@ -51,19 +55,23 @@ def create_shared_axis_histogram(jsonl_path):
         return
 
     # --- Global Binning Strategy ---
-    # To make the shared X-axis meaningful, we need common bins.
     all_raw = sat_raw + unsat_raw
     all_log = np.log10(all_raw)
     
     global_min = np.min(all_log)
     global_max = np.max(all_log)
-    print(len(all_log), len(sat_raw), len(unsat_raw))
-    print("max", global_max)
     
     # Create 50 bins spanning the entire range of data
     common_bins = np.linspace(global_min, global_max, 50)
 
-    # --- Helper to plot ---
+    # --- Stats for Satisfiable ---
+    sat_arr = np.array(sat_raw)
+    if len(sat_arr) > 0:
+        sat_mean = np.mean(sat_arr)
+    else:
+        sat_mean = 0
+
+    # --- Helper to plot Histograms ---
     def plot_subset(ax, raw_data, color, title):
         if not raw_data:
             ax.text(0.5, 0.5, "No Data", ha='center', transform=ax.transAxes)
@@ -84,11 +92,8 @@ def create_shared_axis_histogram(jsonl_path):
         ax.hist(log_data, bins=common_bins, color=color, alpha=0.6, edgecolor='black')
 
         # Add Vertical Lines
-        # Geometric Mean (Dashed)
         ax.axvline(log_mean, color='black', linestyle='--', linewidth=1.5, 
                    label=f'Geo. Mean: {geo_mean_val:.2f}')
-        
-        # Arithmetic Mean (Solid)
         ax.axvline(log_arith_mean, color='blue', linestyle='-', linewidth=1.5, 
                    label=f'Arith. Mean: {arith_mean_val:.2f}')
 
@@ -97,25 +102,97 @@ def create_shared_axis_histogram(jsonl_path):
         ax.grid(axis='y', linestyle=':', alpha=0.5)
         ax.legend(loc='upper right', fontsize='small')
 
+    # --- Helper to plot Effectiveness Ratio ---
+    def plot_effectiveness(ax, sat_data, bins):
+        if not sat_data:
+            ax.text(0.5, 0.5, "No Satisfiable Data", ha='center', transform=ax.transAxes)
+            return
+
+        sat_arr = np.array(sat_data)
+        n_sat = len(sat_arr)
+        
+        # Determine Thresholds (T) from the bins
+        log_thresholds = bins 
+        time_thresholds = 10**log_thresholds
+        
+        effectiveness_values = []
+        valid_log_thresholds = []
+        valid_time_thresholds = []
+
+        # Loop through each threshold T to calculate the specific metric
+        for i, T in enumerate(time_thresholds):
+            # 1. Numerator: Average time, clipped at T
+            clipped_times = np.minimum(sat_arr, T)
+            avg_clipped_time = np.mean(clipped_times)
+            
+            # 2. Denominator: Fraction actually solved (< T)
+            count_solved = np.sum(sat_arr <= T)
+            fraction_solved = count_solved / n_sat
+            
+            if fraction_solved > 0:
+                # 3. Metric: (Avg Time Clipped) / Fraction
+                metric = avg_clipped_time / fraction_solved
+                effectiveness_values.append(metric)
+                valid_log_thresholds.append(log_thresholds[i])
+                valid_time_thresholds.append(T)
+        
+        # --- Find Optimal Timeout ---
+        if effectiveness_values:
+            min_idx = np.argmin(effectiveness_values)
+            best_time = valid_time_thresholds[min_idx]
+            best_metric = effectiveness_values[min_idx]
+            print(f"-"*40)
+            print(f"OPTIMAL TIMEOUT ANALYSIS:")
+            print(f"Optimal Timeout Threshold: {best_time:.4f}s")
+            print(f"Resulting Effective Time:  {best_metric:.4f}s per solve")
+            print(f"-"*40)
+
+            # Mark the optimal point on the graph
+            ax.plot(valid_log_thresholds[min_idx], best_metric, 'ro', label=f'Optimal: {best_time:.1f}s')
+
+        # Plot Metric vs Log10(Time)
+        ax.plot(valid_log_thresholds, effectiveness_values, color='purple', linewidth=2, label='Effective Time Curve')
+        
+        # Add Reference Line for Average Time (Satisfiable)
+        ax.axhline(sat_mean, color='blue', linestyle='-.', linewidth=1.5, label=f'Actual Sat Avg: {sat_mean:.2f}s')
+
+        # Formatting
+        ax.set_title("Effective Time = (Avg Time Clipped at T) / (Fraction Solved at T)")
+        ax.set_ylabel("Effective Time (s)")
+        ax.set_xlabel("Log10(Time Taken)")
+        ax.grid(True, linestyle=':', alpha=0.6, which="both")
+        
+        # --- Fix Y-Axis Ticks ---
+        # 1. Use Log Scale
+        ax.set_yscale('log')
+        
+        # 2. Use ScalarFormatter to force plain numbers (300, 400) instead of 3x10^2
+        formatter = ScalarFormatter()
+        formatter.set_scientific(False) 
+        ax.yaxis.set_major_formatter(formatter)
+        ax.yaxis.set_minor_formatter(formatter)
+        
+        ax.legend(loc='upper right', fontsize='small')
+
     # --- Setup Figure ---
-    # sharex=True locks the x-axis for both plots
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12), sharex=True)
+    fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(10, 15), sharex=True)
+    print(len(all_log), len(sat_raw), len(unsat_raw))
+    print("max", global_max)
 
     plot_subset(ax1, sat_raw, 'green', 'Satisfiable = True (Log10 Scale)')
     plot_subset(ax2, unsat_raw, 'red', 'Satisfiable = False (Log10 Scale)')
-    
-    ax2.set_xlabel('Log10(Time Taken)')
+    plot_effectiveness(ax3, sat_raw, common_bins)
     
     plt.tight_layout()
 
     # Save output
-    output_filename = "time_taken_histogram.png"
+    output_filename = "time_taken_histogram_optimized.png"
     output_path = input_path.parent / output_filename
     
     plt.savefig(output_path)
     plt.close()
     
-    print(f"Histogram saved to: {output_path}")
+    print(f"Chart saved to: {output_path}")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

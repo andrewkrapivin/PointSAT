@@ -1,4 +1,6 @@
-from multiprocessing import Process, Queue, cpu_count
+# from multiprocessing import Process, Queue, cpu_count
+import multiprocessing
+from multiprocessing import Process, cpu_count
 from pathlib import Path
 import subprocess
 import time
@@ -82,7 +84,6 @@ def run_external(task, program_params, timeout=None, kill_with_interrupt = False
 
 
 def server(results_queue, work_queue, base_formula, settings):
-    subcases = settings["cubes_file"]
     out_folder = settings["output_folder"]
     os.makedirs(out_folder, exist_ok=True)
     out_file = os.path.join(out_folder, "raw_results.jsonl")
@@ -101,6 +102,7 @@ def server(results_queue, work_queue, base_formula, settings):
                 finished_jobs[int(finished_job["id"])] = finished_job
     def add_job(job, old_job = {}):
         nonlocal cur_job_id, jobs_left, finished_jobs
+        print("queueing", cur_job_id)
         new_job = {}
         for k, v in old_job.items():
             # print(k, v)
@@ -117,12 +119,23 @@ def server(results_queue, work_queue, base_formula, settings):
         cur_job_id += 1
     # work_left = {}
     
-    with open(subcases, "r", encoding="utf-8") as file:
-        for line in file:
+    if settings["solution_generation"] == "subcases":
+        subcases = settings["cubes_file"]
+        with open(subcases, "r", encoding="utf-8") as file:
+            for line in file:
+                job = {
+                    "type": "SAT",
+                    "remove_flippable": settings['remove_flippable'],
+                    "case": line,
+                    "meta": "initial_cube",
+                }
+                add_job(job)
+    elif settings["solution_generation"] == "scranfilize":
+        for i in range(settings["n_solutions"]):
             job = {
                 "type": "SAT",
                 "remove_flippable": settings['remove_flippable'],
-                "case": line,
+                "scranfilize_seed": i,
                 "meta": "initial_cube",
             }
             add_job(job)
@@ -212,7 +225,7 @@ def server(results_queue, work_queue, base_formula, settings):
         for _ in range(settings["workers"]):
             work_queue.put(None)
 
-def check_sat_case(base_formula, assumptions, settings):
+def check_sat_case(base_formula, assumptions, settings, timeout=None):
     lines = base_formula.splitlines()
     first_line = lines[0].split()
     first_line[3] = str(int(first_line[3]) + len(assumptions))
@@ -221,7 +234,7 @@ def check_sat_case(base_formula, assumptions, settings):
         lines.append(f"{var} 0")
     formula = "\n".join(lines)
 
-    success, out, err, elapsed = run_external(formula, ["./"+settings['cadical_loc'], "--quiet"], timeout=None)
+    success, out, err, elapsed = run_external(formula, ["./"+settings['cadical_loc'], "--quiet"], timeout=timeout)
     out_p = process_sat_str(out, settings['n'])
     return success,out,err,elapsed,out_p
 
@@ -236,28 +249,34 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
 
             # print(job)
             if job["type"] == "SAT" or job["type"] == "SAT_perturb":
-                if job["type"] == "SAT":
+                solver_timeout = settings["solver_timeout"] if "solver_timeout" in settings else None
+                formula = base_formula
+                if settings['solution_generation'] == "scranfilize":
+                    # full scramble
+                    scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-p", "-P", "-f", "0.5", "-s", str(job["scranfilize_seed"])], timeout=None)
+                    # light scramble
+                    # scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-f", "0.1", "-v", "0.1", "-c", "0.1", "-s", str(job["scranfilize_seed"])], timeout=None)
+                    assert (scramble_success)
+                    formula = scrambled_formula
+
+                if job['type'] == "SAT" and settings['solution_generation'] == "scranfilize":
+                    success, out, err, elapsed = run_external(formula, ["./"+settings['cadical_loc'], "--quiet", "--plain"], timeout=solver_timeout)
+                    # print(success, out)
+                    if success:
+                        out_p = process_sat_str(out, settings['n'])
+                    else:
+                        out_p = ""
+                elif job["type"] == "SAT" and settings['solution_generation'] == 'subcases':
                     # print("Hello", job['case'])
                     job_case = job["case"].split()
-                if job["type"] == "SAT_perturb":
+                    success,out,err,elapsed,out_p = check_sat_case(formula, job_case[1:-1], settings, timeout = solver_timeout)
+                elif job["type"] == "SAT_perturb":
                     job_case = job['solution'].split()
                     for i in job["bad_vars"]:
                         # print(job_case[i], i)
                         job_case[i] = -int(job_case[i])
-
-                # lines = base_formula.splitlines()
-                # first_line = lines[0].split()
-                # first_line[3] = str(int(first_line[3]) + len(job_case) - 2)
-                # lines[0] = " ".join(first_line)
-                # for var in job_case[1:-1]:
-                #     lines.append(f"{var} 0")
-                # formula = "\n".join(lines)
-                # # print(formula, file = file)
-                # # input()
-
-                # success, out, err, elapsed = run_external(formula, ["cadical", "--quiet"], timeout=None)
-                # out_p = process_sat_str(out)
-                success,out,err,elapsed,out_p = check_sat_case(base_formula, job_case[1:-1], settings)
+                    success,out,err,elapsed,out_p = check_sat_case(formula, job_case[1:-1], settings)
+                
                 # print(success, out_p)
                 if success and (out_p != ""):
                     job['satisfiable'] = True
@@ -356,30 +375,33 @@ if __name__ == "__main__":
     Path(settings["output_folder"]).mkdir(parents=True, exist_ok=True)
     num_workers = settings["workers"]
 
-    result_queue = Queue()
-    work_queue = Queue()
+    with multiprocessing.Manager() as manager:
+        # result_queue = Queue()
+        # work_queue = Queue()
+        result_queue = manager.Queue()
+        work_queue = manager.Queue()
 
-    base_file = settings["base_file"]
-    output_folder = settings["output_folder"]
-    with open(os.path.join(output_folder, "settings.json"), "w") as settings_file:
-        json.dump(settings, settings_file)
+        base_file = settings["base_file"]
+        output_folder = settings["output_folder"]
+        with open(os.path.join(output_folder, "settings.json"), "w") as settings_file:
+            json.dump(settings, settings_file)
 
-    with open(base_file, "r", encoding="utf-8") as file:
-        base_formula = file.read()
-    
-    server_proc = Process(target=server, args=(result_queue, work_queue, base_formula, settings))
-    server_proc.start()
+        with open(base_file, "r", encoding="utf-8") as file:
+            base_formula = file.read()
+        
+        server_proc = Process(target=server, args=(result_queue, work_queue, base_formula, settings))
+        server_proc.start()
 
-    worker_procs = []
-    for i in range(num_workers):
-        p = Process(target=worker, args=(work_queue, result_queue, base_formula, os.path.join(output_folder, "worker_" + str(i) + ".jsonl"), settings))
-        p.start()
-        worker_procs.append(p)
+        worker_procs = []
+        for i in range(num_workers):
+            p = Process(target=worker, args=(work_queue, result_queue, base_formula, os.path.join(output_folder, "worker_" + str(i) + ".jsonl"), settings))
+            p.start()
+            worker_procs.append(p)
 
 
-    server_proc.join()
+        server_proc.join()
 
-    for p in worker_procs:
-        p.join()
+        for p in worker_procs:
+            p.join()
 
-    print("✅ All tasks completed.")
+        print("✅ All tasks completed.")
