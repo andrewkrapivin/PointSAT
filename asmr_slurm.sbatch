@@ -23,15 +23,15 @@
 # **CRITICAL: Request multiple CPUs for that single task**
 # This is how you allocate cores for your threads.
 # Change '8' to the number of threads you want your script to use.
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=128
 
 # Request memory for the job (e.g., 8GB)
 # Adjust this based on your script's needs.
-#SBATCH --mem=8G
+#SBATCH --mem=128G
 
 # Set a time limit for the job (e.g., 1 hour)
 # Format: HH:MM:SS
-#SBATCH --time=01:00:00
+#SBATCH --time=48:00:00
 
 # --- End of SBATCH Directives ---
 
@@ -42,7 +42,8 @@ echo "Running on a single node with $SLURM_CPUS_PER_TASK CPUs allocated."
 
 # 1. Load any necessary modules (e.g., a specific Python version)
 # (Uncomment and modify if needed by your cluster)
-module load python/3.8.6
+module load anaconda3
+conda activate asmr
 
 # 2. Activate your virtual environment (e.g., conda or venv)
 # (Uncomment and modify if needed)
@@ -68,9 +69,10 @@ module load python/3.8.6
 # # (e.g., in ThreadPoolExecutor, numpy, pandas, etc.)
 
 CUBES=$1
+[[ "$#" -ge 3 ]] && SETTINGS="$2" || SETTINGS="settings.json"
 DIR="$PROJECT/realizations/${1%.*}"
 echo $DIR
 
-python run_parallel2.py settings.json --cubes $CUBES --out $DIR
+python run_parallel2.py $SETTINGS --cubes $CUBES --out $DIR
 
 echo "Job finished."

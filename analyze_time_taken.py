@@ -103,7 +103,7 @@ def create_shared_axis_histogram(jsonl_path):
         ax.legend(loc='upper right', fontsize='small')
 
     # --- Helper to plot Effectiveness Ratio ---
-    def plot_effectiveness(ax, sat_data, bins):
+    def plot_effectiveness(ax, sat_data, bins, num_unsat, total_unsat_time):
         if not sat_data:
             ax.text(0.5, 0.5, "No Satisfiable Data", ha='center', transform=ax.transAxes)
             return
@@ -123,16 +123,18 @@ def create_shared_axis_histogram(jsonl_path):
         for i, T in enumerate(time_thresholds):
             # 1. Numerator: Average time, clipped at T
             clipped_times = np.minimum(sat_arr, T)
-            avg_clipped_time = np.mean(clipped_times)
+            #technically this has a bug: should also clip the unsat times, but here I just assume unsat always takes more than T time, which is true only assuming that the only reason for unsat is timeout. Not the case with subcubes, ofc
+            avg_clipped_time = (np.mean(clipped_times) * n_sat + num_unsat * T) / (n_sat + num_unsat)
             
             # 2. Denominator: Fraction actually solved (< T)
             count_solved = np.sum(sat_arr <= T)
-            fraction_solved = count_solved / n_sat
+            fraction_solved = count_solved / (n_sat + num_unsat)
             
             if fraction_solved > 0:
                 # 3. Metric: (Avg Time Clipped) / Fraction
                 metric = avg_clipped_time / fraction_solved
                 effectiveness_values.append(metric)
+                print(i, T, avg_clipped_time, count_solved, fraction_solved, metric)
                 valid_log_thresholds.append(log_thresholds[i])
                 valid_time_thresholds.append(T)
         
@@ -154,7 +156,7 @@ def create_shared_axis_histogram(jsonl_path):
         ax.plot(valid_log_thresholds, effectiveness_values, color='purple', linewidth=2, label='Effective Time Curve')
         
         # Add Reference Line for Average Time (Satisfiable)
-        ax.axhline(sat_mean, color='blue', linestyle='-.', linewidth=1.5, label=f'Actual Sat Avg: {sat_mean:.2f}s')
+        ax.axhline(sat_mean * (num_unsat + n_sat) / n_sat, color='blue', linestyle='-.', linewidth=1.5, label=f'Actual Sat Avg: {sat_mean:.2f}s')
 
         # Formatting
         ax.set_title("Effective Time = (Avg Time Clipped at T) / (Fraction Solved at T)")
@@ -181,7 +183,7 @@ def create_shared_axis_histogram(jsonl_path):
 
     plot_subset(ax1, sat_raw, 'green', 'Satisfiable = True (Log10 Scale)')
     plot_subset(ax2, unsat_raw, 'red', 'Satisfiable = False (Log10 Scale)')
-    plot_effectiveness(ax3, sat_raw, common_bins)
+    plot_effectiveness(ax3, sat_raw, common_bins, len(unsat_raw), sum(unsat_raw))
     
     plt.tight_layout()
 

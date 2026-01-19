@@ -227,6 +227,8 @@ def server(results_queue, work_queue, base_formula, settings):
 
 def check_sat_case(base_formula, assumptions, settings, timeout=None):
     lines = base_formula.splitlines()
+    #remove weird comments caused by scranfilize
+    lines = [line for line in lines if not line.lower().startswith('c')]
     first_line = lines[0].split()
     first_line[3] = str(int(first_line[3]) + len(assumptions))
     lines[0] = " ".join(first_line)
@@ -246,18 +248,21 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
             # print("hello", case)
             if job is None:
                 break
+            
+            formula = base_formula
+            if settings['solution_generation'] == "scranfilize":
+                # only scramble clauses, not variables and don't flip variables either since its hard to recover orientations otherwise
+                scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-P", "-f", "0", "-v", "0", "-s", str(job["scranfilize_seed"])], timeout=None)
+                # # full scramble
+                # scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-p", "-P", "-f", "0.5", "-s", str(job["scranfilize_seed"])], timeout=None)
+                # light scramble
+                # scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-f", "0.1", "-v", "0.1", "-c", "0.1", "-s", str(job["scranfilize_seed"])], timeout=None)
+                assert (scramble_success)
+                formula = scrambled_formula
 
             # print(job)
             if job["type"] == "SAT" or job["type"] == "SAT_perturb":
                 solver_timeout = settings["solver_timeout"] if "solver_timeout" in settings else None
-                formula = base_formula
-                if settings['solution_generation'] == "scranfilize":
-                    # full scramble
-                    scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-p", "-P", "-f", "0.5", "-s", str(job["scranfilize_seed"])], timeout=None)
-                    # light scramble
-                    # scramble_success, scrambled_formula, _, _ = run_external(base_formula, ["./" + settings['scranfilize_loc'], "-f", "0.1", "-v", "0.1", "-c", "0.1", "-s", str(job["scranfilize_seed"])], timeout=None)
-                    assert (scramble_success)
-                    formula = scrambled_formula
 
                 if job['type'] == "SAT" and settings['solution_generation'] == "scranfilize":
                     success, out, err, elapsed = run_external(formula, ["./"+settings['cadical_loc'], "--quiet", "--plain"], timeout=solver_timeout)
@@ -282,7 +287,7 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                     job['satisfiable'] = True
                     job['solution'] = out_p
                     if job['remove_flippable']:
-                        flippable, non_flippable = check_flippable(base_formula, job['solution'])
+                        flippable, non_flippable = check_flippable(formula, job['solution'])
                         job['original_solution'] = job['solution']
                         job['flippable'] = list(flippable)
                         job['solution'] = "v " + " ".join([str(i) for i in non_flippable]) + " 0"
@@ -301,7 +306,7 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                 valid, bad_vars = validate(job["orientations_file"], job["realization_file"])
                 if job['check_sat']:
                     sat_model = get_sat_model(job["realization_file"], settings['n'])
-                    success,out,err,elapsed,out_p = check_sat_case(base_formula, sat_model, settings)
+                    success,out,err,elapsed,out_p = check_sat_case(formula, sat_model, settings)
                     if success and (out_p != ""):
                         job['realized'] = True
                     else:

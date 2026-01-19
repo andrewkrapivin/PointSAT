@@ -20,7 +20,10 @@ if __name__ == "__main__":
         for line in f:
             obj = json.loads(line.strip())
             if ('violations' in obj) and (obj['meta'] == 'initial_try'):
-                violations.append((obj['violations'], obj['case'], obj))
+                if 'case' in obj:
+                    violations.append((obj['violations'], obj['case'], obj))
+                elif 'scranfilize_seed' in obj:
+                    violations.append((obj['violations'], obj['scranfilize_seed'], obj))
                 violation_counts_raw.append(obj['violations'])
                 if obj['violations'] in violation_counts:
                     violation_counts[obj['violations']] += 1
