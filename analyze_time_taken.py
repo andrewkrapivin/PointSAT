@@ -4,8 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 from pathlib import Path
+import os
 
-def create_shared_axis_histogram(jsonl_path):
+def analyze_time_taken(output_folder, num_bins = 50):
     """
     Reads a JSONL file, extracts 'time_taken' and 'satisfiable'.
     Plots:
@@ -14,7 +15,8 @@ def create_shared_axis_histogram(jsonl_path):
       3. 'Effective Time' curve with readable Y-axis ticks.
          Also prints the Optimal Timeout to the console.
     """
-    input_path = Path(jsonl_path)
+    out_file = os.path.join(output_folder, "raw_results.jsonl")
+    input_path = Path(out_file)
     
     if not input_path.exists():
         print(f"Error: The file '{jsonl_path}' was not found.")
@@ -33,7 +35,7 @@ def create_shared_axis_histogram(jsonl_path):
                     continue
                 try:
                     data = json.loads(line)
-                    if "time_taken" in data and "satisfiable" in data:
+                    if "time_taken" in data and "satisfiable" in data and data['type'] == "SAT":
                         val = float(data["time_taken"])
                         is_sat = data["satisfiable"]
                         
@@ -62,7 +64,7 @@ def create_shared_axis_histogram(jsonl_path):
     global_max = np.max(all_log)
     
     # Create 50 bins spanning the entire range of data
-    common_bins = np.linspace(global_min, global_max, 50)
+    common_bins = np.linspace(global_min, global_max, num_bins)
 
     # --- Stats for Satisfiable ---
     sat_arr = np.array(sat_raw)
@@ -70,37 +72,6 @@ def create_shared_axis_histogram(jsonl_path):
         sat_mean = np.mean(sat_arr)
     else:
         sat_mean = 0
-
-    # --- Helper to plot Histograms ---
-    def plot_subset(ax, raw_data, color, title):
-        if not raw_data:
-            ax.text(0.5, 0.5, "No Data", ha='center', transform=ax.transAxes)
-            ax.set_title(title)
-            return
-
-        raw_arr = np.array(raw_data)
-        log_data = np.log10(raw_arr)
-        
-        # Calculate Stats
-        log_mean = np.mean(log_data)          # Geometric Mean location
-        geo_mean_val = 10**log_mean
-        
-        arith_mean_val = np.mean(raw_arr)     # Arithmetic Mean value
-        log_arith_mean = np.log10(arith_mean_val) # Location on log axis
-
-        # Plot Histogram using COMMON BINS
-        ax.hist(log_data, bins=common_bins, color=color, alpha=0.6, edgecolor='black')
-
-        # Add Vertical Lines
-        ax.axvline(log_mean, color='black', linestyle='--', linewidth=1.5, 
-                   label=f'Geo. Mean: {geo_mean_val:.2f}')
-        ax.axvline(log_arith_mean, color='blue', linestyle='-', linewidth=1.5, 
-                   label=f'Arith. Mean: {arith_mean_val:.2f}')
-
-        ax.set_title(title)
-        ax.set_ylabel('Frequency')
-        ax.grid(axis='y', linestyle=':', alpha=0.5)
-        ax.legend(loc='upper right', fontsize='small')
 
     # --- Helper to plot Effectiveness Ratio ---
     def plot_effectiveness(ax, sat_data, bins, num_unsat, total_unsat_time):
@@ -175,15 +146,52 @@ def create_shared_axis_histogram(jsonl_path):
         ax.yaxis.set_minor_formatter(formatter)
         
         ax.legend(loc='upper right', fontsize='small')
+        return valid_log_thresholds, effectiveness_values
+
+    # --- Helper to plot Histograms ---
+    def plot_subset(ax, raw_data, color, title, bins, n):
+        if not raw_data:
+            ax.text(0.5, 0.5, "No Data", ha='center', transform=ax.transAxes)
+            ax.set_title(title)
+            return
+
+        raw_arr = np.array(raw_data)
+        log_data = np.log10(raw_arr)
+        
+        # Calculate Stats
+        log_mean = np.mean(log_data)          # Geometric Mean location
+        geo_mean_val = 10**log_mean
+        
+        arith_mean_val = np.mean(raw_arr)     # Arithmetic Mean value
+        log_arith_mean = np.log10(arith_mean_val) # Location on log axis
+
+        weights = np.ones_like(log_data) / n
+
+        # Plot Histogram using COMMON BINS
+        # ax.hist(log_data, bins=bins, color=color, alpha=0.6, edgecolor='black')
+        frequencies, _, _ = ax.hist(log_data, bins=bins, color=color, alpha=0.6, edgecolor='black', weights=weights)
+
+        # Add Vertical Lines
+        ax.axvline(log_mean, color='black', linestyle='--', linewidth=1.5, 
+                   label=f'Geo. Mean: {geo_mean_val:.2f}')
+        ax.axvline(log_arith_mean, color='blue', linestyle='-', linewidth=1.5, 
+                   label=f'Arith. Mean: {arith_mean_val:.2f}')
+
+        ax.set_title(title)
+        ax.set_ylabel('Frequency')
+        ax.grid(axis='y', linestyle=':', alpha=0.5)
+        ax.legend(loc='upper right', fontsize='small')
+        return frequencies
 
     # --- Setup Figure ---
     fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(10, 15), sharex=True)
     print(len(all_log), len(sat_raw), len(unsat_raw))
     print("max", global_max)
 
-    plot_subset(ax1, sat_raw, 'green', 'Satisfiable = True (Log10 Scale)')
-    plot_subset(ax2, unsat_raw, 'red', 'Satisfiable = False (Log10 Scale)')
-    plot_effectiveness(ax3, sat_raw, common_bins, len(unsat_raw), sum(unsat_raw))
+    valid_bins, effectiveness_values = plot_effectiveness(ax3, sat_raw, common_bins, len(unsat_raw), sum(unsat_raw))
+    n = len(sat_raw) + len(unsat_raw)
+    sat_bin_frequencies = plot_subset(ax1, sat_raw, 'green', 'Satisfiable = True (Log10 Scale)', valid_bins, n)
+    unsat_bin_frequencies = plot_subset(ax2, unsat_raw, 'red', 'Satisfiable = False (Log10 Scale)', valid_bins, n)
     
     plt.tight_layout()
 
@@ -192,12 +200,14 @@ def create_shared_axis_histogram(jsonl_path):
     output_path = input_path.parent / output_filename
     
     plt.savefig(output_path)
-    plt.close()
+    plt.close('all')
     
     print(f"Chart saved to: {output_path}")
 
+    return valid_bins, effectiveness_values, sat_bin_frequencies, unsat_bin_frequencies
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python plot_histogram_shared.py <path_to_jsonl_file>")
+        print("Usage: python plot_histogram_shared.py <output_folder>")
     else:
-        create_shared_axis_histogram(sys.argv[1])
+        analyze_time_taken(sys.argv[1])

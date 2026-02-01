@@ -188,7 +188,7 @@ def server(results_queue, work_queue, base_formula, settings):
                     shutil.copy(old_realization_file, results_realization_file)
                     shutil.copy(orientations_file, results_orientation_file)
                     # shutil.copy(old_realization_file+".png", results_realization_file+".png")
-                else:
+                else: #I think this else is legacy stuff we don't need
                     if ("check_sat" not in result) or (not result["check_sat"]):
                         add_job({
                             "type": "SAT_perturb",
@@ -275,7 +275,7 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                     # print("Hello", job['case'])
                     job_case = job["case"].split()
                     success,out,err,elapsed,out_p = check_sat_case(formula, job_case[1:-1], settings, timeout = solver_timeout)
-                elif job["type"] == "SAT_perturb":
+                elif job["type"] == "SAT_perturb": #I think this else is legacy stuff we don't need
                     job_case = job['solution'].split()
                     for i in job["bad_vars"]:
                         # print(job_case[i], i)
