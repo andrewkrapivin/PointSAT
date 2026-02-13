@@ -73,6 +73,6 @@ CUBES=$1
 DIR="$PROJECT/realizations/${1%.*}"
 echo $DIR
 
-python run_parallel2.py $SETTINGS --cubes $CUBES --out $DIR
+python SMR.py $SETTINGS --cubes $CUBES --out $DIR
 
 echo "Job finished."

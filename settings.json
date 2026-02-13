@@ -1,29 +1,15 @@
 {
-    "n": 32,
-    "base_file": "7gon-32.cnf",
+    "n": 23,
+    "base_file": "7gon-6hole-23-compact.cnf",
     "solution_generation": "scranfilize",
     "n_solutions": 500,
-    "output_folder": "out_scranfilize_default",
-    "workers": 12,
+    "output_folder": "out",
+    "workers": 4,
     "remove_flippable": true,
     "worker_max_threads": 1,
     "localizer_attempt_levels": 1,
     "localizer_attempt_timeouts": [
-        50,
-        75,
-        300,
-        1500
-    ],
-    "localizer_attempt_branches": [
-        1,
-        1,
-        1,
-        1
-    ],
-    "localizer_attempt_thresholds": [
-        3,
-        7,
-        4
+        15
     ],
     "scranfilize_loc": "scranfilize/scranfilize",
     "localizer_loc": "localizer/src/localizer",

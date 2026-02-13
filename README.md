@@ -2,7 +2,9 @@
 Automated satisfiability modulo realization
 
 
-## Running ASMR
+## Installing/Building Dependencies
+We assume you have python and some C and C++ compiler installed.
+- first, install the required packages: ```pip install -r requirements.txt```
 - clone and build localizer. Before running make in the makefile in localizer/src modify line 2 of the makefile from `CFLAGS = -Wall -Wextra -O3` to `CFLAGS = -Wall -Wextra -O3 -pthread` (the following does exactly that, so you do not need to do it yourself):
 ```
 git clone https://github.com/bsubercaseaux/localizer/
@@ -25,3 +27,32 @@ cd kissat
 ./configure && make
 cd ..
 ```
+
+## Running PointSAT
+To run PointSAT on a local machine, make sure you have installed dependencies
+as above. Then simply run:
+```
+python PointSAT.py settings.json
+```
+By default, this generates 500 abstract solutions for the 23 point 6-hole
+7-gon problem and runs the localizer for
+15 seconds on 1 thread. The total number of threads working on this is set to 4.
+However, all these settings can be modified in the settings.json file.
+The most relevant settings in settings.json are:
+- "n": number of points in the problem
+- "base_file": this gives the constraints for your problem, which is used by
+the SAT solver
+- "n_solutions": number of abstract solutions
+- "output_folder: the folder for the tool to use to log work and output realizations
+- "workers": number of parallel workers. Note that this does not necessarily
+equal the number of threads used by the program, as each worker may run localizer
+on multiple threads.
+- "worker_max_threads": number of threads to call localizer on. Note that the
+SAT solver always uses one thread.
+- "remove_flippable": whether or not to enable the heuristic to remove the flippable
+variables
+
+After PointSAT finishes, all realizations found (if any) will be found in the
+realizations subdirectory of the specified output folder. The .or files correspond
+to the orientation constraints, and the .real files correspond to the actual
+realizations found.
