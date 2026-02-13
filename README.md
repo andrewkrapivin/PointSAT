@@ -1,6 +1,5 @@
-# ASMR
-Automated satisfiability modulo realization
-
+# PointSAT
+Problems complete for the existential theory of the reals arise throughout discrete geometry. We introduce *satisfiability modulo realizability*, a SAT-based approach for solving satisfiable instances of the existential theorem of the reals whose solutions correspond to realizable geometric configurations. Our method encodes an underapproximation of a geometric problem as a SAT instance over abstract order types. Since almost all abstract order types are unrealizable, naive search is infeasible. We guide the search toward realizable order types using diversity-driven sampling, partial realizability feedback, and a novel flippability heuristic that passes only limited information between components. We apply our method to discrete geometry problems and resolve an open problem by showing that the largest set of points avoiding empty convex hexagons and convex heptagons is of size 23.
 
 ## Installing/Building Dependencies
 We assume you have python and some C and C++ compiler installed.
