@@ -56,3 +56,11 @@ After PointSAT finishes, all realizations found (if any) will be found in the
 realizations subdirectory of the specified output folder. The .or files correspond
 to the orientation constraints, and the .real files correspond to the actual
 realizations found.
+
+## Additional Scripts
+- analyze.py: ```python analyze.py [[output_folder]].``` This script analyzes the
+results in the output folder of a PointSAT run. It generates in the same output
+folder histograms for number of violations, number of flippable orientations,
+probability of  being a solution versus number of violations, and the proportion
+of solutions with a given number of violations. It also outputs the data used
+to generate these graphs to a CSV.
