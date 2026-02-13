@@ -173,7 +173,7 @@ def server(results_queue, work_queue, base_formula, settings):
                         "orientations_file": orientations_file,
                         "realization_file": realization_file,
                         "meta": "initial_try",
-                        "timeout": 15,
+                        "timeout": settings['localizer_attempt_timeouts'][0],
                         "original_id": result['id'],
                         "seed": 1,
                         "threads": settings["worker_max_threads"]

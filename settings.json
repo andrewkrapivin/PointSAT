@@ -1,8 +1,8 @@
 {
-    "n": 26,
-    "base_file": "7gon-no-5-cap-no-sb-26.cnf",
+    "n": 32,
+    "base_file": "7gon-32.cnf",
     "solution_generation": "scranfilize",
-    "n_solutions": 1000,
+    "n_solutions": 500,
     "output_folder": "out_scranfilize_default",
     "workers": 12,
     "remove_flippable": true,

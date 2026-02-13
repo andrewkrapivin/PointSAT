@@ -34,9 +34,6 @@ def process_sat_str(data):
 
     # Step 5: Filter out numbers > 1771
     nums = [n for n in nums if abs(n) <= 1771]
-    if len(nums) == 0:
-        print("gamer", data)
-        return ""
 
     # Step 6: Build the output string, keeping the first 'v'
     result = "v " + " ".join(map(str, nums))

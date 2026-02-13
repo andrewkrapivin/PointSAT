@@ -144,7 +144,7 @@ with open(sys.argv[1], 'r') as file:
 layers_set = set()
 layers_count = dict()
 
-n = 23
+n = int(sys.argv[2])
 
 index = 0
 for sol in sols:

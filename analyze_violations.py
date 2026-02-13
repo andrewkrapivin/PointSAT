@@ -57,10 +57,15 @@ def analyze_violations(output_folder):
     sorted_realized_counts = [violation_counts_realized[k] if k in violation_counts_realized else 0 for k in sorted_keys]
     sorted_ratios = [sorted_realized_counts[i] / sorted_counts[i] for i in range(len(sorted_counts))]
     # print("Sorted violation counts:", dict(zip(sorted_keys, sorted_counts)))
-    sum_counts = sum(sorted_counts[:50])
+    # sum_counts = sum(sorted_counts[:50])
+    sum_counts = sum(sorted_counts)
     sorted_counts = [c / sum_counts for c in sorted_counts]
     # print("Sorted violation proportions:", dict(zip(sorted_keys, sorted_counts)))
-    # print(sum_counts)
+    print("Sum_counts", sum_counts)
+
+    import numpy as np
+    worst_index = np.argmax(np.array(violation_counts_raw))
+    print("worst localization", worst_index, violation_counts_raw[worst_index])
 
     total_samples = sum(sorted_counts)
     cumulative_sum = 0
