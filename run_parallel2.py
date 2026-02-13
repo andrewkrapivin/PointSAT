@@ -41,9 +41,6 @@ def process_sat_str(data, n):
     num_orientations = n * (n-1) * (n-2) // 6
     # nums = [n for n in nums if abs(n) <= 1771]
     nums = [n for n in nums if abs(n) <= num_orientations]
-    if len(nums) == 0:
-        print("gamer", data)
-        return ""
 
     # Step 6: Build the output string, keeping the first 'v'
     result = "v " + " ".join(map(str, nums))
