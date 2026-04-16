@@ -81,6 +81,8 @@ def run_external(task, program_params, timeout=None, kill_with_interrupt = False
 
 
 def server(results_queue, work_queue, base_formula, settings):
+    start_time = time.perf_counter()
+    print("start_time", start_time)
     out_folder = settings["output_folder"]
     os.makedirs(out_folder, exist_ok=True)
     out_file = os.path.join(out_folder, "raw_results.jsonl")
@@ -153,7 +155,8 @@ def server(results_queue, work_queue, base_formula, settings):
             if jobs_left == 0:
                 break
             
-            print(jobs_left, flush=True)
+            print("jobs_left", jobs_left, flush=True)
+            print("time_stamp", time.perf_counter(), flush=True)
             result = results_queue.get()
             jobs_left -= 1
             print(json.dumps(result), file=file, flush=True)
@@ -211,6 +214,10 @@ def server(results_queue, work_queue, base_formula, settings):
         # when done tell workers to stop
         for _ in range(settings["workers"]):
             work_queue.put(None)
+    
+    end_time = time.perf_counter()
+    print("end_time", end_time)
+    print("total_time_taken", end_time - start_time)
 
 def check_sat_case(base_formula, assumptions, settings, timeout=None):
     lines = base_formula.splitlines()
