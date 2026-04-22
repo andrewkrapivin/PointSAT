@@ -295,6 +295,7 @@ def worker(work_queue, result_queue, base_formula, out_file, settings):
                 seed = 42
                 if "seed" in job:
                     seed = job["seed"]
+                print("running localizer for ", job['timeout'])
                 commands = ["./"+settings['localizer_loc'], job["orientations_file"], "-t", str(job['threads']), "-i", "10", "-r", "30000", "-s", str(seed), "-o", job["realization_file"]]
                 success, out, err, elapsed = run_external("", commands, timeout=job["timeout"], kill_with_interrupt=True)
                 valid, bad_vars = validate(job["orientations_file"], job["realization_file"])

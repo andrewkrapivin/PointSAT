@@ -23,6 +23,7 @@ def analyze_time_taken(output_folder, num_bins = 50):
         return
 
     # Store RAW values
+    total_time = 0
     sat_raw = []
     unsat_raw = []
 
@@ -40,6 +41,7 @@ def analyze_time_taken(output_folder, num_bins = 50):
                         is_sat = data["satisfiable"]
                         
                         if val > 0:
+                            total_time += val
                             if is_sat:
                                 sat_raw.append(val)
                             else:
@@ -51,6 +53,8 @@ def analyze_time_taken(output_folder, num_bins = 50):
     except Exception as e:
         print(f"An error occurred reading the file: {e}")
         return
+
+    print("total time for satttingg", total_time)
 
     if not sat_raw and not unsat_raw:
         print("No valid positive data found.")
