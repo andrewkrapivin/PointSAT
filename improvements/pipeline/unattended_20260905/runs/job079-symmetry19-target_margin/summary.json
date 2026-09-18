@@ -1,0 +1,16 @@
+{
+  "wall_seconds": 371.6268930710212,
+  "jobs": 4,
+  "sat_models": 0,
+  "realization_attempts": 0,
+  "feedback_attempts": 0,
+  "realized": 0,
+  "distinct_realized_samples": 0,
+  "errors": 0,
+  "first_realized_seconds": null,
+  "stage_worker_seconds": {
+    "scranfilize": 11.133170396031346,
+    "sat": 360.4471120300004
+  },
+  "interrupted": false
+}

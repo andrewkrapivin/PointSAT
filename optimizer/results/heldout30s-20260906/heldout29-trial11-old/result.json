@@ -1,0 +1,61 @@
+{
+  "case": "heldout29-trial11",
+  "family": "holes29",
+  "label": "old",
+  "command": [
+    "/home/andrew/PointSAT/direct/compact",
+    "--input",
+    "optimizer/results/heldout30s-20260906/fixtures/heldout29-trial11.pts",
+    "--output",
+    "optimizer/results/heldout30s-20260906/heldout29-trial11-old/points.pts",
+    "--seconds",
+    "30.0",
+    "--seed",
+    "1"
+  ],
+  "returncode": 0,
+  "wall_seconds": 30.013684424979147,
+  "audit": {
+    "n": 29,
+    "gon": 0,
+    "hole": 6,
+    "cap": 0,
+    "valid": true,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "convex_caps": 0,
+    "cap_subsets_checked": 0,
+    "gon_subsets_checked": 0,
+    "hole_subsets_checked": 475020,
+    "convex_hole_size_subsets": 4628,
+    "hull_layers": [
+      3,
+      4,
+      7,
+      7,
+      7,
+      1
+    ],
+    "bbox": [
+      0,
+      0,
+      470864,
+      395697
+    ],
+    "bbox_width": 470864,
+    "bbox_height": 395697,
+    "bbox_area": 186319472208,
+    "min_determinant": 231,
+    "max_determinant": 185786898936,
+    "min_squared_distance": 372296,
+    "first_gon": [],
+    "first_hole": [],
+    "first_cap": [],
+    "seconds": 0.0597272
+  },
+  "cpu_seconds": 29.88,
+  "output_sha256": "1def296fc70bd8045b330fe81d2eb3ea739c92de0af6d57e4c4a32a34cd2df03",
+  "orientation_changes": 0
+}

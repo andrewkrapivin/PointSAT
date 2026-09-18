@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "id": "control-paper23",
+      "problem": "mixed23",
+      "split": "known_realizable_control",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "orientation": "improvements/benchmarks/corpus/known_controls/paper23.or",
+      "sha256": "09c2e132f41c69ba34a7b6827d3ab6acaa74e5ca0e233266fdfe9b9066e040a6",
+      "known_seeded": true,
+      "source": "direct/seeds/paper23.pts",
+      "source_sha256": "835db1678c6cad38b7595bb1eb68ed569c4638f605e3d1c58cf75f9e29f37623",
+      "note": "Known coordinate-derived order type, NEVER a new SAT discovery. Coordinates are not supplied to Localizer."
+    },
+    {
+      "id": "control-overmars29",
+      "problem": "holes29",
+      "split": "known_realizable_control",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "orientation": "improvements/benchmarks/corpus/known_controls/overmars29.or",
+      "sha256": "3036173442e9183b26f43144cdb262e5192eff39dde107cc01911d912841fb16",
+      "known_seeded": true,
+      "source": "direct/seeds/overmars29.pts",
+      "source_sha256": "9fcfe3ecc579aa725df78148930de8004a2b0c87ffc7f161793eee824d0cb3a7",
+      "note": "Known coordinate-derived order type, NEVER a new SAT discovery. Coordinates are not supplied to Localizer."
+    },
+    {
+      "id": "control-es32",
+      "problem": "gons32",
+      "split": "known_realizable_control",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "orientation": "improvements/benchmarks/corpus/known_controls/es32.or",
+      "sha256": "f082f47103d2898a0cabecd309ad81ee9f4d67c61782b26d13c134ae0ec098fc",
+      "known_seeded": true,
+      "source": "direct/seeds/es32.pts",
+      "source_sha256": "aaeee65e4996e372405f53e40be06f0c0e2c6b3b6034ecf40347a3fc24584544",
+      "note": "Known coordinate-derived order type, NEVER a new SAT discovery. Coordinates are not supplied to Localizer."
+    },
+    {
+      "id": "control-es26cap5",
+      "problem": "caps26",
+      "split": "known_realizable_control",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "orientation": "improvements/benchmarks/corpus/known_controls/es26cap5.or",
+      "sha256": "3672090a40568855e56e27c0f1383c33805f2ca593d16660482c41a15be211af",
+      "known_seeded": true,
+      "source": "direct/seeds/es26cap5.pts",
+      "source_sha256": "1be72593af8b910d3d0c56672114936405cb059651bafc7d572de5e5c647d964",
+      "note": "Known coordinate-derived order type, NEVER a new SAT discovery. Coordinates are not supplied to Localizer."
+    }
+  ]
+}

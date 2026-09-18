@@ -1,0 +1,19 @@
+{
+  "base_file": "7gon-6hole-23-compact.cnf",
+  "n": 23,
+  "solution_generation": "scranfilize",
+  "n_solutions": 8,
+  "workers": 2,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "localizer_attempt_levels": 1,
+  "localizer_attempt_timeouts": [
+    15
+  ],
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "localizer_loc": "improvements/pipeline/localizer_baseline_safe.sh",
+  "solver_timeout": 90,
+  "continue_if_realized": false,
+  "output_folder": "improvements/pipeline/paired_pipeline/before"
+}

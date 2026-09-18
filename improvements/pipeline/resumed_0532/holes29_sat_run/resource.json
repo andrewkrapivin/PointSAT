@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "-u",
+    "PointSAT.py",
+    "improvements/pipeline/resumed_0532/holes29_sat.json",
+    "--out",
+    "improvements/pipeline/resumed_0532/holes29_sat_run"
+  ],
+  "wall_seconds": 181.0708400119911,
+  "cpu_seconds": 180.928778,
+  "max_rss_kib": 234072,
+  "returncode": 0,
+  "timed_out": false
+}

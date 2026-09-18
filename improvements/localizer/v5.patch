@@ -1,0 +1,948 @@
+diff --git a/src/evaluation.c b/src/evaluation.c
+index 60a0bc1..9b5fc77 100644
+--- a/src/evaluation.c
++++ b/src/evaluation.c
+@@ -51,8 +51,10 @@ void evaluate(const Point* points, int n, const Constraint* constraints, int con
+         int pk = constraint.k - 1;
+         double determinant = det(points[pi], points[pj], points[pk]);
+ 
+-        if ((constraint.sign == 1 && determinant <= EPSILON) ||
+-            (constraint.sign == -1 && determinant >= -EPSILON)) {
++        if (!isfinite(determinant) ||
++            (constraint.sign == 1 && determinant <= EPSILON) ||
++            (constraint.sign == -1 && determinant >= -EPSILON) ||
++            (constraint.sign == 0 && fabs(determinant) > EPSILON)) {
+             (*total_violations)++;
+             int points_to_update[] = { pi, pj, pk };
+             for (int j = 0; j < 3; j++) {
+@@ -95,4 +97,4 @@ void evaluate(const Point* points, int n, const Constraint* constraints, int con
+             *point_with_max_violations = m2;
+         }
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/src/main.c b/src/main.c
+index 14e8cf0..07b49e4 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -1,244 +1,214 @@
+ #include <stdio.h>
+ #include <float.h>
+-#include <stdbool.h> 
++#include <stdbool.h>
+ #include <unistd.h>
+-#include <string.h>
++#include <getopt.h>
++#include <errno.h>
+ #include <pthread.h>
+-#include <unistd.h>
+ #include <signal.h>
+-
+ #include "utils.c"
+-#include "solver.c"
+-#include "threading.c"
++#include "solver_fast.c"
+ #include "rng.c"
+ 
+-int GLOBAL_SEED = 42;
+-
+-synchronization_t _sync; // Global synchronization variable, keeping the best solutions.
+-// it's global to allow for signal handling
+-int _N = 0; // number of points, global for signal handling
+-
+-char* output_file = NULL;
+-
+-// Struct to hold thread parameters
+ typedef struct {
+-    int thread_id;
+-    int N; 
++    int id,n,m,sub_iterations;
+     Constraint *constraints;
+-    int constraint_count;
+-    int** constraints_per_point;
+-    int* constraints_per_point_count;
+-    
+-    bool* is_point_fixed;
+-    Point* fixed_points;
+-    Symmetry* symmetry;
+-    
+-    int sub_iterations;
+-    double MIN_DIST; 
+-    Point *points;
+-    char *output_file;
+-    long long int reset_its;
+-    rng_t *rng;
++    int **incident,*incident_count;
++    bool *fixed;
++    Point *fixed_points;
++    Symmetry *symmetry;
++    double minimum_distance;
++    long long reset_its;
++    rng_t rng;
++    Point points[MAX_POINTS];
+     synchronization_t *sync;
++    SolverStats stats;
+ } thread_params_t;
+ 
+-
+-void print_usage() {
+-    color_printf(RED, "Usage: <orientation_file> [-i sub_iterations] [-d min_dist] [-o output_file] [-s random_seed]\n [-r reset_interval] [-t threads] [-f fixed points file] [-c symmetry file]\n");
++static void print_usage(void) {
++    fprintf(stderr,"Usage: localizer ORIENTATIONS [-i subiterations] [-s seed] [-d min_distance]\n"
++            "  [-o output] [-r reset_iterations] [-t threads] [-f fixed] [-c symmetry]\n"
++            "  [-w indexed_coordinates] [-T seconds] [-I max_iterations] [-q]\n"
++            "  [--reference-evaluation] [--check-every iterations] [--line-every proposals]\n"
++            "  [--min-radius radius] [--max-radius radius] [--archive-prefix PATH]\n"
++            "  [--pair-every proposals]\n");
+ }
+-
+-void sigint_handler(int sig_num)
+-{
+-    printf("\nInterrupt signal (%d) received.\n", sig_num);
+-    pthread_mutex_lock(&_sync.top_k_mutex);
+-    // Print information about the object if it exists
+-  
+-    color_printf(GREEN, "Best solution is:\n");
+-    Point* points = _sync.top_k_solutions[0].points;
+-    for (int i = 0; i < _N; i++) {
+-        printf("\t\t Point %d: (%.6f, %.6f)\n", i + 1, points[i].x, points[i].y);
++static void handle_signal(int sig) {
++    (void)sig;
++    atomic_store_explicit(&interrupt_requested,true,memory_order_relaxed);
++}
++static long long integer_arg(const char *s,long long low,long long high) {
++    char *end; errno=0; long long v=strtoll(s,&end,10);
++    if(errno || !*s || *end || v<low || v>high) {
++        fprintf(stderr,"Invalid integer argument: %s\n",s); exit(1);
+     }
+-        
+-    printf("Violations: %d\n", _sync.top_k_solutions[0].violations);
+-    printf("\n");
+-
+-    serialize_solution(_N, points, output_file);
+-    color_printf(YELLOW, "Solution saved to %s\n", output_file);
+- 
+-    pthread_mutex_unlock(&_sync.top_k_mutex);
+-    sync_destroy(&_sync);
+-    exit(0);
++    return v;
+ }
+-
+-
+-void* thread_solve(void* arg) {
+-    
+-    thread_params_t* params = (thread_params_t*)arg;
+-    
+-    solve(params->N, 
+-        params->constraints, 
+-        params->constraint_count, 
+-        (const int**) params->constraints_per_point, 
+-        params->constraints_per_point_count, 
+-        params->sub_iterations, 
+-        params->MIN_DIST, 
+-        params->points, 
+-        params->output_file, 
+-        params->reset_its,
+-        params->thread_id,
+-        params->sync,
+-        params->rng,
+-        params->is_point_fixed,
+-        params->fixed_points,
+-        params->symmetry);
+-    
+-    return NULL;
++static double real_arg(const char *s) {
++    char *end; errno=0; double v=strtod(s,&end);
++    if(errno || !*s || *end || !isfinite(v)) { fprintf(stderr,"Invalid real argument: %s\n",s); exit(1); }
++    return v;
+ }
+-
+-int main(int argc, char* argv[]) {
+-    if (argc < 2) {
+-        print_usage();
+-        return 1;
++static void read_warm(const char *path,int n) {
++    FILE *f=fopen(path,"r");
++    if(!f) { perror(path); exit(1); }
++    bool seen[MAX_POINTS]={false};
++    char line[1024],extra; int i,count=0; double x,y;
++    while(fgets(line,sizeof(line),f)) {
++        if(sscanf(line," %d %lf %lf %c",&i,&x,&y,&extra)!=3 || i<1 || i>n ||
++           seen[i-1] || !isfinite(x) || !isfinite(y)) {
++            fprintf(stderr,"Invalid warm-start row in %s\n",path); exit(1);
++        }
++        seen[i-1]=true; ++count; solver_options.initial[i-1]=(Point){x,y};
+     }
+-
+-        
+-    signal(SIGINT, sigint_handler);
+-    
+-    char* orientation_file = argv[1];
+-
+-    // default values
+-    int sub_iterations = 10;
+-    int NUM_THREADS = 1;
+-    double min_dist = -1.0; // negative -> turned off
+-    long long int reset_its = 30000;
+-    
+-        output_file = malloc(256 * sizeof(char));
+-    if (output_file != NULL) {
+-        strcpy(output_file, "output.txt");
++    fclose(f);
++    if(count!=n) { fprintf(stderr,"Warm start needs exactly %d indexed rows\n",n); exit(1); }
++    solver_options.warm=true;
++}
++static void validate_symmetry(int n,Symmetry *sym,bool *fixed,Point *fixed_points) {
++    bool seen[MAX_POINTS]={false};
++    for(int c=0;c<sym->num_cycles;++c) {
++        int k=sym->cycle_lengths[c],fixed_member=-1;
++        if(k<1 || k>n) { fprintf(stderr,"Invalid symmetry cycle length\n"); exit(1); }
++        for(int j=0;j<k;++j) {
++            int i=sym->cycles[c][j];
++            if(i<0 || i>=n || seen[i]) { fprintf(stderr,"Symmetry indices must be disjoint and in range\n"); exit(1); }
++            seen[i]=true;
++            if(fixed[i]) fixed_member=j;
++        }
++        if(fixed_member>=0) {
++            int idx=sym->cycles[c][fixed_member];
++            Point lead=rotate_r_k(fixed_points[idx],-fixed_member,k);
++            for(int j=0;j<k;++j) {
++                int i=sym->cycles[c][j]; Point expected=rotate_r_k(lead,j,k);
++                double tolerance=1e-10*(1+fabs(expected.x)+fabs(expected.y));
++                if(fixed[i] && (fabs(fixed_points[i].x-expected.x)>tolerance ||
++                                 fabs(fixed_points[i].y-expected.y)>tolerance)) {
++                    fprintf(stderr,"Fixed coordinates conflict with symmetry\n"); exit(1);
++                }
++                fixed[i]=true; fixed_points[i]=expected;
++            }
++        }
+     }
+-    
+-    char* fixed_points_file = malloc(256 * sizeof(char));
+-    char* symmetry_file = malloc(256 * sizeof(char));
+-
+-    // Parse optional arguments
++}
++static void *thread_solve(void *arg) {
++    thread_params_t *p=arg;
++    solve(p->n,p->constraints,p->m,(const int**)p->incident,p->incident_count,
++          p->sub_iterations,p->minimum_distance,p->points,NULL,p->reset_its,p->id,
++          p->sync,&p->rng,p->fixed,p->fixed_points,p->symmetry,&p->stats);
++    return NULL;
++}
++int main(int argc,char **argv) {
++    if(argc<2) { print_usage(); return 1; }
++    const char *orientation_file=argv[1],*output="output.txt",*fixed_file=NULL,*symmetry_file=NULL,*warm_file=NULL;
++    const char *archive_prefix=NULL;
++    int sub_iterations=10,nthreads=1,seed=42; double minimum_distance=-1;
++    long long reset_its=30000;
++    static const struct option long_options[]={
++        {"reference-evaluation",no_argument,NULL,1000},
++        {"check-every",required_argument,NULL,1001},
++        {"line-every",required_argument,NULL,1002},
++        {"min-radius",required_argument,NULL,1003},
++        {"max-radius",required_argument,NULL,1004},
++        {"archive-prefix",required_argument,NULL,1005},
++        {"pair-every",required_argument,NULL,1006},
++        {"max-iterations",required_argument,NULL,'I'},
++        {"seconds",required_argument,NULL,'T'},
++        {"warm-start",required_argument,NULL,'w'},
++        {NULL,0,NULL,0}};
+     int opt;
+-
+-    while ((opt = getopt(argc - 1, argv + 1, "i:s:d:o:r:t:f:c:")) != -1) {
+-        switch (opt) {
+-            case 'i':
+-                sub_iterations = atoi(optarg);
+-                break;
+-            case 's':
+-                GLOBAL_SEED = atoi(optarg);
+-                break;
+-            case 'd':
+-                min_dist = atof(optarg);
+-                break;
+-            case 'o':
+-                strcpy(output_file, optarg);
+-                break;
+-            case 'r':
+-                reset_its = atoi(optarg);
+-                break;
+-            case 't':
+-                NUM_THREADS = atoi(optarg);
+-                break;
+-            case 'f':
+-                strcpy(fixed_points_file, optarg);
+-                break;
+-            case 'c':
+-                strcpy(symmetry_file, optarg);
+-                break;
+-            default:
+-                print_usage();
+-                return 1;
++    while((opt=getopt_long(argc-1,argv+1,"i:s:d:o:r:t:f:c:w:T:I:q",long_options,NULL))!=-1) {
++        switch(opt) {
++            case 'i': sub_iterations=integer_arg(optarg,1,1000); break;
++            case 's': seed=integer_arg(optarg,0,INT32_MAX); break;
++            case 'd': minimum_distance=real_arg(optarg); break;
++            case 'o': output=optarg; break;
++            case 'r': reset_its=integer_arg(optarg,2,INT32_MAX); break;
++            case 't': nthreads=integer_arg(optarg,1,256); break;
++            case 'f': fixed_file=optarg; break;
++            case 'c': symmetry_file=optarg; break;
++            case 'w': warm_file=optarg; break;
++            case 'T': solver_options.seconds=real_arg(optarg); if(solver_options.seconds<=0) return 1; break;
++            case 'I': solver_options.iterations=integer_arg(optarg,1,INT64_MAX); break;
++            case 'q': solver_options.quiet=true; break;
++            case 1000: solver_options.reference=true; break;
++            case 1001: solver_options.check_every=integer_arg(optarg,1,INT64_MAX); break;
++            case 1002: solver_options.line_every=integer_arg(optarg,1,INT64_MAX); break;
++            case 1003: solver_options.minimum_radius=real_arg(optarg); if(solver_options.minimum_radius<0) return 1; break;
++            case 1004: solver_options.maximum_radius=real_arg(optarg); if(solver_options.maximum_radius<=0) return 1; break;
++            case 1005: archive_prefix=optarg; break;
++            case 1006: solver_options.pair_every=integer_arg(optarg,1,INT64_MAX); break;
++            default: print_usage(); return 1;
+         }
+     }
+-    
+-    pthread_t threads[NUM_THREADS];
+-        
+-    int N, constraint_count;
+-    Constraint constraints[MAX_CONSTRAINTS];
+-    int** constraints_per_point = calloc(MAX_POINTS, sizeof(int*));
+-    for(int i = 0; i < MAX_POINTS; ++i) {
+-        constraints_per_point[i] = calloc(MAX_CONSTRAINTS, sizeof(int));
++    int n,m;
++    Constraint *constraints=calloc(MAX_CONSTRAINTS,sizeof(Constraint));
++    int **incident=calloc(MAX_POINTS,sizeof(int*)),*incident_count=calloc(MAX_POINTS,sizeof(int));
++    if(!constraints||!incident||!incident_count) { perror("allocation"); return 1; }
++    for(int i=0;i<MAX_POINTS;++i) {
++        incident[i]=calloc(MAX_CONSTRAINTS,sizeof(int));
++        if(!incident[i]) { perror("allocation"); return 1; }
+     }
+-    int* constraints_per_point_count = calloc(MAX_POINTS, sizeof(int));
+-    
+-    parse_constraints(orientation_file, &N, constraints, &constraint_count, constraints_per_point, constraints_per_point_count);
+-
+-    color_printf(YELLOW, "Parsed %d constraints over %d points\n\n", constraint_count, N);
+-    
+-    _N = N;
+-    
+-    bool* is_point_fixed = calloc(MAX_POINTS, sizeof(bool));
+-    Point* fixed_points = calloc(MAX_POINTS, sizeof(Point));
+-    
+-    parse_fixed_points(fixed_points_file, N, fixed_points, is_point_fixed);
+-    
+-    Symmetry symmetry;
+-    
+-    parse_symmetry(symmetry_file, &symmetry);        
+-   
+-    // Synchronization mutexes.
+-    sync_init(&_sync);
+-    
+-    
+-    
+-    thread_params_t* params = calloc(NUM_THREADS, sizeof(thread_params_t));
+-    
+-    // Create threads
+-    for (int i = 0; i < NUM_THREADS; i++) {
+-   
+-        params[i].thread_id = i + 1;
+-        params[i].N = N;
+-        params[i].constraints = constraints;
+-        params[i].constraint_count = constraint_count;
+-        params[i].constraints_per_point =  constraints_per_point;
+-        params[i].constraints_per_point_count = constraints_per_point_count;
+-        params[i].is_point_fixed = is_point_fixed;
+-        params[i].fixed_points = fixed_points;
+-        params[i].symmetry = &symmetry;
+-        params[i].sub_iterations = sub_iterations;
+-        params[i].MIN_DIST = min_dist;
+-        params[i].points = calloc(MAX_POINTS, sizeof(Point));
+-        params[i].output_file = output_file;
+-        params[i].reset_its = reset_its;
+-        params[i].sync = &_sync;
+-        params[i].rng = malloc(sizeof(rng_t));
+-        rng_init(params[i].rng, GLOBAL_SEED + i);
+-
+-        if (pthread_create(&threads[i], NULL, thread_solve, &params[i]) != 0) {
+-            perror("Failed to create thread");
+-            return 1;
++    parse_constraints(orientation_file,&n,constraints,&m,incident,incident_count);
++    bool fixed[MAX_POINTS]={false}; Point fixed_points[MAX_POINTS]={{0}};
++    parse_fixed_points(fixed_file,n,fixed_points,fixed);
++    Symmetry sym={0}; parse_symmetry(symmetry_file,&sym);
++    validate_symmetry(n,&sym,fixed,fixed_points);
++    if(warm_file) read_warm(warm_file,n);
++    synchronization_t sync; sync_init(&sync);
++    struct sigaction sa={0}; sa.sa_handler=handle_signal; sigemptyset(&sa.sa_mask);
++    sigaction(SIGINT,&sa,NULL); sigaction(SIGTERM,&sa,NULL);
++    pthread_t *threads=calloc(nthreads,sizeof(*threads));
++    thread_params_t *params=calloc(nthreads,sizeof(*params));
++    if(!threads||!params) { perror("allocation"); return 1; }
++    if(!solver_options.quiet) printf("Parsed %d constraints over %d points\n",m,n);
++    int created=0;
++    for(int i=0;i<nthreads;++i) {
++        thread_params_t *p=&params[i];
++        p->id=i+1; p->n=n; p->m=m; p->constraints=constraints; p->incident=incident;
++        p->incident_count=incident_count; p->fixed=fixed; p->fixed_points=fixed_points; p->symmetry=&sym;
++        p->sub_iterations=sub_iterations; p->minimum_distance=minimum_distance; p->reset_its=reset_its; p->sync=&sync;
++        rng_init(&p->rng,(uint64_t)seed+i);
++        if(pthread_create(&threads[i],NULL,thread_solve,p)!=0) {
++            fprintf(stderr,"Failed to create worker\n"); atomic_store(&interrupt_requested,true); break;
+         }
++        ++created;
+     }
+-    
+-    color_printf(CYAN, "=========================================================\n");
+-    color_printf(CYAN, "========================  STARTING  =====================\n");
+-    color_printf(CYAN, "=========================================================\n\n");
+-    
+-       // Join all threads
+-    for (int i = 0; i < NUM_THREADS; i++) {
+-        if (pthread_join(threads[i], NULL) != 0) {
+-            perror("Failed to join thread");
+-            return 1;
++    for(int i=0;i<created;++i) pthread_join(threads[i],NULL);
++    Solution best=sync.top_k_solutions[0];
++    if(best.violations==INT32_MAX) { fprintf(stderr,"No worker initialized\n"); return 1; }
++    int checked,counts[MAX_POINTS],maxp; double md=0;
++    evaluate(best.points,n,constraints,m,(const int**)incident,minimum_distance,&checked,counts,&maxp,&md,-1,-1);
++    if(checked!=best.violations) { fprintf(stderr,"Internal objective mismatch\n"); return 2; }
++    serialize_solution(n,best.points,output);
++    if(archive_prefix && *archive_prefix) {
++        size_t size=strlen(archive_prefix)+32;
++        char *archive_name=malloc(size);
++        if(!archive_name) { perror("archive filename allocation"); return 1; }
++        for(int k=0;k<K_TOP && sync.top_k_solutions[k].violations!=INT32_MAX;++k) {
++            Solution *entry=&sync.top_k_solutions[k];
++            int archive_checked;
++            evaluate(entry->points,n,constraints,m,(const int**)incident,minimum_distance,
++                     &archive_checked,counts,&maxp,&md,-1,-1);
++            if(archive_checked!=entry->violations) { fprintf(stderr,"Archive objective mismatch\n"); return 2; }
++            snprintf(archive_name,size,"%s-%02d.real",archive_prefix,k);
++            serialize_solution(n,entry->points,archive_name);
++            printf("Archive saved: %s (violations %d)\n",archive_name,archive_checked);
+         }
+-
+-        free(params[i].points);
+-        free(params[i].rng);
+-        
++        free(archive_name);
+     }
+-    
+-    free(constraints_per_point_count);
+-    for(int i = 0; i < MAX_POINTS; ++i) {
+-        free(constraints_per_point[i]);
++    printf("%s\nViolations: %d\nSolution saved to %s\n",checked?"STOPPED":"SOLVED",checked,output);
++    for(int i=0;i<created;++i) {
++        SolverStats *s=&params[i].stats;
++        printf("{\"thread\":%d,\"seconds\":%.9f,\"iterations\":%lld,\"proposals\":%lld,"
++               "\"constraint_evaluations\":%lld,\"early_rejections\":%lld,\"accepted\":%lld,"
++               "\"improvements\":%lld,\"restarts\":%lld,\"paired_proposals\":%lld,\"line_proposals\":%lld,"
++               "\"final_violations\":%d,\"best_violations\":%d}\n",
++               i+1,s->seconds,s->iterations,s->proposals,s->evaluations,s->early_rejections,
++               s->accepted,s->improvements,s->restarts,s->paired_proposals,s->line_proposals,s->final_violations,checked);
+     }
+-    
+-    sync_destroy(&_sync);
+-    
+-    free(params);
+-    free(output_file);
+-
+-    return 0;
++    sync_destroy(&sync);
++    for(int i=0;i<MAX_POINTS;++i) free(incident[i]);
++    free(incident); free(incident_count); free(constraints); free(threads); free(params);
++    return created==nthreads?0:1;
+ }
+diff --git a/src/makefile b/src/makefile
+index a54bd6d..b6b6e06 100644
+--- a/src/makefile
++++ b/src/makefile
+@@ -1,6 +1,6 @@
+ CC = gcc
+-CFLAGS = -Wall -Wextra -O3
+-LDFLAGS = -lm
++CFLAGS = -Wall -Wextra -O3 -pthread
++LDFLAGS = -lm -pthread
+ 
+ # Debug flags
+ DEBUG_FLAGS = -g -O0
+@@ -11,7 +11,7 @@ DEBUG_TARGET = $(TARGET)_debug
+ TEST_TARGET = test_solver
+ 
+ # Main source file
+-MAIN = main.c solver.c
++MAIN = main.c solver_fast.c evaluation.c utils.c threading.c rng.c
+ TEST_SRC = test_solver.c
+ 
+ # Default target
+diff --git a/src/threading.c b/src/threading.c
+index 970da82..3496bf8 100644
+--- a/src/threading.c
++++ b/src/threading.c
+@@ -60,7 +60,7 @@ void sync_broadcast_new_solution(synchronization_t* sync, Point* points, int vio
+     pthread_mutex_lock(&sync->top_k_mutex);
+     for(int i = 0; i < K_TOP; ++i) {
+         if(violations <= sync->top_k_solutions[i].violations) {
+-            for(int j = i+1; j < K_TOP; ++j) {
++            for(int j = K_TOP-1; j > i; --j) {
+                 sync->top_k_solutions[j].violations = sync->top_k_solutions[j-1].violations;
+                 for(int p = 0; p < MAX_POINTS; ++p) {
+                     sync->top_k_solutions[j].points[p].x =  sync->top_k_solutions[j-1].points[p].x;
+@@ -81,12 +81,16 @@ void sync_broadcast_new_solution(synchronization_t* sync, Point* points, int vio
+ void sync_get_best_solution(synchronization_t* sync, Point* points, int* violations, rng_t* rng) {
+     pthread_mutex_lock(&sync->top_k_mutex);
+     
+-    int scores[K_TOP];
++    int scores[K_TOP], valid = 0;
+     for(int i = 0; i < K_TOP; ++i) {
+-        scores[i] = (2*sync->top_k_solutions[0].violations - sync->top_k_solutions[i].violations)*(K_TOP - i);
++        if (sync->top_k_solutions[i].violations == INT32_MAX) break;
++        int quality = 2*sync->top_k_solutions[0].violations - sync->top_k_solutions[i].violations;
++        scores[i] = (quality > 0 ? quality : 1)*(K_TOP-i);
++        ++valid;
+     }
+ 
+-    int idx = sample_proportional(scores, K_TOP, rng); 
++    assert(valid > 0);
++    int idx = sample_proportional(scores, valid, rng);
+     *violations = sync->top_k_solutions[idx].violations;
+ 
+     
+@@ -133,4 +137,4 @@ void sync_printf(synchronization_t* sync, const char* format, ...) {
+ 
+ 
+ 
+-#endif // THREADING_H
+\ No newline at end of file
++#endif // THREADING_H
+diff --git a/src/utils.c b/src/utils.c
+index 4da2986..c60b679 100644
+--- a/src/utils.c
++++ b/src/utils.c
+@@ -5,6 +5,8 @@
+ #include <time.h>
+ #include <stdarg.h>
+ #include <stdint.h>
++#include <stdbool.h>
++#include <ctype.h>
+ #include "rng.c"
+ 
+ #define __STDC_LIMIT_MACROS
+@@ -84,7 +86,20 @@ void parse_constraints(const char* orientation_file,
+     while (fgets(line, sizeof(line), file)) {
+         char orientation;
+         int i, j, k;
+-        sscanf(line, "%c_(%d, %d, %d)", &orientation, &i, &j, &k);
++        char *ptr = line;
++        while (isspace((unsigned char)*ptr)) ++ptr;
++        if (!*ptr || *ptr == '#') continue;
++        int consumed = 0;
++        if (sscanf(ptr, "%c_(%d, %d, %d)%n", &orientation, &i, &j, &k, &consumed) != 4 ||
++            (orientation != 'A' && orientation != 'B' && orientation != 'C') ||
++            i < 1 || j < 1 || k < 1 || i > MAX_POINTS || j > MAX_POINTS || k > MAX_POINTS ||
++            i == j || i == k || j == k || *constraint_count >= MAX_CONSTRAINTS) {
++            fprintf(stderr, "Invalid orientation row: %s", line);
++            exit(1);
++        }
++        ptr += consumed;
++        while (isspace((unsigned char)*ptr)) ++ptr;
++        if (*ptr) { fprintf(stderr, "Trailing text in orientation row\n"); exit(1); }
+ 
+         if (i > *N) *N = i;
+         if (j > *N) *N = j;
+@@ -105,13 +120,17 @@ void parse_constraints(const char* orientation_file,
+         }
+         
+         (*constraint_count)++;
+-        if (*constraint_count >= MAX_CONSTRAINTS) {
++        if (*constraint_count > MAX_CONSTRAINTS) {
+             printf("ERROR: Too many constraints\n");
+             exit(1);
+         }
+     }
+ 
+     fclose(file);
++    if (*constraint_count == 0) {
++        fprintf(stderr, "Orientation file has no constraints\n");
++        exit(1);
++    }
+ }
+ 
+ // Generate random assignment of coordinates
+@@ -259,7 +278,7 @@ void serialize_solution(int N, Point* points, const char* output_file) {
+     }
+ 
+     for (int i = 0; i < N; i++) {
+-        fprintf(file, "%d %.8f %.8f\n", i + 1, points[i].x, points[i].y);
++        fprintf(file, "%d %.17g %.17g\n", i + 1, points[i].x, points[i].y);
+     }
+ 
+     fclose(file);
+@@ -285,7 +304,7 @@ void parse_fixed_points(const char* fixed_points_file, int N, Point* fixed_point
+     FILE* file = fopen(fixed_points_file, "r");
+     if (file == NULL) {
+         printf("Error opening fixed points file\n");
+-        return;
++        exit(1);
+     }
+ 
+     char line[MAX_LINE_LENGTH];
+@@ -295,7 +314,7 @@ void parse_fixed_points(const char* fixed_points_file, int N, Point* fixed_point
+         
+         // Parse line in format "idx:x,y"
+         if (sscanf(line, "%d:%lf,%lf", &point_idx, &x, &y) == 3) {
+-            if (point_idx > 0 && point_idx <= N) {
++            if (point_idx > 0 && point_idx <= N && isfinite(x) && isfinite(y)) {
+                 // Adjust to 0-based indexing
+                 int idx = point_idx - 1;
+                 fixed_points[idx].x = x;
+@@ -305,9 +324,11 @@ void parse_fixed_points(const char* fixed_points_file, int N, Point* fixed_point
+                 color_printf(GREEN, "Fixed point %d at (%.2f, %.2f)\n", point_idx, x, y);
+             } else {
+                 color_printf(RED, "Invalid point index %d in fixed points file\n", point_idx);
++                exit(1);
+             }
+         } else {
+             color_printf(RED, "Invalid format in fixed points file: %s\n", line);
++            exit(1);
+         }
+     }
+ 
+@@ -333,10 +354,16 @@ void parse_symmetry(const char* symmetry_file, Symmetry* symmetry) {
+     int cycle_count = 0;
+     while (fgets(line, sizeof(line), file)) {
+         char* ptr = line;
++        while (isspace((unsigned char)*ptr)) ++ptr;
++        if (!*ptr || *ptr == '#') continue;
++        if (cycle_count >= MAX_POINTS) { fprintf(stderr, "Too many symmetry cycles\n"); exit(1); }
+         int num;
+         int cnt = 0;
+         int chr_cnt = 0;
+         while (ptr && *ptr && sscanf(ptr, "%d%n", &num, &chr_cnt) == 1) {
++            if (cnt >= MAX_POINTS || num < 1 || num > MAX_POINTS) {
++                fprintf(stderr, "Invalid symmetry index\n"); exit(1);
++            }
+             symmetry->cycles[cycle_count][cnt++] = num-1;
+             ptr += chr_cnt;
+             // Skip any whitespace
+@@ -346,6 +373,8 @@ void parse_symmetry(const char* symmetry_file, Symmetry* symmetry) {
+         }
+         
+ 
++        while (isspace((unsigned char)*ptr)) ++ptr;
++        if (*ptr || !cnt) { fprintf(stderr, "Invalid symmetry row\n"); exit(1); }
+         symmetry->cycle_lengths[cycle_count] = cnt;
+ 
+         cycle_count++;
+@@ -368,4 +397,4 @@ void parse_symmetry(const char* symmetry_file, Symmetry* symmetry) {
+     color_printf(GREEN, "Parsed %d cycles\n\n", symmetry->num_cycles);
+ }
+ 
+-#endif // UTILS_H
+\ No newline at end of file
++#endif // UTILS_H
+diff --git a/src/solver_fast.c b/src/solver_fast.c
+new file mode 100644
+index 0000000..c3fbcdc
+--- /dev/null
++++ b/src/solver_fast.c
+@@ -0,0 +1,296 @@
++#include <float.h>
++#include <stdbool.h>
++#include <stdatomic.h>
++#include <signal.h>
++#include "utils.c"
++#include "evaluation.c"
++#include "threading.c"
++
++_Static_assert(ATOMIC_BOOL_LOCK_FREE == 2, "signal flag must be lock-free");
++static atomic_bool interrupt_requested = false;
++typedef struct {
++    double seconds, minimum_radius, maximum_radius;
++    long long iterations, check_every, line_every, pair_every;
++    bool quiet, reference, warm;
++    Point initial[MAX_POINTS];
++} SolverOptions;
++static SolverOptions solver_options = {.minimum_radius=0.1,.maximum_radius=15.0};
++typedef struct {
++    long long iterations, proposals, evaluations, early_rejections, accepted, improvements, restarts;
++    long long paired_proposals, line_proposals;
++    double seconds;
++    int final_violations;
++} SolverStats;
++
++typedef struct { double t; int delta; } LineEvent;
++static int compare_events(const void *a,const void *b) {
++    double x=((const LineEvent*)a)->t,y=((const LineEvent*)b)->t;
++    return (x>y)-(x<y);
++}
++/* A determinant is affine in one moved point, quadratic for a coupled orbit.
++ * Sweep its threshold crossings and select a minimum-violation interval.
++ * Ordinary cached evaluation still checks the resulting floating-point move. */
++static Point line_candidate_pair(const Point *points,int chosen,Point trial,double radius,
++                            const Constraint *cs,const int *ids,int count,
++                            const Symmetry *sym,LineEvent *events,SolverStats *stats,
++                            int second,Point *second_trial) {
++    Point p=points[chosen];
++    double dx=trial.x-p.x,dy=trial.y-p.y,dx2=0,dy2=0,length=hypot(dx,dy);
++    if(second>=0) {
++        dx2=second_trial->x-points[second].x;
++        dy2=second_trial->y-points[second].y;
++        length=hypot(length,hypot(dx2,dy2));
++    }
++    if(!(length>0)) return trial;
++    dx/=length; dy/=length; dx2/=length; dy2/=length;
++    Point velocity[MAX_POINTS]={{0}};
++    velocity[chosen]=(Point){dx,dy};
++    if(second>=0) velocity[second]=(Point){dx2,dy2};
++    for(int c=0;c<sym->num_cycles;++c)
++      if(sym->cycles[c][0]==chosen || sym->cycles[c][0]==second) {
++        Point v=velocity[sym->cycles[c][0]];
++        for(int j=0;j<sym->cycle_lengths[c];++j)
++            velocity[sym->cycles[c][j]]=rotate_r_k(v,j,sym->cycle_lengths[c]);
++      }
++    int used=0,score=0;
++    for(int j=0;j<count;++j) {
++        const Constraint *c=&cs[ids[j]];
++        Point a=points[c->i-1],b=points[c->j-1],z=points[c->k-1];
++        Point va=velocity[c->i-1],vb=velocity[c->j-1],vz=velocity[c->k-1];
++        double bx=b.x-a.x,by=b.y-a.y,zx=z.x-a.x,zy=z.y-a.y;
++        double vx=vb.x-va.x,vy=vb.y-va.y,wx=vz.x-va.x,wy=vz.y-va.y;
++        double d=det(a,b,z),linear=vx*zy-vy*zx+bx*wy-by*wx;
++        double quadratic=vx*wy-vy*wx;
++        ++stats->evaluations;
++        double left=d-radius*linear+radius*radius*quadratic;
++        score+=!isfinite(left)||(c->sign==1?left<=EPSILON:c->sign==-1?left>=-EPSILON:fabs(left)>EPSILON);
++        for(int side=-1;side<=1;side+=2) {
++            if(c->sign && c->sign!=side) continue;
++            double constant=d-side*EPSILON,roots[2];
++            int nr=0;
++            if(quadratic==0) {
++                if(linear!=0) roots[nr++]=-constant/linear;
++            } else {
++                double disc=linear*linear-4*quadratic*constant;
++                if(disc>0 && isfinite(disc)) {
++                    double q=-0.5*(linear+copysign(sqrt(disc),linear));
++                    roots[nr++]=q/quadratic;
++                    if(q!=0) roots[nr++]=constant/q;
++                }
++            }
++            for(int r=0;r<nr;++r) {
++                double t=roots[r],slope=linear+2*quadratic*t;
++                if(t<=-radius || t>=radius || !isfinite(t) || slope==0) continue;
++                int delta;
++                if(c->sign==1) delta=slope>0?-1:1;
++                else if(c->sign==-1) delta=slope>0?1:-1;
++                else delta=side==-1?(slope>0?-1:1):(slope>0?1:-1);
++                events[used++]=(LineEvent){t,delta};
++            }
++        }
++    }
++    qsort(events,used,sizeof(*events),compare_events);
++    int best=INT32_MAX,j=0;
++    double left=-radius,best_t=0;
++    while(j<=used) {
++        double right=j<used?events[j].t:radius;
++        double t=left+(right-left)*0.5;
++        if(right>left && (score<best || (score==best && fabs(t)<fabs(best_t)))) {
++            best=score; best_t=t;
++        }
++        if(j==used) break;
++        left=right;
++        do { score+=events[j++].delta; } while(j<used && events[j].t==left);
++    }
++    if(second>=0) *second_trial=(Point){points[second].x+best_t*dx2,points[second].y+best_t*dy2};
++    return (Point){p.x+best_t*dx,p.y+best_t*dy};
++}
++static Point line_candidate(const Point *points,int chosen,Point trial,double radius,
++                            const Constraint *cs,const int *ids,int count,
++                            const Symmetry *sym,LineEvent *events,SolverStats *stats) {
++    return line_candidate_pair(points,chosen,trial,radius,cs,ids,count,sym,events,stats,-1,NULL);
++}
++static inline unsigned char constraint_bad(const Point *p, const Constraint *c) {
++    double d = det(p[c->i-1], p[c->j-1], p[c->k-1]);
++    return !isfinite(d) || (c->sign == 1 ? d <= EPSILON :
++                           c->sign == -1 ? d >= -EPSILON : fabs(d) > EPSILON);
++}
++static void cache_refresh(int n, const Point *p, const Constraint *cs, int m,
++                          unsigned char *bad, int *counts, int *total, SolverStats *stats) {
++    memset(counts,0,n*sizeof(int)); *total=0;
++    for (int a=0;a<m;++a) {
++        bad[a]=constraint_bad(p,&cs[a]); ++stats->evaluations;
++        if (bad[a]) { ++*total; ++counts[cs[a].i-1]; ++counts[cs[a].j-1]; ++counts[cs[a].k-1]; }
++    }
++}
++static void cache_check(int n,const Point *p,const Constraint *cs,int m,
++                        const unsigned char *bad,const int *counts,int total) {
++    int got[MAX_POINTS]={0},sum=0;
++    for(int a=0;a<m;++a) {
++        int v=constraint_bad(p,&cs[a]); assert(v==bad[a]);
++        if(v) { ++sum; ++got[cs[a].i-1]; ++got[cs[a].j-1]; ++got[cs[a].k-1]; }
++    }
++    assert(sum==total);
++    for(int i=0;i<n;++i) assert(got[i]==counts[i]);
++}
++/* Cache one flag per constraint and update only the deduplicated union of
++ * constraints incident to a moved point/orbit. Rejected trials can stop early:
++ * once new violations exceed the old sum, acceptance is impossible. */
++void solve(int n,const Constraint *cs,int m,const int **incident,const int *incident_count,
++           int sub_iterations,double minimum_distance,Point *points,const char *output_file,
++           long long reset_its,int thread_id,synchronization_t *sync,rng_t *rng,
++           const bool *fixed,const Point *fixed_points,const Symmetry *sym,SolverStats *stats) {
++    (void)incident_count; (void)output_file;
++    memset(stats,0,sizeof(*stats));
++    int leader[MAX_POINTS],group_count[MAX_POINTS]={0},*groups[MAX_POINTS]={0};
++    bool group_fixed[MAX_POINTS]={false};
++    for(int i=0;i<n;++i) leader[i]=i;
++    for(int c=0;c<sym->num_cycles;++c)
++        for(int j=0;j<sym->cycle_lengths[c];++j)
++            leader[sym->cycles[c][j]]=sym->cycles[c][0];
++    for(int i=0;i<n;++i) if(fixed[i]) group_fixed[leader[i]]=true;
++    for(int i=0;i<n;++i) if(leader[i]==i) {
++        groups[i]=malloc((size_t)m*sizeof(int));
++        if(!groups[i]) { perror("incident allocation"); exit(1); }
++        for(int a=0;a<m;++a)
++            if(leader[cs[a].i-1]==i||leader[cs[a].j-1]==i||leader[cs[a].k-1]==i)
++                groups[i][group_count[i]++]=a;
++    }
++    unsigned char *bad=malloc((size_t)m),*candidate_bad=malloc((size_t)m);
++    LineEvent *events=solver_options.line_every?malloc(4*(size_t)m*sizeof(LineEvent)):NULL;
++    int *pair_ids=solver_options.pair_every?malloc((size_t)m*sizeof(int)):NULL;
++    if(solver_options.pair_every && !pair_ids) { perror("pair allocation"); exit(1); }
++    if(solver_options.line_every && !events) { perror("line allocation"); exit(1); }
++    if(!bad||!candidate_bad) { perror("cache allocation"); exit(1); }
++    if(solver_options.warm) memcpy(points,solver_options.initial,n*sizeof(Point));
++    else generate_random_assignment(n,points,rng);
++    for(int i=0;i<n;++i) if(fixed[i]) points[i]=fixed_points[i];
++    enforce_symmetry(sym,points);
++    struct timespec start=get_time();
++    int total,counts[MAX_POINTS],maxp;
++    double min_distance=0;
++    cache_refresh(n,points,cs,m,bad,counts,&total,stats);
++    if(minimum_distance>0)
++        evaluate(points,n,cs,m,incident,minimum_distance,&total,counts,&maxp,&min_distance,-1,-1);
++    sync_broadcast_new_solution(sync,points,total);
++    long long since_improvement=0;
++    double radii[sub_iterations];
++    for(int s=0;s<sub_iterations;++s)
++        radii[s]=fmax(solver_options.minimum_radius,solver_options.maximum_radius/pow(2,s));
++    while(total>0) {
++        long long it=stats->iterations;
++        if(atomic_load_explicit(&interrupt_requested,memory_order_relaxed) ||
++           (solver_options.iterations && it>=solver_options.iterations) ||
++           (solver_options.seconds>0 && elapsed_time_sec(start,get_time())>=solver_options.seconds) ||
++           sync_should_stop(sync)) break;
++        if(since_improvement>reset_its) {
++            ++stats->restarts;
++            sync_get_best_solution(sync,points,&total,rng);
++            for(int i=0;i<n;++i) if(fixed[i]) points[i]=fixed_points[i];
++            enforce_symmetry(sym,points);
++            Point best[MAX_POINTS],test[MAX_POINTS];
++            int best_score=INT32_MAX;
++            for(int attempt=0;attempt<100;++attempt) {
++                memcpy(test,points,n*sizeof(Point));
++                for(int j=0;j<n;++j) if(leader[j]==j&&!group_fixed[j])
++                    test[j]=random_point_in_ball(points[j],0.2,rng);
++                enforce_symmetry(sym,test);
++                int score,cc[MAX_POINTS],mp; double md;
++                evaluate(test,n,cs,m,incident,minimum_distance,&score,cc,&mp,&md,-1,-1);
++                stats->evaluations+=m;
++                if(score<best_score) { best_score=score; memcpy(best,test,n*sizeof(Point)); }
++            }
++            if(best_score<total || rng_float(rng)<0.3) memcpy(points,best,n*sizeof(Point));
++            cache_refresh(n,points,cs,m,bad,counts,&total,stats);
++            if(minimum_distance>0)
++                evaluate(points,n,cs,m,incident,minimum_distance,&total,counts,&maxp,&min_distance,-1,-1);
++            sync_broadcast_new_solution(sync,points,total);
++            since_improvement=0;
++            if(!total) break;
++        }
++        if(!solver_options.quiet && it%(reset_its/2)==0)
++            sync_printf(sync,"[Thread %d] [t %.3f s] [iterations %lld] [unsat %d]\n",
++                        thread_id,elapsed_time_sec(start,get_time()),it,total);
++        for(int s=0;s<sub_iterations;++s) {
++            int chosen=leader[sample_proportional(counts,n,rng)];
++            if(group_fixed[chosen]) continue;
++            ++stats->proposals;
++            Point test[MAX_POINTS]; memcpy(test,points,n*sizeof(Point));
++            test[chosen]=random_point_in_ball(points[chosen],radii[s],rng);
++            int second=-1,*ids=groups[chosen],gc=group_count[chosen];
++            if(solver_options.pair_every && stats->proposals%solver_options.pair_every==0) {
++                for(int attempt=0;attempt<8;++attempt) {
++                    int candidate=leader[sample_proportional(counts,n,rng)];
++                    if(candidate!=chosen && !group_fixed[candidate]) { second=candidate; break; }
++                }
++                if(second>=0) {
++                    ++stats->paired_proposals;
++                    test[second]=random_point_in_ball(points[second],radii[s],rng);
++                    ids=pair_ids; gc=0;
++                    for(int a=0;a<m;++a) {
++                        int x=leader[cs[a].i-1],y=leader[cs[a].j-1],z=leader[cs[a].k-1];
++                        if(x==chosen||y==chosen||z==chosen||x==second||y==second||z==second)
++                            ids[gc++]=a;
++                    }
++                }
++            }
++            if(solver_options.line_every && minimum_distance<=0 &&
++               stats->proposals%solver_options.line_every==0) {
++                ++stats->line_proposals;
++                if(second<0)
++                    test[chosen]=line_candidate(points,chosen,test[chosen],radii[s],cs,ids,gc,sym,events,stats);
++                else
++                    test[chosen]=line_candidate_pair(points,chosen,test[chosen],radii[s],cs,ids,gc,
++                                                    sym,events,stats,second,&test[second]);
++            }
++            enforce_symmetry(sym,test);
++            int old_local=0,new_local=0;
++            int next_counts[MAX_POINTS],next_max; double next_min;
++            if(minimum_distance>0) {
++                old_local=total;
++                evaluate(test,n,cs,m,incident,minimum_distance,&new_local,next_counts,&next_max,&next_min,-1,-1);
++                stats->evaluations+=m;
++            } else {
++                if(!solver_options.reference && sym->num_cycles==0 && second<0) old_local=counts[chosen];
++                else for(int j=0;j<gc;++j) {
++                    if(solver_options.reference) {
++                        old_local+=constraint_bad(points,&cs[ids[j]]); ++stats->evaluations;
++                    } else old_local+=bad[ids[j]];
++                }
++                for(int j=0;j<gc;++j) {
++                    candidate_bad[j]=constraint_bad(test,&cs[ids[j]]);
++                    new_local+=candidate_bad[j]; ++stats->evaluations;
++                    if(!solver_options.reference && new_local>old_local) {
++                        ++stats->early_rejections; break;
++                    }
++                }
++            }
++            int improvement=new_local-old_local;
++            if(improvement>0) continue;
++            ++stats->accepted;
++            memcpy(points,test,n*sizeof(Point));
++            if(minimum_distance>0) { total=new_local; memcpy(counts,next_counts,n*sizeof(int)); }
++            else {
++                for(int j=0;j<gc;++j) {
++                    int a=ids[j],change=(int)candidate_bad[j]-bad[a];
++                    if(change) {
++                        counts[cs[a].i-1]+=change; counts[cs[a].j-1]+=change; counts[cs[a].k-1]+=change;
++                        bad[a]=candidate_bad[j];
++                    }
++                }
++                total+=improvement;
++            }
++            if(improvement<0) {
++                ++stats->improvements; sync_broadcast_new_solution(sync,points,total);
++                since_improvement=0; break;
++            }
++        }
++        ++stats->iterations; ++since_improvement;
++        if(minimum_distance<=0 && solver_options.check_every>0 && stats->iterations%solver_options.check_every==0)
++            cache_check(n,points,cs,m,bad,counts,total);
++    }
++    if(!total) { sync_broadcast_new_solution(sync,points,0); sync_set_stop(sync); }
++    stats->final_violations=total; stats->seconds=elapsed_time_sec(start,get_time());
++    free(bad); free(candidate_bad); free(events); free(pair_ids);
++    for(int i=0;i<n;++i) free(groups[i]);
++}

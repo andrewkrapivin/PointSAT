@@ -1,0 +1,78 @@
+{
+  "description": "Eight matched SAT seeds0..7;2workers;15s per realization; identical upstream native binary with explicit empty -f/-c.",
+  "native_sha256": "f5c0819778eba20ac1d8c1f231e922ac0f309372e8d79db9476aca801200b98c",
+  "runs": [
+    {
+      "label": "before",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "-u",
+        "improvements/benchmarks/baseline_snapshot/PointSAT.py",
+        "/home/andrew/PointSAT/improvements/pipeline/paired_pipeline/before.json"
+      ],
+      "wall_seconds": 91.94500335000339,
+      "cpu_seconds": 179.931761,
+      "returncode": 0,
+      "timed_out": false,
+      "settings": {
+        "base_file": "7gon-6hole-23-compact.cnf",
+        "n": 23,
+        "solution_generation": "scranfilize",
+        "n_solutions": 8,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/pipeline/localizer_baseline_safe.sh",
+        "solver_timeout": 90,
+        "continue_if_realized": false,
+        "output_folder": "improvements/pipeline/paired_pipeline/before"
+      },
+      "records": 16,
+      "realized": 0,
+      "sat_models": 8,
+      "raw_results": "improvements/pipeline/paired_pipeline/before/raw_results.jsonl"
+    },
+    {
+      "label": "after",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "-u",
+        "PointSAT.py",
+        "/home/andrew/PointSAT/improvements/pipeline/paired_pipeline/after.json"
+      ],
+      "wall_seconds": 79.79138227901421,
+      "cpu_seconds": 156.725553,
+      "returncode": 0,
+      "timed_out": false,
+      "settings": {
+        "base_file": "7gon-6hole-23-compact.cnf",
+        "n": 23,
+        "solution_generation": "scranfilize",
+        "n_solutions": 8,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/pipeline/localizer_baseline_safe.sh",
+        "solver_timeout": 90,
+        "continue_if_realized": false,
+        "output_folder": "improvements/pipeline/paired_pipeline/after"
+      },
+      "records": 16,
+      "realized": 0,
+      "sat_models": 8,
+      "raw_results": "improvements/pipeline/paired_pipeline/after/raw_results.jsonl"
+    }
+  ]
+}

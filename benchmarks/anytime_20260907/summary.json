@@ -1,0 +1,522 @@
+{
+  "registered_trials": 560,
+  "completed_trials": 560,
+  "complete": true,
+  "attempted_trials": 560,
+  "incomplete_attempts": 0,
+  "milestones": [
+    30,
+    60,
+    120
+  ],
+  "horizon_seconds": 120,
+  "families": {
+    "gons32": {
+      "registered_targets": 20,
+      "arms": {
+        "original": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2361.850336,
+          "parent_wall_seconds": 2400.517115228169,
+          "posthoc_cpu_seconds": 30.645187999999997,
+          "posthoc_wall_seconds": 31.12845009105513,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_plain": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2378.116322,
+          "parent_wall_seconds": 2409.756039749016,
+          "posthoc_cpu_seconds": 44.949633999999996,
+          "posthoc_wall_seconds": 45.507725246890914,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_line": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2372.9725320000002,
+          "parent_wall_seconds": 2410.563434978132,
+          "posthoc_cpu_seconds": 42.206319,
+          "posthoc_wall_seconds": 42.84830887900898,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_pair": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2376.612479,
+          "parent_wall_seconds": 2410.1718700331403,
+          "posthoc_cpu_seconds": 42.455086,
+          "posthoc_wall_seconds": 43.09882705612108,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_retry": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2375.911731,
+          "parent_wall_seconds": 2409.390434024972,
+          "posthoc_cpu_seconds": 48.468381,
+          "posthoc_wall_seconds": 49.067799001932144,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_feedback": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2376.404789,
+          "parent_wall_seconds": 2407.4751652718405,
+          "posthoc_cpu_seconds": 48.600034,
+          "posthoc_wall_seconds": 49.26091528509278,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        }
+      }
+    },
+    "mixed23": {
+      "registered_targets": 20,
+      "arms": {
+        "original": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2337.435011,
+          "parent_wall_seconds": 2400.491354694008,
+          "posthoc_cpu_seconds": 4.296487,
+          "posthoc_wall_seconds": 4.584306832810398,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_plain": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2341.450515,
+          "parent_wall_seconds": 2410.1051620428916,
+          "posthoc_cpu_seconds": 6.243397,
+          "posthoc_wall_seconds": 6.545706040225923,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_line": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2338.891343,
+          "parent_wall_seconds": 2410.124071954051,
+          "posthoc_cpu_seconds": 6.539802,
+          "posthoc_wall_seconds": 6.823226042906754,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_pair": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2339.739421,
+          "parent_wall_seconds": 2410.0919314501225,
+          "posthoc_cpu_seconds": 5.94184,
+          "posthoc_wall_seconds": 6.260158313030843,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_retry": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2336.374284,
+          "parent_wall_seconds": 2410.125870366057,
+          "posthoc_cpu_seconds": 6.041721,
+          "posthoc_wall_seconds": 6.4060313101508655,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_feedback": {
+          "trials": 20,
+          "verified": 4,
+          "milestones": {
+            "30": 0,
+            "60": 4,
+            "120": 4
+          },
+          "parent_cpu_seconds": 2058.57092,
+          "parent_wall_seconds": 2117.5252671379712,
+          "posthoc_cpu_seconds": 8.107728,
+          "posthoc_wall_seconds": 8.410610168066341,
+          "deadline_censored": 16,
+          "status_counts": {
+            "SOLVED": 4,
+            "TIME_LIMIT": 16
+          }
+        }
+      }
+    },
+    "caps26": {
+      "registered_targets": 20,
+      "arms": {
+        "original": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2333.686814,
+          "parent_wall_seconds": 2400.4597899218206,
+          "posthoc_cpu_seconds": 8.255843,
+          "posthoc_wall_seconds": 8.629995936062187,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_plain": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2334.028257,
+          "parent_wall_seconds": 2406.209989684983,
+          "posthoc_cpu_seconds": 11.735532,
+          "posthoc_wall_seconds": 12.040224209078588,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_line": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2332.037203,
+          "parent_wall_seconds": 2405.2791719038505,
+          "posthoc_cpu_seconds": 11.794748,
+          "posthoc_wall_seconds": 12.162234778166749,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_pair": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2334.500904,
+          "parent_wall_seconds": 2406.1941389019485,
+          "posthoc_cpu_seconds": 10.941811,
+          "posthoc_wall_seconds": 11.309562581125647,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_retry": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2331.735386,
+          "parent_wall_seconds": 2406.206291979004,
+          "posthoc_cpu_seconds": 11.451374,
+          "posthoc_wall_seconds": 11.768643410818186,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_feedback": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2333.103675,
+          "parent_wall_seconds": 2404.6056598499417,
+          "posthoc_cpu_seconds": 11.951920999999999,
+          "posthoc_wall_seconds": 12.292259660025593,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        }
+      }
+    },
+    "symmetry19": {
+      "registered_targets": 20,
+      "arms": {
+        "original": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2330.771929,
+          "parent_wall_seconds": 2400.625736334885,
+          "posthoc_cpu_seconds": 4.8878379999999995,
+          "posthoc_wall_seconds": 5.23485593998339,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v4_fixed": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2342.733673,
+          "parent_wall_seconds": 2410.982673536055,
+          "posthoc_cpu_seconds": 5.206710999999999,
+          "posthoc_wall_seconds": 5.525003170128912,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v4_retry": {
+          "trials": 20,
+          "verified": 1,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 1
+          },
+          "parent_cpu_seconds": 2328.885194,
+          "parent_wall_seconds": 2398.2286468561506,
+          "posthoc_cpu_seconds": 9.132356999999999,
+          "posthoc_wall_seconds": 9.467416694911662,
+          "deadline_censored": 19,
+          "status_counts": {
+            "TIME_LIMIT": 19,
+            "SOLVED": 1
+          }
+        },
+        "v4_feedback": {
+          "trials": 20,
+          "verified": 2,
+          "milestones": {
+            "30": 0,
+            "60": 1,
+            "120": 2
+          },
+          "parent_cpu_seconds": 2256.265426,
+          "parent_wall_seconds": 2289.3565538890543,
+          "posthoc_cpu_seconds": 12.913038,
+          "posthoc_wall_seconds": 13.346063994045835,
+          "deadline_censored": 18,
+          "status_counts": {
+            "TIME_LIMIT": 18,
+            "SOLVED": 2
+          }
+        }
+      }
+    },
+    "holes29": {
+      "registered_targets": 20,
+      "arms": {
+        "original": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2337.620174,
+          "parent_wall_seconds": 2400.5236631339067,
+          "posthoc_cpu_seconds": 4.990095999999999,
+          "posthoc_wall_seconds": 5.295123870833777,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_plain": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2342.807094,
+          "parent_wall_seconds": 2410.5859237549594,
+          "posthoc_cpu_seconds": 7.491182,
+          "posthoc_wall_seconds": 7.838216500065755,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_line": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2343.721992,
+          "parent_wall_seconds": 2410.642354126845,
+          "posthoc_cpu_seconds": 7.683363,
+          "posthoc_wall_seconds": 7.976408715185244,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_pair": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2341.580721,
+          "parent_wall_seconds": 2410.6064281999716,
+          "posthoc_cpu_seconds": 7.82283,
+          "posthoc_wall_seconds": 8.166527583205607,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_retry": {
+          "trials": 20,
+          "verified": 0,
+          "milestones": {
+            "30": 0,
+            "60": 0,
+            "120": 0
+          },
+          "parent_cpu_seconds": 2340.072599,
+          "parent_wall_seconds": 2410.2830272040446,
+          "posthoc_cpu_seconds": 7.956795,
+          "posthoc_wall_seconds": 8.259507210867014,
+          "deadline_censored": 20,
+          "status_counts": {
+            "TIME_LIMIT": 20
+          }
+        },
+        "v6_feedback": {
+          "trials": 20,
+          "verified": 12,
+          "milestones": {
+            "30": 0,
+            "60": 5,
+            "120": 12
+          },
+          "parent_cpu_seconds": 1726.963519,
+          "parent_wall_seconds": 1759.2806288388674,
+          "posthoc_cpu_seconds": 16.729426,
+          "posthoc_wall_seconds": 17.17797076306306,
+          "deadline_censored": 8,
+          "status_counts": {
+            "SOLVED": 12,
+            "TIME_LIMIT": 8
+          }
+        }
+      }
+    }
+  },
+  "parent_cpu_seconds_all_attempts": 64684.844243,
+  "posthoc_cpu_seconds_all_attempts": 445.440482
+}

@@ -1,0 +1,137 @@
+{
+  "method": "known_erdos_szekeres_construction",
+  "runs_per_target": 100,
+  "timing_units": "seconds",
+  "cpu_scope": "child user+system time, including process startup and output write",
+  "construction_wall_scope": "C++ steady_clock, construction plus output write; excludes process startup",
+  "targets": [
+    {
+      "n": 32,
+      "gon": 7,
+      "cap": 0,
+      "deterministic_sha256": "aaeee65e4996e372405f53e40be06f0c0e2c6b3b6034ecf40347a3fc24584544",
+      "cpu_seconds": {
+        "min": 0.022483999999999817,
+        "median": 0.024178000000000026,
+        "max": 0.02718299999999986,
+        "mean": 0.024242609999999994
+      },
+      "construction_wall_seconds": {
+        "min": 0.0213856,
+        "median": 0.02316625,
+        "max": 0.0513311,
+        "mean": 0.024869463
+      },
+      "process_wall_seconds": {
+        "min": 0.02281150600174442,
+        "median": 0.024708247001399286,
+        "max": 0.054936913977144286,
+        "mean": 0.026653720689355394
+      },
+      "verification": {
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 3365856,
+        "hole_subsets_checked": 0,
+        "convex_hole_size_subsets": 0,
+        "hull_layers": [
+          6,
+          6,
+          6,
+          5,
+          6,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          264,
+          488
+        ],
+        "bbox_width": 264,
+        "bbox_height": 488,
+        "bbox_area": 128832,
+        "min_determinant": 1,
+        "max_determinant": 128832,
+        "min_squared_distance": 26,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.401484
+      }
+    },
+    {
+      "n": 26,
+      "gon": 7,
+      "cap": 5,
+      "deterministic_sha256": "1be72593af8b910d3d0c56672114936405cb059651bafc7d572de5e5c647d964",
+      "cpu_seconds": {
+        "min": 0.010014999999999441,
+        "median": 0.011232999999999944,
+        "max": 0.012304999999999774,
+        "mean": 0.011148869999999969
+      },
+      "construction_wall_seconds": {
+        "min": 0.00887045,
+        "median": 0.0100028,
+        "max": 0.0239076,
+        "mean": 0.0101435756
+      },
+      "process_wall_seconds": {
+        "min": 0.010327327996492386,
+        "median": 0.011633207977865823,
+        "max": 0.027153614995768294,
+        "mean": 0.011799086538376287
+      },
+      "verification": {
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 65780,
+        "gon_subsets_checked": 657800,
+        "hole_subsets_checked": 0,
+        "convex_hole_size_subsets": 0,
+        "hull_layers": [
+          6,
+          6,
+          6,
+          3,
+          4,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          95,
+          196
+        ],
+        "bbox_width": 95,
+        "bbox_height": 196,
+        "bbox_area": 18620,
+        "min_determinant": 1,
+        "max_determinant": 14978,
+        "min_squared_distance": 26,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0727874
+      }
+    }
+  ]
+}

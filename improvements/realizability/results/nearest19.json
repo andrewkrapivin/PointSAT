@@ -1,0 +1,11 @@
+{
+  "input": "improvements/lazy19/results/distance19542/model000.or",
+  "n": 19,
+  "inequalities": 116280,
+  "lp_status": 0,
+  "lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "status": "NUMERIC_CANDIDATE_UNCERTIFIED",
+  "certificate": null,
+  "blocking_clause": null,
+  "seconds": 21.470442829013336
+}

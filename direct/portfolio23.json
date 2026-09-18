@@ -1,0 +1,10 @@
+[
+  {"name":"overmars23-cold","executable":"direct/overmars","args":["--n",23,"--gon",7,"--hole",6,"--seconds",3600,"--seed",104729,"--triangle","--boundary","--intersections"],"gon":7,"hole":6,"target_n":23},
+  {"name":"overmars23-exact-cold","executable":"direct/arrangement","args":["--grow","--n",23,"--gon",7,"--hole",6,"--seconds",3600,"--seed",32452843,"--triangle","--boundary","--intersections","--exact"],"gon":7,"hole":6,"target_n":23},
+  {"name":"triangle23-anneal","executable":"direct/triangle","args":["--n",23,"--seconds",3600,"--seed",71,"--temperature",1.0,"--mode","anneal"],"gon":7,"hole":6,"target_n":23},
+  {"name":"triangle23-late","executable":"direct/triangle","args":["--n",23,"--seconds",3600,"--seed",65,"--mode","late"],"gon":7,"hole":6,"target_n":23},
+  {"name":"coordinates23-anneal","executable":"direct/search","args":["--n",23,"--seconds",3600,"--seed",1,"--mode","anneal","--stop-on-solution"],"gon":7,"hole":6,"target_n":23},
+  {"name":"coordinates23-late","executable":"direct/search","args":["--n",23,"--seconds",3600,"--seed",2,"--mode","late","--stop-on-solution"],"gon":7,"hole":6,"target_n":23},
+  {"name":"coordinates23-repair","executable":"direct/search","args":["--n",23,"--seconds",3600,"--seed",11,"--mode","repair","--temperature",0.6,"--stop-on-solution"],"gon":7,"hole":6,"target_n":23},
+  {"name":"overmars23-exact-direct22","executable":"direct/arrangement","args":["--grow","--n",23,"--input","direct/results/2026-09-05/pool-hull3-snapshot22.pts","--gon",7,"--hole",6,"--seconds",3600,"--seed",67867967,"--triangle","--boundary","--intersections","--exact"],"gon":7,"hole":6,"target_n":23}
+]

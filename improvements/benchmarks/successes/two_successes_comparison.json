@@ -1,0 +1,10 @@
+{
+  "first": "improvements/benchmarks/successes/sat-guided23-case33/normalized.pts",
+  "second": "improvements/benchmarks/successes/feedback23-sample3/normalized.pts",
+  "n": 23,
+  "triples": 1771,
+  "changed_labeled_orientation_signs": 729,
+  "isomorphic_order_types_allowing_reflection": false,
+  "first_canonical_sha256": "07862266e1396c910c631034bbc624b84b0e1f67f229f59323edb42d6a45741c",
+  "second_canonical_sha256": "98569e292d90fa64549e25b624da4317140d8dc28665a3320f4ab74a86e42c04"
+}

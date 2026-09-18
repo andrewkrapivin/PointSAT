@@ -1,0 +1,47 @@
+{
+  "input_signature": {
+    "real_sha256": "c3a2daec06855a3f8173d2f808f64ed68a879a822fb9537a8545d3b5e3dfbbec",
+    "family": "holes29",
+    "n": 29,
+    "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+    "mapping_sha256": null,
+    "cycles_sha256": null,
+    "orient_sha256": null
+  },
+  "source": "/home/andrew/PointSAT/benchmarks/success29/extension-trial8/stage1.radial.real",
+  "n": 29,
+  "family": "holes29",
+  "numeric_geometry": {
+    "n": 29,
+    "gon": 0,
+    "hole": 6,
+    "valid": true,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "gon_subsets_checked": 0,
+    "hole_subsets_checked": 475020,
+    "seconds": 0.380608
+  },
+  "numeric_cnf": {
+    "mapping_conflicts": [],
+    "mapping_consistent": true,
+    "satisfiable": true,
+    "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+    "variables": 60538,
+    "clauses": 825978,
+    "projected_orientation_variables": 3654,
+    "violated_clauses": 0,
+    "wrong_orientation_assumptions": 0,
+    "full_model": "/home/andrew/PointSAT/benchmarks/success29/extension-trial8/proof/numeric.cnf.model",
+    "full_model_sha256": "3b424e5dd48a1246094835b7039882db7759cf2c2aebfd2a70bceaf2b752033c",
+    "seconds": 0.6038196870358661
+  },
+  "integer_points": "/home/andrew/PointSAT/benchmarks/success29/extension-trial8/proof/points.pts",
+  "integer_points_sha256": "5539e1fbc9c6d01f19a44c8bc672a6f24bc8f9b06b4783d4e0fa036a4b576c59",
+  "exact_C3_symmetry_certified": false,
+  "accepted": true,
+  "certificate": "/home/andrew/PointSAT/benchmarks/success29/extension-trial8/proof/certificate.json",
+  "seconds": 1.2053725690348074
+}

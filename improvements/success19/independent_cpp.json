@@ -1,0 +1,32 @@
+{
+  "n": 19,
+  "arithmetic": "exact_integer_Qsqrt3",
+  "exact_C3_symmetry": true,
+  "valid": true,
+  "input_basis": "Cartesian",
+  "center_original_index": 19,
+  "collinear_triples": 0,
+  "duplicate_pairs": 0,
+  "orientation_changes_from_rounded_input": 820,
+  "constraint_count": 969,
+  "orientation_violations": 0,
+  "six_subsets_checked": 27132,
+  "interior_histogram": [
+    0,
+    15,
+    12,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "first_forbidden_hexagon": [],
+  "seconds": 0.121465
+}

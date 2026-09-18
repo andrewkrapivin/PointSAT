@@ -1,0 +1,20 @@
+{
+  "wall_seconds": 131.017302008986,
+  "jobs": 20,
+  "sat_models": 4,
+  "realization_attempts": 16,
+  "feedback_attempts": 0,
+  "realized": 0,
+  "errors": 0,
+  "first_realized_seconds": null,
+  "stage_worker_seconds": {
+    "scranfilize": 1.9634215460391715,
+    "sat": 12.939732800994534,
+    "checker_initialization": 1.7964037760102656,
+    "flippability": 1.365613715024665,
+    "localizer": 240.07239008805482,
+    "exact_decode": 0.1067870399565436,
+    "cnf_check": 0.009495481004705653
+  },
+  "interrupted": false
+}

@@ -1,0 +1,25 @@
+{
+  "label": "job048-mixed23-target_margin",
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/frozen/PointSAT.py",
+    "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/configs/job048-mixed23-target_margin.json",
+    "--out",
+    "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job048-mixed23-target_margin"
+  ],
+  "budget_seconds": 600.0,
+  "started_utc": "2026-09-05T08:20:15.735932+00:00",
+  "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job048-mixed23-target_margin",
+  "command_file_sha256": {
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python": "a92f0f95e883390c7256b2e441484aac06b1002dbe1d924141a77c8d82f96223",
+    "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/frozen/PointSAT.py": "6969501ae7ebfe8be2c63db31e4c073220fa8d1931ac4d9936db3f0a35d391e1"
+  },
+  "pid": 271753,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": false,
+  "wall_seconds": 178.6373340249993,
+  "ended_utc": "2026-09-05T08:23:14.381252+00:00",
+  "remaining_audit_pids": {},
+  "audit_returncode": 0
+}

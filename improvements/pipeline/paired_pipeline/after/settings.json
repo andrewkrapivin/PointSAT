@@ -1,0 +1,50 @@
+{
+  "output_folder": "improvements/pipeline/paired_pipeline/after",
+  "workers": 2,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "localizer_attempt_levels": 1,
+  "localizer_attempt_timeouts": [
+    15
+  ],
+  "localizer_attempt_branches": [
+    1,
+    1,
+    1
+  ],
+  "localizer_attempt_thresholds": [
+    10,
+    7,
+    4
+  ],
+  "n": 23,
+  "localizer_loc": "improvements/pipeline/localizer_baseline_safe.sh",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "continue_if_realized": false,
+  "solution_generation": "scranfilize",
+  "n_solutions": 8,
+  "solver_timeout": 90,
+  "scranfilize_timeout": 60,
+  "interrupt_grace_seconds": 2,
+  "seed": 1,
+  "sat_seed_start": 0,
+  "localizer_iterations": 10,
+  "localizer_restarts": 30000,
+  "localizer_extra_args": [],
+  "sat_extra_args": [
+    "--quiet",
+    "--plain"
+  ],
+  "warm_start_retries": false,
+  "localizer_warm_start_flag": "-w",
+  "localizer_native_time_limit": false,
+  "stop_on_solution": false,
+  "feedback_rounds": 0,
+  "feedback_max_relaxed": 64,
+  "feedback_max_solves": 64,
+  "feedback_conflict_budget": 1000,
+  "feedback_seconds": 5,
+  "feedback_remove_flippable": true,
+  "base_file": "7gon-6hole-23-compact.cnf",
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize"
+}

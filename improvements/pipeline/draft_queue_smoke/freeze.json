@@ -1,0 +1,32 @@
+{
+  "description": "Oversubscribed deterministic queue; supervisor deadline stops unused jobs. At mosttwo queue workers, one CPUworker/native thread perjob.",
+  "deadline_utc": "2026-09-05T14:00:00+00:00",
+  "jobs": 6,
+  "family_counts": {
+    "mixed23": 2,
+    "symmetry19": 1,
+    "gons32": 1,
+    "holes29": 1,
+    "caps26": 1
+  },
+  "pipeline_snapshot_sha256": {
+    "PointSAT.py": "6969501ae7ebfe8be2c63db31e4c073220fa8d1931ac4d9936db3f0a35d391e1",
+    "flippable2.py": "b943726accd6de9681793a5abbeb29b9535f550b8223f1134fcbad91352426e2",
+    "sat_orient_conversion.py": "5fd8d2f804d4c10ff6529d8a5922d84fedc8aa5c9c5333a569253616a57616f1",
+    "improvements/pipeline/runner.py": "deb360ea321ce179e61cfd00169315d9a9da80673457d490c15a13de5f1ed94f",
+    "improvements/pipeline/orientation_map.py": "92c9265d6e2370a17130eb7459d69816f8f1ec30b9f6a61204e34fde400b3e10",
+    "improvements/__init__.py": "584b37d346af137c3ea5345e520de6924b1d067ad8f59481d55e15a93a297538",
+    "improvements/pipeline/__init__.py": "584b37d346af137c3ea5345e520de6924b1d067ad8f59481d55e15a93a297538"
+  },
+  "cnf_sha256": {
+    "mixed23": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+    "holes29": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+    "gons32": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+    "caps26": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+    "symmetry19": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b"
+  },
+  "native_sha256": {
+    "v4": "5033c4f1a8c206f28fee43bfa39f82a4b1787b17e7701a795268c2e5d4f7720b",
+    "v6": "5fab7d4c1fa7709c603f3f75771239b63a5533b2a36644fcc51fee44daf118a7"
+  }
+}

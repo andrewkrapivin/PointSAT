@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "random_general_position_geometry_fixtures": 40,
+  "learned_cuts_falsified_by_input": 2126,
+  "all_n19_cuts_satisfied_by_known_valid_abstract_target": true,
+  "base_clause_assignment_checks": 3450300,
+  "known_abstract_target_histogram": [
+    0,
+    15,
+    12,
+    0,
+    4,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

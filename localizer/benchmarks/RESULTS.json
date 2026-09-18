@@ -1,0 +1,96 @@
+{
+  "registration": {
+    "description": "One serial native process at a time; fixed iterations and identical seed/input. Caps26 keeps --ordered-x in every arm. No speed claim unless coordinates and all search counters match.",
+    "arguments": {
+      "output": "/home/andrew/PointSAT/localizer/benchmarks/runs/ablation-20260906",
+      "iterations": 300000,
+      "repeats": 5,
+      "seed": 42
+    },
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "native_sha256": {
+      "v6": "8b5332a00d6e57610d5a5f17e275ac13d93266ffb4c5eb2b9d32aee6ff5d7371",
+      "sampling": "1033e897c4c09e9d05abc513d4ebee97fafa54cd21eda8b85a0626ecfd023208",
+      "atomic": "cf43cd5983edfab59b28398e9274e8c9c7aeb8fab15403f7ce03676e8268b0b6",
+      "both": "bf0d5cd74a9edec8102e02bbd262810432d1ca84c8143901af73d363898a3a3c"
+    },
+    "input_sha256": {
+      "mixed23": "e0aace8e7c4b689c94c0dd777e71553d5b29560e3d57312f1ecd6000d604b80d",
+      "holes29": "6a0177f847dd740cae15f068175db36aa9bd7b2adeca82d80ff2f990bcf55266",
+      "gons32": "a943e10b44cf24c7315c5aca5d1b96183af48524670ff793d6d8d3d0a68882c5",
+      "caps26": "ea531b0d89408ecf7c38d9c3c56fcae164c30b62d835e1b1dc1d0782614a5f73"
+    }
+  },
+  "all_coordinate_and_counter_pairs_identical": true,
+  "families": {
+    "mixed23": {
+      "median_cpu_seconds": {
+        "v6": 1.023577,
+        "sampling": 1.014740000000001,
+        "atomic": 1.0383049999999967,
+        "both": 1.0147939999999998
+      },
+      "cpu_speedup_over_v6": {
+        "v6": 1.0,
+        "sampling": 1.0087086347241647,
+        "atomic": 0.9858153432758228,
+        "both": 1.0086549585433104
+      },
+      "actual_iterations": 300000,
+      "proposals": 2998262,
+      "best_violations": 8
+    },
+    "holes29": {
+      "median_cpu_seconds": {
+        "v6": 2.2532609999999984,
+        "sampling": 2.3346889999999934,
+        "atomic": 2.2560500000000077,
+        "both": 2.3246140000000026
+      },
+      "cpu_speedup_over_v6": {
+        "v6": 1.0,
+        "sampling": 0.9651225495130207,
+        "atomic": 0.9987637685334947,
+        "both": 0.9693054416776273
+      },
+      "actual_iterations": 300000,
+      "proposals": 2998015,
+      "best_violations": 33
+    },
+    "gons32": {
+      "median_cpu_seconds": {
+        "v6": 3.277339999999993,
+        "sampling": 3.3476270000000086,
+        "atomic": 3.378930999999994,
+        "both": 3.3930430000000027
+      },
+      "cpu_speedup_over_v6": {
+        "v6": 1.0,
+        "sampling": 0.9790039332338951,
+        "atomic": 0.9699339820789471,
+        "both": 0.9658999311237702
+      },
+      "actual_iterations": 300000,
+      "proposals": 2997297,
+      "best_violations": 140
+    },
+    "caps26": {
+      "median_cpu_seconds": {
+        "v6": 2.505779999999994,
+        "sampling": 2.4599090000000112,
+        "atomic": 2.504810000000017,
+        "both": 2.7411060000000247
+      },
+      "cpu_speedup_over_v6": {
+        "v6": 1.0,
+        "sampling": 1.0186474377710648,
+        "atomic": 1.0003872549215218,
+        "both": 0.9141492521631674
+      },
+      "actual_iterations": 300000,
+      "proposals": 2998785,
+      "best_violations": 51
+    }
+  }
+}

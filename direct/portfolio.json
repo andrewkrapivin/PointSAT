@@ -1,0 +1,10 @@
+[
+  {"name":"repair23-cold-s11","executable":"direct/search","args":["--n",23,"--gon",7,"--hole",6,"--mode","repair","--temperature",0.6,"--seed",11,"--seconds",1200,"--stop-on-solution"],"gon":7,"hole":6},
+  {"name":"repair23-grid400-s12","executable":"direct/search","args":["--input","direct/seeds/paper23.pts","--gon",7,"--hole",6,"--mode","repair","--temperature",0.5,"--grid",400,"--seed",12,"--seconds",1200,"--stop-on-solution"],"gon":7,"hole":6},
+  {"name":"repair29-cold-s13","executable":"direct/search","args":["--n",29,"--gon",0,"--hole",6,"--mode","repair","--temperature",0.6,"--seed",13,"--seconds",1200,"--stop-on-solution"],"gon":0,"hole":6},
+  {"name":"anneal32-cold-s14","executable":"direct/search","args":["--n",32,"--gon",7,"--hole",0,"--mode","anneal","--temperature",1.0,"--seed",14,"--seconds",1200,"--stop-on-solution"],"gon":7,"hole":0},
+  {"name":"repair23-grid500-s15","executable":"direct/search","args":["--input","direct/seeds/paper23.pts","--gon",7,"--hole",6,"--mode","repair","--temperature",0.3,"--grid",500,"--seed",15,"--seconds",900,"--stop-on-solution"],"gon":7,"hole":6},
+  {"name":"repair23-cold-s16","executable":"direct/search","args":["--n",23,"--gon",7,"--hole",6,"--mode","repair","--temperature",1.2,"--seed",16,"--seconds",900,"--stop-on-solution"],"gon":7,"hole":6},
+  {"name":"repair26cap5-cold-s17","executable":"direct/search","args":["--n",26,"--gon",7,"--hole",0,"--cap",5,"--mode","repair","--temperature",0.6,"--seed",17,"--seconds",900,"--stop-on-solution"],"gon":7,"hole":0,"cap":5},
+  {"name":"late29-cold-s18","executable":"direct/search","args":["--n",29,"--gon",0,"--hole",6,"--mode","late","--seed",18,"--seconds",900,"--stop-on-solution"],"gon":0,"hole":6}
+]

@@ -1,0 +1,26 @@
+{
+  "input": "improvements/symmetry19/decoded/center19-adjacent.or",
+  "n": 19,
+  "vertices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    19
+  ],
+  "inequalities": 12870,
+  "lp_status": 2,
+  "lp_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)",
+  "status": "NO_BFP_FOUND",
+  "certificate": null,
+  "blocking_clause": null,
+  "seconds": 1.6199048139969818
+}

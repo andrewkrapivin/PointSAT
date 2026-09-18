@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "case": "holes29-seed19501",
+      "problem": "holes29",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "orientation_sha256": "2e0c5f1525fe0317a5d85bd948f0cfba727a9281c549ce24d964217a38a31bd8",
+      "variables": 60538,
+      "clauses": 825978,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.26443089
+    }
+  ],
+  "all_passed": true
+}

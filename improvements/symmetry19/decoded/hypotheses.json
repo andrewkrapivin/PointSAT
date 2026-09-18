@@ -1,0 +1,249 @@
+[
+  {
+    "center": 1,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 504
+  },
+  {
+    "center": 1,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 429
+  },
+  {
+    "center": 2,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 475
+  },
+  {
+    "center": 2,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 449
+  },
+  {
+    "center": 3,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 459
+  },
+  {
+    "center": 3,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 453
+  },
+  {
+    "center": 4,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 459
+  },
+  {
+    "center": 4,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 463
+  },
+  {
+    "center": 5,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 423
+  },
+  {
+    "center": 5,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 387
+  },
+  {
+    "center": 6,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 395
+  },
+  {
+    "center": 6,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 399
+  },
+  {
+    "center": 7,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 395
+  },
+  {
+    "center": 7,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 408
+  },
+  {
+    "center": 8,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 333
+  },
+  {
+    "center": 8,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 418
+  },
+  {
+    "center": 9,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 296
+  },
+  {
+    "center": 9,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 439
+  },
+  {
+    "center": 10,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 234
+  },
+  {
+    "center": 10,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 427
+  },
+  {
+    "center": 11,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 295
+  },
+  {
+    "center": 11,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 379
+  },
+  {
+    "center": 12,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 230
+  },
+  {
+    "center": 12,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 438
+  },
+  {
+    "center": 13,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 160
+  },
+  {
+    "center": 13,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 410
+  },
+  {
+    "center": 14,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 225
+  },
+  {
+    "center": 14,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 416
+  },
+  {
+    "center": 15,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 169
+  },
+  {
+    "center": 15,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 424
+  },
+  {
+    "center": 16,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 59
+  },
+  {
+    "center": 16,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 430
+  },
+  {
+    "center": 17,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 55
+  },
+  {
+    "center": 17,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 436
+  },
+  {
+    "center": 18,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 87
+  },
+  {
+    "center": 18,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 391
+  },
+  {
+    "center": 19,
+    "layout": "adjacent",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 0,
+    "n": 19,
+    "abstract_convex_hexagons": 34,
+    "interior_histogram": [
+      0,
+      15,
+      12,
+      0,
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "combinatorial_target_met": true
+  },
+  {
+    "center": 19,
+    "layout": "blocks",
+    "primary_variables": 327,
+    "bad_four_point_hulls": 373
+  }
+]

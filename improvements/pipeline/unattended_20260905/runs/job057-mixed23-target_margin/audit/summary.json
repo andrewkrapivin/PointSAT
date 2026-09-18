@@ -1,0 +1,61 @@
+{
+  "pipeline_accepted_attempts": 1,
+  "unique_candidates": 1,
+  "independently_accepted": 1,
+  "rejected": 0,
+  "audits": [
+    {
+      "id": 17,
+      "original_id": 6,
+      "sha256": "128ab57ab15e0864847bd4096a9a142f90b84bb913e8a9f2063437dffadb01d0",
+      "accepted": true,
+      "result": {
+        "input_signature": {
+          "real_sha256": "128ab57ab15e0864847bd4096a9a142f90b84bb913e8a9f2063437dffadb01d0",
+          "family": "mixed23",
+          "n": 23,
+          "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+          "mapping_sha256": null,
+          "cycles_sha256": null,
+          "orient_sha256": null
+        },
+        "source": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job057-mixed23-target_margin/scratch/6_17.real.radial.real",
+        "n": 23,
+        "family": "mixed23",
+        "numeric_geometry": {
+          "n": 23,
+          "gon": 7,
+          "hole": 6,
+          "valid": true,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 0,
+          "gon_subsets_checked": 245157,
+          "hole_subsets_checked": 100947,
+          "seconds": 0.418002
+        },
+        "numeric_cnf": {
+          "mapping_conflicts": [],
+          "mapping_consistent": true,
+          "satisfiable": true,
+          "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+          "variables": 24348,
+          "clauses": 519426,
+          "projected_orientation_variables": 1771,
+          "violated_clauses": 0,
+          "wrong_orientation_assumptions": 0,
+          "full_model": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job057-mixed23-target_margin/audit/sample6-job17/numeric.cnf.model",
+          "full_model_sha256": "1bf07b656cc880118c8c72752ffc9e8a958166fa7e55b0c83dc2f74059204eb3",
+          "seconds": 0.42871660998207517
+        },
+        "integer_points": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job057-mixed23-target_margin/audit/sample6-job17/points.pts",
+        "integer_points_sha256": "c234b14fa2c8a3d29b26df7daa321e8d6e425351fca604500d3d0661fccca32f",
+        "exact_C3_symmetry_certified": false,
+        "accepted": true,
+        "certificate": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job057-mixed23-target_margin/audit/sample6-job17/certificate.json",
+        "seconds": 1.0075028720020782
+      }
+    }
+  ]
+}

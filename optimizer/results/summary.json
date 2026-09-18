@@ -1,0 +1,901 @@
+{
+  "interpretation": "Bounded single-seed compaction experiments; no global optimum or universal speedup claim.",
+  "phases": {
+    "initial_equal_budget": {
+      "source": "results/paired120s-20260906/summary.json",
+      "runs": 12,
+      "valid_runs": 12,
+      "cpu_seconds": 1435.73,
+      "candidate_area_wins": 6,
+      "candidate_area_ties": 0,
+      "candidate_area_regressions": 0,
+      "comparison": [
+        "old",
+        "new"
+      ],
+      "same_preservation_mode": false,
+      "rows": [
+        {
+          "case": "paper23",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 671,
+          "height": 565,
+          "area": 379115,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.64999999999999,
+          "orientation_changes": null,
+          "output_sha256": "bfc2f9215e9f82eee165ba04df092d8b6059a907dffdef1bda900a660c998940"
+        },
+        {
+          "case": "paper23",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 253,
+          "height": 253,
+          "area": 64009,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.3,
+          "orientation_changes": null,
+          "output_sha256": "9718b8be6b6f043d2bb1682dab04f0d1565fe6921846708ec182abb14ced5ef8"
+        },
+        {
+          "case": "archive23-sample7",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 27234,
+          "height": 36540,
+          "area": 995130360,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.43,
+          "orientation_changes": null,
+          "output_sha256": "3d70d09c090e8dc501d75a25b7045935af6677a5b30a27fefa55d9bb3df6cfbc"
+        },
+        {
+          "case": "archive23-sample7",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 686,
+          "height": 1908,
+          "area": 1308888,
+          "layers": [
+            3,
+            3,
+            4,
+            6,
+            4,
+            3
+          ],
+          "cpu_seconds": 119.78999999999999,
+          "orientation_changes": null,
+          "output_sha256": "8298db5cbefe3c3f407b1f24d52092278a7b77a591e22db723bcabbc177cf54c"
+        },
+        {
+          "case": "archive23-sample2",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 108059,
+          "height": 94525,
+          "area": 10214276975,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.49000000000001,
+          "orientation_changes": null,
+          "output_sha256": "f573527b1436711f54cb9296e1cf1ceebb2dc225d5dd7115e9e9db85f855b53b"
+        },
+        {
+          "case": "archive23-sample2",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 238,
+          "height": 315,
+          "area": 74970,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.74000000000001,
+          "orientation_changes": null,
+          "output_sha256": "295ab014980a42da8d2ad4dd233a5f5aacc64104d899555715220fe9d441e530"
+        },
+        {
+          "case": "sat-guided23-case33",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 256366,
+          "height": 125237,
+          "area": 32106508742,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.66000000000001,
+          "orientation_changes": null,
+          "output_sha256": "812428c4b9f44bdb9ad9c6c6e00ac59b99b54df4fadd70d9037ca4ed9cb02b18"
+        },
+        {
+          "case": "sat-guided23-case33",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 4080,
+          "height": 1485,
+          "area": 6058800,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.64,
+          "orientation_changes": null,
+          "output_sha256": "78c14f6f3e7c421060fbab275e94fb6ad8bf12a9b0bbafce0681c7b039b6f0a5"
+        },
+        {
+          "case": "feedback23-sample3",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 252429,
+          "height": 484870,
+          "area": 122395249230,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.85000000000001,
+          "orientation_changes": null,
+          "output_sha256": "9dd3f921eb2cdd03e41b21f4d515afbc8a6f594573fd93fd2be0c3d797321f1a"
+        },
+        {
+          "case": "feedback23-sample3",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 147,
+          "height": 95,
+          "area": 13965,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.78999999999999,
+          "orientation_changes": null,
+          "output_sha256": "c82361f8fa2ad7ba7e91fc7b6c4e8e06b50999e92aa7bf7b7d4ed3e2b7118317"
+        },
+        {
+          "case": "control-margin23-sample6",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 41454,
+          "height": 26999,
+          "area": 1119216546,
+          "layers": [
+            3,
+            5,
+            5,
+            5,
+            4,
+            1
+          ],
+          "cpu_seconds": 119.69,
+          "orientation_changes": null,
+          "output_sha256": "7d432ff9e935b0384bf1f531f8a28c1b171fb16565467728ea1dfbab3cb42cad"
+        },
+        {
+          "case": "control-margin23-sample6",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 1089,
+          "height": 2135,
+          "area": 2325015,
+          "layers": [
+            3,
+            5,
+            5,
+            5,
+            4,
+            1
+          ],
+          "cpu_seconds": 119.7,
+          "orientation_changes": null,
+          "output_sha256": "bf21c410aaf0474369df72f6192de15bb2636ef0b75b9e98e435893b0a791fbb"
+        }
+      ]
+    },
+    "cross_family": {
+      "source": "results/heldout30s-20260906/summary.json",
+      "runs": 12,
+      "valid_runs": 12,
+      "cpu_seconds": 358.98,
+      "candidate_area_wins": 6,
+      "candidate_area_ties": 0,
+      "candidate_area_regressions": 0,
+      "comparison": [
+        "old",
+        "new"
+      ],
+      "same_preservation_mode": false,
+      "rows": [
+        {
+          "case": "heldout23-job090",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 65614,
+          "height": 86892,
+          "area": 5701331688,
+          "layers": [
+            3,
+            4,
+            4,
+            5,
+            5,
+            2
+          ],
+          "cpu_seconds": 29.71,
+          "orientation_changes": 0,
+          "output_sha256": "f52b550333161d2edf2a9a9e67c828ffd09778c7686af003a07d1951ea714cb2"
+        },
+        {
+          "case": "heldout23-job090",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 179,
+          "height": 114,
+          "area": 20406,
+          "layers": [
+            3,
+            4,
+            4,
+            5,
+            5,
+            2
+          ],
+          "cpu_seconds": 29.97,
+          "orientation_changes": 65,
+          "output_sha256": "8776988b706d33401ffb5dfdc2c0abbc3d7c9432386500fefcad80c749a00cfb"
+        },
+        {
+          "case": "heldout23-job072",
+          "label": "old",
+          "family": "mixed23",
+          "valid": true,
+          "width": 152456,
+          "height": 177833,
+          "area": 27111707848,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 29.71,
+          "orientation_changes": 0,
+          "output_sha256": "892af5ae6beef430021c222d89e5070e277e4175da8e60105e355caf73899e25"
+        },
+        {
+          "case": "heldout23-job072",
+          "label": "new",
+          "family": "mixed23",
+          "valid": true,
+          "width": 825,
+          "height": 905,
+          "area": 746625,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 29.98,
+          "orientation_changes": 62,
+          "output_sha256": "d3096669a13f41e67960618e2ec900d8647d4c1d58acf1bcb2cf1ba49aeb0e84"
+        },
+        {
+          "case": "heldout29-trial11",
+          "label": "old",
+          "family": "holes29",
+          "valid": true,
+          "width": 470864,
+          "height": 395697,
+          "area": 186319472208,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.88,
+          "orientation_changes": 0,
+          "output_sha256": "1def296fc70bd8045b330fe81d2eb3ea739c92de0af6d57e4c4a32a34cd2df03"
+        },
+        {
+          "case": "heldout29-trial11",
+          "label": "new",
+          "family": "holes29",
+          "valid": true,
+          "width": 7353,
+          "height": 3413,
+          "area": 25095789,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.97,
+          "orientation_changes": 147,
+          "output_sha256": "166ea48360ee16346e966b9ed1fbc8bc5b7c5361cdfa6210498c248734277b46"
+        },
+        {
+          "case": "heldout29-trial19",
+          "label": "old",
+          "family": "holes29",
+          "valid": true,
+          "width": 375451,
+          "height": 439880,
+          "area": 165153385880,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.89,
+          "orientation_changes": 0,
+          "output_sha256": "9f55dde9e504fb8f7db507e57f0558998c131a0b667f860cd995008a8ec4888a"
+        },
+        {
+          "case": "heldout29-trial19",
+          "label": "new",
+          "family": "holes29",
+          "valid": true,
+          "width": 5397,
+          "height": 1151,
+          "area": 6211947,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.98,
+          "orientation_changes": 153,
+          "output_sha256": "23647bb3e1ff20c84645823b3374f7c21d7f50dddd1c1af5f48c5e27fd1e236c"
+        },
+        {
+          "case": "control32",
+          "label": "old",
+          "family": "gons32",
+          "valid": true,
+          "width": 121,
+          "height": 148,
+          "area": 17908,
+          "layers": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            3
+          ],
+          "cpu_seconds": 29.970000000000002,
+          "orientation_changes": 0,
+          "output_sha256": "826adf3346edaf82eef01098e584a28c6b293338608ace1faa204d0a78b4b88e"
+        },
+        {
+          "case": "control32",
+          "label": "new",
+          "family": "gons32",
+          "valid": true,
+          "width": 82,
+          "height": 84,
+          "area": 6888,
+          "layers": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            3
+          ],
+          "cpu_seconds": 29.97,
+          "orientation_changes": 383,
+          "output_sha256": "d861ac37ba0ec0748f50efa19bef3f9483310eaa0466f31c9ca0da81b0922a05"
+        },
+        {
+          "case": "control26",
+          "label": "old",
+          "family": "caps26",
+          "valid": true,
+          "width": 76,
+          "height": 131,
+          "area": 9956,
+          "layers": [
+            6,
+            6,
+            6,
+            3,
+            4,
+            1
+          ],
+          "cpu_seconds": 29.96,
+          "orientation_changes": 0,
+          "output_sha256": "3d27e09b203bfadc36bfe6220cd8aac46dee59b3b1677bb8ea7935d8e69b756e"
+        },
+        {
+          "case": "control26",
+          "label": "new",
+          "family": "caps26",
+          "valid": true,
+          "width": 46,
+          "height": 71,
+          "area": 3266,
+          "layers": [
+            6,
+            6,
+            6,
+            3,
+            4,
+            1
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 125,
+          "output_sha256": "be3300bdb9efa04aceebbbdbd87eaa671be6eb3d99712aa4937d8f1f8037561b"
+        }
+      ]
+    },
+    "same_mode_ablation": {
+      "source": "results/ablation30s-20260906/summary.json",
+      "runs": 12,
+      "valid_runs": 12,
+      "cpu_seconds": 359.71999999999997,
+      "candidate_area_wins": 1,
+      "candidate_area_ties": 0,
+      "candidate_area_regressions": 5,
+      "comparison": [
+        "v1",
+        "v2"
+      ],
+      "same_preservation_mode": true,
+      "rows": [
+        {
+          "case": "heldout23-job090",
+          "label": "v1",
+          "family": "mixed23",
+          "valid": true,
+          "width": 147,
+          "height": 121,
+          "area": 17787,
+          "layers": [
+            3,
+            4,
+            4,
+            5,
+            5,
+            2
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 89,
+          "output_sha256": "a95d2d1bb9154135cadee328d30b60224c4c72a4dbc2098adf64cfe40d1f2f38"
+        },
+        {
+          "case": "heldout23-job090",
+          "label": "v2",
+          "family": "mixed23",
+          "valid": true,
+          "width": 177,
+          "height": 114,
+          "area": 20178,
+          "layers": [
+            3,
+            4,
+            4,
+            5,
+            5,
+            2
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 63,
+          "output_sha256": "99003e74ca2fd9c58e1fc1308fff4ab0e41c9903cf3a0570646fb2ac96931680"
+        },
+        {
+          "case": "heldout23-job072",
+          "label": "v1",
+          "family": "mixed23",
+          "valid": true,
+          "width": 432,
+          "height": 382,
+          "area": 165024,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 55,
+          "output_sha256": "b8002df1ff204c8232a0d969553700a312dd0032c5959821e2fba3c6ac7e5673"
+        },
+        {
+          "case": "heldout23-job072",
+          "label": "v2",
+          "family": "mixed23",
+          "valid": true,
+          "width": 825,
+          "height": 905,
+          "area": 746625,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 62,
+          "output_sha256": "d3096669a13f41e67960618e2ec900d8647d4c1d58acf1bcb2cf1ba49aeb0e84"
+        },
+        {
+          "case": "heldout29-trial11",
+          "label": "v1",
+          "family": "holes29",
+          "valid": true,
+          "width": 5972,
+          "height": 2295,
+          "area": 13705740,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 139,
+          "output_sha256": "822f5b9f3dce1ee3bf415a6db500319b07f0c186c53c4e0184e6c6a0adf4571c"
+        },
+        {
+          "case": "heldout29-trial11",
+          "label": "v2",
+          "family": "holes29",
+          "valid": true,
+          "width": 7352,
+          "height": 3402,
+          "area": 25011504,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 142,
+          "output_sha256": "4c77439b2c090089a51c7e61a46a811c713c2e0aa1860171fe510c6fd00a5d22"
+        },
+        {
+          "case": "heldout29-trial19",
+          "label": "v1",
+          "family": "holes29",
+          "valid": true,
+          "width": 2347,
+          "height": 7143,
+          "area": 16764621,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.96,
+          "orientation_changes": 109,
+          "output_sha256": "ed2bf26910574c0ddb90cb5c5443440c2e95db2dd26578befb20439e79ee5d04"
+        },
+        {
+          "case": "heldout29-trial19",
+          "label": "v2",
+          "family": "holes29",
+          "valid": true,
+          "width": 5397,
+          "height": 1151,
+          "area": 6211947,
+          "layers": [
+            3,
+            4,
+            7,
+            7,
+            7,
+            1
+          ],
+          "cpu_seconds": 29.99,
+          "orientation_changes": 153,
+          "output_sha256": "23647bb3e1ff20c84645823b3374f7c21d7f50dddd1c1af5f48c5e27fd1e236c"
+        },
+        {
+          "case": "control32",
+          "label": "v1",
+          "family": "gons32",
+          "valid": true,
+          "width": 35,
+          "height": 164,
+          "area": 5740,
+          "layers": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            3
+          ],
+          "cpu_seconds": 29.98,
+          "orientation_changes": 585,
+          "output_sha256": "c104015119de4bb3e269bfd80d3a7cca4687338bc1e383b9ee30e38721be52e9"
+        },
+        {
+          "case": "control32",
+          "label": "v2",
+          "family": "gons32",
+          "valid": true,
+          "width": 82,
+          "height": 84,
+          "area": 6888,
+          "layers": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            3
+          ],
+          "cpu_seconds": 29.930000000000003,
+          "orientation_changes": 383,
+          "output_sha256": "d861ac37ba0ec0748f50efa19bef3f9483310eaa0466f31c9ca0da81b0922a05"
+        },
+        {
+          "case": "control26",
+          "label": "v1",
+          "family": "caps26",
+          "valid": true,
+          "width": 36,
+          "height": 63,
+          "area": 2268,
+          "layers": [
+            6,
+            6,
+            6,
+            3,
+            4,
+            1
+          ],
+          "cpu_seconds": 29.96,
+          "orientation_changes": 160,
+          "output_sha256": "86ae5918291bd31b66e193bf92de5ced953c4df1117cf9fcf6cfc63d40b87e6c"
+        },
+        {
+          "case": "control26",
+          "label": "v2",
+          "family": "caps26",
+          "valid": true,
+          "width": 46,
+          "height": 71,
+          "area": 3266,
+          "layers": [
+            6,
+            6,
+            6,
+            3,
+            4,
+            1
+          ],
+          "cpu_seconds": 29.96,
+          "orientation_changes": 125,
+          "output_sha256": "be3300bdb9efa04aceebbbdbd87eaa671be6eb3d99712aa4937d8f1f8037561b"
+        }
+      ]
+    },
+    "refinements": {
+      "runs": 7,
+      "valid_runs": 7,
+      "cpu_seconds": 1795.508985,
+      "rows": [
+        {
+          "label": "feedback23-target64x78",
+          "valid": true,
+          "width": 124,
+          "height": 81,
+          "area": 10044,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 598.450239,
+          "orientation_changes": 35
+        },
+        {
+          "label": "paper23-v2",
+          "valid": true,
+          "width": 101,
+          "height": 78,
+          "area": 7878,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 598.647928,
+          "orientation_changes": 145
+        },
+        {
+          "label": "control-margin23-sample6-preserve-layers",
+          "valid": true,
+          "width": 597,
+          "height": 728,
+          "area": 434616,
+          "layers": [
+            3,
+            5,
+            5,
+            5,
+            4,
+            1
+          ],
+          "cpu_seconds": 119.822621,
+          "orientation_changes": 56
+        },
+        {
+          "label": "sat-guided23-case33-preserve-layers",
+          "valid": true,
+          "width": 4275,
+          "height": 3231,
+          "area": 13812525,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.03987,
+          "orientation_changes": 43
+        },
+        {
+          "label": "archive23-sample7-preserve-layers",
+          "valid": true,
+          "width": 320,
+          "height": 353,
+          "area": 112960,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.752599,
+          "orientation_changes": 62
+        },
+        {
+          "label": "archive23-sample2-preserve-layers",
+          "valid": true,
+          "width": 172,
+          "height": 191,
+          "area": 32852,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.964081,
+          "orientation_changes": 44
+        },
+        {
+          "label": "feedback23-sample3-preserve-layers",
+          "valid": true,
+          "width": 101,
+          "height": 121,
+          "area": 12221,
+          "layers": [
+            3,
+            4,
+            4,
+            6,
+            5,
+            1
+          ],
+          "cpu_seconds": 119.831647,
+          "orientation_changes": 110
+        }
+      ]
+    }
+  },
+  "total_runs": 43,
+  "total_cpu_seconds": 3949.938985
+}

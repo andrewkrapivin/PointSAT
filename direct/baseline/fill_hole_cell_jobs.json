@@ -1,0 +1,16 @@
+[
+  {
+    "name": "cell_hole_cold_anneal23_seed61",
+    "executable": "direct/baseline/fill_hole_cells",
+    "args": ["--input", "direct/results/2026-09-05/anneal-23-s1.pts", "--gon", "7", "--hole", "6", "--seconds", "300", "--temperature", "0.5", "--seed", "61", "--adjacent-cells", "--hull-penalty", "1"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "direct geometric hole-targeted adjacent-cell repair of cold geometric near miss, with hull penalty"
+  },
+  {
+    "name": "cell_hole_overmars22_append_seed62",
+    "executable": "direct/baseline/fill_hole_cells",
+    "args": ["--input", "direct/baseline/fill_hole_runs/fill_hole_overmars22_append_seed53.pts", "--gon", "7", "--hole", "6", "--seconds", "300", "--temperature", "0.5", "--seed", "62", "--adjacent-cells", "--hull-penalty", "1"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "direct geometric hole-targeted adjacent-cell repair of Overmars22-plus-one near miss, with hull penalty"
+  }
+]

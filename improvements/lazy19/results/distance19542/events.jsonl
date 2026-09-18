@@ -1,0 +1,47 @@
+{"event": "initialized", "base_clauses": 937992, "variables": 969, "seed": 19542, "symmetry": false, "elapsed": 1.3231248160009272}
+{"event": "distance_encoding", "clauses": 25247, "limit": 20, "elapsed": 1.341898966988083}
+{"event": "refine", "round": 1, "bad": 6, "total_cuts": 6, "elapsed": 1.3493756499956362}
+{"event": "distance_exhausted", "bound": 0, "accepted": 0, "elapsed": 1.3498401179967914}
+{"event": "distance_exhausted", "bound": 1, "accepted": 0, "elapsed": 1.36361372799729}
+{"event": "distance_exhausted", "bound": 2, "accepted": 0, "elapsed": 1.447943690000102}
+{"event": "abstract_candidate", "sample": 0, "round": 2, "hamming": 9, "geometry_hamming": 3, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 1.4704465050017461}
+{"event": "refine", "round": 3, "bad": 5, "total_cuts": 11, "elapsed": 1.6081382829870563}
+{"event": "refine", "round": 4, "bad": 2, "total_cuts": 13, "elapsed": 1.6241036819992587}
+{"event": "refine", "round": 5, "bad": 5, "total_cuts": 18, "elapsed": 1.6764193209819496}
+{"event": "distance_exhausted", "bound": 3, "accepted": 1, "elapsed": 1.6887589489924721}
+{"event": "refine", "round": 6, "bad": 2, "total_cuts": 20, "elapsed": 1.814929521002341}
+{"event": "refine", "round": 7, "bad": 4, "total_cuts": 24, "elapsed": 1.9511271549854428}
+{"event": "abstract_candidate", "sample": 1, "round": 8, "hamming": 8, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.0346021489822306}
+{"event": "refine", "round": 9, "bad": 3, "total_cuts": 27, "elapsed": 2.0474223549827}
+{"event": "refine", "round": 10, "bad": 4, "total_cuts": 31, "elapsed": 2.2642760209855624}
+{"event": "abstract_candidate", "sample": 2, "round": 16, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.3533449659880716}
+{"event": "abstract_candidate", "sample": 3, "round": 17, "hamming": 8, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.3611505139851943}
+{"event": "abstract_candidate", "sample": 4, "round": 18, "hamming": 8, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.393649782985449}
+{"event": "abstract_candidate", "sample": 5, "round": 19, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.40877013199497}
+{"event": "abstract_candidate", "sample": 6, "round": 20, "hamming": 8, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.4701941359962802}
+{"event": "abstract_candidate", "sample": 7, "round": 21, "hamming": 8, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.477627517975634}
+{"event": "abstract_candidate", "sample": 8, "round": 26, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.5426904469786678}
+{"event": "abstract_candidate", "sample": 9, "round": 27, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.5509375509864185}
+{"event": "abstract_candidate", "sample": 10, "round": 39, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.6365236029960215}
+{"event": "abstract_candidate", "sample": 11, "round": 40, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.6432772830012254}
+{"event": "abstract_candidate", "sample": 12, "round": 41, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.6502762619929854}
+{"event": "abstract_candidate", "sample": 13, "round": 45, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.672498651983915}
+{"event": "abstract_candidate", "sample": 14, "round": 47, "hamming": 10, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.685263444989687}
+{"event": "abstract_candidate", "sample": 15, "round": 48, "hamming": 8, "geometry_hamming": 4, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.69412660098169}
+{"event": "distance_exhausted", "bound": 4, "accepted": 16, "elapsed": 2.6989310259814374}
+{"event": "abstract_candidate", "sample": 16, "round": 50, "hamming": 7, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.84486592997564}
+{"event": "abstract_candidate", "sample": 17, "round": 51, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 2.8532511020021047}
+{"event": "abstract_candidate", "sample": 18, "round": 52, "hamming": 11, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.097894128994085}
+{"event": "abstract_candidate", "sample": 19, "round": 53, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.2019612540025264}
+{"event": "abstract_candidate", "sample": 20, "round": 55, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.233358022000175}
+{"event": "abstract_candidate", "sample": 21, "round": 57, "hamming": 11, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.58735099399928}
+{"event": "abstract_candidate", "sample": 22, "round": 58, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.6127783169795293}
+{"event": "abstract_candidate", "sample": 23, "round": 59, "hamming": 11, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.621234812977491}
+{"event": "abstract_candidate", "sample": 24, "round": 60, "hamming": 7, "geometry_hamming": 5, "histogram": [0, 13, 10, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.632914816000266}
+{"event": "abstract_candidate", "sample": 25, "round": 62, "hamming": 11, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.7275887739961036}
+{"event": "abstract_candidate", "sample": 26, "round": 63, "hamming": 11, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.736223532992881}
+{"event": "abstract_candidate", "sample": 27, "round": 64, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.7447376049822196}
+{"event": "abstract_candidate", "sample": 28, "round": 66, "hamming": 7, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.8478294249798637}
+{"event": "abstract_candidate", "sample": 29, "round": 67, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.884770591976121}
+{"event": "abstract_candidate", "sample": 30, "round": 68, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.8937068049854133}
+{"event": "abstract_candidate", "sample": 31, "round": 69, "hamming": 9, "geometry_hamming": 5, "histogram": [0, 12, 9, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0], "elapsed": 3.901014541974291}

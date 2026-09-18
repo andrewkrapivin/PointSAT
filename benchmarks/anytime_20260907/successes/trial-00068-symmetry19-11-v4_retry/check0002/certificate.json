@@ -1,0 +1,61 @@
+{
+  "family": "symmetry19",
+  "valid_geometry": false,
+  "started_monotonic": 371896.74926493,
+  "deadline_monotonic": 371954.525293175,
+  "status": "INVALID",
+  "primary_requires_CNF": false,
+  "primary_requires_C3": false,
+  "snapshot": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-11-v4_retry-a_k4_y4f/check0002/snapshot.real",
+  "snapshot_sha256": "43e595ec62377070f1f43674eb1bc5eae5f8b480b61c2265ac5cab2a743f1ef2",
+  "integer_points": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-11-v4_retry-a_k4_y4f/check0002/points.pts",
+  "integer_points_sha256": "9d14a08a78fef7a29029dd30420940306947fcc4fd654672064a123ae81a481a",
+  "n": 19,
+  "general_position": true,
+  "duplicate_pairs": 0,
+  "collinear_triples": 0,
+  "cap_x_ties": 0,
+  "convex_caps": 0,
+  "verifier": "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/verifier19",
+  "verifier_sha256": "8ab0a699b9f92ee62e0d1ae8996e3551a5fe16e3b97f2e15b60d3db1cacff911",
+  "verifier_command": [
+    "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/verifier19",
+    "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-11-v4_retry-a_k4_y4f/check0002/points.pts"
+  ],
+  "verifier_wall_seconds": 0.014910021040122956,
+  "geometry": {
+    "n": 19,
+    "valid": false,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      3,
+      15,
+      12,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_forbidden_hexagon": [
+      8,
+      1,
+      14,
+      5,
+      17,
+      7
+    ],
+    "seconds": 0.012229
+  },
+  "forbidden_polygons": 3,
+  "certificate_validated_monotonic": 371896.765043769,
+  "timing_note": "This is a geometric certificate, not an online acceptance timestamp."
+}

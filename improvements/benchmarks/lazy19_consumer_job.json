@@ -1,0 +1,22 @@
+[
+  {
+    "label": "lazy19-screened-consumer",
+    "workers": 1,
+    "max_seconds": 30000,
+    "output": "/home/andrew/PointSAT/improvements/lazy19/overnight/consumer",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/consume_lazy19.py",
+      "--models", "/home/andrew/PointSAT/improvements/lazy19/overnight/corpus",
+      "--output", "/home/andrew/PointSAT/improvements/lazy19/overnight/consumer",
+      "--deadline", "2026-09-05T14:00:00+00:00",
+      "--geometry-binary", "/home/andrew/PointSAT/improvements/localizer/geometry19_v2",
+      "--geometry-seed", "/home/andrew/PointSAT/improvements/localizer/results/resume0526/geometry-free-s1962.pts",
+      "--warm-real", "/home/andrew/PointSAT/improvements/symmetry19/search/model002-relaxed-symmetric/points.real",
+      "--geometry-extra-json", "[\"--temperature\",\"2\",\"--min-exponent\",\"-10\",\"--cycle-iterations\",\"2000000\",\"--restart-every\",\"500000\",\"--checkpoint-seconds\",\"30\"]",
+      "--native-seconds", "45",
+      "--fallback-seconds", "60",
+      "--seed", "625190"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "label": "benchmark-holes29-s42219",
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+    "--registration",
+    "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+    "--index",
+    "77"
+  ],
+  "budget_seconds": 1718.6074995994568,
+  "started_utc": "2026-09-05T13:30:51.392505+00:00",
+  "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42219",
+  "command_file_sha256": {
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python": "a92f0f95e883390c7256b2e441484aac06b1002dbe1d924141a77c8d82f96223",
+    "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py": "3f80a3d9f2ca6cdef8888fd1f61b31089db970c3a73ec64d1efb06b7f7dde77c"
+  },
+  "pid": 285383,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": false,
+  "wall_seconds": 695.8692904430209,
+  "ended_utc": "2026-09-05T13:42:27.268125+00:00"
+}

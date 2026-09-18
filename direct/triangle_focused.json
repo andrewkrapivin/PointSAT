@@ -1,0 +1,4 @@
+[
+  {"name":"triangle23-direct22-s64","executable":"direct/triangle_threshold","args":["--n",23,"--input","direct/results/2026-09-05/pool-hull3-snapshot22.pts","--seed",64,"--temperature",0.8,"--cutoff",1,"--mode","anneal","--seconds",1200],"gon":7,"hole":6,"target_n":23},
+  {"name":"triangle23-cold-late-s65","executable":"direct/triangle_threshold","args":["--n",23,"--seed",65,"--temperature",0.5,"--cutoff",1,"--mode","late","--seconds",1200],"gon":7,"hole":6,"target_n":23}
+]

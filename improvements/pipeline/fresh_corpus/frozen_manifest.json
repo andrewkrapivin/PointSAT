@@ -1,0 +1,165 @@
+{
+  "split_rule": "First two seeds per problem are tuning; last three heldout, declared before generation.",
+  "jobs": [
+    {
+      "n": 23,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "problem": "mixed23",
+      "seed": 9101,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/mixed23-seed9101"
+    },
+    {
+      "n": 23,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "problem": "mixed23",
+      "seed": 9102,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/mixed23-seed9102"
+    },
+    {
+      "n": 23,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "problem": "mixed23",
+      "seed": 9103,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/mixed23-seed9103"
+    },
+    {
+      "n": 23,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "problem": "mixed23",
+      "seed": 9104,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/mixed23-seed9104"
+    },
+    {
+      "n": 23,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "problem": "mixed23",
+      "seed": 9105,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/mixed23-seed9105"
+    },
+    {
+      "n": 29,
+      "cnf": "6hole-29-compact.cnf",
+      "problem": "holes29",
+      "seed": 9201,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/holes29-seed9201"
+    },
+    {
+      "n": 29,
+      "cnf": "6hole-29-compact.cnf",
+      "problem": "holes29",
+      "seed": 9202,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/holes29-seed9202"
+    },
+    {
+      "n": 29,
+      "cnf": "6hole-29-compact.cnf",
+      "problem": "holes29",
+      "seed": 9203,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/holes29-seed9203"
+    },
+    {
+      "n": 29,
+      "cnf": "6hole-29-compact.cnf",
+      "problem": "holes29",
+      "seed": 9204,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/holes29-seed9204"
+    },
+    {
+      "n": 29,
+      "cnf": "6hole-29-compact.cnf",
+      "problem": "holes29",
+      "seed": 9205,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/holes29-seed9205"
+    },
+    {
+      "n": 32,
+      "cnf": "7gon-32.cnf",
+      "problem": "gons32",
+      "seed": 9301,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/gons32-seed9301"
+    },
+    {
+      "n": 32,
+      "cnf": "7gon-32.cnf",
+      "problem": "gons32",
+      "seed": 9302,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/gons32-seed9302"
+    },
+    {
+      "n": 32,
+      "cnf": "7gon-32.cnf",
+      "problem": "gons32",
+      "seed": 9303,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/gons32-seed9303"
+    },
+    {
+      "n": 32,
+      "cnf": "7gon-32.cnf",
+      "problem": "gons32",
+      "seed": 9304,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/gons32-seed9304"
+    },
+    {
+      "n": 32,
+      "cnf": "7gon-32.cnf",
+      "problem": "gons32",
+      "seed": 9305,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/gons32-seed9305"
+    },
+    {
+      "n": 26,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "problem": "caps26",
+      "seed": 9401,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9401"
+    },
+    {
+      "n": 26,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "problem": "caps26",
+      "seed": 9402,
+      "split": "tuning",
+      "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9402"
+    },
+    {
+      "n": 26,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "problem": "caps26",
+      "seed": 9403,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9403"
+    },
+    {
+      "n": 26,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "problem": "caps26",
+      "seed": 9404,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9404"
+    },
+    {
+      "n": 26,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "problem": "caps26",
+      "seed": 9405,
+      "split": "heldout",
+      "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9405"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "breakout23_overmars_cell_seed71",
+    "executable": "direct/baseline/fill_hole_breakout",
+    "args": ["--input", "direct/baseline/fill_hole_cells_runs/cell_hole_overmars22_append_seed62.pts", "--gon", "7", "--hole", "6", "--seconds", "400", "--temperature", "0.7", "--seed", "71", "--breakout", "--hull-penalty", "1"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "fully geometric guided-penalty repair descended from Overmars22-plus-one"
+  },
+  {
+    "name": "breakout23_triangle_cold_seed72",
+    "executable": "direct/baseline/fill_hole_breakout",
+    "args": ["--input", "direct/results/2026-09-05/triangle/triangle23-cold-s51.pts", "--gon", "7", "--hole", "6", "--seconds", "400", "--temperature", "0.7", "--seed", "72", "--breakout", "--require-triangle"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "fully geometric guided-penalty repair of cold triangular-hull search near miss"
+  },
+  {
+    "name": "breakout23_triangle22_append_seed73",
+    "executable": "direct/baseline/fill_hole_breakout",
+    "args": ["--input", "direct/results/2026-09-05/pool-hull3-snapshot22.pts", "--insert-samples", "10000", "--gon", "7", "--hole", "6", "--seconds", "400", "--temperature", "1.0", "--seed", "73", "--breakout", "--require-triangle"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "fully geometric insertion and guided-penalty repair of triangular Overmars22 set"
+  },
+  {
+    "name": "breakout23_late_cold_seed74",
+    "executable": "direct/baseline/fill_hole_breakout",
+    "args": ["--input", "direct/results/2026-09-05/late-23-s2.pts", "--gon", "7", "--hole", "6", "--seconds", "400", "--temperature", "1.0", "--seed", "74", "--breakout", "--hull-penalty", "1"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "fully geometric guided-penalty repair of cold late-acceptance search near miss"
+  }
+]

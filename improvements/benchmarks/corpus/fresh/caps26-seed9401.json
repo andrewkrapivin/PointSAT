@@ -1,0 +1,15 @@
+{
+  "n": 26,
+  "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+  "problem": "caps26",
+  "seed": 9401,
+  "split": "tuning",
+  "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9401",
+  "scramble_seconds": 0.186128519999329,
+  "returncode": 10,
+  "status": "SATISFIABLE",
+  "orientation_file": "improvements/pipeline/fresh_corpus/caps26-seed9401.or",
+  "orientation_sha256": "b7a6aaf72fae2feaf96f099b5bbdaaa3d3822442d965618aa726e24f9bd53aa7",
+  "sat_seconds": 0.3210850390023552,
+  "wall_seconds": 0.5072155329980887
+}

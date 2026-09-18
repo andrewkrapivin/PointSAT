@@ -205,3 +205,56 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Modern PointSAT run databases and explicit exports (source is not ignored).
+/runs/
+/exports/
+*.sqlite-wal
+*.sqlite-shm
+/reports/build/
+
+# Generated research workspaces and raw process output. Keep source, reference
+# inputs, aggregate measurements, accepted solutions, and published reports.
+scratch/
+*.stdout
+*.stderr
+stdout.txt
+stderr.txt
+stdout.jsonl
+stderr.jsonl
+*.sqlite
+raw_results.jsonl
+run.lock
+batch_started.json
+*.pool-*.pts*
+*.current.pts*
+*.initial.pts*
+supervisor/
+/improvements/lazy19/overnight/consumer/
+/improvements/lazy19/overnight/corpus/
+/improvements/pipeline/verified19/with_verified_cut.cnf
+/improvements/pipeline/verified19/with_two_verified_cuts.cnf
+/improvements/benchmarks/overnight/runs/**/*.real
+/improvements/benchmarks/overnight/runs/**/*.pts
+/improvements/benchmarks/overnight/runs/**/*.model
+/improvements/benchmarks/overnight/runs/**/*.or
+
+# Rebuildable native executables, including frozen experiment binaries.
+/optimizer/compact
+/optimizer/compact_v1
+/optimizer/compact_v2
+/improvements/localizer/geometry19
+/improvements/localizer/geometry19_v2
+/improvements/localizer/localizer_baseline
+/improvements/localizer/localizer_v[1-6]
+/improvements/symmetry19/verify_hexagons
+/improvements/benchmarks/results/*/localizer
+/improvements/lazy19/overnight/frozen/improvements/lazy19/audit
+/benchmarks/*/frozen/c3_verifier
+/benchmarks/*/frozen/original
+/benchmarks/*/frozen/improved
+/benchmarks/*/frozen/v4
+/benchmarks/*/frozen/v6
+/benchmarks/*/frozen/verifier
+/benchmarks/*/frozen/verifier19
+/benchmarks/*/frozen/verifier_paper

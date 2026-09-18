@@ -1,0 +1,99 @@
+{
+  "job": {
+    "case": {
+      "id": "holes29-s42200",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42200,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42200",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200/target.or",
+      "orientation_sha256": "9b33f746420bb795b5dc4bab2b5f2fd1a539697be2018c1d2146e3dd543d5193"
+    },
+    "seed": 811,
+    "arm": "core_feedback"
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "seed": 811,
+      "native_budget_seconds": 15,
+      "native_wall_seconds": 15.051879062026273,
+      "native_cpu_seconds": 15.002562,
+      "finished_elapsed": 17.423785510996822,
+      "returncode": 0,
+      "constraint_count": 3586,
+      "target_sha256": "f792eda127a15df012aa15e9a9794e4905a3223777ccc1f283020e2104815e4b",
+      "warm_start": false,
+      "active_target_errors": 5,
+      "operational_cnf_acceptance": true,
+      "online_geometry": {
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "valid": true,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "gon_subsets_checked": 0,
+        "hole_subsets_checked": 475020,
+        "seconds": 0.302708
+      }
+    }
+  ],
+  "feedback": [],
+  "timings": {
+    "cnf_initialize": 1.2833488539909013,
+    "initial_flippability": 1.0248288760194555
+  },
+  "status": "SUCCESS",
+  "online_success": true,
+  "elapsed": 17.774591031949967,
+  "worker_cpu_seconds": 17.739917000000002,
+  "initial_flippable_count": 68,
+  "job_index": 62,
+  "budget_seconds": 60.0,
+  "wall_seconds": 17.917679437960032,
+  "parent_observed_cpu_seconds": 17.863322,
+  "budget_watchdog_fired": false,
+  "externally_interrupted": false,
+  "returncode": 0,
+  "cpu_may_exclude_unreaped_descendants": false,
+  "timestamp_utc": "2026-09-06T23:04:27Z",
+  "posthoc": {
+    "saved_checkpoints": [
+      {
+        "orientation_violations": 38,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": true,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 0,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.37462
+        },
+        "integer_points": "benchmarks/pilot_20260906/trial-62-y2b44hfq/stage0.pts",
+        "integer_points_sha256": "0b7979324fd987a491e0a2c463bffc4ac8f16c079f1db7dba6db80a8520bf194",
+        "stage_file": "stage0.real",
+        "saved_elapsed_upper_bound": 17.373337507247925
+      }
+    ],
+    "valid_geometry": true,
+    "first_success_upper_bound_seconds": 17.373337507247925,
+    "minimum_forbidden_count": 0,
+    "audit_wall_seconds": 0.3987309859949164
+  }
+}

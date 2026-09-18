@@ -1,0 +1,15 @@
+{
+  "n": 32,
+  "cnf": "7gon-32.cnf",
+  "problem": "gons32",
+  "seed": 9305,
+  "split": "heldout",
+  "prefix": "improvements/pipeline/fresh_corpus/gons32-seed9305",
+  "scramble_seconds": 0.2765621430007741,
+  "returncode": 10,
+  "status": "SATISFIABLE",
+  "orientation_file": "improvements/pipeline/fresh_corpus/gons32-seed9305.or",
+  "orientation_sha256": "fb460b72021fdd305e4dfbc0bd9478a9f3533997c786efdb14ac1b8981152253",
+  "sat_seconds": 0.4806318359915167,
+  "wall_seconds": 0.7571964649832807
+}

@@ -1,0 +1,34 @@
+{
+  "n": 19,
+  "valid": false,
+  "collinear_triples": 0,
+  "duplicate_pairs": 0,
+  "six_subsets_checked": 27132,
+  "interior_histogram": [
+    3,
+    18,
+    18,
+    6,
+    7,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "first_forbidden_hexagon": [
+    1,
+    12,
+    9,
+    2,
+    19,
+    4
+  ],
+  "seconds": 0.0158458,
+  "input": "improvements/localizer/results/search19/rotational-s1901.real",
+  "certificate": "improvements/localizer/results/search19/rotational-s1901.exact.pts"
+}

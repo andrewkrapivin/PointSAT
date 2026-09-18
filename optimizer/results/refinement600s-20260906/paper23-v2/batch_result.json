@@ -1,0 +1,28 @@
+{
+  "label": "paper23-v2",
+  "command": [
+    "optimizer/compact_v2",
+    "--input",
+    "direct/seeds/paper23.pts",
+    "--output",
+    "optimizer/results/refinement600s-20260906/paper23-v2/points.pts",
+    "--seconds",
+    "600",
+    "--seed",
+    "2"
+  ],
+  "budget_seconds": 605.0,
+  "started_utc": "2026-09-06T22:51:22.311565+00:00",
+  "output": "/home/andrew/PointSAT/optimizer/results/refinement600s-20260906/paper23-v2",
+  "command_file_sha256": {
+    "optimizer/compact_v2": "b64a9a166d0761bdc1e15df79f9cb6fe741d22a5bd3d49c0af99224ae7221482"
+  },
+  "pid": 798574,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": false,
+  "wall_seconds": 600.413110369991,
+  "ended_utc": "2026-09-06T23:01:22.725864+00:00",
+  "remaining_audit_pids": {},
+  "audit_returncode": 0
+}

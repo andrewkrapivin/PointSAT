@@ -1,0 +1,21 @@
+{
+  "n": 29,
+  "problem": "holes29",
+  "split": "late_heldout",
+  "sat_seed": 19501,
+  "cnf": "6hole-29-compact.cnf",
+  "solver": "Kissat default (no --plain)",
+  "seconds": 900,
+  "registered_utc": "2026-09-05T05:08:03Z",
+  "returncode": 10,
+  "timed_out": false,
+  "wall_seconds": 208.0958263380162,
+  "cpu_seconds": 207.126032,
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+    "--quiet",
+    "--seed=19501",
+    "/home/andrew/PointSAT/6hole-29-compact.cnf"
+  ],
+  "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3"
+}

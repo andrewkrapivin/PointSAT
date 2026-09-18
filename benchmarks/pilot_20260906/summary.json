@@ -1,0 +1,584 @@
+{
+  "registered_trials": 64,
+  "completed_trials": 64,
+  "complete": true,
+  "budget_seconds": 60.0,
+  "families": {
+    "mixed23": {
+      "unique_target_models": 4,
+      "arms": {
+        "warm_retry": {
+          "trials": 8,
+          "valid_geometry_trials": 0,
+          "successes_in_shared_initial_stage": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 32,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 60.100330543624295,
+          "mean_cpu_seconds": 59.903883375,
+          "mean_native_cpu_seconds": 58.1381975,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.46896050561917946,
+          "mean_best_forbidden_count": 30.375,
+          "median_best_forbidden_count": 18.0,
+          "budget_watchdog_trials": 8,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 11.345359524013475,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 6,
+            "INTERRUPTED": 2
+          }
+        },
+        "core_feedback": {
+          "trials": 8,
+          "valid_geometry_trials": 0,
+          "successes_in_shared_initial_stage": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 32,
+          "feedback_calls": 24,
+          "feedback_sat_repairs": 23,
+          "mean_wall_seconds": 60.094941790368466,
+          "mean_cpu_seconds": 59.86161325,
+          "mean_native_cpu_seconds": 57.306376375,
+          "mean_feedback_wall_seconds": 0.9576731792403734,
+          "mean_initial_flippability_seconds": 0.42281681075837696,
+          "mean_best_forbidden_count": 22.375,
+          "median_best_forbidden_count": 14.0,
+          "budget_watchdog_trials": 8,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 12.40884996810928,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 7,
+            "INTERRUPTED": 1
+          }
+        }
+      },
+      "paired_trials": 8,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "geometry_residual_comparison": {
+        "pairs": 8,
+        "feedback_better": 6,
+        "ties": 1,
+        "retry_better": 1
+      },
+      "neither_success": 8,
+      "target_cluster_outcomes": {
+        "complete_models": 4,
+        "retry_only": 0,
+        "feedback_only": 0,
+        "both": 0,
+        "neither": 4
+      }
+    },
+    "holes29": {
+      "unique_target_models": 4,
+      "arms": {
+        "warm_retry": {
+          "trials": 8,
+          "valid_geometry_trials": 1,
+          "successes_in_shared_initial_stage": 1,
+          "valid_geometry_target_clusters": 1,
+          "native_stages": 29,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 54.97166611125431,
+          "mean_cpu_seconds": 54.772538499999996,
+          "mean_native_cpu_seconds": 51.347280250000004,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 1.3050226564955665,
+          "mean_best_forbidden_count": 6,
+          "median_best_forbidden_count": 7.0,
+          "budget_watchdog_trials": 7,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 14.773722125042696,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 7,
+            "SUCCESS": 1
+          }
+        },
+        "core_feedback": {
+          "trials": 8,
+          "valid_geometry_trials": 2,
+          "successes_in_shared_initial_stage": 1,
+          "valid_geometry_target_clusters": 1,
+          "native_stages": 29,
+          "feedback_calls": 21,
+          "feedback_sat_repairs": 21,
+          "mean_wall_seconds": 54.01371799486515,
+          "mean_cpu_seconds": 53.842677,
+          "mean_native_cpu_seconds": 47.278832375,
+          "mean_feedback_wall_seconds": 3.3217414292448666,
+          "mean_initial_flippability_seconds": 1.2347860785157536,
+          "mean_best_forbidden_count": 2.25,
+          "median_best_forbidden_count": 2.0,
+          "budget_watchdog_trials": 6,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 12.332039118919056,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 6,
+            "SUCCESS": 2
+          }
+        }
+      },
+      "paired_trials": 8,
+      "feedback_only_successes": 1,
+      "retry_only_successes": 0,
+      "both_successes": 1,
+      "geometry_residual_comparison": {
+        "pairs": 8,
+        "feedback_better": 6,
+        "ties": 2,
+        "retry_better": 0
+      },
+      "neither_success": 6,
+      "target_cluster_outcomes": {
+        "complete_models": 4,
+        "retry_only": 0,
+        "feedback_only": 0,
+        "both": 1,
+        "neither": 3
+      }
+    },
+    "gons32": {
+      "unique_target_models": 4,
+      "arms": {
+        "warm_retry": {
+          "trials": 8,
+          "valid_geometry_trials": 0,
+          "successes_in_shared_initial_stage": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 32,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 60.08027499025775,
+          "mean_cpu_seconds": 59.865037375,
+          "mean_native_cpu_seconds": 58.388810125,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.5011894552444573,
+          "mean_best_forbidden_count": 3130.25,
+          "median_best_forbidden_count": 2709.0,
+          "budget_watchdog_trials": 8,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 117.779968879011,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 8
+          }
+        },
+        "core_feedback": {
+          "trials": 8,
+          "valid_geometry_trials": 0,
+          "successes_in_shared_initial_stage": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 32,
+          "feedback_calls": 24,
+          "feedback_sat_repairs": 5,
+          "mean_wall_seconds": 60.088939882130944,
+          "mean_cpu_seconds": 59.95297975,
+          "mean_native_cpu_seconds": 57.852015,
+          "mean_feedback_wall_seconds": 0.6200237994999043,
+          "mean_initial_flippability_seconds": 0.5050568951119203,
+          "mean_best_forbidden_count": 3300.75,
+          "median_best_forbidden_count": 2478.0,
+          "budget_watchdog_trials": 8,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 96.28371602488915,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 6,
+            "INTERRUPTED": 2
+          }
+        }
+      },
+      "paired_trials": 8,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "geometry_residual_comparison": {
+        "pairs": 8,
+        "feedback_better": 2,
+        "ties": 1,
+        "retry_better": 5
+      },
+      "neither_success": 8,
+      "target_cluster_outcomes": {
+        "complete_models": 4,
+        "retry_only": 0,
+        "feedback_only": 0,
+        "both": 0,
+        "neither": 4
+      }
+    },
+    "caps26": {
+      "unique_target_models": 4,
+      "arms": {
+        "warm_retry": {
+          "trials": 8,
+          "valid_geometry_trials": 0,
+          "successes_in_shared_initial_stage": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 32,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 60.0527079637468,
+          "mean_cpu_seconds": 59.8462725,
+          "mean_native_cpu_seconds": 59.03779375,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.21209874999476597,
+          "mean_best_forbidden_count": 735.25,
+          "median_best_forbidden_count": 708.0,
+          "budget_watchdog_trials": 8,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 1,
+          "budget_signal_exit_trials": 1,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 26.265622258069925,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 7,
+            "INTERRUPTED": 1
+          }
+        },
+        "core_feedback": {
+          "trials": 8,
+          "valid_geometry_trials": 0,
+          "successes_in_shared_initial_stage": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 32,
+          "feedback_calls": 24,
+          "feedback_sat_repairs": 21,
+          "mean_wall_seconds": 60.061341385619016,
+          "mean_cpu_seconds": 59.858519,
+          "mean_native_cpu_seconds": 58.29970575,
+          "mean_feedback_wall_seconds": 0.698160680498404,
+          "mean_initial_flippability_seconds": 0.22720814688364044,
+          "mean_best_forbidden_count": 541,
+          "median_best_forbidden_count": 498.5,
+          "budget_watchdog_trials": 8,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "budget_signal_exit_trials": 0,
+          "unexpected_nonzero_exit_trials": 0,
+          "operational_inspection_errors": 0,
+          "native_nonzero_exit_stages": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 24.975308315013535,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 8
+          }
+        }
+      },
+      "paired_trials": 8,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "geometry_residual_comparison": {
+        "pairs": 8,
+        "feedback_better": 7,
+        "ties": 1,
+        "retry_better": 0
+      },
+      "neither_success": 8,
+      "target_cluster_outcomes": {
+        "complete_models": 4,
+        "retry_only": 0,
+        "feedback_only": 0,
+        "both": 0,
+        "neither": 4
+      }
+    }
+  },
+  "success_records": [
+    {
+      "job_index": 11,
+      "phase": null,
+      "job": {
+        "case": {
+          "id": "holes29-s42200",
+          "problem": "holes29",
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "cap": 0,
+          "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+          "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+          "sat_seed": 42200,
+          "sat_seconds": 1800,
+          "output": "improvements/benchmarks/overnight/runs/holes29-s42200",
+          "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200/target.or",
+          "orientation_sha256": "9b33f746420bb795b5dc4bab2b5f2fd1a539697be2018c1d2146e3dd543d5193"
+        },
+        "seed": 811,
+        "arm": "warm_retry"
+      },
+      "audit": {
+        "saved_checkpoints": [
+          {
+            "orientation_violations": 38,
+            "constraint_count": 3654,
+            "collinear_triples_independent": 0,
+            "geometry": {
+              "n": 29,
+              "gon": 0,
+              "hole": 6,
+              "valid": true,
+              "arithmetic": "arbitrary_precision_integer",
+              "collinear_triples": 0,
+              "convex_gons": 0,
+              "empty_holes": 0,
+              "gon_subsets_checked": 0,
+              "hole_subsets_checked": 475020,
+              "seconds": 0.476865
+            },
+            "integer_points": "benchmarks/pilot_20260906/trial-11-_wox0zrv/stage0.pts",
+            "integer_points_sha256": "e42148dc1f6b1772714f408742b1788efcb0c24a0393ac4902cfba52cf1e9927",
+            "stage_file": "stage0.real",
+            "saved_elapsed_upper_bound": 18.0628604888916
+          }
+        ],
+        "valid_geometry": true,
+        "first_success_upper_bound_seconds": 18.0628604888916,
+        "minimum_forbidden_count": 0,
+        "audit_wall_seconds": 0.4976025440264493
+      }
+    },
+    {
+      "job_index": 19,
+      "phase": null,
+      "job": {
+        "case": {
+          "id": "holes29-s42200",
+          "problem": "holes29",
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "cap": 0,
+          "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+          "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+          "sat_seed": 42200,
+          "sat_seconds": 1800,
+          "output": "improvements/benchmarks/overnight/runs/holes29-s42200",
+          "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200/target.or",
+          "orientation_sha256": "9b33f746420bb795b5dc4bab2b5f2fd1a539697be2018c1d2146e3dd543d5193"
+        },
+        "seed": 271,
+        "arm": "core_feedback"
+      },
+      "audit": {
+        "saved_checkpoints": [
+          {
+            "orientation_violations": 44,
+            "constraint_count": 3654,
+            "collinear_triples_independent": 0,
+            "geometry": {
+              "n": 29,
+              "gon": 0,
+              "hole": 6,
+              "valid": false,
+              "arithmetic": "arbitrary_precision_integer",
+              "collinear_triples": 0,
+              "convex_gons": 0,
+              "empty_holes": 10,
+              "gon_subsets_checked": 0,
+              "hole_subsets_checked": 475020,
+              "seconds": 0.214017
+            },
+            "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage0.pts",
+            "integer_points_sha256": "dea326b7aeda5fc4dc830a084173f0f0576218949ce2b43c031228416ba65d57",
+            "stage_file": "stage0.real",
+            "saved_elapsed_upper_bound": 18.09171724319458
+          },
+          {
+            "orientation_violations": 60,
+            "constraint_count": 3654,
+            "collinear_triples_independent": 0,
+            "geometry": {
+              "n": 29,
+              "gon": 0,
+              "hole": 6,
+              "valid": false,
+              "arithmetic": "arbitrary_precision_integer",
+              "collinear_triples": 0,
+              "convex_gons": 0,
+              "empty_holes": 6,
+              "gon_subsets_checked": 0,
+              "hole_subsets_checked": 475020,
+              "seconds": 0.218777
+            },
+            "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage1.pts",
+            "integer_points_sha256": "b0636a2ec4c9126540678f605d4823cf02cace8422f513c4f39b867d7255d8e0",
+            "stage_file": "stage1.real",
+            "saved_elapsed_upper_bound": 34.65770483016968
+          },
+          {
+            "orientation_violations": 69,
+            "constraint_count": 3654,
+            "collinear_triples_independent": 0,
+            "geometry": {
+              "n": 29,
+              "gon": 0,
+              "hole": 6,
+              "valid": false,
+              "arithmetic": "arbitrary_precision_integer",
+              "collinear_triples": 0,
+              "convex_gons": 0,
+              "empty_holes": 1,
+              "gon_subsets_checked": 0,
+              "hole_subsets_checked": 475020,
+              "seconds": 0.39357
+            },
+            "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage2.pts",
+            "integer_points_sha256": "c29d5881d58ca890c786e81885656a564ad46b0bc3b51fd2cb6ac69e218a5d22",
+            "stage_file": "stage2.real",
+            "saved_elapsed_upper_bound": 50.955692768096924
+          },
+          {
+            "orientation_violations": 73,
+            "constraint_count": 3654,
+            "collinear_triples_independent": 0,
+            "geometry": {
+              "n": 29,
+              "gon": 0,
+              "hole": 6,
+              "valid": true,
+              "arithmetic": "arbitrary_precision_integer",
+              "collinear_triples": 0,
+              "convex_gons": 0,
+              "empty_holes": 0,
+              "gon_subsets_checked": 0,
+              "hole_subsets_checked": 475020,
+              "seconds": 0.224005
+            },
+            "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage3.pts",
+            "integer_points_sha256": "90848636cca399919f04817307a28a99261babe2f383a6c36d7365577ff07a19",
+            "stage_file": "stage3.real",
+            "saved_elapsed_upper_bound": 52.910691261291504
+          }
+        ],
+        "valid_geometry": true,
+        "first_success_upper_bound_seconds": 52.910691261291504,
+        "minimum_forbidden_count": 0,
+        "audit_wall_seconds": 1.1106698449584655
+      }
+    },
+    {
+      "job_index": 62,
+      "phase": null,
+      "job": {
+        "case": {
+          "id": "holes29-s42200",
+          "problem": "holes29",
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "cap": 0,
+          "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+          "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+          "sat_seed": 42200,
+          "sat_seconds": 1800,
+          "output": "improvements/benchmarks/overnight/runs/holes29-s42200",
+          "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200/target.or",
+          "orientation_sha256": "9b33f746420bb795b5dc4bab2b5f2fd1a539697be2018c1d2146e3dd543d5193"
+        },
+        "seed": 811,
+        "arm": "core_feedback"
+      },
+      "audit": {
+        "saved_checkpoints": [
+          {
+            "orientation_violations": 38,
+            "constraint_count": 3654,
+            "collinear_triples_independent": 0,
+            "geometry": {
+              "n": 29,
+              "gon": 0,
+              "hole": 6,
+              "valid": true,
+              "arithmetic": "arbitrary_precision_integer",
+              "collinear_triples": 0,
+              "convex_gons": 0,
+              "empty_holes": 0,
+              "gon_subsets_checked": 0,
+              "hole_subsets_checked": 475020,
+              "seconds": 0.37462
+            },
+            "integer_points": "benchmarks/pilot_20260906/trial-62-y2b44hfq/stage0.pts",
+            "integer_points_sha256": "0b7979324fd987a491e0a2c463bffc4ac8f16c079f1db7dba6db80a8520bf194",
+            "stage_file": "stage0.real",
+            "saved_elapsed_upper_bound": 17.373337507247925
+          }
+        ],
+        "valid_geometry": true,
+        "first_success_upper_bound_seconds": 17.373337507247925,
+        "minimum_forbidden_count": 0,
+        "audit_wall_seconds": 0.3987309859949164
+      }
+    }
+  ],
+  "totals": {
+    "search_worker_wall_seconds": 3755.711365294934,
+    "parent_observed_search_cpu_seconds": 3743.228166,
+    "native_cpu_seconds": 3581.192089,
+    "posthoc_audit_wall_seconds": 316.1645862130681,
+    "feedback_wall_seconds": 44.780792707868386,
+    "maximum_trial_wall_seconds": 60.18741710297763,
+    "external_interruptions": 0,
+    "budget_signal_exit_trials": 1,
+    "unexpected_nonzero_exit_trials": 0,
+    "cpu_accounting_flagged_trials": 1,
+    "operational_inspection_errors": 0,
+    "native_nonzero_exit_stages": 0,
+    "posthoc_audit_errors": 0
+  },
+  "nonzero_exit_records": [
+    {
+      "phase": null,
+      "job_index": 31,
+      "returncode": -2,
+      "classification": "budget_signal_after_saved_checkpoints",
+      "status": "BUDGET_EXHAUSTED",
+      "wall_seconds": 60.03449415398063,
+      "saved_checkpoints": 4
+    }
+  ],
+  "registration": "benchmarks/pilot_20260906/registration.json"
+}

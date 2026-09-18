@@ -1,0 +1,13 @@
+{"event":"start","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":0.000238668,"proposals":0,"evaluations":1,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":10.0001,"proposals":112095,"evaluations":82672,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":20.0001,"proposals":225187,"evaluations":166430,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":30.0002,"proposals":315450,"evaluations":233129,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":40.0003,"proposals":398481,"evaluations":294055,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":50.0004,"proposals":480844,"evaluations":355035,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":60.0006,"proposals":563432,"evaluations":416274,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":70.0007,"proposals":649489,"evaluations":479795,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":80.0008,"proposals":732357,"evaluations":541117,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":90.001,"proposals":822019,"evaluations":607511,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":100.001,"proposals":920483,"evaluations":680350,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"progress","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":110.001,"proposals":1011042,"evaluations":747290,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}
+{"event":"done","method":"fill_hole","seed":51,"n":23,"insert_samples":0,"elapsed":120,"proposals":1098586,"evaluations":812105,"accepted":0,"gons":0,"holes":2,"best_gons":0,"best_holes":2,"best_score":2}

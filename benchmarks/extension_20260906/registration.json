@@ -1,0 +1,1498 @@
+{
+  "registered_utc": "2026-09-06T23:06:03Z",
+  "root": "/home/andrew/PointSAT",
+  "cases": [
+    {
+      "id": "mixed23-s42104",
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+      "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+      "sat_seed": 42104,
+      "sat_seconds": 300,
+      "output": "improvements/benchmarks/overnight/runs/mixed23-s42104",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42104/target.or",
+      "orientation_sha256": "91f89a157c866d2b158df4efcae0d11efa944bf701ed7334fa53f5f71c9db52d"
+    },
+    {
+      "id": "mixed23-s42105",
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+      "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+      "sat_seed": 42105,
+      "sat_seconds": 300,
+      "output": "improvements/benchmarks/overnight/runs/mixed23-s42105",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42105/target.or",
+      "orientation_sha256": "4d30595722f4d67b8d79e22810b4085f109d1fbce77f00cb295ea082cd732883"
+    },
+    {
+      "id": "mixed23-s42106",
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+      "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+      "sat_seed": 42106,
+      "sat_seconds": 300,
+      "output": "improvements/benchmarks/overnight/runs/mixed23-s42106",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42106/target.or",
+      "orientation_sha256": "4b01249e229642af39f1edf1907b6d31f5a00c8a59d4d002d6133e57ae9dffe9"
+    },
+    {
+      "id": "mixed23-s42107",
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+      "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+      "sat_seed": 42107,
+      "sat_seconds": 300,
+      "output": "improvements/benchmarks/overnight/runs/mixed23-s42107",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42107/target.or",
+      "orientation_sha256": "6b3deecdab5594de60516e9d2ccf057424cc141e4490ed0c678e829a1304f9cd"
+    },
+    {
+      "id": "holes29-s42204",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42204,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42204",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42204/target.or",
+      "orientation_sha256": "f458460d2df4e3c12f36e021842b5e36af041c17fd95c575a4a95b5864e9c029"
+    },
+    {
+      "id": "holes29-s42205",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42205,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42205",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42205/target.or",
+      "orientation_sha256": "7456de82d735a57568840529d9807a520af8d5a8dcd452ffff18dcbfab3075e4"
+    },
+    {
+      "id": "holes29-s42206",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42206,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42206",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206/target.or",
+      "orientation_sha256": "2fe5794aef0dcc5f07a1df7db3bfe15f3b18f2c8db752377ba7161a0eb9bcf21"
+    },
+    {
+      "id": "holes29-s42207",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42207,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42207",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42207/target.or",
+      "orientation_sha256": "c546b1658a390afd1f8f91d1465dfbb07f45f0e34091c36af3dfd7a6b8ffb428"
+    },
+    {
+      "id": "gons32-s42304",
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+      "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+      "sat_seed": 42304,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/gons32-s42304",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42304/target.or",
+      "orientation_sha256": "e348a3dba0ff43457aed6d691a122c7b485d7b68fb1129e789137b456b68f4b4"
+    },
+    {
+      "id": "gons32-s42305",
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+      "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+      "sat_seed": 42305,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/gons32-s42305",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42305/target.or",
+      "orientation_sha256": "ca34d32660e4b2ea71a33b593891ef75fb28ba455475e845203feb610a0054eb"
+    },
+    {
+      "id": "gons32-s42306",
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+      "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+      "sat_seed": 42306,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/gons32-s42306",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42306/target.or",
+      "orientation_sha256": "5e08aa0b4aea21a243b913869cb03c16d0d3c04a4d3877c33c3e3604adbb5e65"
+    },
+    {
+      "id": "gons32-s42307",
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+      "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+      "sat_seed": 42307,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/gons32-s42307",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42307/target.or",
+      "orientation_sha256": "b6f6f44ee0dc1a88568c29151f8a016126096caffc13f274cebe442877ba5411"
+    },
+    {
+      "id": "caps26-s42404",
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+      "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+      "sat_seed": 42404,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/caps26-s42404",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42404/target.or",
+      "orientation_sha256": "0a043baa2ca2af6f18ddc5ed45c98361d02c29682272fb899e15eb0031be462d"
+    },
+    {
+      "id": "caps26-s42405",
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+      "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+      "sat_seed": 42405,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/caps26-s42405",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42405/target.or",
+      "orientation_sha256": "425486a2b851c4000036e69cf5641ab2253ba086678e2ac6eec4efd04b1f835f"
+    },
+    {
+      "id": "caps26-s42406",
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+      "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+      "sat_seed": 42406,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/caps26-s42406",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42406/target.or",
+      "orientation_sha256": "a8b4753b5872659433cce44e938d0f2f8ac396d5a4b769937ed0b7495632493f"
+    },
+    {
+      "id": "caps26-s42407",
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+      "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+      "sat_seed": 42407,
+      "sat_seconds": 180,
+      "output": "improvements/benchmarks/overnight/runs/caps26-s42407",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42407/target.or",
+      "orientation_sha256": "6a567d4c77c87f4b7ba9c40fb79c6913d7200be0ef45e8a6ed91ff1958491e92"
+    }
+  ],
+  "jobs": [
+    {
+      "case": {
+        "id": "gons32-s42304",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42304,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42304",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42304/target.or",
+        "orientation_sha256": "e348a3dba0ff43457aed6d691a122c7b485d7b68fb1129e789137b456b68f4b4"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42304",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42304,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42304",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42304/target.or",
+        "orientation_sha256": "e348a3dba0ff43457aed6d691a122c7b485d7b68fb1129e789137b456b68f4b4"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42407",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42407,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42407",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42407/target.or",
+        "orientation_sha256": "6a567d4c77c87f4b7ba9c40fb79c6913d7200be0ef45e8a6ed91ff1958491e92"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42105",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42105,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42105",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42105/target.or",
+        "orientation_sha256": "4d30595722f4d67b8d79e22810b4085f109d1fbce77f00cb295ea082cd732883"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42305",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42305,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42305",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42305/target.or",
+        "orientation_sha256": "ca34d32660e4b2ea71a33b593891ef75fb28ba455475e845203feb610a0054eb"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42406",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42406,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42406",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42406/target.or",
+        "orientation_sha256": "a8b4753b5872659433cce44e938d0f2f8ac396d5a4b769937ed0b7495632493f"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42306",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42306,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42306",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42306/target.or",
+        "orientation_sha256": "5e08aa0b4aea21a243b913869cb03c16d0d3c04a4d3877c33c3e3604adbb5e65"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42405",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42405,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42405",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42405/target.or",
+        "orientation_sha256": "425486a2b851c4000036e69cf5641ab2253ba086678e2ac6eec4efd04b1f835f"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42206",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42206,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42206",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206/target.or",
+        "orientation_sha256": "2fe5794aef0dcc5f07a1df7db3bfe15f3b18f2c8db752377ba7161a0eb9bcf21"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42404",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42404,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42404",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42404/target.or",
+        "orientation_sha256": "0a043baa2ca2af6f18ddc5ed45c98361d02c29682272fb899e15eb0031be462d"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42205",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42205,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42205",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42205/target.or",
+        "orientation_sha256": "7456de82d735a57568840529d9807a520af8d5a8dcd452ffff18dcbfab3075e4"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42204",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42204,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42204",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42204/target.or",
+        "orientation_sha256": "f458460d2df4e3c12f36e021842b5e36af041c17fd95c575a4a95b5864e9c029"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42306",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42306,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42306",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42306/target.or",
+        "orientation_sha256": "5e08aa0b4aea21a243b913869cb03c16d0d3c04a4d3877c33c3e3604adbb5e65"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42405",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42405,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42405",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42405/target.or",
+        "orientation_sha256": "425486a2b851c4000036e69cf5641ab2253ba086678e2ac6eec4efd04b1f835f"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42106",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42106,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42106",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42106/target.or",
+        "orientation_sha256": "4b01249e229642af39f1edf1907b6d31f5a00c8a59d4d002d6133e57ae9dffe9"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42405",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42405,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42405",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42405/target.or",
+        "orientation_sha256": "425486a2b851c4000036e69cf5641ab2253ba086678e2ac6eec4efd04b1f835f"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42307",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42307,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42307",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42307/target.or",
+        "orientation_sha256": "b6f6f44ee0dc1a88568c29151f8a016126096caffc13f274cebe442877ba5411"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42206",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42206,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42206",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206/target.or",
+        "orientation_sha256": "2fe5794aef0dcc5f07a1df7db3bfe15f3b18f2c8db752377ba7161a0eb9bcf21"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42406",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42406,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42406",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42406/target.or",
+        "orientation_sha256": "a8b4753b5872659433cce44e938d0f2f8ac396d5a4b769937ed0b7495632493f"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42204",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42204,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42204",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42204/target.or",
+        "orientation_sha256": "f458460d2df4e3c12f36e021842b5e36af041c17fd95c575a4a95b5864e9c029"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42407",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42407,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42407",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42407/target.or",
+        "orientation_sha256": "6a567d4c77c87f4b7ba9c40fb79c6913d7200be0ef45e8a6ed91ff1958491e92"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42306",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42306,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42306",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42306/target.or",
+        "orientation_sha256": "5e08aa0b4aea21a243b913869cb03c16d0d3c04a4d3877c33c3e3604adbb5e65"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42106",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42106,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42106",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42106/target.or",
+        "orientation_sha256": "4b01249e229642af39f1edf1907b6d31f5a00c8a59d4d002d6133e57ae9dffe9"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42304",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42304,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42304",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42304/target.or",
+        "orientation_sha256": "e348a3dba0ff43457aed6d691a122c7b485d7b68fb1129e789137b456b68f4b4"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42107",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42107,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42107",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42107/target.or",
+        "orientation_sha256": "6b3deecdab5594de60516e9d2ccf057424cc141e4490ed0c678e829a1304f9cd"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42306",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42306,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42306",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42306/target.or",
+        "orientation_sha256": "5e08aa0b4aea21a243b913869cb03c16d0d3c04a4d3877c33c3e3604adbb5e65"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42406",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42406,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42406",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42406/target.or",
+        "orientation_sha256": "a8b4753b5872659433cce44e938d0f2f8ac396d5a4b769937ed0b7495632493f"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42104",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42104,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42104",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42104/target.or",
+        "orientation_sha256": "91f89a157c866d2b158df4efcae0d11efa944bf701ed7334fa53f5f71c9db52d"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42205",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42205,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42205",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42205/target.or",
+        "orientation_sha256": "7456de82d735a57568840529d9807a520af8d5a8dcd452ffff18dcbfab3075e4"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42205",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42205,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42205",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42205/target.or",
+        "orientation_sha256": "7456de82d735a57568840529d9807a520af8d5a8dcd452ffff18dcbfab3075e4"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42207",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42207,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42207",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42207/target.or",
+        "orientation_sha256": "c546b1658a390afd1f8f91d1465dfbb07f45f0e34091c36af3dfd7a6b8ffb428"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42404",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42404,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42404",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42404/target.or",
+        "orientation_sha256": "0a043baa2ca2af6f18ddc5ed45c98361d02c29682272fb899e15eb0031be462d"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42207",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42207,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42207",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42207/target.or",
+        "orientation_sha256": "c546b1658a390afd1f8f91d1465dfbb07f45f0e34091c36af3dfd7a6b8ffb428"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42305",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42305,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42305",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42305/target.or",
+        "orientation_sha256": "ca34d32660e4b2ea71a33b593891ef75fb28ba455475e845203feb610a0054eb"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42207",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42207,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42207",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42207/target.or",
+        "orientation_sha256": "c546b1658a390afd1f8f91d1465dfbb07f45f0e34091c36af3dfd7a6b8ffb428"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42205",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42205,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42205",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42205/target.or",
+        "orientation_sha256": "7456de82d735a57568840529d9807a520af8d5a8dcd452ffff18dcbfab3075e4"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42105",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42105,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42105",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42105/target.or",
+        "orientation_sha256": "4d30595722f4d67b8d79e22810b4085f109d1fbce77f00cb295ea082cd732883"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42106",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42106,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42106",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42106/target.or",
+        "orientation_sha256": "4b01249e229642af39f1edf1907b6d31f5a00c8a59d4d002d6133e57ae9dffe9"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42206",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42206,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42206",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206/target.or",
+        "orientation_sha256": "2fe5794aef0dcc5f07a1df7db3bfe15f3b18f2c8db752377ba7161a0eb9bcf21"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42206",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42206,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42206",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206/target.or",
+        "orientation_sha256": "2fe5794aef0dcc5f07a1df7db3bfe15f3b18f2c8db752377ba7161a0eb9bcf21"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42107",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42107,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42107",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42107/target.or",
+        "orientation_sha256": "6b3deecdab5594de60516e9d2ccf057424cc141e4490ed0c678e829a1304f9cd"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42107",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42107,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42107",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42107/target.or",
+        "orientation_sha256": "6b3deecdab5594de60516e9d2ccf057424cc141e4490ed0c678e829a1304f9cd"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42404",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42404,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42404",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42404/target.or",
+        "orientation_sha256": "0a043baa2ca2af6f18ddc5ed45c98361d02c29682272fb899e15eb0031be462d"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42307",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42307,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42307",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42307/target.or",
+        "orientation_sha256": "b6f6f44ee0dc1a88568c29151f8a016126096caffc13f274cebe442877ba5411"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42105",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42105,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42105",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42105/target.or",
+        "orientation_sha256": "4d30595722f4d67b8d79e22810b4085f109d1fbce77f00cb295ea082cd732883"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42106",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42106,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42106",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42106/target.or",
+        "orientation_sha256": "4b01249e229642af39f1edf1907b6d31f5a00c8a59d4d002d6133e57ae9dffe9"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42407",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42407,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42407",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42407/target.or",
+        "orientation_sha256": "6a567d4c77c87f4b7ba9c40fb79c6913d7200be0ef45e8a6ed91ff1958491e92"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42307",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42307,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42307",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42307/target.or",
+        "orientation_sha256": "b6f6f44ee0dc1a88568c29151f8a016126096caffc13f274cebe442877ba5411"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42405",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42405,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42405",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42405/target.or",
+        "orientation_sha256": "425486a2b851c4000036e69cf5641ab2253ba086678e2ac6eec4efd04b1f835f"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42107",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42107,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42107",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42107/target.or",
+        "orientation_sha256": "6b3deecdab5594de60516e9d2ccf057424cc141e4490ed0c678e829a1304f9cd"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42104",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42104,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42104",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42104/target.or",
+        "orientation_sha256": "91f89a157c866d2b158df4efcae0d11efa944bf701ed7334fa53f5f71c9db52d"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "caps26-s42404",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42404,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42404",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42404/target.or",
+        "orientation_sha256": "0a043baa2ca2af6f18ddc5ed45c98361d02c29682272fb899e15eb0031be462d"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42104",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42104,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42104",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42104/target.or",
+        "orientation_sha256": "91f89a157c866d2b158df4efcae0d11efa944bf701ed7334fa53f5f71c9db52d"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42406",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42406,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42406",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42406/target.or",
+        "orientation_sha256": "a8b4753b5872659433cce44e938d0f2f8ac396d5a4b769937ed0b7495632493f"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42305",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42305,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42305",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42305/target.or",
+        "orientation_sha256": "ca34d32660e4b2ea71a33b593891ef75fb28ba455475e845203feb610a0054eb"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "holes29-s42204",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42204,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42204",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42204/target.or",
+        "orientation_sha256": "f458460d2df4e3c12f36e021842b5e36af041c17fd95c575a4a95b5864e9c029"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42304",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42304,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42304",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42304/target.or",
+        "orientation_sha256": "e348a3dba0ff43457aed6d691a122c7b485d7b68fb1129e789137b456b68f4b4"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "caps26-s42407",
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf",
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+        "sat_seed": 42407,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/caps26-s42407",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42407/target.or",
+        "orientation_sha256": "6a567d4c77c87f4b7ba9c40fb79c6913d7200be0ef45e8a6ed91ff1958491e92"
+      },
+      "seed": 271,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42104",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42104,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42104",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42104/target.or",
+        "orientation_sha256": "91f89a157c866d2b158df4efcae0d11efa944bf701ed7334fa53f5f71c9db52d"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "mixed23-s42105",
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf",
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+        "sat_seed": 42105,
+        "sat_seconds": 300,
+        "output": "improvements/benchmarks/overnight/runs/mixed23-s42105",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42105/target.or",
+        "orientation_sha256": "4d30595722f4d67b8d79e22810b4085f109d1fbce77f00cb295ea082cd732883"
+      },
+      "seed": 811,
+      "arm": "warm_retry"
+    },
+    {
+      "case": {
+        "id": "gons32-s42305",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42305,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42305",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42305/target.or",
+        "orientation_sha256": "ca34d32660e4b2ea71a33b593891ef75fb28ba455475e845203feb610a0054eb"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42207",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42207,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42207",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42207/target.or",
+        "orientation_sha256": "c546b1658a390afd1f8f91d1465dfbb07f45f0e34091c36af3dfd7a6b8ffb428"
+      },
+      "seed": 271,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "holes29-s42204",
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+        "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+        "sat_seed": 42204,
+        "sat_seconds": 1800,
+        "output": "improvements/benchmarks/overnight/runs/holes29-s42204",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42204/target.or",
+        "orientation_sha256": "f458460d2df4e3c12f36e021842b5e36af041c17fd95c575a4a95b5864e9c029"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    },
+    {
+      "case": {
+        "id": "gons32-s42307",
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "/home/andrew/PointSAT/7gon-32.cnf",
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+        "sat_seed": 42307,
+        "sat_seconds": 180,
+        "output": "improvements/benchmarks/overnight/runs/gons32-s42307",
+        "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42307/target.or",
+        "orientation_sha256": "b6f6f44ee0dc1a88568c29151f8a016126096caffc13f274cebe442877ba5411"
+      },
+      "seed": 811,
+      "arm": "core_feedback"
+    }
+  ],
+  "budget_seconds": 60.0,
+  "native_chunk_seconds": 15,
+  "feedback_seconds": 5,
+  "native_binary": "/home/andrew/PointSAT/improvements/localizer/localizer_v6",
+  "binary_sha256": {
+    "/home/andrew/PointSAT/improvements/localizer/localizer_v6": "5fab7d4c1fa7709c603f3f75771239b63a5533b2a36644fcc51fee44daf118a7",
+    "/home/andrew/PointSAT/direct/verify": "06d1825fbcac225ee3ccb23d3388cab27c6207aa69ec4823b7d4fd42bdd5b70c",
+    "/home/andrew/PointSAT/direct/verify_big": "63134f2a57bfe0b04d4e92d7fc42f14a6508e405a466f9853a4bebf21c72a997"
+  },
+  "frozen_sha256": {
+    "flippable2.py": "b943726accd6de9681793a5abbeb29b9535f550b8223f1134fcbad91352426e2",
+    "strategy.py": "2ab0b72e92d7f4ad50f8e81c7baa8ba1c3d83ae97fbba582146e171a47ad1ed9",
+    "sat_orient_conversion.py": "5fd8d2f804d4c10ff6529d8a5922d84fedc8aa5c9c5333a569253616a57616f1",
+    "feedback.py": "7bcc609e37ebdcb233b9dae358571f67b1ccddf8058a1eb7dde936f014c17812"
+  },
+  "seeds": [
+    271,
+    811
+  ],
+  "caps_ordered_x": true,
+  "initial_flippability": true,
+  "feedback_flippability": true,
+  "feedback_policy": "target_margin",
+  "sampling": "Unique SAT targets at zero-based positions 4..7 in the same lexicographically ordered reused corpus; disjoint from the pilot. Policy, helpers, native binary, seeds and budgets copied unchanged from the pilot.",
+  "budget_scope": "Process launch/import, CNF initialization, flippability, native search, feedback, and operational acceptance. Independent post-hoc audit is separately timed and never guides search.",
+  "success_metric": "Any saved checkpoint independently satisfies the actual geometric property, regardless of target mismatch or label-only CNF symmetry breaking.",
+  "new_strategy": false,
+  "phase": "prospective_extension",
+  "parent_registration": "/home/andrew/PointSAT/benchmarks/pilot_20260906/registration.json",
+  "parent_registration_sha256": "d12982b3626d834b7473328b1b57e6d6458087b98d146ceed7276cf00d74fa0c",
+  "selection_offset": 4,
+  "targets_per_family": 4,
+  "no_tuning": true,
+  "job_shuffle_seed": 20260906
+}

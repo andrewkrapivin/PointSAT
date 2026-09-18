@@ -1,0 +1,46 @@
+{
+  "case_id": 0,
+  "arm": "original",
+  "stages": [
+    {
+      "command": [
+        "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/original",
+        "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/initial.or",
+        "-t",
+        "1",
+        "-i",
+        "10",
+        "-r",
+        "30000",
+        "-s",
+        "190907",
+        "-f",
+        "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/fixed",
+        "-c",
+        "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/cycles",
+        "-o",
+        "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0.real"
+      ],
+      "native_budget_seconds": 30.0,
+      "native_wall_seconds": 1.6706093790126033,
+      "native_cpu_seconds": 1.660796,
+      "budget_signal": false,
+      "forced_kill": false,
+      "returncode": 0,
+      "file": "stage0.real",
+      "output_saved": true,
+      "seed": 190907,
+      "warm_start": false
+    }
+  ],
+  "feedback": [],
+  "status": "FINISHED",
+  "worker_wall_seconds": 1.671048799995333,
+  "final_checkpoint": "stage0.real",
+  "parent_wall_seconds": 1.7495564029668458,
+  "parent_cpu_seconds": 1.711377,
+  "returncode": 0,
+  "overhead_watchdog": false,
+  "externally_interrupted": false,
+  "cpu_accounting_flag": false
+}

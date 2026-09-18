@@ -1,0 +1,226 @@
+{
+  "registered_trials": 8,
+  "completed_trials": 8,
+  "complete": true,
+  "budget_seconds": 3.0,
+  "families": {
+    "mixed23": {
+      "unique_target_models": 1,
+      "arms": {
+        "warm_retry": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.058511210954748,
+          "mean_cpu_seconds": 3.035918,
+          "mean_native_cpu_seconds": 1.848959,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.33811434800736606,
+          "mean_best_forbidden_count": 32,
+          "budget_watchdog_trials": 1,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 0.35355229303240776,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        },
+        "core_feedback": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.056745930982288,
+          "mean_cpu_seconds": 3.027447,
+          "mean_native_cpu_seconds": 1.750163,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.2947617640020326,
+          "mean_best_forbidden_count": 32,
+          "budget_watchdog_trials": 1,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 0.36895824602106586,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        }
+      },
+      "paired_trials": 1,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "neither_success": 1
+    },
+    "holes29": {
+      "unique_target_models": 1,
+      "arms": {
+        "warm_retry": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.0952287610271014,
+          "mean_cpu_seconds": 3.082915,
+          "mean_native_cpu_seconds": 0.762597,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.927304953977,
+          "mean_best_forbidden_count": 12,
+          "budget_watchdog_trials": 1,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 0.22420440695714206,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        },
+        "core_feedback": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.144960739999078,
+          "mean_cpu_seconds": 3.082446,
+          "mean_native_cpu_seconds": 0.514581,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.9251226809574291,
+          "mean_best_forbidden_count": 12,
+          "budget_watchdog_trials": 1,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 0.23141488403780386,
+          "status_counts": {
+            "INTERRUPTED": 1
+          }
+        }
+      },
+      "paired_trials": 1,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "neither_success": 1
+    },
+    "gons32": {
+      "unique_target_models": 1,
+      "arms": {
+        "warm_retry": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.0648268020013347,
+          "mean_cpu_seconds": 3.0313130000000004,
+          "mean_native_cpu_seconds": 1.90315,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.39182050700765103,
+          "mean_best_forbidden_count": 1281,
+          "budget_watchdog_trials": 1,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 1.821902993018739,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        },
+        "core_feedback": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.057476982008666,
+          "mean_cpu_seconds": 3.029538,
+          "mean_native_cpu_seconds": 2.05576,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.36432495998451486,
+          "mean_best_forbidden_count": 1281,
+          "budget_watchdog_trials": 1,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 1.7473162090172991,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        }
+      },
+      "paired_trials": 1,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "neither_success": 1
+    },
+    "caps26": {
+      "unique_target_models": 1,
+      "arms": {
+        "warm_retry": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.0136943300021812,
+          "mean_cpu_seconds": 3.002004,
+          "mean_native_cpu_seconds": 2.409605,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.13340107502881438,
+          "mean_best_forbidden_count": 739,
+          "budget_watchdog_trials": 0,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 0.5391217999858782,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        },
+        "core_feedback": {
+          "trials": 1,
+          "valid_geometry_trials": 0,
+          "valid_geometry_target_clusters": 0,
+          "native_stages": 1,
+          "feedback_calls": 0,
+          "feedback_sat_repairs": 0,
+          "mean_wall_seconds": 3.0125558800064027,
+          "mean_cpu_seconds": 3.005317,
+          "mean_native_cpu_seconds": 2.317114,
+          "mean_feedback_wall_seconds": 0,
+          "mean_initial_flippability_seconds": 0.1324232270126231,
+          "mean_best_forbidden_count": 739,
+          "budget_watchdog_trials": 0,
+          "external_interruptions": 0,
+          "nonzero_exit_trials": 0,
+          "posthoc_audit_errors": 0,
+          "posthoc_audit_wall_seconds": 0.5381675150129013,
+          "status_counts": {
+            "BUDGET_EXHAUSTED": 1
+          }
+        }
+      },
+      "paired_trials": 1,
+      "feedback_only_successes": 0,
+      "retry_only_successes": 0,
+      "both_successes": 0,
+      "neither_success": 1
+    }
+  },
+  "registration": "benchmarks/smoke_20260906/registration.json",
+  "success_records": []
+}

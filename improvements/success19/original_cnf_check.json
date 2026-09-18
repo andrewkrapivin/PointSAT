@@ -1,0 +1,14 @@
+{
+  "mapping_conflicts": [],
+  "mapping_consistent": true,
+  "satisfiable": true,
+  "cnf_sha256": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+  "variables": 645257,
+  "clauses": 2311196,
+  "projected_orientation_variables": 327,
+  "violated_clauses": 0,
+  "wrong_orientation_assumptions": 0,
+  "full_model": "/home/andrew/PointSAT/improvements/success19/compact.cnf.model",
+  "full_model_sha256": "a6bbff12363fb6d43968f14f84dbdffa1f1df2d62ed2485b51f5e07ff4c3571c",
+  "seconds": 2.441204100003233
+}

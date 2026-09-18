@@ -1,0 +1,42 @@
+{
+  "pairs": 60,
+  "baseline_unmatched": 0,
+  "improved_unmatched": 0,
+  "groups": {
+    "23_no7gon_no6hole/legacy_tuning": {
+      "pairs": 60,
+      "auditable_pairs": 60,
+      "improved_wins": 24,
+      "ties": 21,
+      "regressions": 15,
+      "mean_violation_reduction": 0.6833333333333333,
+      "median_violation_reduction": 0.0,
+      "independent_model_clusters": 60,
+      "mean_reduction_model_cluster_bootstrap_95pct": [
+        0.11666666666666667,
+        1.2666666666666666
+      ],
+      "uncertainty_note": "Percentile paired bootstrap resampling unique orientation SHA256 models, averaging seeds and duplicate SAT draws within model. Exploratory; small samples and shared SAT-generation distribution. No interval is estimated from a single unique model.",
+      "baseline": {
+        "orientation_successes": 0,
+        "geometric_successes": 0,
+        "ordered_cap_geometric_successes": 0,
+        "mean_violations": 14.966666666666667,
+        "median_violations": 14.5,
+        "sum_cpu_seconds": 900.022846,
+        "sum_wall_seconds": 900.1240985848708,
+        "audit_errors": 0
+      },
+      "improved": {
+        "orientation_successes": 0,
+        "geometric_successes": 1,
+        "ordered_cap_geometric_successes": 0,
+        "mean_violations": 14.283333333333333,
+        "median_violations": 13.5,
+        "sum_cpu_seconds": 897.8978680000001,
+        "sum_wall_seconds": 900.2297577140562,
+        "audit_errors": 0
+      }
+    }
+  }
+}

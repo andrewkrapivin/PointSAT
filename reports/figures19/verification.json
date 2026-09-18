@@ -1,0 +1,455 @@
+{
+  "valid": true,
+  "exact_Euclidean_C3": true,
+  "general_position": true,
+  "triples_checked": 969,
+  "six_subsets_checked": 27132,
+  "interior_histogram": [
+    0,
+    15,
+    12,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "convex_hexagons": [
+    {
+      "vertices": [
+        14,
+        1,
+        15,
+        2,
+        13,
+        3
+      ],
+      "interior": [
+        10,
+        11,
+        12,
+        19
+      ]
+    },
+    {
+      "vertices": [
+        1,
+        6,
+        8,
+        2,
+        12,
+        11
+      ],
+      "interior": [
+        15
+      ]
+    },
+    {
+      "vertices": [
+        1,
+        6,
+        8,
+        2,
+        12,
+        19
+      ],
+      "interior": [
+        11,
+        15
+      ]
+    },
+    {
+      "vertices": [
+        18,
+        8,
+        2,
+        12,
+        11,
+        1
+      ],
+      "interior": [
+        6,
+        15
+      ]
+    },
+    {
+      "vertices": [
+        5,
+        7,
+        1,
+        11,
+        10,
+        3
+      ],
+      "interior": [
+        14
+      ]
+    },
+    {
+      "vertices": [
+        5,
+        7,
+        1,
+        11,
+        19,
+        3
+      ],
+      "interior": [
+        10,
+        14
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        7,
+        1,
+        11,
+        10,
+        3
+      ],
+      "interior": [
+        5,
+        14
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        6,
+        8,
+        1,
+        14,
+        5
+      ],
+      "interior": [
+        7
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        18,
+        6,
+        1,
+        14,
+        5
+      ],
+      "interior": [
+        7
+      ]
+    },
+    {
+      "vertices": [
+        5,
+        7,
+        1,
+        11,
+        19,
+        10
+      ],
+      "interior": [
+        14
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        18,
+        8,
+        1,
+        14,
+        5
+      ],
+      "interior": [
+        6,
+        7
+      ]
+    },
+    {
+      "vertices": [
+        3,
+        10,
+        12,
+        2,
+        4,
+        9
+      ],
+      "interior": [
+        13
+      ]
+    },
+    {
+      "vertices": [
+        3,
+        10,
+        19,
+        2,
+        4,
+        9
+      ],
+      "interior": [
+        12,
+        13
+      ]
+    },
+    {
+      "vertices": [
+        3,
+        10,
+        12,
+        2,
+        16,
+        9
+      ],
+      "interior": [
+        4,
+        13
+      ]
+    },
+    {
+      "vertices": [
+        18,
+        4,
+        9,
+        2,
+        15,
+        6
+      ],
+      "interior": [
+        8
+      ]
+    },
+    {
+      "vertices": [
+        18,
+        16,
+        4,
+        2,
+        15,
+        6
+      ],
+      "interior": [
+        8
+      ]
+    },
+    {
+      "vertices": [
+        11,
+        6,
+        8,
+        2,
+        12,
+        19
+      ],
+      "interior": [
+        15
+      ]
+    },
+    {
+      "vertices": [
+        18,
+        16,
+        9,
+        2,
+        15,
+        6
+      ],
+      "interior": [
+        4,
+        8
+      ]
+    },
+    {
+      "vertices": [
+        5,
+        7,
+        3,
+        13,
+        4,
+        16
+      ],
+      "interior": [
+        9
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        5,
+        3,
+        13,
+        4,
+        16
+      ],
+      "interior": [
+        9
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        7,
+        3,
+        13,
+        4,
+        16
+      ],
+      "interior": [
+        5,
+        9
+      ]
+    },
+    {
+      "vertices": [
+        3,
+        10,
+        19,
+        12,
+        4,
+        9
+      ],
+      "interior": [
+        13
+      ]
+    },
+    {
+      "vertices": [
+        15,
+        8,
+        4,
+        9,
+        13,
+        12
+      ],
+      "interior": [
+        2
+      ]
+    },
+    {
+      "vertices": [
+        5,
+        7,
+        14,
+        10,
+        13,
+        9
+      ],
+      "interior": [
+        3
+      ]
+    },
+    {
+      "vertices": [
+        7,
+        6,
+        8,
+        15,
+        11,
+        14
+      ],
+      "interior": [
+        1
+      ]
+    },
+    {
+      "vertices": [
+        18,
+        8,
+        15,
+        11,
+        14,
+        7
+      ],
+      "interior": [
+        1,
+        6
+      ]
+    },
+    {
+      "vertices": [
+        17,
+        7,
+        14,
+        10,
+        13,
+        9
+      ],
+      "interior": [
+        3,
+        5
+      ]
+    },
+    {
+      "vertices": [
+        15,
+        8,
+        16,
+        9,
+        13,
+        12
+      ],
+      "interior": [
+        2,
+        4
+      ]
+    }
+  ],
+  "arithmetic": "independent Python arbitrary integers in Q(sqrt3)",
+  "witness": "improvements/success19/witness.qsqrt3",
+  "witness_sha256": "7a27f06464c79ded524d3476918117446cff7773e912f8b491665cbdb98b0465",
+  "display_scale": 0.5,
+  "new_coordinate_optimization_performed": false,
+  "note": "Existing compact witness, unchanged; no new optimization. Floating point only renders the exact data.",
+  "displayed_examples": [
+    {
+      "vertices": [
+        1,
+        6,
+        8,
+        2,
+        12,
+        11
+      ],
+      "interior": [
+        15
+      ]
+    },
+    {
+      "vertices": [
+        1,
+        6,
+        8,
+        2,
+        12,
+        19
+      ],
+      "interior": [
+        11,
+        15
+      ]
+    },
+    {
+      "vertices": [
+        14,
+        1,
+        15,
+        2,
+        13,
+        3
+      ],
+      "interior": [
+        10,
+        11,
+        12,
+        19
+      ]
+    }
+  ]
+}

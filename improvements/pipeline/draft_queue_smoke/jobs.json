@@ -1,0 +1,140 @@
+[
+  {
+    "label": "job000-mixed23-target_margin",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/frozen/PointSAT.py",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/configs/job000-mixed23-target_margin.json",
+      "--out",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job000-mixed23-target_margin"
+    ],
+    "max_seconds": 600,
+    "workers": 1,
+    "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job000-mixed23-target_margin",
+    "audit_command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/audit_run.py",
+      "--input",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job000-mixed23-target_margin",
+      "--output",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job000-mixed23-target_margin/audit",
+      "--family",
+      "mixed23"
+    ]
+  },
+  {
+    "label": "job001-symmetry19-target_margin",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/frozen/PointSAT.py",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/configs/job001-symmetry19-target_margin.json",
+      "--out",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job001-symmetry19-target_margin"
+    ],
+    "max_seconds": 600,
+    "workers": 1,
+    "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job001-symmetry19-target_margin",
+    "audit_command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/audit_run.py",
+      "--input",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job001-symmetry19-target_margin",
+      "--output",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job001-symmetry19-target_margin/audit",
+      "--family",
+      "symmetry19"
+    ]
+  },
+  {
+    "label": "job002-gons32-target_margin",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/frozen/PointSAT.py",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/configs/job002-gons32-target_margin.json",
+      "--out",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job002-gons32-target_margin"
+    ],
+    "max_seconds": 600,
+    "workers": 1,
+    "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job002-gons32-target_margin",
+    "audit_command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/audit_run.py",
+      "--input",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job002-gons32-target_margin",
+      "--output",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job002-gons32-target_margin/audit",
+      "--family",
+      "gons32"
+    ]
+  },
+  {
+    "label": "job003-mixed23-target_margin",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/frozen/PointSAT.py",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/configs/job003-mixed23-target_margin.json",
+      "--out",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job003-mixed23-target_margin"
+    ],
+    "max_seconds": 600,
+    "workers": 1,
+    "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job003-mixed23-target_margin",
+    "audit_command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/audit_run.py",
+      "--input",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job003-mixed23-target_margin",
+      "--output",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job003-mixed23-target_margin/audit",
+      "--family",
+      "mixed23"
+    ]
+  },
+  {
+    "label": "job004-holes29-target_margin",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/frozen/PointSAT.py",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/configs/job004-holes29-target_margin.json",
+      "--out",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job004-holes29-target_margin"
+    ],
+    "max_seconds": 900,
+    "workers": 1,
+    "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job004-holes29-target_margin",
+    "audit_command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/audit_run.py",
+      "--input",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job004-holes29-target_margin",
+      "--output",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job004-holes29-target_margin/audit",
+      "--family",
+      "holes29"
+    ]
+  },
+  {
+    "label": "job005-caps26-target_margin",
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/frozen/PointSAT.py",
+      "/home/andrew/PointSAT/improvements/pipeline/draft_queue_smoke/configs/job005-caps26-target_margin.json",
+      "--out",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job005-caps26-target_margin"
+    ],
+    "max_seconds": 600,
+    "workers": 1,
+    "output": "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job005-caps26-target_margin",
+    "audit_command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/pipeline/audit_run.py",
+      "--input",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job005-caps26-target_margin",
+      "--output",
+      "/home/andrew/PointSAT/improvements/pipeline/unattended_runs/job005-caps26-target_margin/audit",
+      "--family",
+      "caps26"
+    ]
+  }
+]

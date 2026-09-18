@@ -1,0 +1,67 @@
+{
+  "output_folder": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job071-caps26-target_margin",
+  "workers": 1,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "localizer_attempt_levels": 1,
+  "localizer_attempt_timeouts": [
+    15
+  ],
+  "localizer_attempt_branches": [
+    1,
+    1,
+    1
+  ],
+  "localizer_attempt_thresholds": [
+    10,
+    7,
+    4
+  ],
+  "n": 26,
+  "localizer_loc": "improvements/localizer/localizer_v6",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "continue_if_realized": false,
+  "solution_generation": "scranfilize",
+  "n_solutions": 6,
+  "solver_timeout": 90,
+  "scranfilize_timeout": 60,
+  "interrupt_grace_seconds": 2,
+  "seed": 702202,
+  "sat_seed_start": 17100,
+  "localizer_iterations": 10,
+  "localizer_restarts": 30000,
+  "localizer_extra_args": [
+    "--line-every",
+    "10",
+    "--min-radius",
+    "0.000001",
+    "-q",
+    "--ordered-x"
+  ],
+  "sat_extra_args": [
+    "--quiet",
+    "--plain"
+  ],
+  "warm_start_retries": true,
+  "localizer_warm_start_flag": "-w",
+  "localizer_native_time_limit": true,
+  "stop_on_solution": false,
+  "feedback_rounds": 3,
+  "feedback_max_relaxed": 256,
+  "feedback_max_solves": 256,
+  "feedback_conflict_budget": 1000,
+  "feedback_seconds": 10,
+  "feedback_remove_flippable": true,
+  "radial_relabel_check": false,
+  "problem_family": "caps26",
+  "orientation_map_file": null,
+  "initial_warm_start_file": null,
+  "localizer_archive_candidates": 10,
+  "shutdown_grace_seconds": 10,
+  "feedback_core_choice": "target_margin",
+  "feedback_radial_scaffold": false,
+  "flippability_model_cache_size": 128,
+  "nonrealizability_proof_files": [],
+  "base_file": "7gon-no-5-cap-no-sb-26.cnf",
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize"
+}

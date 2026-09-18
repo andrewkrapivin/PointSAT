@@ -1,0 +1,1130 @@
+{
+  "source": "direct/results/2026-09-05/triangle-focused/triangle23-direct22-s64.pts",
+  "deletions": [
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-1.pts",
+      "deleted_index": 1,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 847,
+        "hull_layers": [
+          4,
+          5,
+          4,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 6992256200000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          18,
+          14,
+          11,
+          20,
+          1,
+          12
+        ],
+        "first_cap": [],
+        "seconds": 0.0457044
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-2.pts",
+      "deleted_index": 2,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 762,
+        "hull_layers": [
+          4,
+          6,
+          4,
+          4,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          87681366,
+          100000000
+        ],
+        "bbox_width": 87681366,
+        "bbox_height": 100000000,
+        "bbox_area": 8768136600000000,
+        "min_determinant": 87374325,
+        "max_determinant": 8768136600000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0547923
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-3.pts",
+      "deleted_index": 3,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 876,
+        "hull_layers": [
+          4,
+          6,
+          6,
+          3,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          26823049
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 26823049,
+        "bbox_area": 2682304900000000,
+        "min_determinant": 87374325,
+        "max_determinant": 2682304900000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          18,
+          14,
+          11,
+          20,
+          2,
+          12
+        ],
+        "first_cap": [],
+        "seconds": 0.041757
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-4.pts",
+      "deleted_index": 4,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 673,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          3,
+          3,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          18,
+          14,
+          11,
+          20,
+          2,
+          12
+        ],
+        "first_cap": [],
+        "seconds": 0.0532105
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-5.pts",
+      "deleted_index": 5,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 7,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 649,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          3,
+          3,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 2768360906,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          1,
+          22,
+          17,
+          10,
+          4,
+          5
+        ],
+        "first_cap": [],
+        "seconds": 0.042484
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-6.pts",
+      "deleted_index": 6,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 737,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          18,
+          14,
+          11,
+          20,
+          2,
+          12
+        ],
+        "first_cap": [],
+        "seconds": 0.0440639
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-7.pts",
+      "deleted_index": 7,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 7,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 669,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          4,
+          4,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          3,
+          4,
+          13,
+          9,
+          14,
+          18
+        ],
+        "first_cap": [],
+        "seconds": 0.0421971
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-8.pts",
+      "deleted_index": 8,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 544,
+        "hull_layers": [
+          3,
+          4,
+          5,
+          4,
+          3,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          18,
+          14,
+          11,
+          20,
+          2,
+          12
+        ],
+        "first_cap": [],
+        "seconds": 0.0417845
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-9.pts",
+      "deleted_index": 9,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 745,
+        "hull_layers": [
+          3,
+          6,
+          6,
+          4,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 869691006,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          18,
+          14,
+          11,
+          20,
+          2,
+          12
+        ],
+        "first_cap": [],
+        "seconds": 0.0441425
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-10.pts",
+      "deleted_index": 10,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 9,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 674,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          4,
+          4,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          8,
+          14,
+          18,
+          13,
+          21,
+          19
+        ],
+        "first_cap": [],
+        "seconds": 0.0438134
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-11.pts",
+      "deleted_index": 11,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 3,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 647,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          3,
+          3,
+          3
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          9,
+          5,
+          7,
+          14,
+          18,
+          4
+        ],
+        "first_cap": [],
+        "seconds": 0.0430734
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-12.pts",
+      "deleted_index": 12,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 695,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0452752
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-13.pts",
+      "deleted_index": 13,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 707,
+        "hull_layers": [
+          3,
+          6,
+          5,
+          4,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0462378
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-14.pts",
+      "deleted_index": 14,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 5,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 714,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          4,
+          3,
+          2
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 869691006,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          15,
+          21,
+          10,
+          14,
+          18,
+          7
+        ],
+        "first_cap": [],
+        "seconds": 0.0576385
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-15.pts",
+      "deleted_index": 15,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 676,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          9,
+          11,
+          12,
+          2,
+          18,
+          4
+        ],
+        "first_cap": [],
+        "seconds": 0.0433755
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-16.pts",
+      "deleted_index": 16,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 2,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 645,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          4,
+          3,
+          2
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 2265257898650,
+        "first_gon": [],
+        "first_hole": [
+          5,
+          17,
+          21,
+          14,
+          7,
+          11
+        ],
+        "first_cap": [],
+        "seconds": 0.0271116
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-17.pts",
+      "deleted_index": 17,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 2,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 688,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          22,
+          19,
+          10,
+          21,
+          17,
+          6
+        ],
+        "first_cap": [],
+        "seconds": 0.0280794
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-18.pts",
+      "deleted_index": 18,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 5,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 665,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          4,
+          4,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          1,
+          22,
+          21,
+          16,
+          5,
+          6
+        ],
+        "first_cap": [],
+        "seconds": 0.0282266
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-19.pts",
+      "deleted_index": 19,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 658,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0280241
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-20.pts",
+      "deleted_index": 20,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 7,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 685,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          1,
+          8,
+          13,
+          10,
+          17,
+          22
+        ],
+        "first_cap": [],
+        "seconds": 0.028055
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-21.pts",
+      "deleted_index": 21,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 706,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0284037
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-22.pts",
+      "deleted_index": 22,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 3,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 712,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          4,
+          3,
+          2
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 2265257898650,
+        "first_gon": [],
+        "first_hole": [
+          8,
+          10,
+          14,
+          16,
+          18,
+          20
+        ],
+        "first_cap": [],
+        "seconds": 0.0289591
+      }
+    },
+    {
+      "path": "direct/results/2026-09-05/one-hole-all-deletions/delete-23.pts",
+      "deleted_index": 23,
+      "verification": {
+        "n": 22,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 1,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 170544,
+        "hole_subsets_checked": 74613,
+        "convex_hole_size_subsets": 691,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4
+        ],
+        "bbox": [
+          0,
+          0,
+          100000000,
+          100000000
+        ],
+        "bbox_width": 100000000,
+        "bbox_height": 100000000,
+        "bbox_area": 10000000000000000,
+        "min_determinant": 87374325,
+        "max_determinant": 10000000000000000,
+        "min_squared_distance": 1761726762772,
+        "first_gon": [],
+        "first_hole": [
+          19,
+          15,
+          12,
+          21,
+          2,
+          13
+        ],
+        "first_cap": [],
+        "seconds": 0.0287348
+      }
+    }
+  ]
+}

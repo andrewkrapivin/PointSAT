@@ -1,0 +1,19 @@
+{
+  "real_sha256": "47b804300b5e31f573334d3d312d924b2becd0384ab0e0fbb613a4307a76e44a",
+  "target_sha256": "d2dfeb55f435564471a4d20996eed28d48e0d3e64dda2f69a9905d9b97f73f71",
+  "dependencies": {
+    "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/compare19_audit.py": "495e6be53fe2ef31bdd51f625873405f574fee856aa43833647d13890d041fe9",
+    "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/verifier19": "8ab0a699b9f92ee62e0d1ae8996e3551a5fe16e3b97f2e15b60d3db1cacff911",
+    "/home/andrew/PointSAT/convex_hexagon_inside_19_3sym.cnf": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+    "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/mapping.json": "30203c74b5516f7e61454ef4f4e37d3ea60b26850e114139cfb7e22e0ea14c35",
+    "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/cycles.cycles": "86cd8a164ef4c7186e8d2f43f8fa7239b813f0f13ad16bec8d6dc6dedd451f7b",
+    "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/c3_verifier": "d32bc15551ec31e93a022f330f21c5fa6dc4f974f3fe6ca991fdfa151dad6128"
+  },
+  "n": 19,
+  "primary_requires_C3": false,
+  "path_roles": {
+    "cnf_path": "/home/andrew/PointSAT/convex_hexagon_inside_19_3sym.cnf",
+    "orientation_map_path": "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/mapping.json",
+    "cycles_path": "/home/andrew/PointSAT/benchmarks/anytime_smoke_20260907/frozen/cycles.cycles"
+  }
+}

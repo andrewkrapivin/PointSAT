@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "-u",
+    "PointSAT.py",
+    "improvements/pipeline/resumed_0532/control_margin.json",
+    "--out",
+    "improvements/pipeline/resumed_0532/control_margin_run"
+  ],
+  "wall_seconds": 131.22256568900775,
+  "cpu_seconds": 131.38954,
+  "max_rss_kib": 296592,
+  "returncode": 0,
+  "timed_out": false
+}

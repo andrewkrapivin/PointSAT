@@ -1,0 +1,160 @@
+[
+  {
+    "case": "control-paper23",
+    "known_coordinate_derived_orientation_control": true,
+    "native_stats": [
+      {
+        "thread": 1,
+        "seconds": 0.648072954,
+        "iterations": 100000,
+        "proposals": 998697,
+        "constraint_evaluations": 127670797,
+        "early_rejections": 769840,
+        "accepted": 228857,
+        "improvements": 247,
+        "restarts": 2,
+        "final_violations": 8,
+        "best_violations": 8
+      }
+    ],
+    "audit": {
+      "orientation_violations": 8,
+      "constraint_count": 1771,
+      "collinear_triples_independent": 0,
+      "geometry": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "valid": false,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 27,
+        "empty_holes": 6,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "seconds": 0.222508
+      },
+      "integer_points": "improvements/benchmarks/results/kernel_v1/control-paper23-r0-fast.pts",
+      "integer_points_sha256": "53c69c5e6b7295656df01d43edad36e8e8d3d9ef8124321108bc3692db0720ff"
+    }
+  },
+  {
+    "case": "control-overmars29",
+    "known_coordinate_derived_orientation_control": true,
+    "native_stats": [
+      {
+        "thread": 1,
+        "seconds": 0.531975882,
+        "iterations": 43580,
+        "proposals": 433849,
+        "constraint_evaluations": 112088367,
+        "early_rejections": 230830,
+        "accepted": 203019,
+        "improvements": 337,
+        "restarts": 1,
+        "final_violations": 0,
+        "best_violations": 0
+      }
+    ],
+    "audit": {
+      "orientation_violations": 0,
+      "constraint_count": 3654,
+      "collinear_triples_independent": 0,
+      "geometry": {
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "valid": true,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "gon_subsets_checked": 0,
+        "hole_subsets_checked": 475020,
+        "seconds": 0.409018
+      },
+      "integer_points": "improvements/benchmarks/results/kernel_v1/control-overmars29-r0-fast.pts",
+      "integer_points_sha256": "ebd454b770bb01c10409532fa2ff3c74ed09180e29a3ba95ec2f4b3ce6ef6776"
+    }
+  },
+  {
+    "case": "control-es32",
+    "known_coordinate_derived_orientation_control": true,
+    "native_stats": [
+      {
+        "thread": 1,
+        "seconds": 0.012767895,
+        "iterations": 1147,
+        "proposals": 8838,
+        "constraint_evaluations": 2708952,
+        "early_rejections": 6554,
+        "accepted": 2284,
+        "improvements": 486,
+        "restarts": 0,
+        "final_violations": 0,
+        "best_violations": 0
+      }
+    ],
+    "audit": {
+      "orientation_violations": 0,
+      "constraint_count": 4960,
+      "collinear_triples_independent": 0,
+      "geometry": {
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "valid": true,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "gon_subsets_checked": 3365856,
+        "hole_subsets_checked": 0,
+        "seconds": 2.06347
+      },
+      "integer_points": "improvements/benchmarks/results/kernel_v1/control-es32-r0-fast.pts",
+      "integer_points_sha256": "d13b6b5266eeec93ba2de4bfe4d9d8b7a6753515f5da2b86ee5db3d16332f538"
+    }
+  },
+  {
+    "case": "control-es26cap5",
+    "known_coordinate_derived_orientation_control": true,
+    "native_stats": [
+      {
+        "thread": 1,
+        "seconds": 0.00315643,
+        "iterations": 448,
+        "proposals": 2921,
+        "constraint_evaluations": 631366,
+        "early_rejections": 1944,
+        "accepted": 977,
+        "improvements": 279,
+        "restarts": 0,
+        "final_violations": 0,
+        "best_violations": 0
+      }
+    ],
+    "audit": {
+      "orientation_violations": 0,
+      "constraint_count": 2600,
+      "collinear_triples_independent": 0,
+      "geometry": {
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "valid": false,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "gon_subsets_checked": 657800,
+        "hole_subsets_checked": 0,
+        "seconds": 0.554978,
+        "convex_caps": 36
+      },
+      "integer_points": "improvements/benchmarks/results/kernel_v1/control-es26cap5-r0-fast.pts",
+      "integer_points_sha256": "1415fcef7502b18d6ced983e1f69a619decf922c3840d99310d091d927fddc3f",
+      "label_order_affine_feasible": false
+    }
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "protocol": "Deterministic replay of representative 23-point SAT/native records. No SAT or Localizer calls; timings measure storage/coordinator only.",
+  "samples": 200,
+  "native_records_per_sample": 2,
+  "repeats": 3,
+  "identical_semantic_payloads": true,
+  "groups": {
+    "legacy": {
+      "wall_seconds": 1.7430133409798145,
+      "cpu_seconds": 1.736002106,
+      "files": 1804,
+      "logical_bytes": 13111418,
+      "allocated_bytes": 19316736,
+      "peak_temporary_files": 1800
+    },
+    "sqlite": {
+      "wall_seconds": 1.5317639909917489,
+      "cpu_seconds": 1.440070269,
+      "files": 1,
+      "logical_bytes": 3244032,
+      "allocated_bytes": 3244032,
+      "peak_temporary_files": 6
+    }
+  },
+  "runs": [
+    {
+      "repeat": 0,
+      "storage": "legacy",
+      "wall_seconds": 1.7430133409798145,
+      "cpu_seconds": 1.736002106,
+      "files": 1804,
+      "logical_bytes": 13111418,
+      "allocated_bytes": 19316736,
+      "peak_temporary_files": 1800,
+      "events": 600,
+      "payload_hash": "dfb1edcd13c50e75346eca3aec4be0683053392236450e4508a59d53422387c7"
+    },
+    {
+      "repeat": 0,
+      "storage": "sqlite",
+      "wall_seconds": 1.5285678940126672,
+      "cpu_seconds": 1.440070269,
+      "files": 1,
+      "logical_bytes": 3244032,
+      "allocated_bytes": 3244032,
+      "peak_temporary_files": 6,
+      "events": 600,
+      "payload_hash": "dfb1edcd13c50e75346eca3aec4be0683053392236450e4508a59d53422387c7"
+    },
+    {
+      "repeat": 1,
+      "storage": "sqlite",
+      "wall_seconds": 1.5353282379801385,
+      "cpu_seconds": 1.4544009340000001,
+      "files": 1,
+      "logical_bytes": 3244032,
+      "allocated_bytes": 3244032,
+      "peak_temporary_files": 6,
+      "events": 600,
+      "payload_hash": "dfb1edcd13c50e75346eca3aec4be0683053392236450e4508a59d53422387c7"
+    },
+    {
+      "repeat": 1,
+      "storage": "legacy",
+      "wall_seconds": 1.8178404240170494,
+      "cpu_seconds": 1.791660136,
+      "files": 1804,
+      "logical_bytes": 13111402,
+      "allocated_bytes": 19316736,
+      "peak_temporary_files": 1800,
+      "events": 600,
+      "payload_hash": "dfb1edcd13c50e75346eca3aec4be0683053392236450e4508a59d53422387c7"
+    },
+    {
+      "repeat": 2,
+      "storage": "legacy",
+      "wall_seconds": 1.6319763170322403,
+      "cpu_seconds": 1.627744872,
+      "files": 1804,
+      "logical_bytes": 13111427,
+      "allocated_bytes": 19316736,
+      "peak_temporary_files": 1800,
+      "events": 600,
+      "payload_hash": "dfb1edcd13c50e75346eca3aec4be0683053392236450e4508a59d53422387c7"
+    },
+    {
+      "repeat": 2,
+      "storage": "sqlite",
+      "wall_seconds": 1.5317639909917489,
+      "cpu_seconds": 1.3707798120000003,
+      "files": 1,
+      "logical_bytes": 3244032,
+      "allocated_bytes": 3244032,
+      "peak_temporary_files": 6,
+      "events": 600,
+      "payload_hash": "dfb1edcd13c50e75346eca3aec4be0683053392236450e4508a59d53422387c7"
+    }
+  ]
+}

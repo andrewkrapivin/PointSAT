@@ -1,0 +1,402 @@
+{
+  "registration": {
+    "registered_utc": "2026-09-05T05:40:02Z",
+    "jobs": [
+      {
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "7gon-6hole-23-compact.cnf",
+        "sat_seed": 31101,
+        "id": "mixed23-seed31101",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "7gon-6hole-23-compact.cnf",
+        "sat_seed": 31102,
+        "id": "mixed23-seed31102",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "7gon-32.cnf",
+        "sat_seed": 31301,
+        "id": "gons32-seed31301",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "7gon-32.cnf",
+        "sat_seed": 31302,
+        "id": "gons32-seed31302",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+        "sat_seed": 31401,
+        "id": "caps26-seed31401",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+        "sat_seed": 31402,
+        "id": "caps26-seed31402",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "6hole-29-compact.cnf",
+        "sat_seed": 31201,
+        "id": "holes29-seed31201",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      },
+      {
+        "problem": "holes29",
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "6hole-29-compact.cnf",
+        "sat_seed": 31202,
+        "id": "holes29-seed31202",
+        "split": "round2_heldout",
+        "wall_limit": 600
+      }
+    ],
+    "native_candidate_sha256": "13a32f6d12f2696791b652f8be1cbeb6452491c0f5ca6f1dd3b1318830cd44eb",
+    "prespecified_native_treatments": [
+      [],
+      [
+        "--line-every",
+        "10"
+      ],
+      [
+        "--pair-every",
+        "10",
+        "--line-every",
+        "10"
+      ]
+    ],
+    "localizer_seeds": [
+      1,
+      17,
+      101
+    ],
+    "localizer_wall_seconds": 15,
+    "note": "All new SAT seeds; candidate and treatments frozen before models or convergence outcomes. Default Kissat,600s SAT cap; no known-coordinate seed."
+  },
+  "cases": [
+    {
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "sat_seed": 31101,
+      "id": "mixed23-seed31101",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "orientation": "improvements/benchmarks/round2_corpus/mixed23-seed31101.or",
+      "sha256": "9ea78c15084a03e0c747480777d28b91551f29a57490c5fc2047b006b4e4228b",
+      "known_seeded": false,
+      "generation_result": {
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "7gon-6hole-23-compact.cnf",
+        "sat_seed": 31101,
+        "id": "mixed23-seed31101",
+        "split": "round2_heldout",
+        "wall_limit": 600,
+        "returncode": 10,
+        "timed_out": false,
+        "wall_seconds": 19.605638712993823,
+        "cpu_seconds": 19.425164,
+        "command": [
+          "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+          "--quiet",
+          "--seed=31101",
+          "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf"
+        ],
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428"
+      }
+    },
+    {
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "sat_seed": 31102,
+      "id": "mixed23-seed31102",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "orientation": "improvements/benchmarks/round2_corpus/mixed23-seed31102.or",
+      "sha256": "ac6e9950930f543da01d8315341315e64bcecc320df2c9017ffb03b84aebbdcb",
+      "known_seeded": false,
+      "generation_result": {
+        "problem": "mixed23",
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "cnf": "7gon-6hole-23-compact.cnf",
+        "sat_seed": 31102,
+        "id": "mixed23-seed31102",
+        "split": "round2_heldout",
+        "wall_limit": 600,
+        "returncode": 10,
+        "timed_out": false,
+        "wall_seconds": 11.541417606000323,
+        "cpu_seconds": 11.498092000000002,
+        "command": [
+          "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+          "--quiet",
+          "--seed=31102",
+          "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf"
+        ],
+        "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428"
+      }
+    },
+    {
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "7gon-32.cnf",
+      "sat_seed": 31301,
+      "id": "gons32-seed31301",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "orientation": "improvements/benchmarks/round2_corpus/gons32-seed31301.or",
+      "sha256": "66055c76eab876461c1834694427a8eac3a77c78fb34bbf0e323ba9dbcac2dad",
+      "known_seeded": false,
+      "generation_result": {
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "7gon-32.cnf",
+        "sat_seed": 31301,
+        "id": "gons32-seed31301",
+        "split": "round2_heldout",
+        "wall_limit": 600,
+        "returncode": 10,
+        "timed_out": false,
+        "wall_seconds": 2.7764240770193283,
+        "cpu_seconds": 2.7205219999999968,
+        "command": [
+          "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+          "--quiet",
+          "--seed=31301",
+          "/home/andrew/PointSAT/7gon-32.cnf"
+        ],
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c"
+      }
+    },
+    {
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "7gon-32.cnf",
+      "sat_seed": 31302,
+      "id": "gons32-seed31302",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "orientation": "improvements/benchmarks/round2_corpus/gons32-seed31302.or",
+      "sha256": "66055c76eab876461c1834694427a8eac3a77c78fb34bbf0e323ba9dbcac2dad",
+      "known_seeded": false,
+      "generation_result": {
+        "problem": "gons32",
+        "n": 32,
+        "gon": 7,
+        "hole": 0,
+        "cap": 0,
+        "cnf": "7gon-32.cnf",
+        "sat_seed": 31302,
+        "id": "gons32-seed31302",
+        "split": "round2_heldout",
+        "wall_limit": 600,
+        "returncode": 10,
+        "timed_out": false,
+        "wall_seconds": 2.8249479320074897,
+        "cpu_seconds": 2.7721080000000033,
+        "command": [
+          "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+          "--quiet",
+          "--seed=31302",
+          "/home/andrew/PointSAT/7gon-32.cnf"
+        ],
+        "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c"
+      }
+    },
+    {
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "sat_seed": 31401,
+      "id": "caps26-seed31401",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "orientation": "improvements/benchmarks/round2_corpus/caps26-seed31401.or",
+      "sha256": "9f443639fd4665cad1de49146e40ea627b2ee992421324cb4932d2506b505cc5",
+      "known_seeded": false,
+      "generation_result": {
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+        "sat_seed": 31401,
+        "id": "caps26-seed31401",
+        "split": "round2_heldout",
+        "wall_limit": 600,
+        "returncode": 10,
+        "timed_out": false,
+        "wall_seconds": 0.8213776709744707,
+        "cpu_seconds": 0.8059240000000061,
+        "command": [
+          "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+          "--quiet",
+          "--seed=31401",
+          "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf"
+        ],
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268"
+      }
+    },
+    {
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "sat_seed": 31402,
+      "id": "caps26-seed31402",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "orientation": "improvements/benchmarks/round2_corpus/caps26-seed31402.or",
+      "sha256": "9f443639fd4665cad1de49146e40ea627b2ee992421324cb4932d2506b505cc5",
+      "known_seeded": false,
+      "generation_result": {
+        "problem": "caps26",
+        "n": 26,
+        "gon": 7,
+        "hole": 0,
+        "cap": 5,
+        "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+        "sat_seed": 31402,
+        "id": "caps26-seed31402",
+        "split": "round2_heldout",
+        "wall_limit": 600,
+        "returncode": 10,
+        "timed_out": false,
+        "wall_seconds": 0.8691948350169696,
+        "cpu_seconds": 0.8154659999999969,
+        "command": [
+          "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+          "--quiet",
+          "--seed=31402",
+          "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf"
+        ],
+        "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268"
+      }
+    }
+  ],
+  "failed_cases": [
+    {
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "6hole-29-compact.cnf",
+      "sat_seed": 31201,
+      "id": "holes29-seed31201",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "returncode": -9,
+      "timed_out": true,
+      "wall_seconds": 600.0127351209812,
+      "cpu_seconds": 599.4827560000001,
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+        "--quiet",
+        "--seed=31201",
+        "/home/andrew/PointSAT/6hole-29-compact.cnf"
+      ],
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3"
+    },
+    {
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "6hole-29-compact.cnf",
+      "sat_seed": 31202,
+      "id": "holes29-seed31202",
+      "split": "round2_heldout",
+      "wall_limit": 600,
+      "returncode": -9,
+      "timed_out": true,
+      "wall_seconds": 600.0076738169882,
+      "cpu_seconds": 584.55793,
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+        "--quiet",
+        "--seed=31202",
+        "/home/andrew/PointSAT/6hole-29-compact.cnf"
+      ],
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3"
+    }
+  ]
+}

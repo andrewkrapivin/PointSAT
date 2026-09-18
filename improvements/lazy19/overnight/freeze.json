@@ -1,0 +1,31 @@
+{
+  "source_sha256": {
+    "sat_orient_conversion.py": "5fd8d2f804d4c10ff6529d8a5922d84fedc8aa5c9c5333a569253616a57616f1",
+    "improvements/lazy19/search.py": "5abfe5c4c116f0a8694e404a8e1a53affab9f38090c7f50568f4c01bd4becb4a",
+    "improvements/lazy19/audit": "ea8120712b815662ab0f57c4af010a96564b95b9a6d48e699d977b06f2b014d1",
+    "improvements/realizability/bfp.py": "ace967aa8bc342bab24e245f4ed0f2f7d4ac8a8cbf51e207c682ddf8bc539cb1",
+    "improvements/benchmarks/verify_bfp.py": "dc1f62f4a7b5e4fad51aeeec9c8ea7ddb4a58540427172e8607dac98dc33ae43"
+  },
+  "initial_proofs": [
+    "/home/andrew/PointSAT/improvements/realizability/results/supplied19-rational.json",
+    "/home/andrew/PointSAT/improvements/realizability/results/relaxed002.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000002.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000009.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000011.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000013.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000019.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000021.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000022.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000023.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000025.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000026.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000027.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000030.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000034.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000036.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000042.proof.json",
+    "/home/andrew/PointSAT/improvements/lazy19/results/bfp19691/bfp/round000047.proof.json"
+  ],
+  "deadline_utc": "2026-09-05T14:00:00+00:00",
+  "classification": "exploratory proof-filtered producer/consumer; not paired benchmark"
+}

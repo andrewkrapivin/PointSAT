@@ -1,0 +1,9 @@
+{
+  "database": "benchmarks/pilot_20260906/results.sqlite",
+  "complete": true,
+  "trials_checked": 64,
+  "complete_pairs_checked": 32,
+  "artifacts_hash_checked": 1269,
+  "audit_errors": [],
+  "all_checks_passed": true
+}

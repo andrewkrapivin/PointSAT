@@ -1,0 +1,33 @@
+{"event": "initialized", "base_clauses": 937992, "variables": 969, "seed": 19621, "symmetry": false, "elapsed": 1.2951449870015495}
+{"event": "distance_encoding", "clauses": 25247, "limit": 20, "elapsed": 1.316254539997317}
+{"event": "refine", "round": 1, "bad": 3, "total_cuts": 3, "elapsed": 1.3369323369988706}
+{"event": "distance_exhausted", "bound": 0, "accepted": 0, "elapsed": 1.3373797649983317}
+{"event": "distance_exhausted", "bound": 1, "accepted": 0, "elapsed": 1.356373449001694}
+{"event": "distance_exhausted", "bound": 2, "accepted": 0, "elapsed": 1.4320569739793427}
+{"event": "refine", "round": 2, "bad": 18, "total_cuts": 21, "elapsed": 1.4389026039862074}
+{"event": "refine", "round": 3, "bad": 62, "total_cuts": 83, "elapsed": 1.5240896439936478}
+{"event": "distance_exhausted", "bound": 3, "accepted": 0, "elapsed": 1.7874439739971422}
+{"event": "distance_exhausted", "bound": 4, "accepted": 0, "elapsed": 2.2172003099985886}
+{"event": "distance_exhausted", "bound": 5, "accepted": 0, "elapsed": 2.9312527859874535}
+{"event": "refine", "round": 4, "bad": 5, "total_cuts": 88, "elapsed": 4.08060001899139}
+{"event": "distance_exhausted", "bound": 6, "accepted": 0, "elapsed": 4.395132181991357}
+{"event": "refine", "round": 5, "bad": 32, "total_cuts": 120, "elapsed": 4.690743526996812}
+{"event": "distance_exhausted", "bound": 7, "accepted": 0, "elapsed": 5.315498037991347}
+{"event": "distance_exhausted", "bound": 8, "accepted": 0, "elapsed": 7.293503816996235}
+{"event": "refine", "round": 6, "bad": 18, "total_cuts": 138, "elapsed": 9.455897868989268}
+{"event": "distance_exhausted", "bound": 9, "accepted": 0, "elapsed": 9.738257671997417}
+{"event": "refine", "round": 7, "bad": 13, "total_cuts": 151, "elapsed": 10.44189326200285}
+{"event": "distance_exhausted", "bound": 10, "accepted": 0, "elapsed": 14.56771434500115}
+{"event": "distance_exhausted", "bound": 11, "accepted": 0, "elapsed": 18.897158563981066}
+{"event": "refine", "round": 8, "bad": 27, "total_cuts": 178, "elapsed": 21.845554822997656}
+{"event": "distance_exhausted", "bound": 12, "accepted": 0, "elapsed": 30.53757982098614}
+{"event": "refine", "round": 9, "bad": 25, "total_cuts": 203, "elapsed": 31.806864621001296}
+{"event": "distance_exhausted", "bound": 13, "accepted": 0, "elapsed": 46.07454744898132}
+{"event": "refine", "round": 10, "bad": 28, "total_cuts": 231, "elapsed": 47.07853164098924}
+{"event": "distance_exhausted", "bound": 14, "accepted": 0, "elapsed": 64.53408507298445}
+{"event": "distance_exhausted", "bound": 15, "accepted": 0, "elapsed": 93.55324459300027}
+{"event": "distance_exhausted", "bound": 16, "accepted": 0, "elapsed": 136.14810998400208}
+{"event": "distance_exhausted", "bound": 17, "accepted": 0, "elapsed": 185.1487746250059}
+{"event": "conflict_budget", "round": 18, "elapsed": 246.22756078699604}
+{"event": "distance_exhausted", "bound": 18, "accepted": 0, "elapsed": 276.33332808699924}
+{"event": "conflict_budget", "round": 19, "elapsed": 343.8763812989928}

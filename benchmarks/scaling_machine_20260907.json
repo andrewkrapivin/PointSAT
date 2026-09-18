@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-09-07T00:31:00Z",
+  "source": "Read-only lscpu and /proc/meminfo in the execution environment",
+  "architecture": "x86_64",
+  "reported_cpu_model": "AMD Ryzen AI 9 365 w/ Radeon 880M",
+  "visible_logical_cpus": 8,
+  "reported_threads_per_core": 1,
+  "hypervisor": "KVM",
+  "memory_total_kib": 9150280,
+  "study_cpu_cap": 2,
+  "native_threads_per_trial": 1,
+  "note": "Virtualized environment: reported topology does not establish dedicated physical cores or constant clock speed. Corpus generation, preparation, native trials and audits share the two-worker limit; measured native CPU and wall time are retained separately. This snapshot does not measure per-process peak RSS."
+}

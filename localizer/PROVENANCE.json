@@ -1,0 +1,100 @@
+{
+  "upstream_repository": "https://github.com/bsubercaseaux/localizer",
+  "upstream_commit": "5b07dd9df283b2438a6dc23e03ea5ef5c4ea55cb",
+  "upstream_license_present_at_commit": false,
+  "baseline_sources": {
+    "baseline/upstream/evaluation.c": {
+      "sha256": "48f10f72b6fac5663f424862a5018d9a3a708ea3569ca712db3d42a87915e15e",
+      "upstream_sha256": "48f10f72b6fac5663f424862a5018d9a3a708ea3569ca712db3d42a87915e15e",
+      "byte_identical": true
+    },
+    "baseline/upstream/main.c": {
+      "sha256": "6292cd637d64778265a63a8c4747a1ff4cec993ae73cf1d6ce8735db5954864e",
+      "upstream_sha256": "6292cd637d64778265a63a8c4747a1ff4cec993ae73cf1d6ce8735db5954864e",
+      "byte_identical": true
+    },
+    "baseline/upstream/rng.c": {
+      "sha256": "70bd44bd3a46904a2c6b89b3567e3b7edba4ef5774e727679ef4c621590ed762",
+      "upstream_sha256": "70bd44bd3a46904a2c6b89b3567e3b7edba4ef5774e727679ef4c621590ed762",
+      "byte_identical": true
+    },
+    "baseline/upstream/solver.c": {
+      "sha256": "322ac9fb3d8f5eb81e3181a1b7b37adb6acc4b52d3c5683d1eebba6a2a468a7c",
+      "upstream_sha256": "322ac9fb3d8f5eb81e3181a1b7b37adb6acc4b52d3c5683d1eebba6a2a468a7c",
+      "byte_identical": true
+    },
+    "baseline/upstream/test_solver.c": {
+      "sha256": "bb1e48266a62b3a1d110c2f488e6e900553056a1f4aa20d950ae61f1689e2801",
+      "upstream_sha256": "bb1e48266a62b3a1d110c2f488e6e900553056a1f4aa20d950ae61f1689e2801",
+      "byte_identical": true
+    },
+    "baseline/upstream/threading.c": {
+      "sha256": "bdea5e1667cbc8203ae91d203b6deaeb29b8b81713550811c0173b72144fdb1d",
+      "upstream_sha256": "bdea5e1667cbc8203ae91d203b6deaeb29b8b81713550811c0173b72144fdb1d",
+      "byte_identical": true
+    },
+    "baseline/upstream/utils.c": {
+      "sha256": "032123be2477bb7a4bc7e5247e6bd0ab5852bf1b417df4e8eb41f83ceca038e2",
+      "upstream_sha256": "032123be2477bb7a4bc7e5247e6bd0ab5852bf1b417df4e8eb41f83ceca038e2",
+      "byte_identical": true
+    },
+    "baseline/v6/evaluation.c": {
+      "sha256": "ebc310b8571d1929847c65482ade746cb272162065bfffe5fe44c735da6cf660",
+      "source": "direct/vendor/localizer/src/evaluation.c",
+      "byte_identical": true
+    },
+    "baseline/v6/main.c": {
+      "sha256": "0b650e1cec843fba4df7afed126fafe96782d0b868d5b436f6fe2837c1dc7249",
+      "source": "direct/vendor/localizer/src/main.c",
+      "byte_identical": true
+    },
+    "baseline/v6/rng.c": {
+      "sha256": "70bd44bd3a46904a2c6b89b3567e3b7edba4ef5774e727679ef4c621590ed762",
+      "source": "direct/vendor/localizer/src/rng.c",
+      "byte_identical": true
+    },
+    "baseline/v6/solver_fast.c": {
+      "sha256": "0e350a8390669614cd65406bab003a0aa95abaa88ff2e0d30da86392f6d95214",
+      "source": "direct/vendor/localizer/src/solver_fast.c",
+      "byte_identical": true
+    },
+    "baseline/v6/test_solver.c": {
+      "sha256": "bb1e48266a62b3a1d110c2f488e6e900553056a1f4aa20d950ae61f1689e2801",
+      "source": "direct/vendor/localizer/src/test_solver.c",
+      "byte_identical": true
+    },
+    "baseline/v6/threading.c": {
+      "sha256": "b349d0cbcc26e87c828bc2ee11976240ea23f3328461519db871ccf9a85b54d6",
+      "source": "direct/vendor/localizer/src/threading.c",
+      "byte_identical": true
+    },
+    "baseline/v6/utils.c": {
+      "sha256": "a50385a6b4b7a662033906f5ec07cedc0731b4d2c86890937bdaff25540e80f3",
+      "source": "direct/vendor/localizer/src/utils.c",
+      "byte_identical": true
+    }
+  },
+  "v6_research_binary_sha256": "5fab7d4c1fa7709c603f3f75771239b63a5533b2a36644fcc51fee44daf118a7",
+  "fixtures": {
+    "mixed23": {
+      "source": "improvements/pipeline/unattended_20260905/runs/job000-mixed23-target_margin/scratch/1.or",
+      "sha256": "e0aace8e7c4b689c94c0dd777e71553d5b29560e3d57312f1ecd6000d604b80d",
+      "byte_identical": true
+    },
+    "holes29": {
+      "source": "improvements/pipeline/unattended_20260905/runs/job088-holes29-target_margin/scratch/1.or",
+      "sha256": "6a0177f847dd740cae15f068175db36aa9bd7b2adeca82d80ff2f990bcf55266",
+      "byte_identical": true
+    },
+    "gons32": {
+      "source": "improvements/pipeline/unattended_20260905/runs/job002-gons32-target_margin/scratch/1.or",
+      "sha256": "a943e10b44cf24c7315c5aca5d1b96183af48524670ff793d6d8d3d0a68882c5",
+      "byte_identical": true
+    },
+    "caps26": {
+      "source": "improvements/pipeline/unattended_20260905/runs/job005-caps26-target_margin/scratch/1.or",
+      "sha256": "ea531b0d89408ecf7c38d9c3c56fcae164c30b62d835e1b1dc1d0782614a5f73",
+      "byte_identical": true
+    }
+  }
+}

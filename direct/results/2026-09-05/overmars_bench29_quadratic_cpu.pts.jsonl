@@ -1,0 +1,2 @@
+{"event":"best","seconds":0.001067,"cpu_seconds":0.001057,"seed":1,"gon":0,"hole":6,"n":29,"best_n":29,"candidates":0,"candidates_per_second":0.000000,"candidates_per_cpu_second":0.000000,"general_position_candidates":0,"insertions":0,"moves":0,"backtracks":0}
+{"event":"benchmark_done","seconds":10.000020,"cpu_seconds":9.461279,"seed":1,"gon":0,"hole":6,"n":29,"best_n":29,"candidates":1778447,"candidates_per_second":177844.024922,"candidates_per_cpu_second":187971.097777,"general_position_candidates":1564244,"insertions":0,"moves":0,"backtracks":0}

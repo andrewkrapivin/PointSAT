@@ -1,0 +1,29 @@
+{
+  "label": "archive23-sample2-preserve-layers",
+  "command": [
+    "optimizer/compact_v2",
+    "--input",
+    "improvements/benchmarks/successes/archive23-sample2/normalized.pts",
+    "--output",
+    "optimizer/results/refinement600s-20260906/archive23-sample2-preserve-layers/points.pts",
+    "--seconds",
+    "120",
+    "--seed",
+    "1",
+    "--preserve-layers"
+  ],
+  "budget_seconds": 125.0,
+  "started_utc": "2026-09-06T22:53:22.669843+00:00",
+  "output": "/home/andrew/PointSAT/optimizer/results/refinement600s-20260906/archive23-sample2-preserve-layers",
+  "command_file_sha256": {
+    "optimizer/compact_v2": "b64a9a166d0761bdc1e15df79f9cb6fe741d22a5bd3d49c0af99224ae7221482"
+  },
+  "pid": 802086,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": false,
+  "wall_seconds": 120.08855372294784,
+  "ended_utc": "2026-09-06T22:55:22.758699+00:00",
+  "remaining_audit_pids": {},
+  "audit_returncode": 0
+}

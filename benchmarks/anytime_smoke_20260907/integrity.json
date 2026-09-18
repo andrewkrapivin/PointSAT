@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "integrity_ok": true,
+  "completed_trials": 6,
+  "registered_trials": 6,
+  "artifacts_checked": 145,
+  "accepted_certificates_checked": 3,
+  "matched_partial_targets": 2,
+  "registration_sha256": "22457096a82ba67122f0c4c581b208b976d42f88a76fc512f0baa80a50b8f319",
+  "checked_utc": "2026-09-07T01:54:25Z",
+  "SAT_calls": 0,
+  "geometry_reruns": 0
+}

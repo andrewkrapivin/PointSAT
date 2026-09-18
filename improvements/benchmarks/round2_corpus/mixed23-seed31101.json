@@ -1,0 +1,23 @@
+{
+  "problem": "mixed23",
+  "n": 23,
+  "gon": 7,
+  "hole": 6,
+  "cap": 0,
+  "cnf": "7gon-6hole-23-compact.cnf",
+  "sat_seed": 31101,
+  "id": "mixed23-seed31101",
+  "split": "round2_heldout",
+  "wall_limit": 600,
+  "returncode": 10,
+  "timed_out": false,
+  "wall_seconds": 19.605638712993823,
+  "cpu_seconds": 19.425164,
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+    "--quiet",
+    "--seed=31101",
+    "/home/andrew/PointSAT/7gon-6hole-23-compact.cnf"
+  ],
+  "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428"
+}

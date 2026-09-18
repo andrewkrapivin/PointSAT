@@ -1,0 +1,122 @@
+{
+  "registered_utc": "2026-09-05T05:40:02Z",
+  "jobs": [
+    {
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "sat_seed": 31101,
+      "id": "mixed23-seed31101",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "mixed23",
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "7gon-6hole-23-compact.cnf",
+      "sat_seed": 31102,
+      "id": "mixed23-seed31102",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "7gon-32.cnf",
+      "sat_seed": 31301,
+      "id": "gons32-seed31301",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "gons32",
+      "n": 32,
+      "gon": 7,
+      "hole": 0,
+      "cap": 0,
+      "cnf": "7gon-32.cnf",
+      "sat_seed": 31302,
+      "id": "gons32-seed31302",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "sat_seed": 31401,
+      "id": "caps26-seed31401",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "caps26",
+      "n": 26,
+      "gon": 7,
+      "hole": 0,
+      "cap": 5,
+      "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+      "sat_seed": 31402,
+      "id": "caps26-seed31402",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "6hole-29-compact.cnf",
+      "sat_seed": 31201,
+      "id": "holes29-seed31201",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    },
+    {
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "6hole-29-compact.cnf",
+      "sat_seed": 31202,
+      "id": "holes29-seed31202",
+      "split": "round2_heldout",
+      "wall_limit": 600
+    }
+  ],
+  "native_candidate_sha256": "13a32f6d12f2696791b652f8be1cbeb6452491c0f5ca6f1dd3b1318830cd44eb",
+  "prespecified_native_treatments": [
+    [],
+    [
+      "--line-every",
+      "10"
+    ],
+    [
+      "--pair-every",
+      "10",
+      "--line-every",
+      "10"
+    ]
+  ],
+  "localizer_seeds": [
+    1,
+    17,
+    101
+  ],
+  "localizer_wall_seconds": 15,
+  "note": "All new SAT seeds; candidate and treatments frozen before models or convergence outcomes. Default Kissat,600s SAT cap; no known-coordinate seed."
+}

@@ -1,0 +1,24 @@
+{
+  "source": "improvements/pipeline/resumed_0532/control_margin_run/scratch/6_19.real.radial.real",
+  "source_sha256": "0a5e625b1af6e77fe8601d9d0a51936ce1779fdf08efff9510421df9d3a998da",
+  "constraint_source": "improvements/pipeline/resumed_0532/control_margin_run/scratch/6_19.real.radial.real.or",
+  "constraint_sha256": "4a4f22ffd6fb142a31d068ba1e0d6c54e906858f15fc0a7bed1708b5b024dcaf",
+  "orientation_violations": 0,
+  "constraint_count": 1771,
+  "collinear_triples_independent": 0,
+  "geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "valid": true,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "seconds": 0.19134
+  },
+  "integer_points": "improvements/benchmarks/control_margin6_audit/points.pts",
+  "integer_points_sha256": "67c17f1fd1cc89aa9ffbe4ffff91bfafa3481c4cd2ffe96eaae42ac7195add6c"
+}

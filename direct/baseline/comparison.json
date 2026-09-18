@@ -1,0 +1,220 @@
+{
+  "runs": [
+    {
+      "started_utc": "2026-09-05T03:46:07.857551+00:00",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "-u",
+        "PointSAT.py",
+        "direct/baseline/settings.json"
+      ],
+      "settings": {
+        "n": 23,
+        "base_file": "7gon-6hole-23-compact.cnf",
+        "solution_generation": "scranfilize",
+        "n_solutions": 40,
+        "output_folder": "direct/baseline/with_flippable",
+        "workers": 2,
+        "remove_flippable": true,
+        "worker_max_threads": 1,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15
+        ],
+        "solver_timeout": 60,
+        "continue_if_realized": false,
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "localizer_loc": "direct/vendor/localizer/src/localizer",
+        "cadical_loc": "direct/vendor/kissat/build/kissat"
+      },
+      "wall_seconds": 457.3160413679725,
+      "wall_limit_seconds": 540.0,
+      "cpu_user_seconds": 886.806559,
+      "cpu_system_seconds": 11.405147,
+      "max_rss_kib": 273484,
+      "returncode": 0,
+      "timed_out": false,
+      "sat_jobs_completed": 40,
+      "sat_models": 40,
+      "sat_stage_worker_seconds": 276.7829069690197,
+      "realization_attempts": 40,
+      "realized": 0,
+      "realization_stage_worker_seconds": 631.2202173840778,
+      "minimum_orientation_violations": 4,
+      "realization_files": [],
+      "run": "direct/baseline/with_flippable",
+      "sat_worker_seconds": {
+        "count": 40,
+        "minimum": 3.1275493369903415,
+        "median": 5.788789037993411,
+        "mean": 6.919572674225492,
+        "maximum": 16.467788064008346
+      },
+      "realize_worker_seconds": {
+        "count": 40,
+        "minimum": 15.628640123002697,
+        "median": 15.782711991501856,
+        "mean": 15.780505434601945,
+        "maximum": 16.06405446899589
+      },
+      "orientation_violations": {
+        "count": 40,
+        "minimum": 4,
+        "median": 11.0,
+        "mean": 11.775,
+        "maximum": 25
+      },
+      "omitted_flippables": {
+        "count": 40,
+        "minimum": 26,
+        "median": 35.5,
+        "mean": 35.45,
+        "maximum": 47
+      },
+      "independently_valid": 0,
+      "convex_gons": {
+        "count": 40,
+        "minimum": 3,
+        "median": 19.5,
+        "mean": 28.075,
+        "maximum": 103
+      },
+      "empty_holes": {
+        "count": 40,
+        "minimum": 0,
+        "median": 4.0,
+        "mean": 5.3,
+        "maximum": 18
+      }
+    },
+    {
+      "started_utc": "2026-09-05T03:53:55.606080+00:00",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "-u",
+        "PointSAT.py",
+        "direct/baseline/no_flippable.json"
+      ],
+      "settings": {
+        "n": 23,
+        "base_file": "7gon-6hole-23-compact.cnf",
+        "solution_generation": "scranfilize",
+        "n_solutions": 20,
+        "output_folder": "direct/baseline/without_flippable",
+        "workers": 2,
+        "remove_flippable": false,
+        "worker_max_threads": 1,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15
+        ],
+        "solver_timeout": 60,
+        "continue_if_realized": false,
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "localizer_loc": "direct/vendor/localizer/src/localizer",
+        "cadical_loc": "direct/vendor/kissat/build/kissat"
+      },
+      "wall_seconds": 211.68967844598228,
+      "wall_limit_seconds": 360.0,
+      "cpu_user_seconds": 401.927124,
+      "cpu_system_seconds": 4.010139,
+      "max_rss_kib": 159232,
+      "returncode": 0,
+      "timed_out": false,
+      "sat_jobs_completed": 20,
+      "sat_models": 20,
+      "sat_stage_worker_seconds": 106.1240070029744,
+      "realization_attempts": 20,
+      "realized": 0,
+      "realization_stage_worker_seconds": 316.53608541894937,
+      "minimum_orientation_violations": 13,
+      "realization_files": [],
+      "run": "direct/baseline/without_flippable",
+      "sat_worker_seconds": {
+        "count": 20,
+        "minimum": 1.6184320969914552,
+        "median": 3.903058065014193,
+        "mean": 5.306200350148719,
+        "maximum": 19.253779310005484
+      },
+      "realize_worker_seconds": {
+        "count": 20,
+        "minimum": 15.698905992991058,
+        "median": 15.79146224098804,
+        "mean": 15.826804270947468,
+        "maximum": 16.174233205005294
+      },
+      "orientation_violations": {
+        "count": 20,
+        "minimum": 13,
+        "median": 23.0,
+        "mean": 22.4,
+        "maximum": 32
+      },
+      "omitted_flippables": {
+        "count": 20,
+        "minimum": 0,
+        "median": 0.0,
+        "mean": 0,
+        "maximum": 0
+      },
+      "independently_valid": 0,
+      "convex_gons": {
+        "count": 20,
+        "minimum": 9,
+        "median": 41.0,
+        "mean": 43.55,
+        "maximum": 104
+      },
+      "empty_holes": {
+        "count": 20,
+        "minimum": 3,
+        "median": 8.0,
+        "mean": 9.25,
+        "maximum": 25
+      }
+    }
+  ],
+  "paired_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "paired_orientation_violations": {
+    "direct/baseline/with_flippable": {
+      "count": 20,
+      "minimum": 6,
+      "median": 10.5,
+      "mean": 11.4,
+      "maximum": 21
+    },
+    "direct/baseline/without_flippable": {
+      "count": 20,
+      "minimum": 13,
+      "median": 23.0,
+      "mean": 22.4,
+      "maximum": 32
+    }
+  },
+  "paired_valid": {
+    "direct/baseline/with_flippable": 0,
+    "direct/baseline/without_flippable": 0
+  }
+}

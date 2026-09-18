@@ -1,0 +1,23 @@
+{
+  "problem": "caps26",
+  "n": 26,
+  "gon": 7,
+  "hole": 0,
+  "cap": 5,
+  "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+  "sat_seed": 31402,
+  "id": "caps26-seed31402",
+  "split": "round2_heldout",
+  "wall_limit": 600,
+  "returncode": 10,
+  "timed_out": false,
+  "wall_seconds": 0.8691948350169696,
+  "cpu_seconds": 0.8154659999999969,
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+    "--quiet",
+    "--seed=31402",
+    "/home/andrew/PointSAT/7gon-no-5-cap-no-sb-26.cnf"
+  ],
+  "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268"
+}

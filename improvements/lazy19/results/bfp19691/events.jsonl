@@ -1,0 +1,30 @@
+{"event": "initialized", "base_clauses": 937992, "variables": 969, "seed": 19691, "symmetry": false, "elapsed": 1.0276297779928427}
+{"event": "distance_encoding", "clauses": 35266, "limit": 30, "elapsed": 1.056147718016291}
+{"event": "refine", "round": 1, "bad": 6, "total_cuts": 6, "elapsed": 1.063314563012682}
+{"event": "distance_exhausted", "bound": 0, "accepted": 0, "elapsed": 1.0636459430097602}
+{"event": "distance_exhausted", "bound": 1, "accepted": 0, "elapsed": 1.0769000129948836}
+{"event": "distance_exhausted", "bound": 2, "accepted": 0, "elapsed": 1.1803368350083474}
+{"event": "proved_nonrealizable", "round": 2, "proofs": 1, "blocking_literals": 969, "elapsed": 31.515886795998085}
+{"event": "refine", "round": 3, "bad": 5, "total_cuts": 11, "elapsed": 31.64399014299852}
+{"event": "refine", "round": 4, "bad": 2, "total_cuts": 13, "elapsed": 31.656957717990736}
+{"event": "refine", "round": 5, "bad": 5, "total_cuts": 18, "elapsed": 31.697906810004497}
+{"event": "distance_exhausted", "bound": 3, "accepted": 0, "elapsed": 31.707448186993133}
+{"event": "refine", "round": 6, "bad": 2, "total_cuts": 20, "elapsed": 31.739378308993764}
+{"event": "refine", "round": 7, "bad": 1, "total_cuts": 21, "elapsed": 31.862535615015076}
+{"event": "refine", "round": 8, "bad": 4, "total_cuts": 25, "elapsed": 31.872208167013014}
+{"event": "proved_nonrealizable", "round": 9, "proofs": 2, "blocking_literals": 969, "elapsed": 63.46124652601429}
+{"event": "refine", "round": 10, "bad": 3, "total_cuts": 28, "elapsed": 63.47404660799657}
+{"event": "proved_nonrealizable", "round": 11, "proofs": 3, "blocking_literals": 969, "elapsed": 107.43470494999201}
+{"event": "proved_nonrealizable", "round": 13, "proofs": 4, "blocking_literals": 968, "elapsed": 152.18618314299965}
+{"event": "proved_nonrealizable", "round": 19, "proofs": 5, "blocking_literals": 968, "elapsed": 189.80536529101664}
+{"event": "proved_nonrealizable", "round": 21, "proofs": 6, "blocking_literals": 968, "elapsed": 228.4036564739945}
+{"event": "proved_nonrealizable", "round": 22, "proofs": 7, "blocking_literals": 967, "elapsed": 272.10514720901847}
+{"event": "proved_nonrealizable", "round": 23, "proofs": 8, "blocking_literals": 967, "elapsed": 319.8107130480057}
+{"event": "proved_nonrealizable", "round": 25, "proofs": 9, "blocking_literals": 968, "elapsed": 364.3452227250091}
+{"event": "proved_nonrealizable", "round": 26, "proofs": 10, "blocking_literals": 968, "elapsed": 396.86907977299416}
+{"event": "proved_nonrealizable", "round": 27, "proofs": 11, "blocking_literals": 969, "elapsed": 425.5988090040046}
+{"event": "proved_nonrealizable", "round": 30, "proofs": 12, "blocking_literals": 969, "elapsed": 457.41815156000666}
+{"event": "proved_nonrealizable", "round": 34, "proofs": 13, "blocking_literals": 967, "elapsed": 488.35741920099827}
+{"event": "proved_nonrealizable", "round": 36, "proofs": 14, "blocking_literals": 967, "elapsed": 530.774194986996}
+{"event": "proved_nonrealizable", "round": 42, "proofs": 15, "blocking_literals": 967, "elapsed": 569.1504790009931}
+{"event": "proved_nonrealizable", "round": 47, "proofs": 16, "blocking_literals": 968, "elapsed": 612.9847024990013}

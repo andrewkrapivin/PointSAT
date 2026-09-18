@@ -1,0 +1,113 @@
+{
+  "trial": 11,
+  "job": {
+    "case": {
+      "id": "holes29-s42200",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42200,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42200",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200/target.or",
+      "orientation_sha256": "9b33f746420bb795b5dc4bab2b5f2fd1a539697be2018c1d2146e3dd543d5193"
+    },
+    "seed": 811,
+    "arm": "warm_retry"
+  },
+  "normalization_grid": 1000000,
+  "all_orientation_signs_preserved": true,
+  "independent_normalized_geometry": {
+    "n": 29,
+    "gon": 0,
+    "hole": 6,
+    "cap": 0,
+    "valid": true,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "convex_caps": 0,
+    "cap_subsets_checked": 0,
+    "gon_subsets_checked": 0,
+    "hole_subsets_checked": 475020,
+    "convex_hole_size_subsets": 4628,
+    "hull_layers": [
+      3,
+      4,
+      7,
+      7,
+      7,
+      1
+    ],
+    "bbox": [
+      0,
+      0,
+      1000000,
+      723094
+    ],
+    "bbox_width": 1000000,
+    "bbox_height": 723094,
+    "bbox_area": 723094000000,
+    "min_determinant": 799,
+    "max_determinant": 570479922082,
+    "min_squared_distance": 178021,
+    "first_gon": [],
+    "first_hole": [],
+    "first_cap": [],
+    "seconds": 0.0550794
+  },
+  "original_cnf_certificate": {
+    "input_signature": {
+      "real_sha256": "67ce2b90904c5bf8eb17ae1dc54889a29c583ac3827c64121cb9bf9cd724813d",
+      "family": "holes29",
+      "n": 29,
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "mapping_sha256": null,
+      "cycles_sha256": null,
+      "orient_sha256": null
+    },
+    "source": "/home/andrew/PointSAT/benchmarks/success29/trial11/stage0.radial.real",
+    "n": 29,
+    "family": "holes29",
+    "numeric_geometry": {
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "valid": true,
+      "arithmetic": "arbitrary_precision_integer",
+      "collinear_triples": 0,
+      "convex_gons": 0,
+      "empty_holes": 0,
+      "gon_subsets_checked": 0,
+      "hole_subsets_checked": 475020,
+      "seconds": 0.632495
+    },
+    "numeric_cnf": {
+      "mapping_conflicts": [],
+      "mapping_consistent": true,
+      "satisfiable": true,
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "variables": 60538,
+      "clauses": 825978,
+      "projected_orientation_variables": 3654,
+      "violated_clauses": 0,
+      "wrong_orientation_assumptions": 0,
+      "full_model": "/home/andrew/PointSAT/benchmarks/success29/trial11/proof/numeric.cnf.model",
+      "full_model_sha256": "c7b6f402c1695e68d5eacafe2cae6f20853d4ff8a3a4e7839ce110223c693be1",
+      "seconds": 0.9540410339832306
+    },
+    "integer_points": "/home/andrew/PointSAT/benchmarks/success29/trial11/proof/points.pts",
+    "integer_points_sha256": "3924abcdecd760ca5fcf06c431339a465014954b592fcee9ea01c2fd9b3c25fe",
+    "exact_C3_symmetry_certified": false,
+    "accepted": true,
+    "certificate": "/home/andrew/PointSAT/benchmarks/success29/trial11/proof/certificate.json",
+    "seconds": 1.8499481119797565
+  },
+  "search_wall_seconds": 18.69749795901589,
+  "saved_geometry_upper_bound_seconds": 18.0628604888916
+}

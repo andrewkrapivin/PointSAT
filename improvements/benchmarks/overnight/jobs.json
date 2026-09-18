@@ -1,0 +1,1122 @@
+[
+  {
+    "label": "benchmark-mixed23-s42100",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "0"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42100"
+  },
+  {
+    "label": "benchmark-holes29-s42200",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "1"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200"
+  },
+  {
+    "label": "benchmark-gons32-s42300",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "2"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42300"
+  },
+  {
+    "label": "benchmark-caps26-s42400",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "3"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42400"
+  },
+  {
+    "label": "benchmark-mixed23-s42101",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "4"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42101"
+  },
+  {
+    "label": "benchmark-holes29-s42201",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "5"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42201"
+  },
+  {
+    "label": "benchmark-gons32-s42301",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "6"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42301"
+  },
+  {
+    "label": "benchmark-caps26-s42401",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "7"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42401"
+  },
+  {
+    "label": "benchmark-mixed23-s42102",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "8"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42102"
+  },
+  {
+    "label": "benchmark-holes29-s42202",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "9"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42202"
+  },
+  {
+    "label": "benchmark-gons32-s42302",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "10"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42302"
+  },
+  {
+    "label": "benchmark-caps26-s42402",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "11"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42402"
+  },
+  {
+    "label": "benchmark-mixed23-s42103",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "12"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42103"
+  },
+  {
+    "label": "benchmark-holes29-s42203",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "13"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42203"
+  },
+  {
+    "label": "benchmark-gons32-s42303",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "14"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42303"
+  },
+  {
+    "label": "benchmark-caps26-s42403",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "15"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42403"
+  },
+  {
+    "label": "benchmark-mixed23-s42104",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "16"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42104"
+  },
+  {
+    "label": "benchmark-holes29-s42204",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "17"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42204"
+  },
+  {
+    "label": "benchmark-gons32-s42304",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "18"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42304"
+  },
+  {
+    "label": "benchmark-caps26-s42404",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "19"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42404"
+  },
+  {
+    "label": "benchmark-mixed23-s42105",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "20"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42105"
+  },
+  {
+    "label": "benchmark-holes29-s42205",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "21"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42205"
+  },
+  {
+    "label": "benchmark-gons32-s42305",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "22"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42305"
+  },
+  {
+    "label": "benchmark-caps26-s42405",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "23"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42405"
+  },
+  {
+    "label": "benchmark-mixed23-s42106",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "24"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42106"
+  },
+  {
+    "label": "benchmark-holes29-s42206",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "25"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206"
+  },
+  {
+    "label": "benchmark-gons32-s42306",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "26"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42306"
+  },
+  {
+    "label": "benchmark-caps26-s42406",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "27"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42406"
+  },
+  {
+    "label": "benchmark-mixed23-s42107",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "28"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42107"
+  },
+  {
+    "label": "benchmark-holes29-s42207",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "29"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42207"
+  },
+  {
+    "label": "benchmark-gons32-s42307",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "30"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42307"
+  },
+  {
+    "label": "benchmark-caps26-s42407",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "31"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42407"
+  },
+  {
+    "label": "benchmark-mixed23-s42108",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "32"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42108"
+  },
+  {
+    "label": "benchmark-holes29-s42208",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "33"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42208"
+  },
+  {
+    "label": "benchmark-gons32-s42308",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "34"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42308"
+  },
+  {
+    "label": "benchmark-caps26-s42408",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "35"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42408"
+  },
+  {
+    "label": "benchmark-mixed23-s42109",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "36"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42109"
+  },
+  {
+    "label": "benchmark-holes29-s42209",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "37"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42209"
+  },
+  {
+    "label": "benchmark-gons32-s42309",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "38"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42309"
+  },
+  {
+    "label": "benchmark-caps26-s42409",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "39"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42409"
+  },
+  {
+    "label": "benchmark-mixed23-s42110",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "40"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42110"
+  },
+  {
+    "label": "benchmark-holes29-s42210",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "41"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42210"
+  },
+  {
+    "label": "benchmark-gons32-s42310",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "42"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42310"
+  },
+  {
+    "label": "benchmark-caps26-s42410",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "43"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42410"
+  },
+  {
+    "label": "benchmark-mixed23-s42111",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "44"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42111"
+  },
+  {
+    "label": "benchmark-holes29-s42211",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "45"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42211"
+  },
+  {
+    "label": "benchmark-gons32-s42311",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "46"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42311"
+  },
+  {
+    "label": "benchmark-caps26-s42411",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "47"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42411"
+  },
+  {
+    "label": "benchmark-mixed23-s42112",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "48"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42112"
+  },
+  {
+    "label": "benchmark-holes29-s42212",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "49"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42212"
+  },
+  {
+    "label": "benchmark-gons32-s42312",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "50"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42312"
+  },
+  {
+    "label": "benchmark-caps26-s42412",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "51"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42412"
+  },
+  {
+    "label": "benchmark-mixed23-s42113",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "52"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42113"
+  },
+  {
+    "label": "benchmark-holes29-s42213",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "53"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42213"
+  },
+  {
+    "label": "benchmark-gons32-s42313",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "54"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42313"
+  },
+  {
+    "label": "benchmark-caps26-s42413",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "55"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42413"
+  },
+  {
+    "label": "benchmark-mixed23-s42114",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "56"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42114"
+  },
+  {
+    "label": "benchmark-holes29-s42214",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "57"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42214"
+  },
+  {
+    "label": "benchmark-gons32-s42314",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "58"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42314"
+  },
+  {
+    "label": "benchmark-caps26-s42414",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "59"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42414"
+  },
+  {
+    "label": "benchmark-mixed23-s42115",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "60"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42115"
+  },
+  {
+    "label": "benchmark-holes29-s42215",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "61"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42215"
+  },
+  {
+    "label": "benchmark-gons32-s42315",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "62"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42315"
+  },
+  {
+    "label": "benchmark-caps26-s42415",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "63"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42415"
+  },
+  {
+    "label": "benchmark-mixed23-s42116",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "64"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42116"
+  },
+  {
+    "label": "benchmark-holes29-s42216",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "65"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42216"
+  },
+  {
+    "label": "benchmark-gons32-s42316",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "66"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42316"
+  },
+  {
+    "label": "benchmark-caps26-s42416",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "67"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42416"
+  },
+  {
+    "label": "benchmark-mixed23-s42117",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "68"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42117"
+  },
+  {
+    "label": "benchmark-holes29-s42217",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "69"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42217"
+  },
+  {
+    "label": "benchmark-gons32-s42317",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "70"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42317"
+  },
+  {
+    "label": "benchmark-caps26-s42417",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "71"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42417"
+  },
+  {
+    "label": "benchmark-mixed23-s42118",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "72"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42118"
+  },
+  {
+    "label": "benchmark-holes29-s42218",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "73"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42218"
+  },
+  {
+    "label": "benchmark-gons32-s42318",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "74"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42318"
+  },
+  {
+    "label": "benchmark-caps26-s42418",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "75"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42418"
+  },
+  {
+    "label": "benchmark-mixed23-s42119",
+    "workers": 1,
+    "max_seconds": 855,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "76"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/mixed23-s42119"
+  },
+  {
+    "label": "benchmark-holes29-s42219",
+    "workers": 1,
+    "max_seconds": 2355,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "77"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42219"
+  },
+  {
+    "label": "benchmark-gons32-s42319",
+    "workers": 1,
+    "max_seconds": 735,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "78"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/gons32-s42319"
+  },
+  {
+    "label": "benchmark-caps26-s42419",
+    "workers": 1,
+    "max_seconds": 1005,
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight_case.py",
+      "--registration",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/registration.json",
+      "--index",
+      "79"
+    ],
+    "output": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/caps26-s42419"
+  }
+]

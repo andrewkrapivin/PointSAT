@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "case": "caps26-seed31401",
+      "problem": "caps26",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+      "orientation_sha256": "9f443639fd4665cad1de49146e40ea627b2ee992421324cb4932d2506b505cc5",
+      "variables": 18198,
+      "clauses": 248584,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.09081814999999999
+    },
+    {
+      "case": "caps26-seed31402",
+      "problem": "caps26",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "ce8f9802d69804e16bdd856e26e737053b7b9976ff69f1b701a0f4ec70261268",
+      "orientation_sha256": "9f443639fd4665cad1de49146e40ea627b2ee992421324cb4932d2506b505cc5",
+      "variables": 18198,
+      "clauses": 248584,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.080810035
+    },
+    {
+      "case": "gons32-seed31301",
+      "problem": "gons32",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+      "orientation_sha256": "66055c76eab876461c1834694427a8eac3a77c78fb34bbf0e323ba9dbcac2dad",
+      "variables": 29759,
+      "clauses": 465132,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.12339784599999992
+    },
+    {
+      "case": "gons32-seed31302",
+      "problem": "gons32",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+      "orientation_sha256": "66055c76eab876461c1834694427a8eac3a77c78fb34bbf0e323ba9dbcac2dad",
+      "variables": 29759,
+      "clauses": 465132,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.11009287300000004
+    },
+    {
+      "case": "mixed23-seed31101",
+      "problem": "mixed23",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+      "orientation_sha256": "9ea78c15084a03e0c747480777d28b91551f29a57490c5fc2047b006b4e4228b",
+      "variables": 24348,
+      "clauses": 519426,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.139763627
+    },
+    {
+      "case": "mixed23-seed31102",
+      "problem": "mixed23",
+      "sat_under_all_orientation_literals": true,
+      "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+      "orientation_sha256": "ac6e9950930f543da01d8315341315e64bcecc320df2c9017ffb03b84aebbdcb",
+      "variables": 24348,
+      "clauses": 519426,
+      "violated_original_clauses": 0,
+      "wrong_orientation_literals": 0,
+      "cpu_seconds": 0.13518661399999998
+    }
+  ],
+  "all_passed": true
+}

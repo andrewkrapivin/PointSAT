@@ -1,0 +1,62 @@
+{
+  "case": "paper23",
+  "label": "new",
+  "command": [
+    "/home/andrew/PointSAT/optimizer/compact_v1",
+    "--input",
+    "optimizer/results/paired120s-20260906/fixtures/paper23.pts",
+    "--output",
+    "optimizer/results/paired120s-20260906/paper23-new/points.pts",
+    "--seconds",
+    "120.0",
+    "--seed",
+    "1"
+  ],
+  "returncode": 0,
+  "wall_seconds": 120.0392141410266,
+  "audit": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "cap": 0,
+    "valid": true,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "convex_caps": 0,
+    "cap_subsets_checked": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "convex_hole_size_subsets": 945,
+    "hull_layers": [
+      3,
+      4,
+      4,
+      6,
+      5,
+      1
+    ],
+    "bbox": [
+      0,
+      0,
+      253,
+      253
+    ],
+    "bbox_width": 253,
+    "bbox_height": 253,
+    "bbox_area": 64009,
+    "min_determinant": 1,
+    "max_determinant": 63279,
+    "min_squared_distance": 2,
+    "first_gon": [],
+    "first_hole": [],
+    "first_cap": [],
+    "seconds": 0.039192
+  },
+  "cpu_user_seconds": 119.23,
+  "cpu_system_seconds": 0.07,
+  "output_sha256": "9718b8be6b6f043d2bb1682dab04f0d1565fe6921846708ec182abb14ced5ef8",
+  "initial_area": 380352,
+  "final_area": 64009
+}

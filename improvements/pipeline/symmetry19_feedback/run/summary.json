@@ -1,0 +1,17 @@
+{
+  "wall_seconds": 53.15710646699881,
+  "jobs": 1,
+  "sat_models": 1,
+  "realization_attempts": 0,
+  "feedback_attempts": 0,
+  "realized": 0,
+  "distinct_realized_samples": 0,
+  "errors": 0,
+  "first_realized_seconds": null,
+  "stage_worker_seconds": {
+    "sat": 0.6865251200215425,
+    "checker_initialization": 3.866122399980668,
+    "flippability": 17.989989362016786
+  },
+  "interrupted": true
+}

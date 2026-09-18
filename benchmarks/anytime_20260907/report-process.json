@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/anytime_report.py",
+    "--registration",
+    "/home/andrew/PointSAT/benchmarks/anytime_20260907/registration.json",
+    "--out",
+    "/home/andrew/PointSAT/reports/anytime_20260907",
+    "--machine-info",
+    "/home/andrew/PointSAT/benchmarks/scaling_machine_20260907.json",
+    "--positive-control-result",
+    "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/result.json"
+  ],
+  "returncode": 0,
+  "wall_seconds": 3.937515979981981,
+  "cpu_seconds": 3.762364,
+  "deadline_censored": false,
+  "external_stop": false,
+  "outside_primary_clock": true
+}

@@ -1,0 +1,33 @@
+{
+  "label": "feedback23-target64x78",
+  "command": [
+    "optimizer/compact_v2",
+    "--input",
+    "optimizer/results/paired120s-20260906/feedback23-sample3-new/points.pts",
+    "--output",
+    "optimizer/results/refinement600s-20260906/feedback23-target64x78/points.pts",
+    "--seconds",
+    "600",
+    "--seed",
+    "3",
+    "--geometry-repair",
+    "--target-width",
+    "64",
+    "--target-height",
+    "78"
+  ],
+  "budget_seconds": 605.0,
+  "started_utc": "2026-09-06T22:51:22.311129+00:00",
+  "output": "/home/andrew/PointSAT/optimizer/results/refinement600s-20260906/feedback23-target64x78",
+  "command_file_sha256": {
+    "optimizer/compact_v2": "b64a9a166d0761bdc1e15df79f9cb6fe741d22a5bd3d49c0af99224ae7221482"
+  },
+  "pid": 798573,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": false,
+  "wall_seconds": 600.4202923820121,
+  "ended_utc": "2026-09-06T23:01:22.732754+00:00",
+  "remaining_audit_pids": {},
+  "audit_returncode": 0
+}

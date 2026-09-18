@@ -1,0 +1,8 @@
+[
+  {"path":"direct/seeds/paper23.pts","title":"Published configuration","provenance":"Reference · 753 convex hexagons"},
+  {"path":"improvements/benchmarks/successes/sat-guided23-case33/normalized.pts","title":"SAT-guided native search","provenance":"New order type · 772 convex hexagons"},
+  {"path":"improvements/benchmarks/successes/feedback23-sample3/normalized.pts","title":"UNSAT-core feedback","provenance":"New order type · 591 convex hexagons"},
+  {"path":"improvements/benchmarks/successes/archive23-sample2/normalized.pts","title":"Archive recovery, sample 2","provenance":"New order type · 642 convex hexagons"},
+  {"path":"improvements/benchmarks/successes/archive23-sample7/normalized.pts","title":"Archive recovery, sample 7","provenance":"New order type · 606 convex hexagons"},
+  {"path":"improvements/benchmarks/successes/control-margin23-sample6/normalized.pts","title":"Margin-guided core feedback","provenance":"New order type · 573 convex hexagons"}
+]

@@ -1,0 +1,66 @@
+{
+  "original_record_id": 12,
+  "source": "improvements/pipeline/paired_pipeline/before/scratch/4_12.real",
+  "source_sha256": "e065e363f17862d34eb0120f48fd26f82535308ec8d405b04129ddcb8730c5cc",
+  "pipeline_reported_realized": false,
+  "pipeline_reported_violations": 15,
+  "orientation_violations": 15,
+  "constraint_count": 1741,
+  "collinear_triples_independent": 0,
+  "geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "cap": 0,
+    "valid": false,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "convex_gons": 81,
+    "empty_holes": 9,
+    "convex_caps": 0,
+    "cap_subsets_checked": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "convex_hole_size_subsets": 1069,
+    "hull_layers": [
+      3,
+      4,
+      5,
+      6,
+      5
+    ],
+    "bbox": [
+      -15768765606,
+      -33355494088,
+      134498347763,
+      57421553200
+    ],
+    "bbox_width": 150267113369,
+    "bbox_height": 90777047288,
+    "bbox_area": 13640804856128969993272,
+    "min_determinant": 981018673994958,
+    "max_determinant": 7197129063439214754272,
+    "min_squared_distance": 38103276567377893,
+    "first_gon": [
+      23,
+      22,
+      14,
+      11,
+      12,
+      13,
+      20
+    ],
+    "first_hole": [
+      23,
+      19,
+      16,
+      12,
+      13,
+      20
+    ],
+    "first_cap": [],
+    "seconds": 0.0366764
+  },
+  "integer_points": "improvements/benchmarks/pipeline_before_audit/12/points.pts",
+  "integer_points_sha256": "f7855de0e7c3fbab3cf7f83be801c397ce45b9dfe7e112b14e6914a830ae73d8"
+}

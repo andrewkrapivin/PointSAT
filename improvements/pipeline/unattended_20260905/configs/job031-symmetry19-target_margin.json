@@ -1,0 +1,53 @@
+{
+  "base_file": "improvements/pipeline/verified19/with_two_verified_cuts.cnf",
+  "n": 19,
+  "problem_family": "symmetry19",
+  "workers": 1,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "solution_generation": "scranfilize",
+  "n_solutions": 4,
+  "sat_seed_start": 13100,
+  "seed": 700962,
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "sat_extra_args": [
+    "--quiet",
+    "--sat"
+  ],
+  "solver_timeout": 90,
+  "localizer_loc": "improvements/localizer/localizer_v4",
+  "localizer_extra_args": [
+    "--line-every",
+    "10",
+    "--min-radius",
+    "0.000001",
+    "-q",
+    "-c",
+    "improvements/symmetry19/decoded/center19-adjacent.cycles",
+    "-f",
+    "improvements/symmetry19/decoded/center19-adjacent.fixed"
+  ],
+  "localizer_native_time_limit": true,
+  "localizer_archive_candidates": 10,
+  "localizer_attempt_levels": 1,
+  "localizer_attempt_timeouts": [
+    30
+  ],
+  "warm_start_retries": true,
+  "feedback_rounds": 3,
+  "feedback_max_relaxed": 128,
+  "feedback_max_solves": 128,
+  "feedback_seconds": 10,
+  "feedback_conflict_budget": 2000,
+  "feedback_core_choice": "target_margin",
+  "flippability_model_cache_size": 128,
+  "radial_relabel_check": false,
+  "feedback_radial_scaffold": false,
+  "orientation_map_file": "improvements/symmetry19/variants/mapping.json",
+  "audit_base_file": "convex_hexagon_inside_19_3sym.cnf",
+  "nonrealizability_proof_files": [
+    "improvements/realizability/results/supplied19-rational.json",
+    "improvements/realizability/results/relaxed002.json"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "note": "Same improved search trajectory with reference full evaluation versus optimized incremental evaluation. NOT original-versus-revised overall algorithm speedup.",
+  "repeats": 5,
+  "binary_sha256": "ee6644d849da68e2f86e5c8873fdb41e19f47a132fd24a0832b9420326028492",
+  "groups": {
+    "caps26": {
+      "reference_median_cpu_seconds": 0.007687000000001609,
+      "fast_median_cpu_seconds": 0.0051779999999990375,
+      "median_cpu_speedup": 1.4845500193130625,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 1755200,
+      "fast_constraint_evaluations": 631366,
+      "proposals": 2921,
+      "actual_iterations": 448,
+      "solved_before_iteration_cap": true,
+      "timing_caveat": "Short solved controls include startup overhead; fixed trajectory, not necessarily full100k iterations."
+    },
+    "gons32": {
+      "reference_median_cpu_seconds": 0.02976599999999719,
+      "fast_median_cpu_seconds": 0.01520999999999887,
+      "median_cpu_speedup": 1.9570019723865484,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 8224300,
+      "fast_constraint_evaluations": 2708952,
+      "proposals": 8838,
+      "actual_iterations": 1147,
+      "solved_before_iteration_cap": true,
+      "timing_caveat": "Short solved controls include startup overhead; fixed trajectory, not necessarily full100k iterations."
+    },
+    "holes29": {
+      "reference_median_cpu_seconds": 1.1117730000000015,
+      "fast_median_cpu_seconds": 0.5348860000000014,
+      "median_cpu_speedup": 2.0785232741182207,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 328362552,
+      "fast_constraint_evaluations": 112088367,
+      "proposals": 433849,
+      "actual_iterations": 43580,
+      "solved_before_iteration_cap": true,
+      "timing_caveat": "Short solved controls include startup overhead; fixed trajectory, not necessarily full100k iterations."
+    },
+    "mixed23": {
+      "reference_median_cpu_seconds": 1.4023819999999998,
+      "fast_median_cpu_seconds": 0.6517150000000008,
+      "median_cpu_speedup": 2.1518332399898696,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 461757527,
+      "fast_constraint_evaluations": 127670797,
+      "proposals": 998697,
+      "actual_iterations": 100000,
+      "solved_before_iteration_cap": false,
+      "timing_caveat": "Short solved controls include startup overhead; fixed trajectory, not necessarily full100k iterations."
+    }
+  },
+  "max_iterations": 100000
+}

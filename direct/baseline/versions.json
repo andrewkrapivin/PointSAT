@@ -1,0 +1,27 @@
+{
+  "pointsat_commit": "7f521d35ded21201ac641db28c3604572221d226",
+  "localizer": {
+    "url": "https://github.com/bsubercaseaux/localizer",
+    "commit": "5b07dd9df283b2438a6dc23e03ea5ef5c4ea55cb",
+    "build": "make -j1 CFLAGS='-Wall -Wextra -O3 -pthread'"
+  },
+  "kissat": {
+    "url": "https://github.com/arminbiere/kissat",
+    "commit": "8af8e56f174b778aef3aa45af9f739b2a5f492c2",
+    "build": "./configure && make -j1"
+  },
+  "scranfilize": {
+    "url": "https://github.com/arminbiere/scranfilize",
+    "commit": "4b14e95cbaeb90ba4558cdb8d9338a88208b3ae6",
+    "build": "./configure && make -j1"
+  },
+  "compiler": "gcc 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1)",
+  "python": "3.12",
+  "python_sat": "1.9.dev15",
+  "six": "1.17.0",
+  "cpu_model": "AMD Ryzen AI 9 365 w/ Radeon 880M",
+  "guest_logical_cpus": 8,
+  "virtualization": "KVM",
+  "baseline_workers": 2,
+  "localizer_threads_per_worker": 1
+}

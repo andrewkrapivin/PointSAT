@@ -1,0 +1,58 @@
+{
+  "binary": "improvements/localizer/localizer_v2",
+  "orientations": "improvements/symmetry19/variants/model005-relaxed.or",
+  "symmetry": false,
+  "seed": 19106,
+  "seconds": 30.0,
+  "output": "improvements/symmetry19/search/model005-relaxed-free",
+  "command": [
+    "/home/andrew/PointSAT/improvements/localizer/localizer_v2",
+    "improvements/symmetry19/variants/model005-relaxed.or",
+    "-t",
+    "1",
+    "-s",
+    "19106",
+    "-T",
+    "30.0",
+    "-q",
+    "-o",
+    "improvements/symmetry19/search/model005-relaxed-free/points.real"
+  ],
+  "binary_sha256": "550b29b0fbc499147c77581e6ea759468f1c989cbdf07b6c69932917e2fc349d",
+  "returncode": 0,
+  "wall_seconds": 30.0426075529831,
+  "orientation_violations": 5,
+  "verification": {
+    "n": 19,
+    "valid": false,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      4,
+      17,
+      17,
+      4,
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_forbidden_hexagon": [
+      2,
+      5,
+      1,
+      13,
+      8,
+      9
+    ],
+    "seconds": 0.0296518
+  },
+  "verification_exit": 1
+}

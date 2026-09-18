@@ -1,0 +1,41 @@
+{
+  "classification": "Earlier SAT-seeded direct repair; exclude from fully geometric cold-search results",
+  "sampled_sat_models_with_flippability": 40,
+  "valid_after_localizer": 0,
+  "selected_direct_repair_trials": 4,
+  "valid_after_direct_repair": 2,
+  "direct_repair_cpu_seconds_all_four_trials": 1196.17,
+  "sat_localizer_cpu_seconds_main_sample": 898.211706,
+  "main_sampling_plus_all_direct_repair_cpu_seconds": 2094.381706,
+  "separate_no_flippability_ablation_cpu_seconds": 405.937263,
+  "including_ablation_cpu_seconds": 2500.318969,
+  "successful_trials": [
+    {
+      "sat_scrambling_seed": 23,
+      "direct_seed": 4102,
+      "sat_and_flippability_worker_seconds": 9.123753800988197,
+      "localizer_and_validation_worker_seconds": 15.739748260006309,
+      "direct_wall_seconds": 23.54,
+      "direct_cpu_seconds": 21.81,
+      "direct_evaluations": 234631,
+      "initial_gons": 3,
+      "initial_holes": 3,
+      "points": "direct/baseline/hybrid/hybrid_sat_partial_2_seed4102.pts",
+      "certificate": "direct/baseline/hybrid/hybrid_sat_partial_2_seed4102.meta.json"
+    },
+    {
+      "sat_scrambling_seed": 4,
+      "direct_seed": 4104,
+      "sat_and_flippability_worker_seconds": 5.426969594002003,
+      "localizer_and_validation_worker_seconds": 15.773869648983236,
+      "direct_wall_seconds": 0.03,
+      "direct_cpu_seconds": 0.03,
+      "direct_evaluations": 380,
+      "initial_gons": 7,
+      "initial_holes": 0,
+      "points": "direct/baseline/hybrid/hybrid_sat_partial_4_seed4104.pts",
+      "certificate": "direct/baseline/hybrid/hybrid_sat_partial_4_seed4104.meta.json"
+    }
+  ],
+  "caveat": "Winning-seed chain times are post-selection and exclude other sampled seeds/trials. Full aggregate costs above include both 600-second unsuccessful repair trials. No success-rate estimate or universal speedup follows from this small selected sample. No new SAT computations were run after the user redirected effort to direct 23-point geometry."
+}

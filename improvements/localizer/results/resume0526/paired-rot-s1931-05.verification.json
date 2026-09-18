@@ -1,0 +1,34 @@
+{
+  "n": 19,
+  "valid": false,
+  "collinear_triples": 0,
+  "duplicate_pairs": 0,
+  "six_subsets_checked": 27132,
+  "interior_histogram": [
+    3,
+    15,
+    15,
+    3,
+    4,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "first_forbidden_hexagon": [
+    5,
+    1,
+    13,
+    8,
+    9,
+    2
+  ],
+  "seconds": 0.0158661,
+  "input": "improvements/localizer/results/resume0526/paired-rot-s1931-05.real",
+  "certificate": "improvements/localizer/results/resume0526/paired-rot-s1931-05.exact.pts"
+}

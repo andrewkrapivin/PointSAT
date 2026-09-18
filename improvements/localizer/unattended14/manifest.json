@@ -1,0 +1,246 @@
+{
+  "created_utc": "2026-09-05T06:14:35.747901+00:00",
+  "deadline_utc": "2026-09-05T14:00:00+00:00",
+  "max_workers": 2,
+  "native_budget_seconds": 900,
+  "watchdog_seconds": 905,
+  "jobs": 128,
+  "allocation": "all direct geometry unless an explicit BFP-screened native target whitelist is supplied",
+  "native_targets": [],
+  "excluded_nonrealizable_orientation_sha256": "074395364c0f1f8c6f6178c661727e982a92484569a92e3ea3afd7961cb73ad5",
+  "snapshots": {
+    "free": {
+      "source": "improvements/localizer/results/resume0526/geometry-free-s1962.pts",
+      "snapshot": "improvements/localizer/unattended14/inputs/free.pts",
+      "sha256": "272f9d9e0d31dcfcd7e93c7c9addf3ef765a6d5da73f5e6ee72c3a50611854b9",
+      "score": 2,
+      "audit": {
+        "n": 19,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          2,
+          19,
+          15,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [
+          2,
+          12,
+          14,
+          6,
+          10,
+          9
+        ],
+        "seconds": 0.022532
+      }
+    },
+    "free-empty": {
+      "source": "improvements/localizer/results/resume0526/geometry-free-s1962.pts",
+      "snapshot": "improvements/localizer/unattended14/inputs/free-empty.pts",
+      "sha256": "272f9d9e0d31dcfcd7e93c7c9addf3ef765a6d5da73f5e6ee72c3a50611854b9",
+      "score": 2,
+      "audit": {
+        "n": 19,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          2,
+          19,
+          15,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [
+          2,
+          12,
+          14,
+          6,
+          10,
+          9
+        ],
+        "seconds": 0.022532
+      }
+    },
+    "free-three": {
+      "source": "improvements/localizer/results/resume0526/geometry-free-s1962.pts",
+      "snapshot": "improvements/localizer/unattended14/inputs/free-three.pts",
+      "sha256": "272f9d9e0d31dcfcd7e93c7c9addf3ef765a6d5da73f5e6ee72c3a50611854b9",
+      "score": 2,
+      "audit": {
+        "n": 19,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          2,
+          19,
+          15,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [
+          2,
+          12,
+          14,
+          6,
+          10,
+          9
+        ],
+        "seconds": 0.022532
+      }
+    },
+    "rot": {
+      "source": "improvements/localizer/results/resume0526/geometry-rot-s1961.pts",
+      "snapshot": "improvements/localizer/unattended14/inputs/rot.pts",
+      "sha256": "7554743472fe91314a44649b194fd7faf88f1a35ca0e776c7e25a9ff0202f532",
+      "score": 3,
+      "audit": {
+        "n": 19,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          3,
+          7,
+          3,
+          0,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [
+          2,
+          12,
+          13,
+          8,
+          11,
+          1
+        ],
+        "seconds": 0.0165819
+      }
+    },
+    "rot-empty": {
+      "source": "improvements/localizer/results/resume0526/geometry-rot-s1961.pts.current.pts",
+      "snapshot": "improvements/localizer/unattended14/inputs/rot-empty.pts",
+      "sha256": "e0c54e2826d3a35ab7296aa90a606f1ab8d93bc6bd84a4a7a2f24bf88ed92a67",
+      "score": 3,
+      "audit": {
+        "n": 19,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          0,
+          12,
+          12,
+          3,
+          4,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [
+          4,
+          14,
+          12,
+          5,
+          9,
+          19
+        ],
+        "seconds": 0.0165059
+      }
+    },
+    "rot-three": {
+      "source": "improvements/localizer/results/resume0526/geometry-rot-s1961.pts",
+      "snapshot": "improvements/localizer/unattended14/inputs/rot-three.pts",
+      "sha256": "7554743472fe91314a44649b194fd7faf88f1a35ca0e776c7e25a9ff0202f532",
+      "score": 3,
+      "audit": {
+        "n": 19,
+        "valid": false,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          3,
+          7,
+          3,
+          0,
+          3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [
+          2,
+          12,
+          13,
+          8,
+          11,
+          1
+        ],
+        "seconds": 0.0165819
+      }
+    }
+  },
+  "binaries": {
+    "improvements/localizer/geometry19_v2": "9620b9f1bc4f7d4f158b3cf5569cdc355149245202d046a43d0f24f33de6d62c",
+    "improvements/localizer/localizer_v6": "5fab7d4c1fa7709c603f3f75771239b63a5533b2a36644fcc51fee44daf118a7"
+  },
+  "manifest_sha256": "453e2a80395733cb7093d40dabbc5356a05776e1f1ca4ac24d7ce840534c681f"
+}

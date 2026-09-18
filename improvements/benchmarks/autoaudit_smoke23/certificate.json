@@ -1,0 +1,47 @@
+{
+  "input_signature": {
+    "real_sha256": "b7636783f67e77c208180c5f549d6e5a6f8d64902439cf0bf13739dd4d0a1463",
+    "family": "mixed23",
+    "n": 23,
+    "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+    "mapping_sha256": null,
+    "cycles_sha256": null,
+    "orient_sha256": null
+  },
+  "source": "/home/andrew/PointSAT/improvements/pipeline/resumed_0532/archive23_run/realizations/2_24.real.radial.real",
+  "n": 23,
+  "family": "mixed23",
+  "numeric_geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "valid": true,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "seconds": 0.292699
+  },
+  "numeric_cnf": {
+    "mapping_conflicts": [],
+    "mapping_consistent": true,
+    "satisfiable": true,
+    "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+    "variables": 24348,
+    "clauses": 519426,
+    "projected_orientation_variables": 1771,
+    "violated_clauses": 0,
+    "wrong_orientation_assumptions": 0,
+    "full_model": "/home/andrew/PointSAT/improvements/benchmarks/autoaudit_smoke23/numeric.cnf.model",
+    "full_model_sha256": "361c13ae8f1219cc26c280d1624c4768b4bd85da5522d38b78dc28d8d0aadbc8",
+    "seconds": 0.40364608899108134
+  },
+  "integer_points": "/home/andrew/PointSAT/improvements/benchmarks/autoaudit_smoke23/points.pts",
+  "integer_points_sha256": "04454a8e394639a30a5da70fcbe5f5d127f7b705c0cd5c23d2de1ac234ab9cc9",
+  "exact_C3_symmetry_certified": false,
+  "accepted": true,
+  "certificate": "/home/andrew/PointSAT/improvements/benchmarks/autoaudit_smoke23/certificate.json",
+  "seconds": 0.8319858780014329
+}

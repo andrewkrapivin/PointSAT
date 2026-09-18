@@ -1,0 +1,592 @@
+{
+  "integrity_ok": true,
+  "status": "PENDING",
+  "auditor_sha256": "abbb726a0f85826c84bbb784c496881755c2d7ad5c082ced5407b25ff21db5b0",
+  "studies": [
+    {
+      "registration": "/home/andrew/PointSAT/benchmarks/compare19_smoke_20260907/registration.json",
+      "registration_sha256": "d3bfda516ef6f327b4c6bac55149ad9c912e8c2feec3d65a3e9596f47e37a608",
+      "kind": "symmetry19",
+      "controller_active_at_start": false,
+      "registered_conditions": 3,
+      "hash_checked_files": 14,
+      "geometric_predicates_rerun": false,
+      "SAT_calls": 0,
+      "attempted_trials": 3,
+      "completed_rows": 3,
+      "completed_conditions": 3,
+      "pending_conditions": 0,
+      "artifacts_checked": 65,
+      "compressed_artifact_bytes": 72730,
+      "expanded_artifact_bytes": 286535,
+      "diagnostics_counts": {
+        "forced_native_kills": 0,
+        "missing_native_outputs": 0,
+        "error_trials": 0,
+        "worker_watchdogs": 0,
+        "audit_watchdogs": 0,
+        "audit_errors": 0,
+        "superseded_incomplete_attempts": 0
+      },
+      "summary": {
+        "status": "MATCHED",
+        "sha256": "5359d92292bc58c0ca5de55c9e63165ec0864667daca84bb7f34a8262f1bee5b",
+        "SQL_groups": 3,
+        "paired_comparisons_checked": 3,
+        "mismatch_count": 0
+      },
+      "status": "PASSED",
+      "integrity_ok": true,
+      "faults": [],
+      "pending": [],
+      "diagnostics": [],
+      "wall_seconds": 0.049625882995314896
+    },
+    {
+      "registration": "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/registration.json",
+      "registration_sha256": "802ca2d1f810f6b6acf39bf29e1840a91db6c3672d056986ce92471502d4580c",
+      "kind": "paper_families",
+      "controller_active_at_start": false,
+      "registered_conditions": 1200,
+      "hash_checked_files": 93,
+      "geometric_predicates_rerun": false,
+      "SAT_calls": 0,
+      "attempted_trials": 15,
+      "completed_rows": 15,
+      "completed_conditions": 15,
+      "pending_conditions": 1185,
+      "artifacts_checked": 228,
+      "compressed_artifact_bytes": 231540,
+      "expanded_artifact_bytes": 1023337,
+      "diagnostics_counts": {
+        "forced_native_kills": 0,
+        "missing_native_outputs": 0,
+        "error_trials": 0,
+        "worker_watchdogs": 0,
+        "audit_watchdogs": 0,
+        "audit_errors": 0,
+        "superseded_incomplete_attempts": 0
+      },
+      "summary": {
+        "status": "MATCHED",
+        "sha256": "836827dae59b615d3316bf95d45b8c7a5de2ef2d78f222c42b7f73c85fee8222",
+        "SQL_groups": 15,
+        "paired_comparisons_checked": 48,
+        "mismatch_count": 0
+      },
+      "status": "PENDING",
+      "integrity_ok": true,
+      "faults": [],
+      "pending": [
+        {
+          "message": "Registered conditions remain unfinished",
+          "count": 1185,
+          "first_conditions": [
+            [
+              0,
+              "original",
+              10.0
+            ],
+            [
+              0,
+              "original",
+              30.0
+            ],
+            [
+              0,
+              "original",
+              60.0
+            ],
+            [
+              0,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              0,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              0,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              0,
+              "v6_line10",
+              10.0
+            ],
+            [
+              0,
+              "v6_line10",
+              30.0
+            ],
+            [
+              0,
+              "v6_line10",
+              60.0
+            ],
+            [
+              0,
+              "v6_line10_pair10",
+              10.0
+            ],
+            [
+              0,
+              "v6_line10_pair10",
+              30.0
+            ],
+            [
+              0,
+              "v6_line10_pair10",
+              60.0
+            ],
+            [
+              0,
+              "v6_plain",
+              10.0
+            ],
+            [
+              0,
+              "v6_plain",
+              30.0
+            ],
+            [
+              0,
+              "v6_plain",
+              60.0
+            ],
+            [
+              1,
+              "original",
+              10.0
+            ],
+            [
+              1,
+              "original",
+              30.0
+            ],
+            [
+              1,
+              "original",
+              60.0
+            ],
+            [
+              1,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              1,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              1,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              1,
+              "v6_line10",
+              10.0
+            ],
+            [
+              1,
+              "v6_line10",
+              30.0
+            ],
+            [
+              1,
+              "v6_line10",
+              60.0
+            ],
+            [
+              1,
+              "v6_line10_pair10",
+              10.0
+            ],
+            [
+              1,
+              "v6_line10_pair10",
+              30.0
+            ],
+            [
+              1,
+              "v6_line10_pair10",
+              60.0
+            ],
+            [
+              1,
+              "v6_plain",
+              10.0
+            ],
+            [
+              1,
+              "v6_plain",
+              30.0
+            ],
+            [
+              1,
+              "v6_plain",
+              60.0
+            ],
+            [
+              2,
+              "original",
+              10.0
+            ],
+            [
+              2,
+              "original",
+              30.0
+            ],
+            [
+              2,
+              "original",
+              60.0
+            ],
+            [
+              2,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              2,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              2,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              2,
+              "v6_line10",
+              10.0
+            ],
+            [
+              2,
+              "v6_line10",
+              30.0
+            ],
+            [
+              2,
+              "v6_line10",
+              60.0
+            ],
+            [
+              2,
+              "v6_line10_pair10",
+              10.0
+            ],
+            [
+              2,
+              "v6_line10_pair10",
+              30.0
+            ],
+            [
+              2,
+              "v6_line10_pair10",
+              60.0
+            ],
+            [
+              2,
+              "v6_plain",
+              10.0
+            ],
+            [
+              2,
+              "v6_plain",
+              30.0
+            ],
+            [
+              2,
+              "v6_plain",
+              60.0
+            ],
+            [
+              3,
+              "original",
+              10.0
+            ],
+            [
+              3,
+              "original",
+              30.0
+            ],
+            [
+              3,
+              "original",
+              60.0
+            ],
+            [
+              3,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              3,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              3,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              3,
+              "v6_line10",
+              10.0
+            ],
+            [
+              3,
+              "v6_line10",
+              30.0
+            ],
+            [
+              3,
+              "v6_line10",
+              60.0
+            ],
+            [
+              3,
+              "v6_line10_pair10",
+              10.0
+            ],
+            [
+              3,
+              "v6_line10_pair10",
+              30.0
+            ],
+            [
+              3,
+              "v6_line10_pair10",
+              60.0
+            ],
+            [
+              3,
+              "v6_plain",
+              10.0
+            ],
+            [
+              3,
+              "v6_plain",
+              30.0
+            ],
+            [
+              3,
+              "v6_plain",
+              60.0
+            ],
+            [
+              4,
+              "original",
+              10.0
+            ],
+            [
+              4,
+              "original",
+              30.0
+            ],
+            [
+              4,
+              "original",
+              60.0
+            ],
+            [
+              4,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              4,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              4,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              4,
+              "v6_line10",
+              10.0
+            ],
+            [
+              4,
+              "v6_line10",
+              30.0
+            ],
+            [
+              4,
+              "v6_line10",
+              60.0
+            ],
+            [
+              4,
+              "v6_line10_pair10",
+              10.0
+            ],
+            [
+              4,
+              "v6_line10_pair10",
+              30.0
+            ],
+            [
+              4,
+              "v6_line10_pair10",
+              60.0
+            ],
+            [
+              4,
+              "v6_plain",
+              10.0
+            ],
+            [
+              4,
+              "v6_plain",
+              30.0
+            ],
+            [
+              4,
+              "v6_plain",
+              60.0
+            ],
+            [
+              5,
+              "original",
+              10.0
+            ],
+            [
+              5,
+              "original",
+              30.0
+            ],
+            [
+              5,
+              "original",
+              60.0
+            ],
+            [
+              5,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              5,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              5,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              5,
+              "v6_line10",
+              10.0
+            ],
+            [
+              5,
+              "v6_line10",
+              30.0
+            ],
+            [
+              5,
+              "v6_line10",
+              60.0
+            ],
+            [
+              5,
+              "v6_line10_pair10",
+              10.0
+            ],
+            [
+              5,
+              "v6_line10_pair10",
+              30.0
+            ],
+            [
+              5,
+              "v6_line10_pair10",
+              60.0
+            ],
+            [
+              5,
+              "v6_plain",
+              10.0
+            ],
+            [
+              5,
+              "v6_plain",
+              30.0
+            ],
+            [
+              5,
+              "v6_plain",
+              60.0
+            ],
+            [
+              6,
+              "original",
+              10.0
+            ],
+            [
+              6,
+              "original",
+              30.0
+            ],
+            [
+              6,
+              "original",
+              60.0
+            ],
+            [
+              6,
+              "v6_feedback",
+              10.0
+            ],
+            [
+              6,
+              "v6_feedback",
+              30.0
+            ],
+            [
+              6,
+              "v6_feedback",
+              60.0
+            ],
+            [
+              6,
+              "v6_line10",
+              10.0
+            ],
+            [
+              6,
+              "v6_line10",
+              30.0
+            ],
+            [
+              6,
+              "v6_line10",
+              60.0
+            ],
+            [
+              6,
+              "v6_line10_pair10",
+              10.0
+            ]
+          ]
+        }
+      ],
+      "diagnostics": [],
+      "wall_seconds": 0.2944632179569453
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-07T00:41:45.825186+00:00",
+  "configuration": {
+    "nineteen_registration": "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/registration.json",
+    "paper_registration": "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/registration.json",
+    "report_output": "/home/andrew/PointSAT/reports/scaling_20260907",
+    "audit_output": "/home/andrew/PointSAT/benchmarks/scaling_20260907_integrity.json",
+    "machine_info": "/home/andrew/PointSAT/benchmarks/scaling_machine_20260907.json",
+    "positive_control_result": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/result.json"
+  },
+  "source_sha256": {
+    "/home/andrew/PointSAT/benchmarks/run_scaling_suite.py": "062349ffd3bb32764df9ca80ad9ee98f68ba30a50acff6656ecab046f5cabcba",
+    "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/registration.json": "867cdb70c0622ab441ec830f92c2cb9eec7802738ca81306cf37a51faf420fe6",
+    "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/registration.json": "802ca2d1f810f6b6acf39bf29e1840a91db6c3672d056986ce92471502d4580c",
+    "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/frozen/compare19.py": "48865ff07e13e92c40df7ee560e298d0024455bb1c4e4228eeae536bfbaf8661",
+    "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/frozen/compare_families.py": "e43d12d8363621792fa53d240b2f4541cde58441293f03bb28a0df815a4af605",
+    "/home/andrew/PointSAT/benchmarks/scaling_audit.py": "abbb726a0f85826c84bbb784c496881755c2d7ad5c082ced5407b25ff21db5b0",
+    "/home/andrew/PointSAT/benchmarks/scaling_report.py": "f4c3abf8926d989dd60187194cbdaba1859d9cb1c7eace3943547e6275b73bac",
+    "/home/andrew/PointSAT/benchmarks/scaling_effects.py": "83ac377615f7def37c24d1b2ac3224d144bd9834dca9afa3c1f07eb2cd28e4e0",
+    "/home/andrew/PointSAT/benchmarks/scaling_pdf.py": "f71ec0518091c7506c27c70d3ec0b39ef4602ca3568d3d146ac7157f5d1ec462",
+    "/home/andrew/PointSAT/benchmarks/scaling_machine_20260907.json": "0bd3a26900459081798e7de741a64ea7b80b292deea816ff2f7ee117ffe99099",
+    "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/result.json": "a3f57133eba3db0f7931ccdee4752ad52c460164fb86e3ac778683d7046b3b12"
+  },
+  "plan": [
+    {
+      "name": "nineteen",
+      "kind": "benchmark",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/frozen/compare19.py",
+        "run",
+        "--registration",
+        "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/registration.json",
+        "--workers",
+        "2"
+      ],
+      "summary": "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/summary.json",
+      "expected_trials": 180,
+      "command_sha256": "91941697d7febb2a8ef882fd10adb7d452d2ed3e1faf445a3d4c6a9dafaf4500"
+    },
+    {
+      "name": "paper",
+      "kind": "benchmark",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/frozen/compare_families.py",
+        "run",
+        "--registration",
+        "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/registration.json",
+        "--workers",
+        "2"
+      ],
+      "summary": "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/summary.json",
+      "expected_trials": 1200,
+      "command_sha256": "f7aa3955ec8457b15feca7b752b6b80229203d02c677bc1736f05eebfb6d9fbd"
+    },
+    {
+      "name": "audit",
+      "kind": "audit",
+      "output": "/home/andrew/PointSAT/benchmarks/scaling_20260907_integrity.json",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "/home/andrew/PointSAT/benchmarks/scaling_audit.py",
+        "--registration",
+        "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/registration.json",
+        "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/registration.json",
+        "--output",
+        "/home/andrew/PointSAT/benchmarks/scaling_20260907_integrity.json"
+      ],
+      "command_sha256": "9931e825b13470222499cbb6c6088cbb02fe712ea52d545092d87718457cdc59"
+    },
+    {
+      "name": "report",
+      "kind": "report",
+      "output": "/home/andrew/PointSAT/reports/scaling_20260907",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "/home/andrew/PointSAT/benchmarks/scaling_report.py",
+        "--nineteen-registration",
+        "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/registration.json",
+        "--paper-registration",
+        "/home/andrew/PointSAT/benchmarks/paper_scaling_20260907/registration.json",
+        "--out",
+        "/home/andrew/PointSAT/reports/scaling_20260907",
+        "--machine-info",
+        "/home/andrew/PointSAT/benchmarks/scaling_machine_20260907.json",
+        "--positive-control-result",
+        "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/result.json"
+      ],
+      "command_sha256": "68e82fc32ef0e8b593fff272f2e6441cc690a924e6f8735998687c7f00e7a74e"
+    }
+  ],
+  "history": [
+    {
+      "name": "nineteen",
+      "started_utc": "2026-09-07T00:41:45.833035+00:00",
+      "command": [
+        "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+        "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/frozen/compare19.py",
+        "run",
+        "--registration",
+        "/home/andrew/PointSAT/benchmarks/compare19_scaling_20260907/registration.json",
+        "--workers",
+        "2"
+      ],
+      "command_sha256": "91941697d7febb2a8ef882fd10adb7d452d2ed3e1faf445a3d4c6a9dafaf4500",
+      "status": "INTERRUPTED",
+      "process": {
+        "pid": 3,
+        "start_ticks": "36344207"
+      },
+      "returncode": 0,
+      "finished_utc": "2026-09-07T01:21:18.136708+00:00",
+      "wall_seconds": 2372.303157923976
+    }
+  ],
+  "status": "INTERRUPTED",
+  "supervisor": {
+    "pid": 2,
+    "start_ticks": "36344200"
+  },
+  "active_process": null,
+  "updated_utc": "2026-09-07T01:21:18.136734+00:00",
+  "affinity": [
+    0,
+    1
+  ],
+  "stop_reason": "STOP marker; remove it explicitly before resume"
+}

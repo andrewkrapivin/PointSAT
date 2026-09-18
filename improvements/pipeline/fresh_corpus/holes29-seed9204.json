@@ -1,0 +1,12 @@
+{
+  "n": 29,
+  "cnf": "6hole-29-compact.cnf",
+  "problem": "holes29",
+  "seed": 9204,
+  "split": "heldout",
+  "prefix": "improvements/pipeline/fresh_corpus/holes29-seed9204",
+  "scramble_seconds": 0.7643909089965746,
+  "status": "TIMEOUT",
+  "sat_seconds": 90.06495472998358,
+  "wall_seconds": 90.829348002997
+}

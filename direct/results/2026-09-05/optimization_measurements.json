@@ -1,0 +1,18 @@
+{
+  "triangle_incremental_orientation_update": {
+    "exact_differential_tests": 20000,
+    "test_source": "direct/test_triangle.cpp",
+    "result": "passed"
+  },
+  "triangle_score_early_rejection": {
+    "seed": 63,
+    "proposals": 100000,
+    "starting_file": "direct/results/2026-09-05/triangle/triangle23-cold-s51.pts",
+    "starting_note": "snapshot was read while the running incumbent had score 2; retained test outputs under /tmp/triangle-full2.pts and /tmp/triangle-cutoff2.pts",
+    "full_count_cpu_seconds": 5.56,
+    "cutoff_count_cpu_seconds": 4.24,
+    "speedup": 1.3113207547,
+    "best_output_byte_identical": true,
+    "note": "Acceptance threshold sampled before counting in both modes. Early return only after a whole anchor's counts; an earlier per-edge cutoff version did not improve timing. Concurrent machine load; one paired measurement, not a statistical guarantee."
+  }
+}

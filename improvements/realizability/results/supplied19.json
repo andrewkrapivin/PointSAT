@@ -1,0 +1,11 @@
+{
+  "input": "improvements/symmetry19/decoded/center19-adjacent.or",
+  "n": 19,
+  "inequalities": 116280,
+  "lp_status": 0,
+  "lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "status": "NUMERIC_CANDIDATE_UNCERTIFIED",
+  "certificate": null,
+  "blocking_clause": null,
+  "seconds": 16.792066547990544
+}

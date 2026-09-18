@@ -1,0 +1,42 @@
+{
+  "label": "014-geometry-free-s21014",
+  "command": [
+    "improvements/localizer/geometry19_v2",
+    "--input",
+    "improvements/localizer/unattended14/inputs/free-empty.pts",
+    "--output",
+    "improvements/localizer/unattended14/014-geometry-free-s21014/points.pts",
+    "--seconds",
+    "900",
+    "--seed",
+    "21014",
+    "--temperature",
+    "4",
+    "--hole-weight",
+    "3",
+    "--three-weight",
+    "1",
+    "--min-exponent",
+    "-12",
+    "--restart-every",
+    "1000000",
+    "--cycle-iterations",
+    "2000000",
+    "--checkpoint-seconds",
+    "60"
+  ],
+  "budget_seconds": 905.0,
+  "started_utc": "2026-09-05T08:04:07.154069+00:00",
+  "output": "/home/andrew/PointSAT/improvements/localizer/unattended14/014-geometry-free-s21014",
+  "command_file_sha256": {
+    "improvements/localizer/geometry19_v2": "9620b9f1bc4f7d4f158b3cf5569cdc355149245202d046a43d0f24f33de6d62c"
+  },
+  "pid": 270735,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": false,
+  "wall_seconds": 900.0497769890062,
+  "ended_utc": "2026-09-05T08:19:07.204062+00:00",
+  "remaining_audit_pids": {},
+  "audit_returncode": 0
+}

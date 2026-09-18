@@ -1,0 +1,26 @@
+{
+  "wall_seconds": 117.14688802999444,
+  "jobs": 18,
+  "sat_models": 6,
+  "realization_attempts": 6,
+  "feedback_attempts": 6,
+  "realized": 0,
+  "distinct_realized_samples": 0,
+  "errors": 0,
+  "first_realized_seconds": null,
+  "stage_worker_seconds": {
+    "scranfilize": 2.989633443998173,
+    "sat": 17.174216103972867,
+    "checker_initialization": 0.9328037340019364,
+    "flippability": 2.034273987985216,
+    "localizer": 90.03004717893782,
+    "exact_decode": 0.03284868798800744,
+    "cnf_check": 0.0030795600032433867,
+    "radial_relabel": 0.01157579300343059,
+    "radial_cnf_check": 0.014662102999864146,
+    "archive_exact_audit": 0.14754482806893066,
+    "feedback_margin_ranking": 0.010711007984355092,
+    "core_feedback": 3.657588981965091
+  },
+  "interrupted": false
+}

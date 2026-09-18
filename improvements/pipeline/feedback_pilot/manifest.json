@@ -1,0 +1,418 @@
+{
+  "description": "Four matched SAT seeds0..3 per problem; two workers; at most4x15s Localizer/model. Warm retries vs core-guided retargeting are search treatments, not isolated speed tests.",
+  "native_sha256": "550b29b0fbc499147c77581e6ea759468f1c989cbdf07b6c69932917e2fc349d",
+  "runs": [
+    {
+      "problem": "mixed23",
+      "n": 23,
+      "treatment": "warm_retry",
+      "settings": {
+        "base_file": "7gon-6hole-23-compact.cnf",
+        "n": 23,
+        "output_folder": "improvements/pipeline/feedback_pilot/mixed23-warm_retry",
+        "solution_generation": "scranfilize",
+        "n_solutions": 4,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 4,
+        "localizer_attempt_timeouts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "localizer_attempt_branches": [
+          1,
+          1,
+          1
+        ],
+        "localizer_attempt_thresholds": [
+          10000,
+          10000,
+          10000
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/localizer/localizer_v2",
+        "localizer_native_time_limit": true,
+        "warm_start_retries": true,
+        "feedback_rounds": 0,
+        "feedback_max_relaxed": 256,
+        "feedback_max_solves": 256,
+        "feedback_seconds": 10,
+        "feedback_conflict_budget": 1000,
+        "solver_timeout": 90,
+        "continue_if_realized": false
+      },
+      "wall_seconds": 131.13583379401825,
+      "cpu_seconds": 256.929016,
+      "returncode": 0,
+      "summary": {
+        "wall_seconds": 131.017302008986,
+        "jobs": 20,
+        "sat_models": 4,
+        "realization_attempts": 16,
+        "feedback_attempts": 0,
+        "realized": 0,
+        "errors": 0,
+        "first_realized_seconds": null,
+        "stage_worker_seconds": {
+          "scranfilize": 1.9634215460391715,
+          "sat": 12.939732800994534,
+          "checker_initialization": 1.7964037760102656,
+          "flippability": 1.365613715024665,
+          "localizer": 240.07239008805482,
+          "exact_decode": 0.1067870399565436,
+          "cnf_check": 0.009495481004705653
+        },
+        "interrupted": false
+      }
+    },
+    {
+      "problem": "mixed23",
+      "n": 23,
+      "treatment": "core_feedback",
+      "settings": {
+        "base_file": "7gon-6hole-23-compact.cnf",
+        "n": 23,
+        "output_folder": "improvements/pipeline/feedback_pilot/mixed23-core_feedback",
+        "solution_generation": "scranfilize",
+        "n_solutions": 4,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "localizer_attempt_branches": [
+          1,
+          1,
+          1
+        ],
+        "localizer_attempt_thresholds": [
+          10000,
+          10000,
+          10000
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/localizer/localizer_v2",
+        "localizer_native_time_limit": true,
+        "warm_start_retries": true,
+        "feedback_rounds": 3,
+        "feedback_max_relaxed": 256,
+        "feedback_max_solves": 256,
+        "feedback_seconds": 10,
+        "feedback_conflict_budget": 1000,
+        "solver_timeout": 90,
+        "continue_if_realized": false
+      },
+      "wall_seconds": 67.13101244802237,
+      "cpu_seconds": 131.894518,
+      "returncode": 0,
+      "summary": {
+        "wall_seconds": 67.01845806301571,
+        "jobs": 18,
+        "sat_models": 4,
+        "realization_attempts": 8,
+        "feedback_attempts": 6,
+        "realized": 1,
+        "distinct_realized_samples": 1,
+        "errors": 0,
+        "first_realized_seconds": 44.91327971601277,
+        "stage_worker_seconds": {
+          "scranfilize": 1.799948093976127,
+          "sat": 11.708744056988508,
+          "checker_initialization": 1.810632231994532,
+          "flippability": 1.2523948459711391,
+          "localizer": 111.85966441300116,
+          "exact_decode": 0.05593187699560076,
+          "cnf_check": 0.010770959983346984,
+          "core_feedback": 2.0880351120140404,
+          "feedback_flippability": 1.1360865899769124
+        },
+        "interrupted": false
+      }
+    },
+    {
+      "problem": "gons32",
+      "n": 32,
+      "treatment": "warm_retry",
+      "settings": {
+        "base_file": "7gon-32.cnf",
+        "n": 32,
+        "output_folder": "improvements/pipeline/feedback_pilot/gons32-warm_retry",
+        "solution_generation": "scranfilize",
+        "n_solutions": 4,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 4,
+        "localizer_attempt_timeouts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "localizer_attempt_branches": [
+          1,
+          1,
+          1
+        ],
+        "localizer_attempt_thresholds": [
+          10000,
+          10000,
+          10000
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/localizer/localizer_v2",
+        "localizer_native_time_limit": true,
+        "warm_start_retries": true,
+        "feedback_rounds": 0,
+        "feedback_max_relaxed": 256,
+        "feedback_max_solves": 256,
+        "feedback_seconds": 10,
+        "feedback_conflict_budget": 1000,
+        "solver_timeout": 90,
+        "continue_if_realized": false
+      },
+      "wall_seconds": 123.80343069299124,
+      "cpu_seconds": 242.029077,
+      "returncode": 0,
+      "summary": {
+        "wall_seconds": 123.67377326500718,
+        "jobs": 20,
+        "sat_models": 4,
+        "realization_attempts": 16,
+        "feedback_attempts": 0,
+        "realized": 0,
+        "distinct_realized_samples": 0,
+        "errors": 0,
+        "first_realized_seconds": null,
+        "stage_worker_seconds": {
+          "scranfilize": 1.475768203032203,
+          "sat": 2.3992289660673123,
+          "checker_initialization": 1.251225436979439,
+          "flippability": 1.50343417795375,
+          "localizer": 240.09227115105023,
+          "exact_decode": 0.3275173690635711,
+          "cnf_check": 0.006244830030482262
+        },
+        "interrupted": false
+      }
+    },
+    {
+      "problem": "gons32",
+      "n": 32,
+      "treatment": "core_feedback",
+      "settings": {
+        "base_file": "7gon-32.cnf",
+        "n": 32,
+        "output_folder": "improvements/pipeline/feedback_pilot/gons32-core_feedback",
+        "solution_generation": "scranfilize",
+        "n_solutions": 4,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "localizer_attempt_branches": [
+          1,
+          1,
+          1
+        ],
+        "localizer_attempt_thresholds": [
+          10000,
+          10000,
+          10000
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/localizer/localizer_v2",
+        "localizer_native_time_limit": true,
+        "warm_start_retries": true,
+        "feedback_rounds": 3,
+        "feedback_max_relaxed": 256,
+        "feedback_max_solves": 256,
+        "feedback_seconds": 10,
+        "feedback_conflict_budget": 1000,
+        "solver_timeout": 90,
+        "continue_if_realized": false
+      },
+      "wall_seconds": 34.757845407002605,
+      "cpu_seconds": 68.49277099999996,
+      "returncode": 0,
+      "summary": {
+        "wall_seconds": 34.6220414149866,
+        "jobs": 12,
+        "sat_models": 4,
+        "realization_attempts": 4,
+        "feedback_attempts": 4,
+        "realized": 0,
+        "distinct_realized_samples": 0,
+        "errors": 0,
+        "first_realized_seconds": null,
+        "stage_worker_seconds": {
+          "scranfilize": 1.4898312040022574,
+          "sat": 2.524152441008482,
+          "checker_initialization": 1.3443494270031806,
+          "flippability": 1.5203394579875749,
+          "localizer": 60.02340596501017,
+          "exact_decode": 0.08521169101004489,
+          "cnf_check": 0.0055854860111139715,
+          "core_feedback": 1.7748191970167682
+        },
+        "interrupted": false
+      }
+    },
+    {
+      "problem": "caps26",
+      "n": 26,
+      "treatment": "warm_retry",
+      "settings": {
+        "base_file": "7gon-no-5-cap-no-sb-26.cnf",
+        "n": 26,
+        "output_folder": "improvements/pipeline/feedback_pilot/caps26-warm_retry",
+        "solution_generation": "scranfilize",
+        "n_solutions": 4,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 4,
+        "localizer_attempt_timeouts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "localizer_attempt_branches": [
+          1,
+          1,
+          1
+        ],
+        "localizer_attempt_thresholds": [
+          10000,
+          10000,
+          10000
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/localizer/localizer_v2",
+        "localizer_native_time_limit": true,
+        "warm_start_retries": true,
+        "feedback_rounds": 0,
+        "feedback_max_relaxed": 256,
+        "feedback_max_solves": 256,
+        "feedback_seconds": 10,
+        "feedback_conflict_budget": 1000,
+        "solver_timeout": 90,
+        "continue_if_realized": false
+      },
+      "wall_seconds": 122.08532899900456,
+      "cpu_seconds": 243.18803600000004,
+      "returncode": 0,
+      "summary": {
+        "wall_seconds": 121.98730433502351,
+        "jobs": 20,
+        "sat_models": 4,
+        "realization_attempts": 16,
+        "feedback_attempts": 0,
+        "realized": 0,
+        "distinct_realized_samples": 0,
+        "errors": 0,
+        "first_realized_seconds": null,
+        "stage_worker_seconds": {
+          "scranfilize": 0.7513033840223216,
+          "sat": 1.4597704609914217,
+          "checker_initialization": 0.6882826410001144,
+          "flippability": 0.6427936819382012,
+          "localizer": 240.0598487080715,
+          "exact_decode": 0.13250592004624195,
+          "cnf_check": 0.012866002944065258
+        },
+        "interrupted": false
+      }
+    },
+    {
+      "problem": "caps26",
+      "n": 26,
+      "treatment": "core_feedback",
+      "settings": {
+        "base_file": "7gon-no-5-cap-no-sb-26.cnf",
+        "n": 26,
+        "output_folder": "improvements/pipeline/feedback_pilot/caps26-core_feedback",
+        "solution_generation": "scranfilize",
+        "n_solutions": 4,
+        "workers": 2,
+        "worker_max_threads": 1,
+        "remove_flippable": true,
+        "localizer_attempt_levels": 1,
+        "localizer_attempt_timeouts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "localizer_attempt_branches": [
+          1,
+          1,
+          1
+        ],
+        "localizer_attempt_thresholds": [
+          10000,
+          10000,
+          10000
+        ],
+        "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+        "cadical_loc": "direct/vendor/kissat/build/kissat",
+        "localizer_loc": "improvements/localizer/localizer_v2",
+        "localizer_native_time_limit": true,
+        "warm_start_retries": true,
+        "feedback_rounds": 3,
+        "feedback_max_relaxed": 256,
+        "feedback_max_solves": 256,
+        "feedback_seconds": 10,
+        "feedback_conflict_budget": 1000,
+        "solver_timeout": 90,
+        "continue_if_realized": false
+      },
+      "wall_seconds": 78.56013317100587,
+      "cpu_seconds": 110.670243,
+      "returncode": 0,
+      "summary": {
+        "wall_seconds": 78.44949881901266,
+        "jobs": 17,
+        "sat_models": 4,
+        "realization_attempts": 7,
+        "feedback_attempts": 6,
+        "realized": 0,
+        "distinct_realized_samples": 0,
+        "errors": 0,
+        "first_realized_seconds": null,
+        "stage_worker_seconds": {
+          "scranfilize": 0.7796000640082639,
+          "sat": 1.512287378020119,
+          "checker_initialization": 0.7028345440048724,
+          "flippability": 0.7498808190575801,
+          "localizer": 105.04143423298956,
+          "exact_decode": 0.06757562805432826,
+          "cnf_check": 0.013587287976406515,
+          "core_feedback": 1.6077818860067055,
+          "feedback_flippability": 0.62851659199805
+        },
+        "interrupted": false
+      }
+    }
+  ]
+}

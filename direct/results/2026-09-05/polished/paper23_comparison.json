@@ -1,0 +1,10 @@
+{
+  "first": "direct/seeds/paper23.pts",
+  "second": "direct/results/2026-09-05/polished/repair23-grid400-s12-compact.pts",
+  "n": 23,
+  "triples": 1771,
+  "changed_labeled_orientation_signs": 39,
+  "isomorphic_order_types_allowing_reflection": false,
+  "first_canonical_sha256": "78acdc42e168249ce2c5006ece9f7b6a3437ec525b75d5e6f6b31d9a1bbbacab",
+  "second_canonical_sha256": "09aa99e8f4c75532b7090aa8ed98008ab71fb20b2645a0589687e87e7ab98d11"
+}

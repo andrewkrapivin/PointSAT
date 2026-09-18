@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "arithmetic": "Python arbitrary-size integers only",
+  "weighted_strict_inequalities": 882,
+  "weight_sum": 422575259746151259918901937603605873380793649513680704599383283990992779956282,
+  "distinct_bracket_variables": 902,
+  "blocking_literals": 967,
+  "claim": "Every orientation assignment retaining these explicitly specified premises has no real point realization.",
+  "input_constraints": 969,
+  "partial_input": false,
+  "random_general_position_sets": 40,
+  "exact_GP_product_identities_and_strict_inequalities": 85800,
+  "source_proof": "improvements/realizability/results/supplied19-rational.json",
+  "corrupted_weight_rejected": true,
+  "unspecified_premise_rejected": true
+}

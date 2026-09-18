@@ -1,0 +1,282 @@
+{
+  "created_utc": "2026-09-06T22:41:40.187276+00:00",
+  "seconds_per_run": 120.0,
+  "workers": 3,
+  "seed": 1,
+  "cases": {
+    "paper23": {
+      "source": "direct/seeds/paper23.pts",
+      "sha256": "835db1678c6cad38b7595bb1eb68ed569c4638f605e3d1c58cf75f9e29f37623",
+      "input_audit": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "convex_hole_size_subsets": 753,
+        "hull_layers": [
+          3,
+          4,
+          4,
+          6,
+          5,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          672,
+          566
+        ],
+        "bbox_width": 672,
+        "bbox_height": 566,
+        "bbox_area": 380352,
+        "min_determinant": 1,
+        "max_determinant": 361957,
+        "min_squared_distance": 194,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0249001
+      }
+    },
+    "archive23-sample7": {
+      "source": "improvements/benchmarks/successes/archive23-sample7/normalized.pts",
+      "sha256": "5b4405bd0fdfe7cf5017dd3da5357551715638ebc0457d72d36e109ba59f81a1",
+      "input_audit": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "convex_hole_size_subsets": 606,
+        "hull_layers": [
+          3,
+          4,
+          4,
+          6,
+          5,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          100000,
+          85769
+        ],
+        "bbox_width": 100000,
+        "bbox_height": 85769,
+        "bbox_area": 8576900000,
+        "min_determinant": 1354,
+        "max_determinant": 6994706528,
+        "min_squared_distance": 146,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0276901
+      }
+    },
+    "archive23-sample2": {
+      "source": "improvements/benchmarks/successes/archive23-sample2/normalized.pts",
+      "sha256": "68f8c638ab72c66c7136e2a4efe1e74fe830616cd5be890e29c75a8623748fb9",
+      "input_audit": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "convex_hole_size_subsets": 642,
+        "hull_layers": [
+          3,
+          4,
+          4,
+          6,
+          5,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          717390,
+          1000000
+        ],
+        "bbox_width": 717390,
+        "bbox_height": 1000000,
+        "bbox_area": 717390000000,
+        "min_determinant": 2009,
+        "max_determinant": 517645308100,
+        "min_squared_distance": 110005,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0244252
+      }
+    },
+    "sat-guided23-case33": {
+      "source": "improvements/benchmarks/successes/sat-guided23-case33/normalized.pts",
+      "sha256": "79375456714dd4f87692600d3b4ba4ed1b87e2872773c4bc2184504ec01123e1",
+      "input_audit": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "convex_hole_size_subsets": 772,
+        "hull_layers": [
+          3,
+          4,
+          4,
+          6,
+          5,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          1000000,
+          740898
+        ],
+        "bbox_width": 1000000,
+        "bbox_height": 740898,
+        "bbox_area": 740898000000,
+        "min_determinant": 36,
+        "max_determinant": 670674734076,
+        "min_squared_distance": 2529,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0235143
+      }
+    },
+    "feedback23-sample3": {
+      "source": "improvements/benchmarks/successes/feedback23-sample3/normalized.pts",
+      "sha256": "95583cf9849450b4212a078fbcebbb075d7fa7138aa574f50efeac67b3bcda94",
+      "input_audit": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "convex_hole_size_subsets": 591,
+        "hull_layers": [
+          3,
+          4,
+          4,
+          6,
+          5,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          590237,
+          1000000
+        ],
+        "bbox_width": 590237,
+        "bbox_height": 1000000,
+        "bbox_area": 590237000000,
+        "min_determinant": 852,
+        "max_determinant": 539463331110,
+        "min_squared_distance": 97700,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.024126
+      }
+    },
+    "control-margin23-sample6": {
+      "source": "improvements/benchmarks/successes/control-margin23-sample6/normalized.pts",
+      "sha256": "766aa121672de0370c16f817ef637824a4ec520ef79d1e5d5da5f9819049993f",
+      "input_audit": {
+        "n": 23,
+        "gon": 7,
+        "hole": 6,
+        "cap": 0,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "convex_caps": 0,
+        "cap_subsets_checked": 0,
+        "gon_subsets_checked": 245157,
+        "hole_subsets_checked": 100947,
+        "convex_hole_size_subsets": 573,
+        "hull_layers": [
+          3,
+          5,
+          5,
+          5,
+          4,
+          1
+        ],
+        "bbox": [
+          0,
+          0,
+          100000,
+          88656
+        ],
+        "bbox_width": 100000,
+        "bbox_height": 88656,
+        "bbox_area": 8865600000,
+        "min_determinant": 1698,
+        "max_determinant": 7904640000,
+        "min_squared_distance": 27877,
+        "first_gon": [],
+        "first_hole": [],
+        "first_cap": [],
+        "seconds": 0.0248501
+      }
+    }
+  },
+  "binaries": {
+    "old": {
+      "path": "/home/andrew/PointSAT/direct/compact",
+      "sha256": "fe8c2e6996e4070d40b9a74809397949967a62dfb7421146c31577a5d618937b"
+    },
+    "new": {
+      "path": "/home/andrew/PointSAT/optimizer/compact_v1",
+      "sha256": "80faa99d357cb6f21e55d6da442b8cde8362b8e150f0211142cf9dbcf9de3205"
+    }
+  }
+}

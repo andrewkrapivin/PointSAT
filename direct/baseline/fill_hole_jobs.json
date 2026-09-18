@@ -1,0 +1,30 @@
+[
+  {
+    "name": "fill_hole_cold_anneal23_seed51",
+    "executable": "direct/baseline/fill_hole",
+    "args": ["--input", "direct/results/2026-09-05/anneal-23-s1.pts", "--gon", "7", "--hole", "6", "--seconds", "120", "--temperature", "0.5", "--seed", "51"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "direct geometric fill-hole repair of cold geometric search near miss"
+  },
+  {
+    "name": "fill_hole_cold_late23_seed52",
+    "executable": "direct/baseline/fill_hole",
+    "args": ["--input", "direct/results/2026-09-05/late-23-s2.pts", "--gon", "7", "--hole", "6", "--seconds", "120", "--temperature", "0.5", "--seed", "52"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "direct geometric fill-hole repair of cold geometric search near miss"
+  },
+  {
+    "name": "fill_hole_overmars22_append_seed53",
+    "executable": "direct/baseline/fill_hole",
+    "args": ["--input", "direct/results/2026-09-05/overmars_warm_direct22_seed15485863.pts", "--insert-samples", "10000", "--gon", "7", "--hole", "6", "--seconds", "120", "--temperature", "0.5", "--seed", "53"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "direct geometric insertion and fill-hole repair of valid Overmars-generated 22-point set"
+  },
+  {
+    "name": "fill_hole_overmars22_append_seed54",
+    "executable": "direct/baseline/fill_hole",
+    "args": ["--input", "direct/results/2026-09-05/overmars_warm_direct22_seed15485863.pts", "--insert-samples", "10000", "--gon", "7", "--hole", "6", "--seconds", "120", "--temperature", "1.0", "--seed", "54"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "direct geometric insertion and fill-hole repair of valid Overmars-generated 22-point set"
+  }
+]

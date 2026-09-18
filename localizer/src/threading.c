@@ -1,0 +1,160 @@
+#include <pthread.h>
+#include <stdbool.h>
+#include <assert.h>
+#include <stdatomic.h>
+#include "utils.c"
+
+
+#ifndef THREADING_H
+#define THREADING_H
+
+
+#define K_TOP 10
+#ifndef LOCALIZER_ATOMIC_STOP
+#define LOCALIZER_ATOMIC_STOP 0
+#endif
+
+// Mutex and condition variable to signal the first thread to finish
+typedef struct {
+    Solution top_k_solutions[K_TOP];
+#if LOCALIZER_ATOMIC_STOP
+    atomic_bool stop_flag;
+#else
+    bool stop_flag;
+#endif
+    pthread_mutex_t stop_mutex;
+    pthread_mutex_t top_k_mutex;
+    pthread_mutex_t print_mutex;
+} synchronization_t;
+
+void sync_init(synchronization_t* sync) {
+#if LOCALIZER_ATOMIC_STOP
+    atomic_init(&sync->stop_flag, false);
+#else
+    sync->stop_flag = false;
+#endif
+    
+    for(int i = 0; i < K_TOP; ++i) {
+        solution_init(&sync->top_k_solutions[i]);
+    }
+
+    int rc1 = pthread_mutex_init(&sync->stop_mutex, NULL);
+    assert(rc1 == 0);
+    int rc2 = pthread_mutex_init(&sync->top_k_mutex, NULL);
+    assert(rc2 == 0);
+    int rc3 = pthread_mutex_init(&sync->print_mutex, NULL);
+    assert(rc3 == 0);
+}
+
+void sync_destroy(synchronization_t* sync) {
+    pthread_mutex_destroy(&sync->stop_mutex);
+    pthread_mutex_destroy(&sync->top_k_mutex);
+    pthread_mutex_destroy(&sync->print_mutex);
+}
+
+bool sync_should_stop(synchronization_t* sync) {
+#if LOCALIZER_ATOMIC_STOP
+    return atomic_load_explicit(&sync->stop_flag, memory_order_relaxed);
+#else
+    pthread_mutex_lock(&sync->stop_mutex);
+    bool should_stop = sync->stop_flag;
+    pthread_mutex_unlock(&sync->stop_mutex);
+    return should_stop;
+#endif
+}
+
+bool sync_set_stop(synchronization_t* sync) {
+#if LOCALIZER_ATOMIC_STOP
+    return !atomic_exchange_explicit(&sync->stop_flag, true, memory_order_relaxed);
+#else
+    // returns whether it was the first thread to set the stop flag (i.e., it was false before)
+    pthread_mutex_lock(&sync->stop_mutex);
+    bool ans = !sync->stop_flag;
+    sync->stop_flag = true;
+    pthread_mutex_unlock(&sync->stop_mutex);
+    return ans;
+#endif
+}
+
+void sync_broadcast_new_solution(synchronization_t* sync, Point* points, int violations) {
+    pthread_mutex_lock(&sync->top_k_mutex);
+    for(int i = 0; i < K_TOP; ++i) {
+        if(violations <= sync->top_k_solutions[i].violations) {
+            for(int j = K_TOP-1; j > i; --j) {
+                sync->top_k_solutions[j].violations = sync->top_k_solutions[j-1].violations;
+                for(int p = 0; p < MAX_POINTS; ++p) {
+                    sync->top_k_solutions[j].points[p].x =  sync->top_k_solutions[j-1].points[p].x;
+                    sync->top_k_solutions[j].points[p].y =  sync->top_k_solutions[j-1].points[p].y;
+                }
+            }
+            sync->top_k_solutions[i].violations = violations;
+            for(int p = 0; p < MAX_POINTS; ++p) {
+                sync->top_k_solutions[i].points[p].x = points[p].x;
+                sync->top_k_solutions[i].points[p].y = points[p].y;
+            }
+            break;
+        }
+    }
+    pthread_mutex_unlock(&sync->top_k_mutex);
+}
+
+void sync_get_best_solution(synchronization_t* sync, Point* points, int* violations, rng_t* rng) {
+    pthread_mutex_lock(&sync->top_k_mutex);
+    
+    int scores[K_TOP], valid = 0;
+    for(int i = 0; i < K_TOP; ++i) {
+        if (sync->top_k_solutions[i].violations == INT32_MAX) break;
+        int quality = 2*sync->top_k_solutions[0].violations - sync->top_k_solutions[i].violations;
+        scores[i] = (quality > 0 ? quality : 1)*(K_TOP-i);
+        ++valid;
+    }
+
+    assert(valid > 0);
+    int idx = sample_proportional(scores, valid, rng);
+    *violations = sync->top_k_solutions[idx].violations;
+
+    
+    for(int i = 0; i < MAX_POINTS; ++i) {
+        points[i].x = sync->top_k_solutions[idx].points[i].x;
+        points[i].y = sync->top_k_solutions[idx].points[i].y;
+    }
+
+    pthread_mutex_unlock(&sync->top_k_mutex);
+}
+
+void sync_color_printf(synchronization_t* sync, Color color, const char* format, ...) {
+    pthread_mutex_lock(&sync->print_mutex);
+    va_list args;
+
+    // Print the color code
+    printf("%s", get_color_code(color));
+
+    // Initialize variadic arguments
+    va_start(args, format);
+
+    // Print the formatted string
+    vprintf(format, args);
+
+    // Reset to default color
+    printf("%s", get_color_code(RESET));
+    pthread_mutex_unlock(&sync->print_mutex);
+
+    // Clean up variadic arguments
+    va_end(args);
+}
+
+void sync_printf(synchronization_t* sync, const char* format, ...) {
+    va_list args;
+    
+    va_start(args, format);
+    
+    pthread_mutex_lock(&sync->print_mutex);
+    vprintf(format, args);
+    pthread_mutex_unlock(&sync->print_mutex);
+
+    va_end(args);
+}
+
+
+
+#endif // THREADING_H

@@ -1,0 +1,80 @@
+{
+  "candidates_audited": 2,
+  "any_valid": false,
+  "best_score": 3,
+  "best_certificate": "improvements/localizer/unattended14/smoke-rot/points.pts",
+  "records": [
+    {
+      "n": 19,
+      "valid": false,
+      "collinear_triples": 0,
+      "duplicate_pairs": 0,
+      "six_subsets_checked": 27132,
+      "interior_histogram": [
+        3,
+        7,
+        3,
+        0,
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_forbidden_hexagon": [
+        2,
+        12,
+        13,
+        8,
+        11,
+        1
+      ],
+      "seconds": 0.016354,
+      "input": "improvements/localizer/unattended14/smoke-rot/points.pts",
+      "certificate": "improvements/localizer/unattended14/smoke-rot/points.pts",
+      "sha256": "7554743472fe91314a44649b194fd7faf88f1a35ca0e776c7e25a9ff0202f532",
+      "score": 3
+    },
+    {
+      "n": 19,
+      "valid": false,
+      "collinear_triples": 0,
+      "duplicate_pairs": 0,
+      "six_subsets_checked": 27132,
+      "interior_histogram": [
+        12,
+        18,
+        21,
+        21,
+        25,
+        21,
+        15,
+        10,
+        9,
+        6,
+        4,
+        0,
+        0,
+        0
+      ],
+      "first_forbidden_hexagon": [
+        2,
+        6,
+        19,
+        12,
+        1,
+        9
+      ],
+      "seconds": 0.0171827,
+      "input": "improvements/localizer/unattended14/smoke-rot/points.pts.current.pts",
+      "certificate": "improvements/localizer/unattended14/smoke-rot/points.pts.current.pts",
+      "sha256": "9f0967df57eb91d964289111481374b99ad56ffb708c24d07816efd1cd962db8",
+      "score": 33
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-09-05T03:46:07.857551+00:00",
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "-u",
+    "PointSAT.py",
+    "direct/baseline/settings.json"
+  ],
+  "settings": {
+    "n": 23,
+    "base_file": "7gon-6hole-23-compact.cnf",
+    "solution_generation": "scranfilize",
+    "n_solutions": 40,
+    "output_folder": "direct/baseline/with_flippable",
+    "workers": 2,
+    "remove_flippable": true,
+    "worker_max_threads": 1,
+    "localizer_attempt_levels": 1,
+    "localizer_attempt_timeouts": [
+      15
+    ],
+    "solver_timeout": 60,
+    "continue_if_realized": false,
+    "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+    "localizer_loc": "direct/vendor/localizer/src/localizer",
+    "cadical_loc": "direct/vendor/kissat/build/kissat"
+  },
+  "wall_seconds": 457.3160413679725,
+  "wall_limit_seconds": 540.0,
+  "cpu_user_seconds": 886.806559,
+  "cpu_system_seconds": 11.405147,
+  "max_rss_kib": 273484,
+  "returncode": 0,
+  "timed_out": false,
+  "sat_jobs_completed": 40,
+  "sat_models": 40,
+  "sat_stage_worker_seconds": 276.7829069690197,
+  "realization_attempts": 40,
+  "realized": 0,
+  "realization_stage_worker_seconds": 631.2202173840778,
+  "minimum_orientation_violations": 4,
+  "realization_files": []
+}

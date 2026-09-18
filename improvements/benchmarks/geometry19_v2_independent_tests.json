@@ -1,0 +1,1010 @@
+{
+  "status": "passed",
+  "general_position_cases": 200,
+  "random_cases": 196,
+  "adversarial_cases": 4,
+  "native_sha256": "9620b9f1bc4f7d4f158b3cf5569cdc355149245202d046a43d0f24f33de6d62c",
+  "reference_sha256": "8ab0a699b9f92ee62e0d1ae8996e3551a5fe16e3b97f2e15b60d3db1cacff911",
+  "cases": [
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 6,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 7,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 7,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 13,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 7,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 8,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 9,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 9,
+      "holes0": 3,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 9,
+      "holes0": 0,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 2,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 8,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 1,
+      "holes3": 0
+    },
+    {
+      "n": 9,
+      "holes0": 2,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 8,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 1,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 3,
+      "holes3": 0
+    },
+    {
+      "n": 9,
+      "holes0": 2,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 2,
+      "holes3": 1
+    },
+    {
+      "n": 9,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 10,
+      "holes0": 0,
+      "holes3": 0
+    },
+    {
+      "n": 10,
+      "holes0": 3,
+      "holes3": 2
+    },
+    {
+      "n": 10,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 10,
+      "holes0": 8,
+      "holes3": 6
+    },
+    {
+      "n": 10,
+      "holes0": 9,
+      "holes3": 0
+    },
+    {
+      "n": 10,
+      "holes0": 34,
+      "holes3": 1
+    },
+    {
+      "n": 10,
+      "holes0": 4,
+      "holes3": 1
+    },
+    {
+      "n": 10,
+      "holes0": 8,
+      "holes3": 6
+    },
+    {
+      "n": 10,
+      "holes0": 3,
+      "holes3": 5
+    },
+    {
+      "n": 10,
+      "holes0": 3,
+      "holes3": 4
+    },
+    {
+      "n": 10,
+      "holes0": 1,
+      "holes3": 1
+    },
+    {
+      "n": 10,
+      "holes0": 8,
+      "holes3": 2
+    },
+    {
+      "n": 10,
+      "holes0": 2,
+      "holes3": 1
+    },
+    {
+      "n": 10,
+      "holes0": 14,
+      "holes3": 0
+    },
+    {
+      "n": 11,
+      "holes0": 2,
+      "holes3": 5
+    },
+    {
+      "n": 11,
+      "holes0": 1,
+      "holes3": 2
+    },
+    {
+      "n": 11,
+      "holes0": 42,
+      "holes3": 0
+    },
+    {
+      "n": 11,
+      "holes0": 18,
+      "holes3": 13
+    },
+    {
+      "n": 11,
+      "holes0": 48,
+      "holes3": 9
+    },
+    {
+      "n": 11,
+      "holes0": 2,
+      "holes3": 0
+    },
+    {
+      "n": 11,
+      "holes0": 4,
+      "holes3": 1
+    },
+    {
+      "n": 11,
+      "holes0": 35,
+      "holes3": 4
+    },
+    {
+      "n": 11,
+      "holes0": 14,
+      "holes3": 7
+    },
+    {
+      "n": 11,
+      "holes0": 3,
+      "holes3": 2
+    },
+    {
+      "n": 11,
+      "holes0": 3,
+      "holes3": 6
+    },
+    {
+      "n": 11,
+      "holes0": 2,
+      "holes3": 4
+    },
+    {
+      "n": 11,
+      "holes0": 4,
+      "holes3": 5
+    },
+    {
+      "n": 11,
+      "holes0": 0,
+      "holes3": 2
+    },
+    {
+      "n": 12,
+      "holes0": 13,
+      "holes3": 34
+    },
+    {
+      "n": 12,
+      "holes0": 3,
+      "holes3": 14
+    },
+    {
+      "n": 12,
+      "holes0": 37,
+      "holes3": 35
+    },
+    {
+      "n": 12,
+      "holes0": 2,
+      "holes3": 5
+    },
+    {
+      "n": 12,
+      "holes0": 16,
+      "holes3": 21
+    },
+    {
+      "n": 12,
+      "holes0": 2,
+      "holes3": 5
+    },
+    {
+      "n": 12,
+      "holes0": 3,
+      "holes3": 17
+    },
+    {
+      "n": 12,
+      "holes0": 3,
+      "holes3": 6
+    },
+    {
+      "n": 12,
+      "holes0": 29,
+      "holes3": 26
+    },
+    {
+      "n": 12,
+      "holes0": 5,
+      "holes3": 10
+    },
+    {
+      "n": 12,
+      "holes0": 5,
+      "holes3": 20
+    },
+    {
+      "n": 12,
+      "holes0": 31,
+      "holes3": 30
+    },
+    {
+      "n": 12,
+      "holes0": 4,
+      "holes3": 18
+    },
+    {
+      "n": 12,
+      "holes0": 3,
+      "holes3": 17
+    },
+    {
+      "n": 13,
+      "holes0": 50,
+      "holes3": 55
+    },
+    {
+      "n": 13,
+      "holes0": 22,
+      "holes3": 30
+    },
+    {
+      "n": 13,
+      "holes0": 5,
+      "holes3": 38
+    },
+    {
+      "n": 13,
+      "holes0": 10,
+      "holes3": 10
+    },
+    {
+      "n": 13,
+      "holes0": 16,
+      "holes3": 49
+    },
+    {
+      "n": 13,
+      "holes0": 18,
+      "holes3": 36
+    },
+    {
+      "n": 13,
+      "holes0": 41,
+      "holes3": 42
+    },
+    {
+      "n": 13,
+      "holes0": 6,
+      "holes3": 7
+    },
+    {
+      "n": 13,
+      "holes0": 4,
+      "holes3": 67
+    },
+    {
+      "n": 13,
+      "holes0": 35,
+      "holes3": 77
+    },
+    {
+      "n": 13,
+      "holes0": 10,
+      "holes3": 20
+    },
+    {
+      "n": 13,
+      "holes0": 66,
+      "holes3": 45
+    },
+    {
+      "n": 13,
+      "holes0": 67,
+      "holes3": 25
+    },
+    {
+      "n": 13,
+      "holes0": 76,
+      "holes3": 0
+    },
+    {
+      "n": 14,
+      "holes0": 79,
+      "holes3": 43
+    },
+    {
+      "n": 14,
+      "holes0": 18,
+      "holes3": 89
+    },
+    {
+      "n": 14,
+      "holes0": 15,
+      "holes3": 31
+    },
+    {
+      "n": 14,
+      "holes0": 49,
+      "holes3": 150
+    },
+    {
+      "n": 14,
+      "holes0": 12,
+      "holes3": 22
+    },
+    {
+      "n": 14,
+      "holes0": 148,
+      "holes3": 111
+    },
+    {
+      "n": 14,
+      "holes0": 8,
+      "holes3": 50
+    },
+    {
+      "n": 14,
+      "holes0": 44,
+      "holes3": 84
+    },
+    {
+      "n": 14,
+      "holes0": 45,
+      "holes3": 154
+    },
+    {
+      "n": 14,
+      "holes0": 26,
+      "holes3": 107
+    },
+    {
+      "n": 14,
+      "holes0": 70,
+      "holes3": 89
+    },
+    {
+      "n": 14,
+      "holes0": 19,
+      "holes3": 74
+    },
+    {
+      "n": 14,
+      "holes0": 14,
+      "holes3": 54
+    },
+    {
+      "n": 14,
+      "holes0": 32,
+      "holes3": 60
+    },
+    {
+      "n": 15,
+      "holes0": 55,
+      "holes3": 271
+    },
+    {
+      "n": 15,
+      "holes0": 58,
+      "holes3": 405
+    },
+    {
+      "n": 15,
+      "holes0": 49,
+      "holes3": 147
+    },
+    {
+      "n": 15,
+      "holes0": 72,
+      "holes3": 136
+    },
+    {
+      "n": 15,
+      "holes0": 25,
+      "holes3": 60
+    },
+    {
+      "n": 15,
+      "holes0": 28,
+      "holes3": 145
+    },
+    {
+      "n": 15,
+      "holes0": 10,
+      "holes3": 54
+    },
+    {
+      "n": 15,
+      "holes0": 87,
+      "holes3": 304
+    },
+    {
+      "n": 15,
+      "holes0": 9,
+      "holes3": 19
+    },
+    {
+      "n": 15,
+      "holes0": 25,
+      "holes3": 33
+    },
+    {
+      "n": 15,
+      "holes0": 123,
+      "holes3": 291
+    },
+    {
+      "n": 15,
+      "holes0": 42,
+      "holes3": 209
+    },
+    {
+      "n": 15,
+      "holes0": 49,
+      "holes3": 317
+    },
+    {
+      "n": 15,
+      "holes0": 31,
+      "holes3": 113
+    },
+    {
+      "n": 16,
+      "holes0": 34,
+      "holes3": 148
+    },
+    {
+      "n": 16,
+      "holes0": 124,
+      "holes3": 328
+    },
+    {
+      "n": 16,
+      "holes0": 150,
+      "holes3": 296
+    },
+    {
+      "n": 16,
+      "holes0": 11,
+      "holes3": 65
+    },
+    {
+      "n": 16,
+      "holes0": 60,
+      "holes3": 158
+    },
+    {
+      "n": 16,
+      "holes0": 121,
+      "holes3": 257
+    },
+    {
+      "n": 16,
+      "holes0": 36,
+      "holes3": 216
+    },
+    {
+      "n": 16,
+      "holes0": 13,
+      "holes3": 131
+    },
+    {
+      "n": 16,
+      "holes0": 30,
+      "holes3": 119
+    },
+    {
+      "n": 16,
+      "holes0": 352,
+      "holes3": 393
+    },
+    {
+      "n": 16,
+      "holes0": 61,
+      "holes3": 170
+    },
+    {
+      "n": 16,
+      "holes0": 48,
+      "holes3": 191
+    },
+    {
+      "n": 16,
+      "holes0": 78,
+      "holes3": 59
+    },
+    {
+      "n": 16,
+      "holes0": 84,
+      "holes3": 463
+    },
+    {
+      "n": 17,
+      "holes0": 29,
+      "holes3": 148
+    },
+    {
+      "n": 17,
+      "holes0": 45,
+      "holes3": 295
+    },
+    {
+      "n": 17,
+      "holes0": 54,
+      "holes3": 227
+    },
+    {
+      "n": 17,
+      "holes0": 101,
+      "holes3": 221
+    },
+    {
+      "n": 17,
+      "holes0": 185,
+      "holes3": 405
+    },
+    {
+      "n": 17,
+      "holes0": 79,
+      "holes3": 292
+    },
+    {
+      "n": 17,
+      "holes0": 184,
+      "holes3": 311
+    },
+    {
+      "n": 17,
+      "holes0": 35,
+      "holes3": 124
+    },
+    {
+      "n": 17,
+      "holes0": 39,
+      "holes3": 82
+    },
+    {
+      "n": 17,
+      "holes0": 83,
+      "holes3": 404
+    },
+    {
+      "n": 17,
+      "holes0": 62,
+      "holes3": 234
+    },
+    {
+      "n": 17,
+      "holes0": 69,
+      "holes3": 329
+    },
+    {
+      "n": 17,
+      "holes0": 28,
+      "holes3": 113
+    },
+    {
+      "n": 17,
+      "holes0": 76,
+      "holes3": 300
+    },
+    {
+      "n": 18,
+      "holes0": 68,
+      "holes3": 265
+    },
+    {
+      "n": 18,
+      "holes0": 111,
+      "holes3": 610
+    },
+    {
+      "n": 18,
+      "holes0": 28,
+      "holes3": 205
+    },
+    {
+      "n": 18,
+      "holes0": 77,
+      "holes3": 201
+    },
+    {
+      "n": 18,
+      "holes0": 63,
+      "holes3": 469
+    },
+    {
+      "n": 18,
+      "holes0": 55,
+      "holes3": 311
+    },
+    {
+      "n": 18,
+      "holes0": 148,
+      "holes3": 513
+    },
+    {
+      "n": 18,
+      "holes0": 72,
+      "holes3": 165
+    },
+    {
+      "n": 18,
+      "holes0": 66,
+      "holes3": 581
+    },
+    {
+      "n": 18,
+      "holes0": 146,
+      "holes3": 820
+    },
+    {
+      "n": 18,
+      "holes0": 62,
+      "holes3": 464
+    },
+    {
+      "n": 18,
+      "holes0": 51,
+      "holes3": 209
+    },
+    {
+      "n": 18,
+      "holes0": 52,
+      "holes3": 285
+    },
+    {
+      "n": 18,
+      "holes0": 24,
+      "holes3": 165
+    },
+    {
+      "n": 19,
+      "holes0": 105,
+      "holes3": 468
+    },
+    {
+      "n": 19,
+      "holes0": 48,
+      "holes3": 165
+    },
+    {
+      "n": 19,
+      "holes0": 59,
+      "holes3": 493
+    },
+    {
+      "n": 19,
+      "holes0": 123,
+      "holes3": 538
+    },
+    {
+      "n": 19,
+      "holes0": 216,
+      "holes3": 1173
+    },
+    {
+      "n": 19,
+      "holes0": 82,
+      "holes3": 678
+    },
+    {
+      "n": 19,
+      "holes0": 310,
+      "holes3": 1090
+    },
+    {
+      "n": 19,
+      "holes0": 47,
+      "holes3": 263
+    },
+    {
+      "n": 19,
+      "holes0": 83,
+      "holes3": 289
+    },
+    {
+      "n": 19,
+      "holes0": 129,
+      "holes3": 988
+    },
+    {
+      "n": 19,
+      "holes0": 36,
+      "holes3": 445
+    },
+    {
+      "n": 19,
+      "holes0": 77,
+      "holes3": 683
+    },
+    {
+      "n": 19,
+      "holes0": 64,
+      "holes3": 468
+    },
+    {
+      "n": 19,
+      "holes0": 79,
+      "holes3": 297
+    },
+    {
+      "n": 19,
+      "holes0": 27132,
+      "holes3": 0
+    },
+    {
+      "n": 19,
+      "holes0": 27132,
+      "holes3": 0
+    },
+    {
+      "n": 19,
+      "holes0": 79,
+      "holes3": 297
+    },
+    {
+      "n": 19,
+      "holes0": 0,
+      "holes3": 58
+    }
+  ]
+}

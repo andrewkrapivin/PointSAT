@@ -1,0 +1,294 @@
+{
+  "job": {
+    "case": {
+      "id": "holes29-s42200",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42200,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42200",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42200/target.or",
+      "orientation_sha256": "9b33f746420bb795b5dc4bab2b5f2fd1a539697be2018c1d2146e3dd543d5193"
+    },
+    "seed": 271,
+    "arm": "core_feedback"
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "seed": 271,
+      "native_budget_seconds": 15,
+      "native_wall_seconds": 15.036954065028112,
+      "native_cpu_seconds": 14.952163,
+      "finished_elapsed": 18.126213017036207,
+      "returncode": 0,
+      "constraint_count": 3586,
+      "target_sha256": "f792eda127a15df012aa15e9a9794e4905a3223777ccc1f283020e2104815e4b",
+      "warm_start": false,
+      "active_target_errors": 8,
+      "operational_cnf_acceptance": false,
+      "operational_check_seconds": 0.022698521963320673
+    },
+    {
+      "stage": 1,
+      "seed": 272,
+      "native_budget_seconds": 15,
+      "native_wall_seconds": 15.025267885008361,
+      "native_cpu_seconds": 14.962414999999998,
+      "finished_elapsed": 34.68081691302359,
+      "returncode": 0,
+      "constraint_count": 3564,
+      "target_sha256": "8514f8ef99c112062d621b0bbf40246598f41c8f87f88b4529d2fdf112fb2a3d",
+      "warm_start": true,
+      "active_target_errors": 6,
+      "operational_cnf_acceptance": false,
+      "operational_check_seconds": 0.028661563992500305
+    },
+    {
+      "stage": 2,
+      "seed": 273,
+      "native_budget_seconds": 15,
+      "native_wall_seconds": 15.013951077009551,
+      "native_cpu_seconds": 14.956477,
+      "finished_elapsed": 50.967235338001046,
+      "returncode": 0,
+      "constraint_count": 3563,
+      "target_sha256": "021e9e7b587fb93d9150ba1c31b7764704f9ab04928feff226d4f054d9c8c9f1",
+      "warm_start": true,
+      "active_target_errors": 1,
+      "operational_cnf_acceptance": false,
+      "operational_check_seconds": 0.03175736399134621
+    },
+    {
+      "stage": 3,
+      "seed": 274,
+      "native_budget_seconds": 7.857280918958131,
+      "native_wall_seconds": 0.8159546820097603,
+      "native_cpu_seconds": 0.8098480000000003,
+      "finished_elapsed": 52.918715531006455,
+      "returncode": 0,
+      "constraint_count": 3564,
+      "target_sha256": "18e2ec78276baaa5e739ef07dd4cfef3665fd3d5ac056f70b8bc30079139aab4",
+      "warm_start": true,
+      "active_target_errors": 0,
+      "operational_cnf_acceptance": true,
+      "online_geometry": {
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "valid": true,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "gon_subsets_checked": 0,
+        "hole_subsets_checked": 475020,
+        "seconds": 0.205939
+      }
+    }
+  ],
+  "feedback": [
+    {
+      "sat_calls": 9,
+      "relaxed": [
+        -17,
+        -1312,
+        -3628,
+        1784,
+        -2383,
+        2614,
+        -3542,
+        2615
+      ],
+      "core_sizes": [
+        1,
+        1,
+        1,
+        139,
+        61,
+        97,
+        141,
+        60
+      ],
+      "orientation_changes": 7,
+      "seconds": 0.055530657002236694,
+      "status": "SAT",
+      "core_choice": "target_margin",
+      "new_flippables": 90,
+      "total_feedback_wall_seconds": 1.4983712880057283
+    },
+    {
+      "sat_calls": 7,
+      "relaxed": [
+        -17,
+        -1312,
+        -3628,
+        1784,
+        2614,
+        2615
+      ],
+      "core_sizes": [
+        1,
+        1,
+        1,
+        167,
+        108,
+        100
+      ],
+      "orientation_changes": 6,
+      "seconds": 0.03677094099111855,
+      "status": "SAT",
+      "core_choice": "target_margin",
+      "new_flippables": 91,
+      "total_feedback_wall_seconds": 1.2320583629771136
+    },
+    {
+      "sat_calls": 9,
+      "relaxed": [
+        -1312,
+        -455,
+        3411,
+        3089,
+        -2400,
+        1253,
+        -734,
+        2806
+      ],
+      "core_sizes": [
+        1,
+        220,
+        185,
+        157,
+        83,
+        121,
+        123,
+        132
+      ],
+      "orientation_changes": 2,
+      "seconds": 0.09442531003151089,
+      "status": "SAT",
+      "core_choice": "target_margin",
+      "new_flippables": 90,
+      "total_feedback_wall_seconds": 1.091610397968907
+    }
+  ],
+  "timings": {
+    "cnf_initialize": 1.624011492007412,
+    "initial_flippability": 1.3771569190430455
+  },
+  "status": "SUCCESS",
+  "online_success": true,
+  "elapsed": 53.15451738104457,
+  "worker_cpu_seconds": 52.96081900000001,
+  "initial_flippable_count": 68,
+  "job_index": 19,
+  "budget_seconds": 60.0,
+  "wall_seconds": 53.298897697997745,
+  "parent_observed_cpu_seconds": 53.097105,
+  "budget_watchdog_fired": false,
+  "externally_interrupted": false,
+  "returncode": 0,
+  "cpu_may_exclude_unreaped_descendants": false,
+  "timestamp_utc": "2026-09-06T22:49:42Z",
+  "posthoc": {
+    "saved_checkpoints": [
+      {
+        "orientation_violations": 44,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": false,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 10,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.214017
+        },
+        "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage0.pts",
+        "integer_points_sha256": "dea326b7aeda5fc4dc830a084173f0f0576218949ce2b43c031228416ba65d57",
+        "stage_file": "stage0.real",
+        "saved_elapsed_upper_bound": 18.09171724319458
+      },
+      {
+        "orientation_violations": 60,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": false,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 6,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.218777
+        },
+        "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage1.pts",
+        "integer_points_sha256": "b0636a2ec4c9126540678f605d4823cf02cace8422f513c4f39b867d7255d8e0",
+        "stage_file": "stage1.real",
+        "saved_elapsed_upper_bound": 34.65770483016968
+      },
+      {
+        "orientation_violations": 69,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": false,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 1,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.39357
+        },
+        "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage2.pts",
+        "integer_points_sha256": "c29d5881d58ca890c786e81885656a564ad46b0bc3b51fd2cb6ac69e218a5d22",
+        "stage_file": "stage2.real",
+        "saved_elapsed_upper_bound": 50.955692768096924
+      },
+      {
+        "orientation_violations": 73,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": true,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 0,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.224005
+        },
+        "integer_points": "benchmarks/pilot_20260906/trial-19-ybhgtrsd/stage3.pts",
+        "integer_points_sha256": "90848636cca399919f04817307a28a99261babe2f383a6c36d7365577ff07a19",
+        "stage_file": "stage3.real",
+        "saved_elapsed_upper_bound": 52.910691261291504
+      }
+    ],
+    "valid_geometry": true,
+    "first_success_upper_bound_seconds": 52.910691261291504,
+    "minimum_forbidden_count": 0,
+    "audit_wall_seconds": 1.1106698449584655
+  }
+}

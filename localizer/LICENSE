@@ -1,0 +1,15 @@
+UPSTREAM LICENSE STATUS — NO LICENSE GRANT IDENTIFIED
+
+This folder includes source from Bernardo Subercaseaux's Localizer:
+https://github.com/bsubercaseaux/localizer
+Pinned revision: 5b07dd9df283b2438a6dc23e03ea5ef5c4ea55cb
+
+No LICENSE, COPYING, or other redistribution license was present in that
+revision, and its README contained no license grant. Upstream authors retain
+their rights. This file is a provenance notice, NOT a new license grant and
+NOT permission to redistribute upstream code. Confirm permission or obtain an
+applicable license from upstream before publishing/distributing these sources.
+
+Local PointSAT modifications do not change or supersede upstream rights.
+Original baseline files and source attribution are preserved for reproducible
+local research. No third-party license has been invented or assigned here.

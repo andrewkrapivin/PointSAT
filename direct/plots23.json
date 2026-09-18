@@ -1,0 +1,5 @@
+[
+  {"path":"direct/seeds/paper23.pts","title":"Published 23-point example","provenance":"PointSAT paper, Figure 1","gon":7,"hole":6},
+  {"path":"direct/results/2026-09-05/polished/repair23-grid400-s12-compact.pts","title":"Direct geometric refinement","provenance":"Published seed → small-grid repair → compaction","gon":7,"hole":6},
+  {"path":"direct/results/2026-09-05/pool-hull3-snapshot22.pts","title":"22 points grown geometrically","provenance":"Overmars growth + candidate-pool replacements","gon":7,"hole":6}
+]

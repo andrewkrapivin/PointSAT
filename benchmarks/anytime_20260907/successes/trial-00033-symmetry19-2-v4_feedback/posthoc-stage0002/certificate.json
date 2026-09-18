@@ -1,0 +1,236 @@
+{
+  "input_signature": {
+    "real_sha256": "42186a1cb7ec506d26dfdc268af311cb610a9f3de9136d32757700c4290708a2",
+    "target_sha256": "1eb2d8efdb4c71be14c50f33e225069f868ae694596bd7ddc15ca254b78bada8",
+    "dependencies": {
+      "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/compare19_audit.py": "495e6be53fe2ef31bdd51f625873405f574fee856aa43833647d13890d041fe9",
+      "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/verifier19": "8ab0a699b9f92ee62e0d1ae8996e3551a5fe16e3b97f2e15b60d3db1cacff911",
+      "/home/andrew/PointSAT/convex_hexagon_inside_19_3sym.cnf": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+      "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/mapping.json": "30203c74b5516f7e61454ef4f4e37d3ea60b26850e114139cfb7e22e0ea14c35",
+      "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/cycles.cycles": "86cd8a164ef4c7186e8d2f43f8fa7239b813f0f13ad16bec8d6dc6dedd451f7b",
+      "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/c3_verifier": "d32bc15551ec31e93a022f330f21c5fa6dc4f974f3fe6ca991fdfa151dad6128"
+    },
+    "n": 19,
+    "primary_requires_C3": false,
+    "path_roles": {
+      "cnf_path": "/home/andrew/PointSAT/convex_hexagon_inside_19_3sym.cnf",
+      "orientation_map_path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/mapping.json",
+      "cycles_path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/frozen/cycles.cycles"
+    }
+  },
+  "source": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/stage0002.real",
+  "n": 19,
+  "valid_geometry": true,
+  "accepted": true,
+  "primary_requires_C3": false,
+  "geometry": {
+    "n": 19,
+    "valid": true,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      0,
+      12,
+      9,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_forbidden_hexagon": [],
+    "seconds": 0.0115712
+  },
+  "orientation_violations": 21,
+  "constraint_count": 969,
+  "general_position": true,
+  "forbidden_hexagons": 0,
+  "empty_hexagons": 0,
+  "hexagons_with_three_inside": 0,
+  "integer_points": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/points.pts",
+  "integer_coordinates": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "696132322722609660",
+      "278011749952563786"
+    ],
+    [
+      "107300923351817596",
+      "741874150849529240"
+    ],
+    [
+      "14877033481166265220",
+      "5949269399414804000"
+    ],
+    [
+      "-11894602851711129380",
+      "10187265977886791800"
+    ],
+    [
+      "-2178997383380713380",
+      "-15116649476499499400"
+    ],
+    [
+      "515512571179177260",
+      "427839087970745190"
+    ],
+    [
+      "67856518218390542",
+      "510539188578592448"
+    ],
+    [
+      "220064156676859160",
+      "81507624252755460"
+    ],
+    [
+      "-23027543439801960",
+      "-172015196778206920"
+    ],
+    [
+      "856615624689416900",
+      "344076910736048983"
+    ],
+    [
+      "-30154835175187740",
+      "847824186844250900"
+    ],
+    [
+      "102475923203279154",
+      "770482574433863060"
+    ],
+    [
+      "-22363121511989940",
+      "-18482784494064640"
+    ],
+    [
+      "723320444383137740",
+      "267886110862294448"
+    ],
+    [
+      "216537935140945726",
+      "92547354515726280"
+    ],
+    [
+      "507714995088473380",
+      "419265425409786760"
+    ],
+    [
+      "79180315845008034",
+      "508073120876579980"
+    ],
+    [
+      "267811082024809020",
+      "339961966934031000"
+    ]
+  ],
+  "numeric_cnf": {
+    "mapping_consistent": true,
+    "compressed_mapping": true,
+    "status": "SAT",
+    "satisfiable": true,
+    "variables": 645257,
+    "clauses": 2311196,
+    "projected_variables": 327,
+    "violated_clauses": 0,
+    "wrong_orientation_assumptions": 0,
+    "full_model": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/numeric.cnf.model",
+    "full_model_sha256": "6f9614b6e6c3536b1f385fbba9975d4086675b7c1ba47ca761340ec170890f40",
+    "seconds": 1.919680691033136
+  },
+  "exact_C3_projection": {
+    "requested": true,
+    "primary_outcome_unchanged": true,
+    "note": "Exact rotations reconstructed from orbit representatives: a separate witness, not exact symmetry of the input decimals.",
+    "geometry": {
+      "n": 19,
+      "arithmetic": "exact_integer_Qsqrt3",
+      "exact_C3_symmetry": true,
+      "valid": true,
+      "input_basis": "Cartesian",
+      "center_original_index": 19,
+      "collinear_triples": 0,
+      "duplicate_pairs": 0,
+      "orientation_changes_from_rounded_input": 0,
+      "constraint_count": 0,
+      "orientation_violations": 0,
+      "six_subsets_checked": 27132,
+      "interior_histogram": [
+        0,
+        12,
+        9,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_forbidden_hexagon": [],
+      "seconds": 0.0702399
+    },
+    "valid_geometry": true,
+    "points": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/projected_c3.qsqrt3",
+    "signs_preserved": true,
+    "numeric_cnf": {
+      "mapping_consistent": true,
+      "compressed_mapping": true,
+      "status": "SAT",
+      "satisfiable": true,
+      "variables": 645257,
+      "clauses": 2311196,
+      "projected_variables": 327,
+      "violated_clauses": 0,
+      "wrong_orientation_assumptions": 0,
+      "full_model": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/projected_c3.cnf.model",
+      "full_model_sha256": "6f9614b6e6c3536b1f385fbba9975d4086675b7c1ba47ca761340ec170890f40",
+      "seconds": 1.8139011700404808
+    }
+  },
+  "artifacts": {
+    "projected_c3.qsqrt3": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/projected_c3.qsqrt3",
+      "sha256": "fdf8692c15d141b04be581b63d8eb8c467d041a1dcc8eed2b34ac94f474939db"
+    },
+    "numeric.cnf.model": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/numeric.cnf.model",
+      "sha256": "6f9614b6e6c3536b1f385fbba9975d4086675b7c1ba47ca761340ec170890f40"
+    },
+    "points.real": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/points.real",
+      "sha256": "42186a1cb7ec506d26dfdc268af311cb610a9f3de9136d32757700c4290708a2"
+    },
+    "projected_c3.qsqrt3.or": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/projected_c3.qsqrt3.or",
+      "sha256": "6fcf1ce0e773c50187b81546065895ca5bbb83b60ad44d25781fc24cc888d738"
+    },
+    "projected_c3.cnf.model": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/projected_c3.cnf.model",
+      "sha256": "6f9614b6e6c3536b1f385fbba9975d4086675b7c1ba47ca761340ec170890f40"
+    },
+    "points.pts": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/points.pts",
+      "sha256": "54fdc8816354424e92229732449594910d028a76a3bfca1887bff61170ef97a8"
+    },
+    "target.or": {
+      "path": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/target.or",
+      "sha256": "1eb2d8efdb4c71be14c50f33e225069f868ae694596bd7ddc15ca254b78bada8"
+    }
+  },
+  "certificate": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-symmetry19-2-v4_feedback-ujoi6jpv/posthoc-stage0002/certificate.json",
+  "audit_wall_seconds": 4.103465972992126
+}

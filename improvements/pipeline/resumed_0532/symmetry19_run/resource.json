@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "-u",
+    "PointSAT.py",
+    "improvements/pipeline/resumed_0532/symmetry19.json",
+    "--out",
+    "improvements/pipeline/resumed_0532/symmetry19_run"
+  ],
+  "wall_seconds": 53.86923455502256,
+  "cpu_seconds": 53.962256,
+  "max_rss_kib": 1062104,
+  "returncode": 0,
+  "timed_out": false
+}

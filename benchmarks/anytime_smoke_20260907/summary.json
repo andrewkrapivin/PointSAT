@@ -1,0 +1,72 @@
+{
+  "registered_trials": 6,
+  "completed_trials": 6,
+  "complete": true,
+  "attempted_trials": 6,
+  "incomplete_attempts": 0,
+  "milestones": [
+    30,
+    60
+  ],
+  "horizon_seconds": 60,
+  "families": {
+    "symmetry19": {
+      "registered_targets": 2,
+      "arms": {
+        "original": {
+          "trials": 2,
+          "verified": 1,
+          "milestones": {
+            "30": 1,
+            "60": 1
+          },
+          "parent_cpu_seconds": 75.040066,
+          "parent_wall_seconds": 78.39000872999895,
+          "posthoc_cpu_seconds": 4.3569379999999995,
+          "posthoc_wall_seconds": 4.448975206993055,
+          "deadline_censored": 1,
+          "status_counts": {
+            "TIME_LIMIT": 1,
+            "SOLVED": 1
+          }
+        },
+        "v4_fixed": {
+          "trials": 2,
+          "verified": 1,
+          "milestones": {
+            "30": 1,
+            "60": 1
+          },
+          "parent_cpu_seconds": 77.671301,
+          "parent_wall_seconds": 81.10160272294888,
+          "posthoc_cpu_seconds": 4.536404,
+          "posthoc_wall_seconds": 4.597951792005915,
+          "deadline_censored": 1,
+          "status_counts": {
+            "SOLVED": 1,
+            "TIME_LIMIT": 1
+          }
+        },
+        "v4_feedback": {
+          "trials": 2,
+          "verified": 1,
+          "milestones": {
+            "30": 1,
+            "60": 1
+          },
+          "parent_cpu_seconds": 77.316008,
+          "parent_wall_seconds": 80.4379704130115,
+          "posthoc_cpu_seconds": 4.508584999999999,
+          "posthoc_wall_seconds": 4.592035839974415,
+          "deadline_censored": 1,
+          "status_counts": {
+            "SOLVED": 1,
+            "TIME_LIMIT": 1
+          }
+        }
+      }
+    }
+  },
+  "parent_cpu_seconds_all_attempts": 230.027375,
+  "posthoc_cpu_seconds_all_attempts": 13.401926999999999
+}

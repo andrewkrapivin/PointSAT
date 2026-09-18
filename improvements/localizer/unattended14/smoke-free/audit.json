@@ -1,0 +1,80 @@
+{
+  "candidates_audited": 2,
+  "any_valid": false,
+  "best_score": 2,
+  "best_certificate": "improvements/localizer/unattended14/smoke-free/points.pts",
+  "records": [
+    {
+      "n": 19,
+      "valid": false,
+      "collinear_triples": 0,
+      "duplicate_pairs": 0,
+      "six_subsets_checked": 27132,
+      "interior_histogram": [
+        2,
+        19,
+        15,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_forbidden_hexagon": [
+        2,
+        12,
+        14,
+        6,
+        10,
+        9
+      ],
+      "seconds": 0.0156563,
+      "input": "improvements/localizer/unattended14/smoke-free/points.pts",
+      "certificate": "improvements/localizer/unattended14/smoke-free/points.pts",
+      "sha256": "272f9d9e0d31dcfcd7e93c7c9addf3ef765a6d5da73f5e6ee72c3a50611854b9",
+      "score": 2
+    },
+    {
+      "n": 19,
+      "valid": false,
+      "collinear_triples": 0,
+      "duplicate_pairs": 0,
+      "six_subsets_checked": 27132,
+      "interior_histogram": [
+        7,
+        21,
+        37,
+        21,
+        20,
+        15,
+        10,
+        5,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_forbidden_hexagon": [
+        6,
+        3,
+        8,
+        9,
+        1,
+        4
+      ],
+      "seconds": 0.0162784,
+      "input": "improvements/localizer/unattended14/smoke-free/points.pts.current.pts",
+      "certificate": "improvements/localizer/unattended14/smoke-free/points.pts.current.pts",
+      "sha256": "d60657224de65b7d76a285407c0d3db9f28e226634d20082e3a9b030a15e5e1b",
+      "score": 28
+    }
+  ]
+}

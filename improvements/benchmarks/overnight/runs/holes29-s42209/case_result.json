@@ -1,0 +1,47 @@
+{
+  "registration_sha256": "cc19dc3db306973d0577316d9a035fe6a179cc4b536213a91471bdd656750dc9",
+  "case": {
+    "id": "holes29-s42209",
+    "problem": "holes29",
+    "n": 29,
+    "gon": 0,
+    "hole": 6,
+    "cap": 0,
+    "cnf": "6hole-29-compact.cnf",
+    "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+    "sat_seed": 42209,
+    "sat_seconds": 1800,
+    "output": "improvements/benchmarks/overnight/runs/holes29-s42209"
+  },
+  "native_runs": [],
+  "shuffle": {
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/scranfilize/scranfilize",
+      "-P",
+      "-f",
+      "0",
+      "-v",
+      "0",
+      "-s",
+      "42209"
+    ],
+    "returncode": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "wall_seconds": 0.8034640930127352,
+    "cpu_seconds": 0.7487360000000001
+  },
+  "sat": {
+    "command": [
+      "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+      "--quiet",
+      "--seed=42209",
+      "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42209/shuffle.stdout"
+    ],
+    "returncode": -15,
+    "timed_out": true,
+    "interrupted": false,
+    "wall_seconds": 1800.1027032120037,
+    "cpu_seconds": 1789.098013
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "n": 29,
+  "problem": "holes29",
+  "split": "late_heldout",
+  "sat_seed": 19501,
+  "cnf": "6hole-29-compact.cnf",
+  "solver": "Kissat default (no --plain)",
+  "seconds": 900,
+  "registered_utc": "2026-09-05T05:08:03Z"
+}

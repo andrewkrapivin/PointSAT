@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "arithmetic": "Python arbitrary-size integers only",
+  "weighted_strict_inequalities": 846,
+  "weight_sum": 259491293820359277815611904782726308890223685082073090850657098230462616540,
+  "distinct_bracket_variables": 865,
+  "blocking_literals": 939,
+  "claim": "Every orientation assignment retaining these explicitly specified premises has no real point realization.",
+  "input_constraints": 942,
+  "partial_input": true,
+  "random_general_position_sets": 40,
+  "exact_GP_product_identities_and_strict_inequalities": 85800,
+  "source_proof": "improvements/realizability/results/relaxed002.json",
+  "corrupted_weight_rejected": true,
+  "unspecified_premise_rejected": true
+}

@@ -1,0 +1,25 @@
+{
+  "original_record_id": 5,
+  "source": "improvements/pipeline/feedback_pilot/mixed23-core_feedback/scratch/1_5.real",
+  "source_sha256": "d9345ce0d05d8e216ee870c82d7c4330480d2560ccb8123b6d1f80dc7a3a2260",
+  "pipeline_reported_realized": false,
+  "pipeline_reported_violations": 14,
+  "orientation_violations": 14,
+  "constraint_count": 1744,
+  "collinear_triples_independent": 0,
+  "geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "valid": false,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 48,
+    "empty_holes": 5,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "seconds": 0.450992
+  },
+  "integer_points": "improvements/benchmarks/feedback_pilot_audit/5/points.pts",
+  "integer_points_sha256": "f6e5e3fa324cca131033aab48f72858a0a2611374972c432c5ab143f301ee1f6"
+}

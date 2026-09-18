@@ -1,0 +1,47 @@
+{
+  "input_signature": {
+    "real_sha256": "5cc55913a72e8a23e2aa4dbc0861a12fc43a2aa5eb03a61d5c16c51a46688158",
+    "family": "mixed23",
+    "n": 23,
+    "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+    "mapping_sha256": null,
+    "cycles_sha256": null,
+    "orient_sha256": null
+  },
+  "source": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job015-mixed23-hash/scratch/2_9.real",
+  "n": 23,
+  "family": "mixed23",
+  "numeric_geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "valid": true,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "seconds": 0.346565
+  },
+  "numeric_cnf": {
+    "mapping_conflicts": [],
+    "mapping_consistent": true,
+    "satisfiable": true,
+    "cnf_sha256": "033504ee0535ed18af09d54e67ab1e2a41f596e7d7251fa386e78e387c66a428",
+    "variables": 24348,
+    "clauses": 519426,
+    "projected_orientation_variables": 1771,
+    "violated_clauses": 0,
+    "wrong_orientation_assumptions": 0,
+    "full_model": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job015-mixed23-hash/audit/sample2-job9/numeric.cnf.model",
+    "full_model_sha256": "56d840703960a1d912d1c7cf848dacead7586bda8f476138cbdeb7a272147219",
+    "seconds": 0.4137780869787093
+  },
+  "integer_points": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job015-mixed23-hash/audit/sample2-job9/points.pts",
+  "integer_points_sha256": "ec8c2d4c1981cc924fd1571df9b3f7de67cfb01bda57596fcdb631cadb457d6a",
+  "exact_C3_symmetry_certified": false,
+  "accepted": true,
+  "certificate": "/home/andrew/PointSAT/improvements/pipeline/unattended_20260905/runs/job015-mixed23-hash/audit/sample2-job9/certificate.json",
+  "seconds": 0.9227397030044813
+}

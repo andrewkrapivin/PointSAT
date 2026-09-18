@@ -1,0 +1,83 @@
+{
+  "provenance": "Fresh SAT seed106/sample7; nativev4 and feedbackround1, exact target satisfaction without relabel. No published coordinate seed.",
+  "classification": "SAT-guided geometric solution; exact input orientation status is recorded separately.",
+  "original_run": {
+    "source": "improvements/pipeline/resumed_0532/archive23_run/realizations/7_45.real",
+    "source_sha256": "1f82ef6d78b9748b5cc4712c4ed18fec4c8622e5a1a562213f84de19f73cac6e",
+    "constraint_source": "improvements/pipeline/resumed_0532/archive23_run/realizations/7_feedback_44.or",
+    "constraint_sha256": "ed35810e3fb554d13a6f047b06b90deee9aaaf169dd22f87916f3bb5258f5ff0",
+    "orientation_violations": 0,
+    "constraint_count": 1713,
+    "collinear_triples_independent": 0,
+    "geometry": {
+      "n": 23,
+      "gon": 7,
+      "hole": 6,
+      "valid": true,
+      "arithmetic": "arbitrary_precision_integer",
+      "collinear_triples": 0,
+      "convex_gons": 0,
+      "empty_holes": 0,
+      "gon_subsets_checked": 245157,
+      "hole_subsets_checked": 100947,
+      "seconds": 0.386887
+    },
+    "integer_points": "improvements/benchmarks/archive23_sample7_audit/points.pts",
+    "integer_points_sha256": "5c9e96a497317808ff290ee359777d98a9ba14fbe60e4fa1f44729b4d0be3b2b"
+  },
+  "normalization_grid": 100000,
+  "normalized_sha256": "5b4405bd0fdfe7cf5017dd3da5357551715638ebc0457d72d36e109ba59f81a1",
+  "all_1771_labeled_signs_preserved": true,
+  "independent_int128_geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "cap": 0,
+    "valid": true,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "convex_caps": 0,
+    "cap_subsets_checked": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "convex_hole_size_subsets": 606,
+    "hull_layers": [
+      3,
+      4,
+      4,
+      6,
+      5,
+      1
+    ],
+    "bbox": [
+      0,
+      0,
+      100000,
+      85769
+    ],
+    "bbox_width": 100000,
+    "bbox_height": 85769,
+    "bbox_area": 8576900000,
+    "min_determinant": 1354,
+    "max_determinant": 6994706528,
+    "min_squared_distance": 146,
+    "first_gon": [],
+    "first_hole": [],
+    "first_cap": [],
+    "seconds": 0.0438666
+  },
+  "original_full_cnf_sat_for_new_order_type": true,
+  "violated_original_clauses_in_extension": 0,
+  "paper_comparison": {
+    "first": "/home/andrew/PointSAT/direct/seeds/paper23.pts",
+    "second": "/home/andrew/PointSAT/improvements/benchmarks/successes/archive23-sample7/normalized.pts",
+    "n": 23,
+    "triples": 1771,
+    "changed_labeled_orientation_signs": 1011,
+    "isomorphic_order_types_allowing_reflection": false,
+    "first_canonical_sha256": "78acdc42e168249ce2c5006ece9f7b6a3437ec525b75d5e6f6b31d9a1bbbacab",
+    "second_canonical_sha256": "156322f66aa01bce28e4d793a3a6b62e30a52f62cbde1946437aaf1fd999d8b6"
+  }
+}

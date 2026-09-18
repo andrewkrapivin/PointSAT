@@ -1,0 +1,15 @@
+{
+  "n": 23,
+  "cnf": "7gon-6hole-23-compact.cnf",
+  "problem": "mixed23",
+  "seed": 9104,
+  "split": "heldout",
+  "prefix": "improvements/pipeline/fresh_corpus/mixed23-seed9104",
+  "scramble_seconds": 0.4167900920147076,
+  "returncode": 10,
+  "status": "SATISFIABLE",
+  "orientation_file": "improvements/pipeline/fresh_corpus/mixed23-seed9104.or",
+  "orientation_sha256": "0143b3adced595cb61df01618041ee6d6335ac6e9c2f8918c50b9690ffd4fd72",
+  "sat_seconds": 3.7172578950121533,
+  "wall_seconds": 4.134050031017978
+}

@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "arithmetic": "Python arbitrary-size integers only",
+  "weighted_strict_inequalities": 880,
+  "weight_sum": 231066035003695859994815631733846327403297011540418488286033146240676444551106,
+  "distinct_bracket_variables": 899,
+  "blocking_literals": 968,
+  "claim": "Every orientation assignment retaining these explicitly specified premises has no real point realization.",
+  "input_constraints": 969,
+  "partial_input": false,
+  "random_general_position_sets": 40,
+  "exact_GP_product_identities_and_strict_inequalities": 85800,
+  "source_proof": "improvements/lazy19/results/bfp19691/bfp/round000019.proof.json",
+  "corrupted_weight_rejected": true,
+  "unspecified_premise_rejected": true
+}

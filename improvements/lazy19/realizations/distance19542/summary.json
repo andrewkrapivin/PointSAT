@@ -1,0 +1,267 @@
+{
+  "input": "improvements/lazy19/realizations/distance19542",
+  "runs": 32,
+  "valid": 0,
+  "best_geometric_violations": 6,
+  "best_orientation_violations": 3,
+  "mean_orientation_violations": 3.71875,
+  "total_worker_wall_seconds": 641.214835182036,
+  "results": [
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model000/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.04596125500393,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model001/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.03940110601252,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model002/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.033301474992186,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model003/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.02728864099481,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model004/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.05025738599943,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model005/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.052296681009466,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model006/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.036914366995916,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model007/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.03908644997864,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model008/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.038925497996388,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model009/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.046832735009957,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model010/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.034392964007566,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model011/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.039130872988608,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model012/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.043436762993224,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model013/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.02455202501733,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model014/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.047923363017617,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model015/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.04033195701777,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model016/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 20.03993397700833,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model017/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 20.041726377996383,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model018/result.json",
+      "valid": false,
+      "bad_hexagons": 7,
+      "orientation_violations": 4,
+      "wall_seconds": 20.0413256350148,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model019/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.00786862699897,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model020/result.json",
+      "valid": false,
+      "bad_hexagons": 7,
+      "orientation_violations": 4,
+      "wall_seconds": 20.036240896006348,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model021/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.047859023005003,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model022/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.04876149399206,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model023/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.043686853983672,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model024/result.json",
+      "valid": false,
+      "bad_hexagons": 7,
+      "orientation_violations": 4,
+      "wall_seconds": 20.011368531006156,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model025/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 20.052281283016782,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model026/result.json",
+      "valid": false,
+      "bad_hexagons": 7,
+      "orientation_violations": 4,
+      "wall_seconds": 20.05251329598832,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model027/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.047853149008006,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model028/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 20.01437412199448,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model029/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.041256465978222,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model030/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 20.010014002997195,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/distance19542/model031/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 20.037737909005955,
+      "collinear_triples": 0
+    }
+  ]
+}

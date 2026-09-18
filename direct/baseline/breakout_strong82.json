@@ -1,0 +1,10 @@
+[
+  {
+    "name": "breakout23_triangular_one_hole_seed82",
+    "executable": "direct/baseline/fill_hole_breakout",
+    "args": ["--input", "direct/baseline/triangle_one_hole_snapshot.pts", "--gon", "7", "--hole", "6", "--seconds", "500", "--temperature", "1.2", "--seed", "82", "--breakout", "--require-triangle"],
+    "gon": 7, "hole": 6, "cap": 0,
+    "classification": "fully geometric guided-penalty repair of cold-derived triangular one-hole near miss",
+    "source": "Snapshot of direct/results/2026-09-05/triangle-focused/triangle23-direct22-s64.pts at 04:24 UTC"
+  }
+]

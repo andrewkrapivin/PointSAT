@@ -1,0 +1,2 @@
+{"event":"best","seconds":0.001091,"seed":1,"gon":0,"hole":6,"n":29,"best_n":29,"candidates":0,"candidates_per_second":0.000000,"general_position_candidates":0,"insertions":0,"moves":0,"backtracks":0}
+{"event":"benchmark_done","seconds":10.000014,"seed":1,"gon":0,"hole":6,"n":29,"best_n":29,"candidates":1692428,"candidates_per_second":169242.359564,"general_position_candidates":1488542,"insertions":0,"moves":0,"backtracks":0}

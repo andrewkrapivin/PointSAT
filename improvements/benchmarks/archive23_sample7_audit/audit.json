@@ -1,0 +1,24 @@
+{
+  "source": "improvements/pipeline/resumed_0532/archive23_run/realizations/7_45.real",
+  "source_sha256": "1f82ef6d78b9748b5cc4712c4ed18fec4c8622e5a1a562213f84de19f73cac6e",
+  "constraint_source": "improvements/pipeline/resumed_0532/archive23_run/realizations/7_feedback_44.or",
+  "constraint_sha256": "ed35810e3fb554d13a6f047b06b90deee9aaaf169dd22f87916f3bb5258f5ff0",
+  "orientation_violations": 0,
+  "constraint_count": 1713,
+  "collinear_triples_independent": 0,
+  "geometry": {
+    "n": 23,
+    "gon": 7,
+    "hole": 6,
+    "valid": true,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "gon_subsets_checked": 245157,
+    "hole_subsets_checked": 100947,
+    "seconds": 0.386887
+  },
+  "integer_points": "improvements/benchmarks/archive23_sample7_audit/points.pts",
+  "integer_points_sha256": "5c9e96a497317808ff290ee359777d98a9ba14fbe60e4fa1f44729b4d0be3b2b"
+}

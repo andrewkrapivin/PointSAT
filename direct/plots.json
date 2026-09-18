@@ -1,0 +1,8 @@
+[
+  {"path":"direct/seeds/paper23.pts","title":"Published 23-point example","provenance":"PointSAT paper, Figure 1","gon":7,"hole":6},
+  {"path":"direct/results/2026-09-05/polished/repair23-grid400-s12-compact.pts","title":"23 points, smaller coordinates","provenance":"Seeded repair + exact compression","gon":7,"hole":6},
+  {"path":"direct/baseline/hybrid/hybrid_sat_partial_2_seed4102.pts","title":"Fresh hybrid 23-point solution","provenance":"SAT partial realization + direct repair","gon":7,"hole":6},
+  {"path":"direct/results/2026-09-05/polished/es32-compact.pts","title":"32 points, no convex 7-gon","provenance":"Known ES construction + compression","gon":7,"hole":0},
+  {"path":"direct/results/2026-09-05/polished/es26cap5-compact.pts","title":"26 points, no 7-gon or 5-cap","provenance":"Known ES construction + compression","gon":7,"hole":0,"cap":5},
+  {"path":"direct/seeds/overmars29.pts","title":"Published 29-point benchmark","provenance":"Overmars, 2001 · no empty 6-gon","gon":0,"hole":6}
+]

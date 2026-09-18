@@ -1,0 +1,44 @@
+{
+  "base_file": "7gon-no-5-cap-no-sb-26.cnf",
+  "n": 26,
+  "problem_family": "caps26",
+  "workers": 1,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "solution_generation": "scranfilize",
+  "n_solutions": 6,
+  "sat_seed_start": 14100,
+  "seed": 701272,
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "sat_extra_args": [
+    "--quiet",
+    "--plain"
+  ],
+  "solver_timeout": 90,
+  "localizer_loc": "improvements/localizer/localizer_v6",
+  "localizer_extra_args": [
+    "--line-every",
+    "10",
+    "--min-radius",
+    "0.000001",
+    "-q",
+    "--ordered-x"
+  ],
+  "localizer_native_time_limit": true,
+  "localizer_archive_candidates": 10,
+  "localizer_attempt_levels": 1,
+  "localizer_attempt_timeouts": [
+    15
+  ],
+  "warm_start_retries": true,
+  "feedback_rounds": 3,
+  "feedback_max_relaxed": 256,
+  "feedback_max_solves": 256,
+  "feedback_seconds": 10,
+  "feedback_conflict_budget": 1000,
+  "feedback_core_choice": "target_margin",
+  "flippability_model_cache_size": 128,
+  "radial_relabel_check": false,
+  "feedback_radial_scaffold": false
+}

@@ -1,0 +1,19 @@
+{
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c",
+  "source_sha256": "788ee8bfa99d18179847ae4ed45b0567c7fadb5c281d3c08fd812a9618e3e428",
+  "executables": {
+    "localizer_loc": {
+      "path": "/home/andrew/PointSAT/improvements/localizer/localizer_v2",
+      "sha256": "550b29b0fbc499147c77581e6ea759468f1c989cbdf07b6c69932917e2fc349d"
+    },
+    "cadical_loc": {
+      "path": "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+      "sha256": "d4ded83950c8e3f18992b703facf0236de70012b2d609812b87c896358b176f5"
+    },
+    "scranfilize_loc": {
+      "path": "/home/andrew/PointSAT/direct/vendor/scranfilize/scranfilize",
+      "sha256": "b2fe69951866d40e75f605f330b390f7bf429380115132a1979651e4ebca4ee6"
+    }
+  }
+}

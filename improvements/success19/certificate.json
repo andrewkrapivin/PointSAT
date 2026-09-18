@@ -1,0 +1,107 @@
+{
+  "source": "improvements/pipeline/unattended_20260905/runs/job013-symmetry19-target_margin/audit/sample4-job14",
+  "normalization_grid": 33666,
+  "all_969_orientation_signs_preserved": true,
+  "representatives": [
+    [
+      -667,
+      -1605
+    ],
+    [
+      3333,
+      1586
+    ],
+    [
+      -2656,
+      1313
+    ],
+    [
+      -948,
+      1232
+    ],
+    [
+      2362,
+      1537
+    ],
+    [
+      33666,
+      3722
+    ]
+  ],
+  "valid": true,
+  "exact_Euclidean_C3": true,
+  "interior_histogram": [
+    0,
+    15,
+    12,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "total_convex_hexagons": 28,
+  "witness_sha256": "7a27f06464c79ded524d3476918117446cff7773e912f8b491665cbdb98b0465",
+  "original_independent_python_check": {
+    "valid": true,
+    "exact_Euclidean_C3": true,
+    "general_position": true,
+    "triples_checked": 969,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      0,
+      15,
+      12,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "arithmetic": "independent Python arbitrary integers in Q(sqrt3)"
+  },
+  "cpp_check": {
+    "n": 19,
+    "arithmetic": "exact_integer_Qsqrt3",
+    "exact_C3_symmetry": true,
+    "valid": true,
+    "input_basis": "Cartesian",
+    "center_original_index": 19,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "orientation_changes_from_rounded_input": 820,
+    "constraint_count": 969,
+    "orientation_violations": 0,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      0,
+      15,
+      12,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_forbidden_hexagon": [],
+    "seconds": 0.121465
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "n": 26,
+  "cnf": "7gon-no-5-cap-no-sb-26.cnf",
+  "problem": "caps26",
+  "seed": 9405,
+  "split": "heldout",
+  "prefix": "improvements/pipeline/fresh_corpus/caps26-seed9405",
+  "scramble_seconds": 0.16901967299054377,
+  "returncode": 10,
+  "status": "SATISFIABLE",
+  "orientation_file": "improvements/pipeline/fresh_corpus/caps26-seed9405.or",
+  "orientation_sha256": "6d8fb579cbe26a588be8334b6130f55e54c12fdb066b30e4cc363ada3966a500",
+  "sat_seconds": 0.3204604519996792,
+  "wall_seconds": 0.48948218798614107
+}

@@ -1,0 +1,111 @@
+{
+  "input_signature": {
+    "real_sha256": "0f83ee7a436e30ec4ba0688f434d30bad202b3c29604122b5c164ba015f44cdd",
+    "family": "symmetry19",
+    "n": 19,
+    "cnf_sha256": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+    "mapping_sha256": "30203c74b5516f7e61454ef4f4e37d3ea60b26850e114139cfb7e22e0ea14c35",
+    "cycles_sha256": "86cd8a164ef4c7186e8d2f43f8fa7239b813f0f13ad16bec8d6dc6dedd451f7b",
+    "orient_sha256": null
+  },
+  "source": "/home/andrew/PointSAT/improvements/symmetry19/search/model007-relaxed-symmetric/points.real",
+  "n": 19,
+  "family": "symmetry19",
+  "numeric_geometry": {
+    "n": 19,
+    "valid": false,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      3,
+      15,
+      15,
+      3,
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_forbidden_hexagon": [
+      2,
+      5,
+      1,
+      13,
+      8,
+      9
+    ],
+    "seconds": 0.0256737
+  },
+  "numeric_cnf": {
+    "mapping_conflicts": [],
+    "mapping_consistent": true,
+    "satisfiable": false,
+    "cnf_sha256": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+    "variables": 645257,
+    "clauses": 2311196,
+    "projected_orientation_variables": 327,
+    "seconds": 2.0424153540225234
+  },
+  "integer_points": "/home/andrew/PointSAT/improvements/benchmarks/autoaudit_smoke19/points.pts",
+  "integer_points_sha256": "4dad61aaf6df35fbc1d543ccb05debac3f76a6a69e2d4b7bd60bd9123906d719",
+  "exact_C3_symmetry_certified": true,
+  "exact_C3_geometry": {
+    "n": 19,
+    "arithmetic": "exact_integer_Qsqrt3",
+    "exact_C3_symmetry": true,
+    "valid": false,
+    "center_original_index": 19,
+    "collinear_triples": 0,
+    "duplicate_pairs": 0,
+    "orientation_changes_from_rounded_input": 0,
+    "constraint_count": 0,
+    "orientation_violations": 0,
+    "six_subsets_checked": 27132,
+    "interior_histogram": [
+      3,
+      15,
+      15,
+      3,
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_forbidden_hexagon": [
+      2,
+      5,
+      1,
+      13,
+      8,
+      9
+    ],
+    "seconds": 0.0979938
+  },
+  "exact_C3_cnf": {
+    "mapping_conflicts": [],
+    "mapping_consistent": true,
+    "satisfiable": false,
+    "cnf_sha256": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+    "variables": 645257,
+    "clauses": 2311196,
+    "projected_orientation_variables": 327,
+    "seconds": 1.1498185789969284
+  },
+  "exact_C3_points": "/home/andrew/PointSAT/improvements/benchmarks/autoaudit_smoke19/exact_c3.qsqrt3",
+  "accepted": false,
+  "certificate": "/home/andrew/PointSAT/improvements/benchmarks/autoaudit_smoke19/certificate.json",
+  "seconds": 4.715259849006543
+}

@@ -1,0 +1,267 @@
+{
+  "input": "improvements/lazy19/realizations/gradient19542",
+  "runs": 32,
+  "valid": 0,
+  "best_geometric_violations": 6,
+  "best_orientation_violations": 3,
+  "mean_orientation_violations": 4.46875,
+  "total_worker_wall_seconds": 961.08751149202,
+  "results": [
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model000/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 3,
+      "wall_seconds": 30.024766937014647,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model001/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.023012516001472,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model002/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.027300027984893,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model003/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.025289907003753,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model004/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.031991605996154,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model005/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.027983233012492,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model006/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.047985862998758,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model007/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.04929589398671,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model008/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.02931235198048,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model009/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.05158670799574,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model010/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.038109148998046,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model011/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.040111938025802,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model012/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.021925822016783,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model013/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.01963141799206,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model014/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.02929479200975,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model015/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 4,
+      "wall_seconds": 30.01287782099098,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model016/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.048193021997577,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model017/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.04405818399391,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model018/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.016515162977157,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model019/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.042237984016538,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model020/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.045343670004513,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model021/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.041373838990694,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model022/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.040603190020192,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model023/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.003925591998268,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model024/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.042890495999018,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model025/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.034190948004834,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model026/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.04857077798806,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model027/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.044165586004965,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model028/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.039315480011282,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model029/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.033595718996366,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model030/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.01724027900491,
+      "collinear_triples": 0
+    },
+    {
+      "file": "improvements/lazy19/realizations/gradient19542/model031/result.json",
+      "valid": false,
+      "bad_hexagons": 6,
+      "orientation_violations": 5,
+      "wall_seconds": 30.04481557800318,
+      "collinear_triples": 0
+    }
+  ]
+}

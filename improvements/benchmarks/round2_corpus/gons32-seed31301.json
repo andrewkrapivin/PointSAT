@@ -1,0 +1,23 @@
+{
+  "problem": "gons32",
+  "n": 32,
+  "gon": 7,
+  "hole": 0,
+  "cap": 0,
+  "cnf": "7gon-32.cnf",
+  "sat_seed": 31301,
+  "id": "gons32-seed31301",
+  "split": "round2_heldout",
+  "wall_limit": 600,
+  "returncode": 10,
+  "timed_out": false,
+  "wall_seconds": 2.7764240770193283,
+  "cpu_seconds": 2.7205219999999968,
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/kissat/build/kissat",
+    "--quiet",
+    "--seed=31301",
+    "/home/andrew/PointSAT/7gon-32.cnf"
+  ],
+  "cnf_sha256": "d4096d7f7cab994258e6f6aaa27260923b0e59b04e5da698ed4958e186d2bf2c"
+}

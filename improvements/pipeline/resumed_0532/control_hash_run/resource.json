@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/andrew/PointSAT/direct/vendor/venv/bin/python",
+    "-u",
+    "PointSAT.py",
+    "improvements/pipeline/resumed_0532/control_hash.json",
+    "--out",
+    "improvements/pipeline/resumed_0532/control_hash_run"
+  ],
+  "wall_seconds": 157.88806153499172,
+  "cpu_seconds": 158.616854,
+  "max_rss_kib": 281572,
+  "returncode": 0,
+  "timed_out": false
+}

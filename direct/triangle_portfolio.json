@@ -1,0 +1,5 @@
+[
+  {"name":"triangle23-cold-s51","executable":"direct/triangle","args":["--n",23,"--seed",51,"--temperature",0.5,"--mode","anneal","--seconds",600],"gon":7,"hole":6},
+  {"name":"triangle23-cold-s52","executable":"direct/triangle","args":["--n",23,"--seed",52,"--temperature",1.2,"--mode","anneal","--seconds",600],"gon":7,"hole":6},
+  {"name":"triangle23-cold-s53","executable":"direct/triangle","args":["--n",23,"--seed",53,"--temperature",0.5,"--mode","late","--seconds",600],"gon":7,"hole":6}
+]

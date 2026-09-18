@@ -1,0 +1,44 @@
+{
+  "note": "Same improved search trajectory with reference full evaluation versus optimized incremental evaluation. NOT original-versus-revised overall algorithm speedup.",
+  "iterations": 100000,
+  "repeats": 5,
+  "binary_sha256": "ee6644d849da68e2f86e5c8873fdb41e19f47a132fd24a0832b9420326028492",
+  "groups": {
+    "caps26": {
+      "reference_median_cpu_seconds": 1.1746779999999992,
+      "fast_median_cpu_seconds": 0.5551580000000024,
+      "median_cpu_speedup": 2.11593456277311,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 599223600,
+      "fast_constraint_evaluations": 183860139,
+      "proposals": 998264
+    },
+    "gons32": {
+      "reference_median_cpu_seconds": 1.9503349999999986,
+      "fast_median_cpu_seconds": 0.9386989999999997,
+      "median_cpu_speedup": 2.0777000934271785,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 927989650,
+      "fast_constraint_evaluations": 326546512,
+      "proposals": 997833
+    },
+    "holes29": {
+      "reference_median_cpu_seconds": 1.5219259999999983,
+      "fast_median_cpu_seconds": 0.7180950000000001,
+      "median_cpu_speedup": 2.1193936735390135,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 754817616,
+      "fast_constraint_evaluations": 252533938,
+      "proposals": 997943
+    },
+    "mixed23": {
+      "reference_median_cpu_seconds": 0.8908490000000002,
+      "fast_median_cpu_seconds": 0.47401400000000016,
+      "median_cpu_speedup": 1.8793727611420759,
+      "coordinate_identical_pairs": 5,
+      "reference_constraint_evaluations": 461506584,
+      "fast_constraint_evaluations": 160921024,
+      "proposals": 998541
+    }
+  }
+}

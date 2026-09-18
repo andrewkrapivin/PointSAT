@@ -1,0 +1,65 @@
+{
+  "output_folder": "improvements/pipeline/symmetry19_feedback/run",
+  "workers": 1,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "localizer_attempt_levels": 1,
+  "localizer_attempt_timeouts": [
+    30
+  ],
+  "localizer_attempt_branches": [
+    1,
+    1,
+    1
+  ],
+  "localizer_attempt_thresholds": [
+    10,
+    7,
+    4
+  ],
+  "n": 19,
+  "localizer_loc": "improvements/localizer/localizer_v4",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "continue_if_realized": false,
+  "solution_generation": "subcases",
+  "n_solutions": 1,
+  "solver_timeout": 90,
+  "scranfilize_timeout": 60,
+  "interrupt_grace_seconds": 2,
+  "seed": 19103,
+  "sat_seed_start": 0,
+  "localizer_iterations": 10,
+  "localizer_restarts": 30000,
+  "localizer_extra_args": [
+    "-c",
+    "improvements/symmetry19/decoded/center19-adjacent.cycles",
+    "-f",
+    "improvements/symmetry19/decoded/center19-adjacent.fixed",
+    "--line-every",
+    "10",
+    "--min-radius",
+    "0.000001",
+    "-q"
+  ],
+  "sat_extra_args": [
+    "--quiet",
+    "--plain"
+  ],
+  "warm_start_retries": true,
+  "localizer_warm_start_flag": "-w",
+  "localizer_native_time_limit": true,
+  "stop_on_solution": false,
+  "feedback_rounds": 12,
+  "feedback_max_relaxed": 128,
+  "feedback_max_solves": 128,
+  "feedback_conflict_budget": 2000,
+  "feedback_seconds": 10,
+  "feedback_remove_flippable": true,
+  "radial_relabel_check": false,
+  "problem_family": null,
+  "orientation_map_file": "improvements/symmetry19/variants/mapping.json",
+  "initial_warm_start_file": "improvements/symmetry19/search/model002-relaxed-symmetric/points.real",
+  "localizer_archive_candidates": 10,
+  "base_file": "convex_hexagon_inside_19_3sym.cnf",
+  "cubes_file": "improvements/pipeline/symmetry19_feedback/initial.cubes"
+}

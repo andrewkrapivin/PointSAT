@@ -1,0 +1,39 @@
+{
+  "base_file": "7gon-6hole-23-compact.cnf",
+  "n": 23,
+  "output_folder": "improvements/pipeline/feedback_pilot/mixed23-warm_retry",
+  "solution_generation": "scranfilize",
+  "n_solutions": 4,
+  "workers": 2,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "localizer_attempt_levels": 4,
+  "localizer_attempt_timeouts": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "localizer_attempt_branches": [
+    1,
+    1,
+    1
+  ],
+  "localizer_attempt_thresholds": [
+    10000,
+    10000,
+    10000
+  ],
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "localizer_loc": "improvements/localizer/localizer_v2",
+  "localizer_native_time_limit": true,
+  "warm_start_retries": true,
+  "feedback_rounds": 0,
+  "feedback_max_relaxed": 256,
+  "feedback_max_solves": 256,
+  "feedback_seconds": 10,
+  "feedback_conflict_budget": 1000,
+  "solver_timeout": 90,
+  "continue_if_realized": false
+}

@@ -1,0 +1,41 @@
+{
+  "valid_geometry": true,
+  "geometry": {
+    "n": 29,
+    "gon": 0,
+    "hole": 6,
+    "valid": true,
+    "arithmetic": "arbitrary_precision_integer",
+    "collinear_triples": 0,
+    "convex_gons": 0,
+    "empty_holes": 0,
+    "gon_subsets_checked": 0,
+    "hole_subsets_checked": 475020,
+    "seconds": 0.206122,
+    "convex_caps": 0,
+    "duplicate_pairs": 0
+  },
+  "general_position": true,
+  "orientation_violations": 87,
+  "constraint_count": 3654,
+  "forbidden_polygons": 0,
+  "integer_points": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-holes29-30-v6_feedback-czchsn4o/posthoc-stage0005/points.pts",
+  "integer_points_sha256": "edb0a0c7c862e06fb53f6b0c00b61c9cff87385e23e63dcf6a51e3ee4ed4157a",
+  "real_sha256": "fa9ef9d9146a0ab22bc7007ce97c284c066c4da9e3afcb522e3e7c7ce2ed1242",
+  "source_full_target_sha256": "46de689925989c1f0b62281c7303f3d454f0f99847a6d86402f70f1b065ee7c0",
+  "numeric_cnf": {
+    "mapping_consistent": true,
+    "compressed_mapping": false,
+    "status": "SAT",
+    "satisfiable": true,
+    "variables": 60538,
+    "clauses": 825978,
+    "projected_variables": 3654,
+    "violated_clauses": 0,
+    "wrong_orientation_assumptions": 0,
+    "full_model": "/home/andrew/PointSAT/benchmarks/anytime_20260907/.trial-holes29-30-v6_feedback-czchsn4o/posthoc-stage0005/geometry.cnf.model",
+    "full_model_sha256": "bea7cc9219c3f6bf1d5a5c215aa79965de3c0f81e3973bbf4cf2504035ddd7da",
+    "seconds": 0.6560705220326781
+  },
+  "audit_wall_seconds": 0.9143698459956795
+}

@@ -1,0 +1,43 @@
+{
+  "label": "061-geometry-rot-s21061",
+  "command": [
+    "improvements/localizer/geometry19_v2",
+    "--input",
+    "improvements/localizer/unattended14/inputs/rot.pts",
+    "--output",
+    "improvements/localizer/unattended14/061-geometry-rot-s21061/points.pts",
+    "--seconds",
+    "900",
+    "--seed",
+    "21061",
+    "--temperature",
+    "6",
+    "--hole-weight",
+    "1",
+    "--three-weight",
+    "1",
+    "--min-exponent",
+    "-8",
+    "--restart-every",
+    "100000",
+    "--cycle-iterations",
+    "1000000",
+    "--checkpoint-seconds",
+    "60",
+    "--symmetry"
+  ],
+  "budget_seconds": 560.4687879085541,
+  "started_utc": "2026-09-05T13:50:09.531219+00:00",
+  "output": "/home/andrew/PointSAT/improvements/localizer/unattended14/061-geometry-rot-s21061",
+  "command_file_sha256": {
+    "improvements/localizer/geometry19_v2": "9620b9f1bc4f7d4f158b3cf5569cdc355149245202d046a43d0f24f33de6d62c"
+  },
+  "pid": 286731,
+  "remaining_tagged_pids": {},
+  "returncode": 0,
+  "watchdog_stopped": true,
+  "wall_seconds": 560.9305534680025,
+  "ended_utc": "2026-09-05T13:59:30.461969+00:00",
+  "remaining_audit_pids": {},
+  "audit_returncode": 0
+}

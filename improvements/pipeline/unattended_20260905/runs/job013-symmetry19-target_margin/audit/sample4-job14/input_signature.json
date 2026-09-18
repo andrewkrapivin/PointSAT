@@ -1,0 +1,9 @@
+{
+  "real_sha256": "b360bb1ee5ca986f64e227f149aed1b441bea7b70e251295cc72130d4b8c8c30",
+  "family": "symmetry19",
+  "n": 19,
+  "cnf_sha256": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+  "mapping_sha256": "30203c74b5516f7e61454ef4f4e37d3ea60b26850e114139cfb7e22e0ea14c35",
+  "cycles_sha256": "86cd8a164ef4c7186e8d2f43f8fa7239b813f0f13ad16bec8d6dc6dedd451f7b",
+  "orient_sha256": null
+}

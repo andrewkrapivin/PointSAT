@@ -1,0 +1,108 @@
+{
+  "setup": {
+    "wall": 0.8563326449948363,
+    "cpu": 0.8498758369999999
+  },
+  "samples": [
+    {
+      "id": 1,
+      "baseline": {
+        "wall": 2.5791447889932897,
+        "cpu": 2.565906871
+      },
+      "improved": {
+        "wall": 0.5349960179883055,
+        "cpu": 0.5349726850000005
+      },
+      "flippables": 27,
+      "stats": {
+        "variables": 1771,
+        "screened_nonflippable": 1715,
+        "witness_flippable": 0,
+        "flip_sat_calls": 56,
+        "initial_sat_calls": 1,
+        "seconds": 0.5348652629763819
+      }
+    },
+    {
+      "id": 2,
+      "baseline": {
+        "wall": 2.489753458008636,
+        "cpu": 2.48656945
+      },
+      "improved": {
+        "wall": 0.3796271820028778,
+        "cpu": 0.3796308290000008
+      },
+      "flippables": 34,
+      "stats": {
+        "variables": 1771,
+        "screened_nonflippable": 1715,
+        "witness_flippable": 0,
+        "flip_sat_calls": 56,
+        "initial_sat_calls": 1,
+        "seconds": 0.37945433001732454
+      }
+    },
+    {
+      "id": 3,
+      "baseline": {
+        "wall": 2.2493146330234595,
+        "cpu": 2.249234949
+      },
+      "improved": {
+        "wall": 0.39792203399701975,
+        "cpu": 0.3977600670000001
+      },
+      "flippables": 42,
+      "stats": {
+        "variables": 1771,
+        "screened_nonflippable": 1712,
+        "witness_flippable": 1,
+        "flip_sat_calls": 58,
+        "initial_sat_calls": 1,
+        "seconds": 0.3977606639964506
+      }
+    },
+    {
+      "id": 4,
+      "baseline": {
+        "wall": 2.092769955022959,
+        "cpu": 2.0921855689999997
+      },
+      "improved": {
+        "wall": 0.39243672401062213,
+        "cpu": 0.39242567900000047
+      },
+      "flippables": 30,
+      "stats": {
+        "variables": 1771,
+        "screened_nonflippable": 1709,
+        "witness_flippable": 0,
+        "flip_sat_calls": 62,
+        "initial_sat_calls": 1,
+        "seconds": 0.39227353999740444
+      }
+    },
+    {
+      "id": 5,
+      "baseline": {
+        "wall": 2.6364468529936858,
+        "cpu": 2.6362617749999995
+      },
+      "improved": {
+        "wall": 0.4687024599988945,
+        "cpu": 0.46867851700000074
+      },
+      "flippables": 37,
+      "stats": {
+        "variables": 1771,
+        "screened_nonflippable": 1707,
+        "witness_flippable": 1,
+        "flip_sat_calls": 63,
+        "initial_sat_calls": 1,
+        "seconds": 0.4685129660065286
+      }
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "case_id": 0,
+  "arm": "audit",
+  "stages": [],
+  "feedback": [],
+  "status": "AUDITED",
+  "worker_wall_seconds": 4.034540186985396,
+  "audits": [
+    {
+      "input_signature": {
+        "real_sha256": "992d8aff4a3c23b75234a2244eaef53de4a821f06d28d26da8f1916ed3fa0a44",
+        "target_sha256": "2c70ed3c289940dc5a347af0939e323e13fa73ad68512e09ea701cfb938f3243",
+        "dependencies": {
+          "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/compare19_audit.py": "495e6be53fe2ef31bdd51f625873405f574fee856aa43833647d13890d041fe9",
+          "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/verifier": "8ab0a699b9f92ee62e0d1ae8996e3551a5fe16e3b97f2e15b60d3db1cacff911",
+          "/home/andrew/PointSAT/convex_hexagon_inside_19_3sym.cnf": "5960e92d308798d2871ff652168fb7c742746cc17a91dde2990e46e594e7d85b",
+          "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/mapping": "30203c74b5516f7e61454ef4f4e37d3ea60b26850e114139cfb7e22e0ea14c35",
+          "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/cycles": "86cd8a164ef4c7186e8d2f43f8fa7239b813f0f13ad16bec8d6dc6dedd451f7b",
+          "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/c3_verifier": "d32bc15551ec31e93a022f330f21c5fa6dc4f974f3fe6ca991fdfa151dad6128"
+        },
+        "n": 19,
+        "primary_requires_C3": false,
+        "path_roles": {
+          "cnf_path": "/home/andrew/PointSAT/convex_hexagon_inside_19_3sym.cnf",
+          "orientation_map_path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/mapping",
+          "cycles_path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/frozen/cycles"
+        }
+      },
+      "source": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0.real",
+      "n": 19,
+      "valid_geometry": true,
+      "accepted": true,
+      "primary_requires_C3": false,
+      "geometry": {
+        "n": 19,
+        "valid": true,
+        "collinear_triples": 0,
+        "duplicate_pairs": 0,
+        "six_subsets_checked": 27132,
+        "interior_histogram": [
+          0,
+          15,
+          12,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_forbidden_hexagon": [],
+        "seconds": 0.0114072
+      },
+      "orientation_violations": 3,
+      "constraint_count": 969,
+      "general_position": true,
+      "forbidden_hexagons": 0,
+      "empty_hexagons": 0,
+      "hexagons_with_three_inside": 0,
+      "integer_points": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/points.pts",
+      "integer_coordinates": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1741164253",
+          "-443290015"
+        ],
+        [
+          "1254482540",
+          "1286247468"
+        ],
+        [
+          "3117068734",
+          "-735318736"
+        ],
+        [
+          "819434592",
+          "2623830063"
+        ],
+        [
+          "-940856533",
+          "-1045553873"
+        ],
+        [
+          "569286720",
+          "2034027483"
+        ],
+        [
+          "-304998580",
+          "-967286995"
+        ],
+        [
+          "2731358653",
+          "-223783035"
+        ],
+        [
+          "1235733408",
+          "1224350401"
+        ],
+        [
+          "62978999",
+          "14711309"
+        ],
+        [
+          "1696934386",
+          "-396104256"
+        ],
+        [
+          "2639219247",
+          "-220256359"
+        ],
+        [
+          "612302231",
+          "1952469079"
+        ],
+        [
+          "-255874685",
+          "-889255266"
+        ],
+        [
+          "74737219807",
+          "-75338179574"
+        ],
+        [
+          "29617331735",
+          "101950130734"
+        ],
+        [
+          "-101358904749",
+          "-25768993706"
+        ],
+        [
+          "998548931",
+          "280985818"
+        ]
+      ],
+      "numeric_cnf": {
+        "mapping_consistent": true,
+        "compressed_mapping": true,
+        "status": "SAT",
+        "satisfiable": true,
+        "variables": 645257,
+        "clauses": 2311196,
+        "projected_variables": 327,
+        "violated_clauses": 0,
+        "wrong_orientation_assumptions": 0,
+        "full_model": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/numeric.cnf.model",
+        "full_model_sha256": "618bff5b72ecf641f8ae48dc7c7600d08dd88461adc232b8b239c3c66708bea6",
+        "seconds": 1.886036024952773
+      },
+      "exact_C3_projection": {
+        "requested": true,
+        "primary_outcome_unchanged": true,
+        "note": "Exact rotations reconstructed from orbit representatives: a separate witness, not exact symmetry of the input decimals.",
+        "geometry": {
+          "n": 19,
+          "arithmetic": "exact_integer_Qsqrt3",
+          "exact_C3_symmetry": true,
+          "valid": true,
+          "input_basis": "Cartesian",
+          "center_original_index": 19,
+          "collinear_triples": 0,
+          "duplicate_pairs": 0,
+          "orientation_changes_from_rounded_input": 0,
+          "constraint_count": 0,
+          "orientation_violations": 0,
+          "six_subsets_checked": 27132,
+          "interior_histogram": [
+            0,
+            15,
+            12,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_forbidden_hexagon": [],
+          "seconds": 0.0611516
+        },
+        "valid_geometry": true,
+        "points": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/projected_c3.qsqrt3",
+        "signs_preserved": true,
+        "numeric_cnf": {
+          "mapping_consistent": true,
+          "compressed_mapping": true,
+          "status": "SAT",
+          "satisfiable": true,
+          "variables": 645257,
+          "clauses": 2311196,
+          "projected_variables": 327,
+          "violated_clauses": 0,
+          "wrong_orientation_assumptions": 0,
+          "full_model": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/projected_c3.cnf.model",
+          "full_model_sha256": "618bff5b72ecf641f8ae48dc7c7600d08dd88461adc232b8b239c3c66708bea6",
+          "seconds": 1.8034705240279436
+        }
+      },
+      "artifacts": {
+        "projected_c3.qsqrt3": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/projected_c3.qsqrt3",
+          "sha256": "d13b39a71f4209edb9e15d226c0fb225377fed34d7046a2bfcb5a95671768b3a"
+        },
+        "numeric.cnf.model": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/numeric.cnf.model",
+          "sha256": "618bff5b72ecf641f8ae48dc7c7600d08dd88461adc232b8b239c3c66708bea6"
+        },
+        "points.real": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/points.real",
+          "sha256": "992d8aff4a3c23b75234a2244eaef53de4a821f06d28d26da8f1916ed3fa0a44"
+        },
+        "projected_c3.qsqrt3.or": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/projected_c3.qsqrt3.or",
+          "sha256": "628c3e96f67af9b544284766c58fd6a8a1d412472ef4146f53af7ed12c10c346"
+        },
+        "projected_c3.cnf.model": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/projected_c3.cnf.model",
+          "sha256": "618bff5b72ecf641f8ae48dc7c7600d08dd88461adc232b8b239c3c66708bea6"
+        },
+        "points.pts": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/points.pts",
+          "sha256": "14be2dff5a6b1d000986984be60cc11fb14659a1cbb7ddaaafd245eb2f5dfb0b"
+        },
+        "target.or": {
+          "path": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/target.or",
+          "sha256": "2c70ed3c289940dc5a347af0939e323e13fa73ad68512e09ea701cfb938f3243"
+        }
+      },
+      "certificate": "/home/andrew/PointSAT/benchmarks/compare19_positive_control_20260907/original/stage0-audit/certificate.json",
+      "audit_wall_seconds": 4.030278794991318,
+      "checkpoint": "stage0.real"
+    }
+  ]
+}

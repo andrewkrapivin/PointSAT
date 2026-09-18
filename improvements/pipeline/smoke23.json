@@ -1,0 +1,19 @@
+{
+  "base_file": "7gon-6hole-23-compact.cnf",
+  "n": 23,
+  "solution_generation": "scranfilize",
+  "scranfilize_loc": "direct/vendor/scranfilize/scranfilize",
+  "cadical_loc": "direct/vendor/kissat/build/kissat",
+  "localizer_loc": "direct/vendor/localizer/src/localizer",
+  "output_folder": "improvements/pipeline/smoke23_run",
+  "n_solutions": 2,
+  "workers": 2,
+  "worker_max_threads": 1,
+  "remove_flippable": true,
+  "localizer_attempt_levels": 2,
+  "localizer_attempt_timeouts": [0.5, 0.5],
+  "localizer_attempt_thresholds": [1771],
+  "localizer_attempt_branches": [1],
+  "localizer_native_time_limit": true,
+  "warm_start_retries": true
+}

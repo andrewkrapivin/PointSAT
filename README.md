@@ -1,65 +1,109 @@
 # PointSAT
-Problems complete for the existential theory of the reals arise throughout discrete geometry. We introduce *satisfiability modulo realizability*, a SAT-based approach for solving satisfiable instances of the existential theorem of the reals whose solutions correspond to realizable geometric configurations. Our method encodes an underapproximation of a geometric problem as a SAT instance over abstract order types. Since almost all abstract order types are unrealizable, naive search is infeasible. We guide the search toward realizable order types using diversity-driven sampling, partial realizability feedback, and a novel flippability heuristic that passes only limited information between components. We apply our method to discrete geometry problems and resolve an open problem by showing that the largest set of points avoiding empty convex hexagons and convex heptagons is of size 23.
 
-## Installing/Building Dependencies
-We assume you have python and some C and C++ compiler installed.
-- first, install the required packages: ```pip install -r requirements.txt```
-- clone and build localizer. Before running make in the makefile in localizer/src modify line 2 of the makefile from `CFLAGS = -Wall -Wextra -O3` to `CFLAGS = -Wall -Wextra -O3 -pthread` (the following does exactly that, so you do not need to do it yourself):
-```
-git clone https://github.com/bsubercaseaux/localizer/
-cd localizer/src
-sed -i '2c\CFLAGS = -Wall -Wextra -O3 -pthread' makefile
+PointSAT searches for planar point configurations using SAT and a native geometric
+realizer. The current workflow includes compact run storage, bounded searches,
+automatic integer-coordinate optimization, and independent exact verification.
+
+The underlying research is described in *Toward Satisfiability Modulo
+Realizability* by Andrew Krapivin, Benjamin Przybocki, and Marijn J. H. Heule.
+The supplied [paper](Happy_ending.pdf) proves that 23 is the largest number of
+points avoiding both an empty convex hexagon and a convex heptagon.
+
+## Quick start
+
+Use Python 3.10+, a C/C++ compiler, Make, and Boost headers for the exact checker.
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
 make
-cd ../..
-```
-- clone and build scranfilize
-```
-git clone https://github.com/arminbiere/scranfilize
-cd scranfilize
-./configure && make
-cd ..
-```
-- clone and build kissat (or cadical or whatever sat solver you choose)
-```
-git clone https://github.com/arminbiere/kissat
-cd kissat
-./configure && make
-cd ..
+python -m pointsat doctor
 ```
 
-## Running PointSAT
-To run PointSAT on a local machine, make sure you have installed dependencies
-as above. Then simply run:
-```
-python PointSAT.py settings.json
-```
-By default, this generates 500 abstract solutions for the 23 point 6-hole
-7-gon problem and runs the localizer for
-15 seconds on 1 thread. The total number of threads working on this is set to 4.
-However, all these settings can be modified in the settings.json file.
-The most relevant settings in settings.json are:
-- "n": number of points in the problem
-- "base_file": this gives the constraints for your problem, which is used by
-the SAT solver
-- "n_solutions": number of abstract solutions
-- "output_folder: the folder for the tool to use to log work and output realizations
-- "workers": number of parallel workers. Note that this does not necessarily
-equal the number of threads used by the program, as each worker may run localizer
-on multiple threads.
-- "worker_max_threads": number of threads to call localizer on. Note that the
-SAT solver always uses one thread.
-- "remove_flippable": whether or not to enable the heuristic to remove the flippable
-variables
+Kissat and scranfilize must also be built. Existing builds in this repository's
+`direct/vendor/` are detected automatically; other locations can be specified
+in a settings file. See [installation and usage](docs/USAGE.md). On the current
+machine, `direct/vendor/venv/bin/python` already has the Python dependencies.
 
-After PointSAT finishes, all realizations found (if any) will be found in the
-realizations subdirectory of the specified output folder. The .or files correspond
-to the orientation constraints, and the .real files correspond to the actual
-realizations found.
+```sh
+# Search for 23-point solutions; automatically compact accepted coordinates.
+python -m pointsat run --problem mixed23 --samples 20 --workers 2 --seconds 600 --out runs/demo
 
-## Additional Scripts
-- analyze.py: ```python analyze.py [[output_folder]].``` This script analyzes the
-results in the output folder of a PointSAT run. It generates in the same output
-folder histograms for number of violations, number of flippable orientations,
-probability of  being a solution versus number of violations, and the proportion
-of solutions with a given number of violations. It also outputs the data used
-to generate these graphs to a CSV.
+# Inspect a run even while it is active.
+python -m pointsat status runs/demo
+python -m pointsat solutions runs/demo
+
+# Spend more time optimizing every saved solution, retaining hull-layer sizes.
+python -m pointsat optimize runs/demo --seconds 60 --mode layers
+
+# Only export files when you want them.
+python -m pointsat export runs/demo --mode layers --out exports/demo --svg
+```
+
+Successful runs keep **one `run.sqlite` database**, with compressed events,
+coordinates, metadata and deduplicated artifacts. SQLite's two temporary WAL
+files may exist while a run is open. Native tools use a bounded temporary
+workspace; interrupted runs retain recovery files instead of risking lost
+coordinates. `python -m pointsat recover runs/demo` independently checks those
+files. Existing research output is never deleted or migrated implicitly.
+
+## Automatic coordinate optimization
+
+No manually chosen `.or` / realization pairing is required:
+
+```sh
+# The paper example is built in, but it is only one benchmark input.
+python -m pointsat optimize --paper --out runs/paper --seconds 60
+
+# Discover, validate and optimize an entire collection.
+python -m pointsat optimize --scan improvements/benchmarks/successes --out runs/collection --seconds 30
+
+# Existing legacy PointSAT runs are detected through their realizations/ folder.
+python -m pointsat optimize path/to/legacy-run --seconds 30 --problem mixed23
+```
+
+Modes are `layers` (default: retain hull-layer sizes), `order-type` (retain every
+labeled orientation), and `free` (any configuration satisfying the same geometric
+problem). Every candidate is checked independently with exact arithmetic; a
+failed attempt never replaces the saved solution. Grid dimensions mean coordinate
+spans, e.g. 64×78 means coordinates in `[0,64] × [0,78]`.
+Use `solutions --mode layers` or `export --mode layers` to select a preserving
+result if the collection also contains earlier free compactions. The standard
+optimizer is v1; `--strategy experimental` enables v2, which helped the paper
+example but regressed on five of six same-mode comparison inputs.
+
+## Supported problems
+
+| Preset | Points | Forbidden configurations |
+| --- | ---: | --- |
+| `mixed23` | 23 | convex 7-gon; empty convex 6-gon |
+| `holes29` | 29 | empty convex 6-gon |
+| `gons32` | 32 | convex 7-gon |
+| `caps26` | 26 | convex 7-gon; 5-cap in the actual x direction |
+
+Custom CNFs and the compressed 19-point symmetry encoding remain supported
+through `--settings FILE.json`. Automatic geometric optimization currently
+supports the four named families above. Full CNF satisfaction is never a
+substitute for the separate cap check.
+
+## Implementation, evidence, and compatibility
+
+- [User guide and configuration](docs/USAGE.md)
+- [Self-contained optimized Localizer](localizer/README.md)
+- [Native optimizer and multi-example benchmarks](optimizer/README.md)
+- [Matched feedback-on/off benchmark](benchmarks/README.md)
+- [Localizer variants and time-budget scaling study](benchmarks/SCALING_STUDY.md)
+- [Consolidated PDF report](reports/PointSAT-improvements.pdf)
+- [Earlier exact 19-point solution](improvements/success19/README.md)
+
+`python PointSAT.py run ...` also invokes the new interface. The original
+`python PointSAT.py settings.json` entry point remains available with legacy
+file output; use `python -m pointsat run --settings settings.json` to select
+compact storage. Existing scripts such as `analyze.py` expect legacy output;
+export events/artifacts or use `solutions --csv` for the new database.
+
+Run `make test PYTHON=.venv/bin/python` for workflow, pipeline and native tests.
+All performance claims distinguish fixed-work evaluation speed, storage overhead,
+and actual success rates. Experimental native moves that did not help are not
+enabled by default.

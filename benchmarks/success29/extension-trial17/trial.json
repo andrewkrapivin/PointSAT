@@ -1,0 +1,164 @@
+{
+  "job": {
+    "case": {
+      "id": "holes29-s42206",
+      "problem": "holes29",
+      "n": 29,
+      "gon": 0,
+      "hole": 6,
+      "cap": 0,
+      "cnf": "/home/andrew/PointSAT/6hole-29-compact.cnf",
+      "cnf_sha256": "18220d232d7df49d391dcc560055550b9fc862674bfa2cac6b6d685650b1a1c3",
+      "sat_seed": 42206,
+      "sat_seconds": 1800,
+      "output": "improvements/benchmarks/overnight/runs/holes29-s42206",
+      "orientation": "/home/andrew/PointSAT/improvements/benchmarks/overnight/runs/holes29-s42206/target.or",
+      "orientation_sha256": "2fe5794aef0dcc5f07a1df7db3bfe15f3b18f2c8db752377ba7161a0eb9bcf21"
+    },
+    "seed": 811,
+    "arm": "core_feedback"
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "seed": 811,
+      "native_budget_seconds": 15,
+      "native_wall_seconds": 15.017448146012612,
+      "native_cpu_seconds": 15.002026,
+      "finished_elapsed": 17.2462811099831,
+      "returncode": 0,
+      "constraint_count": 3591,
+      "target_sha256": "92a9511b9bc4536730e72651114f31a695a79dc084a1f97bb6be3238d98478ca",
+      "warm_start": false,
+      "active_target_errors": 11,
+      "operational_cnf_acceptance": false,
+      "operational_check_seconds": 0.013108163024298847
+    },
+    {
+      "stage": 1,
+      "seed": 812,
+      "native_budget_seconds": 15,
+      "native_wall_seconds": 15.019852652971167,
+      "native_cpu_seconds": 15.002714000000001,
+      "finished_elapsed": 33.383751449000556,
+      "returncode": 0,
+      "constraint_count": 3551,
+      "target_sha256": "39ef4f5b261491a5269595039cfd6687f6f1fd7dac8a38c22c31e6c0ee4dfcf4",
+      "warm_start": true,
+      "active_target_errors": 1,
+      "operational_cnf_acceptance": true,
+      "online_geometry": {
+        "n": 29,
+        "gon": 0,
+        "hole": 6,
+        "valid": true,
+        "arithmetic": "arbitrary_precision_integer",
+        "collinear_triples": 0,
+        "convex_gons": 0,
+        "empty_holes": 0,
+        "gon_subsets_checked": 0,
+        "hole_subsets_checked": 475020,
+        "seconds": 0.297383
+      }
+    }
+  ],
+  "feedback": [
+    {
+      "sat_calls": 8,
+      "relaxed": [
+        -113,
+        -74,
+        -1829,
+        3629,
+        -143,
+        3281,
+        2930
+      ],
+      "core_sizes": [
+        1,
+        22,
+        228,
+        56,
+        111,
+        290,
+        72
+      ],
+      "orientation_changes": 6,
+      "seconds": 0.058044979989062995,
+      "status": "SAT",
+      "core_choice": "target_margin",
+      "new_flippables": 103,
+      "total_feedback_wall_seconds": 1.0976142939762212
+    }
+  ],
+  "timings": {
+    "cnf_initialize": 1.1805773450178094,
+    "initial_flippability": 0.9751689129625447
+  },
+  "status": "SUCCESS",
+  "online_success": true,
+  "elapsed": 33.72424181300448,
+  "worker_cpu_seconds": 33.733695000000004,
+  "initial_flippable_count": 63,
+  "job_index": 17,
+  "budget_seconds": 60.0,
+  "wall_seconds": 33.87324563396396,
+  "parent_observed_cpu_seconds": 33.85465,
+  "budget_watchdog_fired": false,
+  "externally_interrupted": false,
+  "returncode": 0,
+  "cpu_may_exclude_unreaped_descendants": false,
+  "timestamp_utc": "2026-09-06T23:12:14Z",
+  "posthoc": {
+    "saved_checkpoints": [
+      {
+        "orientation_violations": 44,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": false,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 4,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.386915
+        },
+        "integer_points": "benchmarks/extension_20260906/trial-17-k5ghfe5v/stage0.pts",
+        "integer_points_sha256": "36306777aca97f07dff2fb0308dbe1d6b45bf149aeab26ba0d9a20a2d1a26ddc",
+        "stage_file": "stage0.real",
+        "saved_elapsed_upper_bound": 17.230119705200195
+      },
+      {
+        "orientation_violations": 67,
+        "constraint_count": 3654,
+        "collinear_triples_independent": 0,
+        "geometry": {
+          "n": 29,
+          "gon": 0,
+          "hole": 6,
+          "valid": true,
+          "arithmetic": "arbitrary_precision_integer",
+          "collinear_triples": 0,
+          "convex_gons": 0,
+          "empty_holes": 0,
+          "gon_subsets_checked": 0,
+          "hole_subsets_checked": 475020,
+          "seconds": 0.351973
+        },
+        "integer_points": "benchmarks/extension_20260906/trial-17-k5ghfe5v/stage1.pts",
+        "integer_points_sha256": "526584e0c5705351e3134b2355495f7815d8298bc6bb7378520a6d4f2861f51c",
+        "stage_file": "stage1.real",
+        "saved_elapsed_upper_bound": 33.36514115333557
+      }
+    ],
+    "valid_geometry": true,
+    "first_success_upper_bound_seconds": 33.36514115333557,
+    "minimum_forbidden_count": 0,
+    "audit_wall_seconds": 0.7671222789795138
+  }
+}
